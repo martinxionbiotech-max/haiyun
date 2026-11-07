@@ -13,6 +13,9 @@ export default defineConfig({
         defaultLocale: 'en',
         locales: { en: 'en', ru: 'ru', es: 'es', ar: 'ar' },
       },
+      // /search/ is noindex and its content is the index itself — submitting it
+      // would put a duplicate-of-everything URL in front of crawlers.
+      filter: (page) => !page.endsWith('/search/'),
     }),
   ],
   site: 'https://haiyunmilling.com',

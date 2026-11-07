@@ -19,6 +19,7 @@ export const ui = {
       projects: 'Projects',
       about: 'About',
       contact: 'Contact',
+      search: 'Search',
     },
     cta: {
       quote: 'Request a quote',
@@ -128,6 +129,8 @@ export const ui = {
       cleaning: 'Cleaning equipment',
       milling: 'Milling equipment',
     },
+    specNote:
+      'Specification tables keep their original English column headers and SI units. A mistranslated unit is a safety problem, not a copy problem — engineers read the table in the units the machine actually meets.',
     notTranslated: {
       heading: 'This section is published in English',
       body: 'Our engineering handbooks and reference project records are written for mill engineers and stay in English. The commercial pages — plant range, equipment, about and contact — are available in your language.',
@@ -146,6 +149,7 @@ export const ui = {
       projects: 'Проекты',
       about: 'О компании',
       contact: 'Контакты',
+      search: 'Поиск',
     },
     cta: {
       quote: 'Запросить цену',
@@ -255,6 +259,8 @@ export const ui = {
       cleaning: 'Оборудование очистки',
       milling: 'Мельничное оборудование',
     },
+    specNote:
+      'Таблицы параметров сохраняют оригинальные английские заголовки и единицы СИ. Ошибка в единице измерения — это вопрос безопасности, а не стиля: инженер читает таблицу в тех единицах, в которых машина действительно аттестована.',
     notTranslated: {
       heading: 'Этот раздел опубликован на английском',
       body: 'Наши инженерные руководства и описания проектов написаны для инженеров-мельников и остаются на английском. Коммерческие разделы — модельный ряд, оборудование, о компании и контакты — доступны на вашем языке.',
@@ -273,6 +279,7 @@ export const ui = {
       projects: 'Proyectos',
       about: 'Empresa',
       contact: 'Contacto',
+      search: 'Buscar',
     },
     cta: {
       quote: 'Solicitar cotización',
@@ -382,6 +389,8 @@ export const ui = {
       cleaning: 'Equipos de limpieza',
       milling: 'Equipos de molienda',
     },
+    specNote:
+      'Las tablas de parámetros conservan sus encabezados originales en inglés y las unidades del SI. Una unidad mal traducida es un problema de seguridad, no de estilo: el ingeniero lee la tabla en las unidades con las que la máquina está realmente certificada.',
     notTranslated: {
       heading: 'Esta sección se publica en inglés',
       body: 'Nuestros manuales de ingeniería y fichas de proyectos están escritos para ingenieros de molino y se mantienen en inglés. Las páginas comerciales — gama de plantas, equipos, empresa y contacto — están disponibles en su idioma.',
@@ -400,6 +409,7 @@ export const ui = {
       projects: 'المشاريع',
       about: 'عن الشركة',
       contact: 'اتصل بنا',
+      search: 'بحث',
     },
     cta: {
       quote: 'اطلب عرض سعر',
@@ -509,6 +519,8 @@ export const ui = {
       cleaning: 'معدات التنظيف',
       milling: 'معدات الطحن',
     },
+    specNote:
+      'تحتفظ جداول المواصفات بعناوين أعمدتها الإنجليزية ووحدات النظام الدولي. ترجمة الوحدة خطأً مسألة سلامة لا مسألة صياغة — فالمهندس يقرأ الجدول بالوحدات التي اعتُمدت بها الماكينة فعليًا.',
     notTranslated: {
       heading: 'هذا القسم منشور بالإنجليزية',
       body: 'أدلتنا الهندسية وسجلات المشاريع مكتوبة لمهندسي المطاحن وتبقى بالإنجليزية. أما الصفحات التجارية — نطاق المصانع والمعدات وعن الشركة والاتصال — فمتاحة بلغتك.',

@@ -1,0 +1,252 @@
+---
+// Shared equipment detail body, used by the English page and the /ru|es|ar/
+// pages. Spec tables stay in src/data/equipment.js — translations only carry
+// prose, so a machine's numbers can never differ between locales.
+import PageLayout from '../../layouts/PageLayout.astro';
+import PageHero from '../PageHero.astro';
+import Figure from '../Figure.astro';
+import FAQ from '../FAQ.astro';
+import CTABand from '../CTABand.astro';
+import { getDetailUI } from '../../i18n/detail.js';
+import { getSelectionContent } from '../../i18n/content.js';
+import { localizePath } from '../../i18n/config.js';
+import { site } from '../../data/site.js';
+import { equipmentByCategory } from '../../data/equipment.js';
+import { selectionBySlug } from '../../data/selection.js';
+import { equipmentGallery } from '../../data/gallery.js';
+
+const { item, lang = 'en' } = Astro.props;
+
+const t = getDetailUI(lang);
+const href = (p) => localizePath(lang, p);
+
+const related = equipmentByCategory(item.category)
+  .filter((e) => e.slug !== item.slug)
+  .slice(0, 4);
+
+const selGroup = getSelectionContent(lang, selectionBySlug[item.slug]);
+const selfOption = selGroup?.options.find((o) => o.slug === item.slug);
+const rivals = selGroup?.options.filter((o) => o.slug !== item.slug) ?? [];
+
+const shots = equipmentGallery[item.slug] ?? { hero: null, gallery: [] };
+const heroFile = shots.hero;
+const galleryFiles = shots.gallery.filter((f) => f !== heroFile);
+
+const isCleaning = item.category === 'cleaning';
+const catName = isCleaning ? t.cleaning : t.milling;
+const catHref = isCleaning ? '/equipment/cleaning-equipment/' : '/equipment/flour-milling-equipment/';
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: `${item.name} (${item.model})`,
+    description: item.tagline,
+    brand: { '@type': 'Brand', name: 'HAIYUN' },
+    manufacturer: { '@id': `${site.url}/#organization` },
+    category: isCleaning ? t.cleaningCategory : t.millingCategory,
+    model: item.model,
+    offers: {
+      '@type': 'Offer',
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      seller: { '@id': `${site.url}/#organization` },
+      url: `${site.url}${href(`/equipment/${item.slug}/`)}`,
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: item.name,
+    inLanguage: lang,
+    author: { '@id': `${site.url}/#organization` },
+    publisher: { '@id': `${site.url}/#organization` },
+    datePublished: '2026-01-15',
+    dateModified: '2026-11-07',
+  },
+];
+---
+
+<PageLayout
+  title={`${item.name} — ${item.model}`}
+  description={`${item.tagline} ${item.name} (${item.model}) — ${t.technicalParameters}, ${t.selectionGuidance}, ${t.maintenance}.`}
+  image={heroFile ? `/images/${heroFile}` : undefined}
+  schema={schema}
+  lang={lang}
+>
+  <PageHero
+    eyebrow={`${item.stage} · ${t.paramHeaders.model} ${item.model}`}
+    title={item.name}
+    subtitle={item.tagline}
+    image={heroFile ? `/images/${heroFile}` : undefined}
+    imageAlt={`${item.name} ${item.model}`}
+    lang={lang}
+  />
+
+  <section class="section">
+    <div class="container-x grid gap-12 lg:grid-cols-[2fr_1fr]">
+      <div>
+        <nav class="mb-6 text-xs text-steel-500" aria-label="Breadcrumb">
+          <a href={href('/equipment/')} class="hover:text-ember-700">{t.equipment}</a>
+          <span class="mx-1.5">/</span>
+          <a href={href(catHref)} class="hover:text-ember-700">{catName}</a>
+          <span class="mx-1.5">/</span>
+          <span class="text-steel-700">{item.name}</span>
+        </nav>
+
+        <h2 class="font-display text-2xl font-bold uppercase tracking-tight text-steel-900">{t.whatItDoes}</h2>
+        <p class="mt-3 text-[16px] leading-relaxed text-steel-700">{item.intro}</p>
+
+        <h2 class="mt-10 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
+          {t.technicalParameters}
+        </h2>
+        <p class="mt-2 text-xs text-steel-500">{t.technicalNote}</p>
+        <div class="mt-4 overflow-x-auto rounded-lg border border-steel-200">
+          <table class="w-full border-collapse text-sm">
+            <thead class="bg-steel-50 text-start">
+              <tr>
+                {item.specs.headers.map((h) => (
+                  <th class="whitespace-nowrap border-b border-steel-200 px-3 py-2.5 text-start text-xs font-bold uppercase tracking-wide text-steel-800">
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {item.specs.rows.map((row) => (
+                <tr class="even:bg-steel-50/50">
+                  {row.map((cell, i) => (
+                    <td class:list={['border-b border-steel-100 px-3 py-2.5', i === 0 ? 'font-semibold text-steel-900' : 'text-steel-700']}>
+                      {cell}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-10 grid gap-4 sm:grid-cols-2">
+          <div class="rounded-lg border border-steel-200 bg-steel-50 p-5">
+            <h3 class="text-xs font-bold uppercase tracking-widest text-ember-700">{t.selectionGuidance}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-steel-700">{item.selection}</p>
+          </div>
+          <div class="rounded-lg border border-steel-200 bg-white p-5 shadow-card">
+            <h3 class="text-xs font-bold uppercase tracking-widest text-steel-600">{t.maintenance}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-steel-700">{item.maintenance}</p>
+          </div>
+        </div>
+
+        {
+          selGroup && (
+            <div class="mt-12 rounded-xl border border-steel-200 bg-white p-6 shadow-card sm:p-8">
+              <p class="text-[11px] font-bold uppercase tracking-widest text-ember-700">{t.selectionCrossCheck}</p>
+              <h2 class="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
+                {selGroup.title}
+              </h2>
+              <p class="mt-3 text-sm leading-relaxed text-steel-600">{selGroup.intro}</p>
+
+              <div class="mt-6 grid gap-4 sm:grid-cols-2">
+                <div class="rounded-lg border-2 border-ember-500 bg-ember-50/40 p-5">
+                  <p class="text-[10px] font-bold uppercase tracking-widest text-ember-700">{t.thisMachine}</p>
+                  <p class="mt-1 font-display text-lg font-bold uppercase leading-tight text-steel-900">
+                    {selfOption?.name ?? item.name}
+                  </p>
+                  <p class="text-xs text-steel-500">{selfOption?.model ?? item.model}</p>
+                  <p class="mt-3 text-[13px] font-bold uppercase tracking-wide text-steel-800">{t.chooseWhen}</p>
+                  <p class="mt-1 text-sm leading-relaxed text-steel-700">{selfOption?.choose}</p>
+                  <p class="mt-3 text-[13px] font-bold uppercase tracking-wide text-steel-800">{t.watchOut}</p>
+                  <p class="mt-1 text-sm leading-relaxed text-steel-700">{selfOption?.mind}</p>
+                </div>
+
+                {rivals.map((r) => (
+                  <a
+                    href={href(`/equipment/${r.slug}/`)}
+                    class="group rounded-lg border border-steel-200 p-5 transition hover:border-ember-400 hover:bg-steel-50"
+                  >
+                    <p class="text-[10px] font-bold uppercase tracking-widest text-steel-400">{t.alternative}</p>
+                    <p class="mt-1 font-display text-lg font-bold uppercase leading-tight text-steel-900 group-hover:text-ember-700">
+                      {r.name}
+                    </p>
+                    <p class="text-xs text-steel-500">{r.model}</p>
+                    <p class="mt-3 text-[13px] font-bold uppercase tracking-wide text-steel-800">{t.chooseWhen}</p>
+                    <p class="mt-1 text-sm leading-relaxed text-steel-700">{r.choose}</p>
+                    <p class="mt-3 text-[13px] font-bold uppercase tracking-wide text-steel-800">{t.watchOut}</p>
+                    <p class="mt-1 text-sm leading-relaxed text-steel-700">{r.mind}</p>
+                    <span class="mt-3 inline-block text-xs font-bold text-ember-700">
+                      {t.open} {r.name} →
+                    </span>
+                  </a>
+                ))}
+              </div>
+
+              <div class="mt-6 rounded-lg bg-steel-900 p-5 text-white">
+                <p class="text-[10px] font-bold uppercase tracking-widest text-ember-400">{t.decisionRule}</p>
+                <p class="mt-1.5 text-sm leading-relaxed text-steel-100">{selGroup.rule}</p>
+              </div>
+            </div>
+          )
+        }
+      </div>
+
+      <aside class="lg:sticky lg:top-28 lg:self-start">
+        <div class="rounded-xl border border-steel-200 bg-steel-900 p-6 text-white">
+          <p class="text-[11px] font-bold uppercase tracking-widest text-ember-400">{t.modelSeries}</p>
+          <p class="mt-2 font-display text-3xl font-bold uppercase" dir="ltr">{item.model}</p>
+          <p class="mt-1 text-sm text-steel-400">{item.specs.rows.length} {t.configurations}</p>
+          <dl class="mt-5 space-y-2.5 border-t border-steel-800 pt-4 text-sm">
+            <div class="flex justify-between gap-3">
+              <dt class="text-steel-400">{t.processStage}</dt>
+              <dd class="text-end font-semibold">{item.stage}</dd>
+            </div>
+            <div class="flex justify-between gap-3">
+              <dt class="text-steel-400">{t.category}</dt>
+              <dd class="text-end font-semibold">{isCleaning ? t.cleaningShort : t.millingShort}</dd>
+            </div>
+          </dl>
+          <a href={href('/contact/')} class="btn-primary mt-6 w-full justify-center">{t.getQuotation}</a>
+          <a href={`https://wa.me/${site.whatsapp}`} rel="noopener" class="btn-ghost-light mt-2 w-full justify-center">
+            {t.whatsapp}
+          </a>
+        </div>
+
+        <div class="mt-6 rounded-xl border border-steel-200 p-6">
+          <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">{t.relatedEquipment}</p>
+          <ul class="mt-4 space-y-3 text-sm">
+            {related.map((r) => (
+              <li>
+                <a href={href(`/equipment/${r.slug}/`)} class="group block">
+                  <span class="block font-semibold text-steel-800 group-hover:text-ember-700">{r.name}</span>
+                  <span class="block text-xs text-steel-500">{r.model} · {r.stage}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <FAQ faq={item.faq} lang={lang} />
+
+  {
+    galleryFiles.length > 0 && (
+      <section class="section pt-0">
+        <div class="container-x">
+          <p class="eyebrow">{t.fromBrochure}</p>
+          <h2 class="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-steel-900 sm:text-3xl">
+            {item.name} {t.catalogueImages}
+          </h2>
+          <p class="mt-3 max-w-2xl text-[15px] leading-relaxed text-steel-600">{t.catalogueNote}</p>
+          <div class="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {galleryFiles.map((f, i) => (
+              <Figure file={f} ratio="4/3" index={i + 1} showNote />
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <CTABand lang={lang} />
+</PageLayout>

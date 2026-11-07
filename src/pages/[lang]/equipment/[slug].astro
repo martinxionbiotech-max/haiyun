@@ -1,0 +1,23 @@
+---
+import EquipmentDetail from '../../../components/pages/EquipmentDetail.astro';
+import { equipment } from '../../../data/equipment.js';
+import { getEquipmentContent } from '../../../i18n/content.js';
+import { translatedLocales } from '../../../i18n/config.js';
+
+export async function getStaticPaths() {
+  const paths = [];
+  for (const lang of translatedLocales) {
+    for (const e of equipment) {
+      paths.push({
+        params: { lang, slug: e.slug },
+        props: { item: await getEquipmentContent(lang, e.slug), lang },
+      });
+    }
+  }
+  return paths;
+}
+
+const { item, lang } = Astro.props;
+---
+
+<EquipmentDetail item={item} lang={lang} />

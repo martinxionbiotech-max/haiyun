@@ -1,89 +1,41 @@
 ---
-import PageLayout from '../../layouts/PageLayout.astro';
-import PageHero from '../../components/PageHero.astro';
-import CTABand from '../../components/CTABand.astro';
-import Figure from '../../components/Figure.astro';
-import { equipmentByCategory } from '../../data/equipment.js';
+import CategoryList from '../../components/pages/CategoryList.astro';
 
-const items = equipmentByCategory('cleaning');
-const stages = [...new Set(items.map(i => i.stage))];
+export function getStaticPaths() {
+  return [{ params: { lang: 'en' } }];
+}
 
-// Catalogue photographs that genuinely show cleaning machinery.
-const gallery = [
-  'p19_01.jpg', 'p21_02.jpg', 'p22_03.jpg', 'p20_02.jpg',
-  'p19_02.jpg', 'p23_02.jpg', 'p22_02.jpg',
-];
+const copy = {
+  eyebrow: '13 machine families',
+  title: 'Grain cleaning equipment for flour mills',
+  sub: 'Drum sieves, vibrating screens, destoners, scourers, length graders, washer-destoners, dampening systems, magnetic separators and aspirators. Full parameter tables for every stage of wheat cleaning.',
+  sectionTitle: 'The order matters more than the machines',
+  sectionBody:
+    'Wheat cleaning follows a fixed logic: coarse before fine, dry before wet, size before density, and magnets always last. Reverse two stages and you either blind a screen or send stones into a roll. The sequence below is what every Haiyun flow sheet uses, from a 200 kg/h unit to a 500 t/d tower.',
+  sequence: [
+    'Intake & weighing',
+    'Coarse pre-cleaning',
+    'Size grading',
+    'Density separation',
+    'Surface scouring',
+    'Length grading',
+    'Wet cleaning (optional)',
+    'Dampening & tempering',
+    'Magnetic separation',
+    'Aspiration before break',
+  ],
+  specLink: 'Specifications',
+  galleryTitle: 'Cleaning machinery',
+  galleryNote:
+    'Catalogue photographs of the cleaning line, with the brochure original captions. Not every machine family is photographed separately — where the catalogue shows a group, the caption says so.',
+  gallery: [
+    'p19_01.jpg', 'p21_02.jpg', 'p22_03.jpg', 'p20_02.jpg',
+    'p19_02.jpg', 'p23_02.jpg', 'p22_02.jpg',
+  ],
+  cta: 'Send us your wheat analysis. We will specify the cleaning line.',
+  catName: 'Cleaning equipment',
+  hero: '/images/p21_02.jpg',
+};
 ---
 
-<PageLayout
-  title="Grain Cleaning Equipment for Flour Mills — 13 Machine Families"
-  description="Drum sieves, vibrating screens, destoners, scourers, length graders, washer-destoners, dampening systems, magnetic separators and aspirators. Full parameter tables for every stage of wheat cleaning."
->
-  <PageHero
-    eyebrow="13 machine families"
-    title="Wheat cleaning equipment"
-    subtitle="Cleaning is 40% of flour quality and 10% of plant cost. Every machine here exists to remove one specific class of impurity — get the order right and the mill runs itself."
-    image="/images/p21_02.jpg"
-    imageAlt="TQSF gravity grading destoner — wheat cleaning equipment"
-  />
-
-  <section class="section">
-    <div class="container-x">
-      <div class="max-w-3xl">
-        <h2 class="font-display text-3xl font-bold uppercase tracking-tight text-steel-900">The order matters more than the machines</h2>
-        <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
-          Wheat cleaning follows a fixed logic: coarse before fine, dry before wet, size before density, and
-          magnets always last. Reverse two stages and you either blind a screen or send stones into a roll.
-          The sequence below is what every Haiyun flow sheet uses, from a 200 kg/h unit to a 500 t/d tower.
-        </p>
-      </div>
-      <ol class="mt-8 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-        {['Intake & weighing','Coarse pre-cleaning','Size grading','Density separation','Surface scouring','Length grading','Wet cleaning (optional)','Dampening & tempering','Magnetic separation','Aspiration before break'].map((s,i)=>(
-          <li class="flex items-center gap-3 rounded-lg border border-steel-200 bg-white px-4 py-3 shadow-card">
-            <span class="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-ember-600 text-[11px] font-bold text-white">{i+1}</span>
-            <span class="text-sm font-medium text-steel-800">{s}</span>
-          </li>
-        ))}
-      </ol>
-    </div>
-  </section>
-
-  <section class="section hairline">
-    <div class="container-x">
-      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-        {items.map((e) => (
-          <a href={`/equipment/${e.slug}/`} class="card group flex flex-col p-6">
-            <div class="flex items-start justify-between gap-3">
-              <span class="rounded bg-steel-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-steel-600">{e.stage}</span>
-              <span class="text-[11px] font-bold text-ember-600">{e.model}</span>
-            </div>
-            <h3 class="mt-3 font-display text-lg font-bold uppercase leading-tight text-steel-900 group-hover:text-ember-700">{e.name}</h3>
-            <p class="mt-0.5 text-xs text-steel-500">{e.altName}</p>
-            <p class="mt-3 flex-1 text-sm leading-relaxed text-steel-600">{e.tagline}</p>
-            <span class="mt-4 text-sm font-semibold text-ember-700">Specifications →</span>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="section pt-0">
-    <div class="container-x">
-      <p class="eyebrow">From the brochure</p>
-      <h2 class="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-steel-900 sm:text-3xl">
-        Cleaning machinery
-      </h2>
-      <p class="mt-3 max-w-2xl text-[15px] leading-relaxed text-steel-600">
-        Catalogue photographs of the cleaning line, with the brochure's original captions. Not every
-        machine family is photographed separately — where the catalogue shows a group, the caption says so.
-      </p>
-      <div class="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {gallery.map((f, i) => (
-          <Figure file={f} ratio="4/3" index={i + 1} showNote />
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <CTABand heading="Send us your wheat analysis. We will specify the cleaning line." />
-</PageLayout>
+<CategoryList category="cleaning" lang="en" copy={copy} />

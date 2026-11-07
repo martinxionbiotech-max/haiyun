@@ -32,6 +32,19 @@ export const translatedPaths = [
 
 export const localePath = (lang, path = '') => (lang === defaultLocale ? `/${path}` : `/${lang}/${path}`);
 
+// Detail pages are dynamic (/equipment/tqsf/), so a static list of paths cannot
+// describe them. These prefixes mark the subtrees that exist in every locale.
+export const translatedPrefixes = ['flour-milling-plant/', 'equipment/'];
+
+// True when `path` (a pathname without the locale prefix, no leading slash)
+// has a translated counterpart in ru/es/ar.
+export function isTranslatedPath(path) {
+  const key = path.replace(/^\//, '');
+  if (key === '') return true;
+  if (translatedPaths.includes(key)) return true;
+  return translatedPrefixes.some((p) => key.startsWith(p));
+}
+
 // Given a current pathname, work out the equivalent path in another locale.
 //
 // Only funnel pages exist in ru/es/ar. If the current page is an English-only
@@ -44,7 +57,7 @@ export function switchLocalePath(pathname, target) {
 
   if (target === defaultLocale) return clean;
 
-  const exists = clean === '/' || translatedPaths.includes(key);
+  const exists = isTranslatedPath(key);
   return exists ? `/${target}${clean === '/' ? '/' : clean}` : `/${target}/`;
 }
 
@@ -53,7 +66,6 @@ export function switchLocalePath(pathname, target) {
 // three dead links per locale; untranslated sections fall back to English.
 export function localizePath(lang, path) {
   const key = path.replace(/^\//, '');
-  const isTranslated = translatedPaths.includes(key) || (key === '' && lang !== defaultLocale);
   if (lang === defaultLocale) return path;
-  return isTranslated ? `/${lang}${path === '/' ? '/' : path}` : path;
+  return isTranslatedPath(key) ? `/${lang}${path === '/' ? '/' : path}` : path;
 }

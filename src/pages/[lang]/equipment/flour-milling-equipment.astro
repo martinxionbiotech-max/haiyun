@@ -1,0 +1,53 @@
+---
+import CategoryList from '../../../components/pages/CategoryList.astro';
+import { translatedLocales } from '../../../i18n/config.js';
+
+export function getStaticPaths() {
+  return translatedLocales.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang;
+
+const copy = {
+  ru: {
+    eyebrow: '9 семейств машин',
+    title: 'Мельничное оборудование',
+    sub: '9 семейств мельничного оборудования: одновальцовые станки 6F, двухвальцовые FMFQ, ситовейки, одно- и двухсекционные рассевы, высокие квадратные рассевы, машины для отрубей, деташеры, упаковщики и пылеуловители.',
+    sectionTitle: 'Драть, размалывать, сортировать, обогащать',
+    sectionBody:
+      'Мельничный пол — это сеть проходов, а не набор машин. Драные вальцы раскрывают пшеницу и снимают эндосперм с отрубей при дифференциале 2,5:1. Размольные измельчают освобождённый эндосперм при 1,25:1, чтобы он истирался, а не резался. Рассевы разделяют по размеру частиц, ситовейки — по плотности, а деташеры разбивают хлопья, которые дают гладкие вальцы. Уберите любой из элементов — и схема рассыпается. Каждая машина ниже задаётся тем проходом, который она обслуживает, и дифференциал важнее мощности двигателя.',
+    specLink: 'Характеристики',
+    gallery: [],
+    cta: 'Нужна схема с правильным числом проходов?',
+    hero: '/images/p25_01.jpg',
+  },
+  es: {
+    eyebrow: '9 familias de máquinas',
+    title: 'Equipos de molienda de harina',
+    sub: '9 familias de molienda: molinos de cilindros 6F, FMFQ de doble cilindro, purificadores, cernidores de uno y dos compartimentos, cernidores planos de gran superficie, cepilladoras de salvado, desprendedores por impacto, ensacadoras y filtros de mangas.',
+    sectionTitle: 'Romper, reducir, clasificar, purificar',
+    sectionBody:
+      'Una planta de molienda es una red de pasadas, no una colección de máquinas. Los cilindros de rotura abren el trigo y raspan el endospermo del salvado con un diferencial de 2,5:1. Los de reducción muelen el endospermo liberado a 1,25:1 para reducirlo por atrición y no por corte. Los cernidores separan por tamaño de partícula, los purificadores por densidad, y los desprendedores rompen las escamas que producen los cilindros lisos. Quite cualquiera de ellos y el diagrama se cae. Cada unidad de abajo se especifica por la pasada que sirve, y el diferencial importa más que la potencia del motor.',
+    specLink: 'Especificaciones',
+    gallery: [],
+    cta: '¿Quiere un diagrama con el número correcto de pasadas?',
+    hero: '/images/p25_01.jpg',
+  },
+  ar: {
+    eyebrow: '9 عائلات ماكينات',
+    title: 'معدات طحن الدقيق',
+    sub: 'تسع عائلات طحن: مطاحن درفيل مفرد 6F، ومزدوجة FMFQ، ومكنات تنقية، ومناخل بحجرة وبحجرتين، ومناخل مسطحة عالية، ومنظّفات نخالة، ومفكّكات صدمية، وماكينات تعبئة، ومجمّعات غبار.',
+    sectionTitle: 'اكسر، خفّف، صنّف، نقِّ',
+    sectionBody:
+      'أرضية الطحن شبكة مرورات لا مجموعة ماكينات. درفيلات الكسر تفتح القمح وتكشط الإندوسبرم عن النخالة بفارق 2.5:1. ودرفيلات التخفيف تطحن الإندوسبرم المحرَّر عند 1.25:1 ليُختزل بالسحق لا بالقطع. المناخل تفصل بحجم الجزيء، ومكنات التنقية تفصل بالكثافة، والمفكّكات الصدمية تفتّت الرقائق التي تنتجها الدرفيلات الملساء. أزل أي عنصر منها فينهار المخطط. كل وحدة أدناه تُحدَّد بالمرور الذي تخدمه، والفارق أهم من قدرة المحرك.',
+    specLink: 'المواصفات',
+    gallery: [],
+    cta: 'تريد مخططًا بعدد المرورات الصحيح؟',
+    hero: '/images/p25_01.jpg',
+  },
+};
+
+const c = copy[lang];
+---
+
+<CategoryList category="milling" lang={lang} copy={c} />

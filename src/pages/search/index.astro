@@ -1,0 +1,218 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { getUI } from '../../i18n/ui.js';
+
+const t = getUI('en');
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'SearchResultsPage',
+  name: 'Search — HAIYUN Milling',
+  description: 'Search the Haiyun site: plant architectures, equipment specifications and flour milling engineering handbooks.',
+};
+---
+
+<PageLayout
+  title="Search — Plant, Equipment and Engineering Library"
+  description="Search every Haiyun plant page, equipment specification and engineering handbook by model number, capacity, machine type or technical topic."
+  schema={[schema]}
+  noindex={true}
+>
+  <section class="bg-steel-950">
+    <div class="container-x py-14 sm:py-16">
+      <p class="eyebrow-light">Search</p>
+      <h1 class="mt-3 font-display text-4xl font-bold uppercase leading-[1.05] tracking-tight text-white sm:text-5xl">
+        Find a machine, a model or a passage.
+      </h1>
+      <p class="mt-4 max-w-xl text-base leading-relaxed text-steel-300">
+        Search across 113 pages: plant architectures by capacity, equipment by model
+        designation, and the engineering library by topic.
+      </p>
+
+      <div class="mt-8 max-w-2xl">
+        <label for="q" class="sr-only">Search term</label>
+        <div class="relative">
+          <input
+            id="q"
+            type="search"
+            autocomplete="off"
+            placeholder="e.g. TQSF, 200 t/d, tempering, purifier, kWh/t"
+            class="w-full rounded-lg border border-steel-700 bg-steel-900 px-4 py-3.5 pe-12 text-base text-white placeholder:text-steel-500 focus:border-ember-500 focus:outline-none focus:ring-2 focus:ring-ember-500/30"
+          />
+          <svg class="pointer-events-none absolute end-4 top-1/2 h-5 w-5 -translate-y-1/2 text-steel-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" />
+            <path d="m20 20-3.5-3.5" stroke-linecap="round" />
+          </svg>
+        </div>
+        <p id="meta" class="mt-3 text-sm text-steel-400">Loading index…</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-x max-w-4xl">
+      <div id="filters" class="hidden flex-wrap gap-2" role="group" aria-label="Filter by content type">
+        <button type="button" class="chip chip-on" data-type="">All</button>
+        <button type="button" class="chip" data-type="Plant">Plants</button>
+        <button type="button" class="chip" data-type="Equipment">Equipment</button>
+        <button type="button" class="chip" data-type="Handbook">Handbooks</button>
+        <button type="button" class="chip" data-type="Article">Articles</button>
+        <button type="button" class="chip" data-type="Project">Projects</button>
+        <button type="button" class="chip" data-type="Page">Pages</button>
+      </div>
+
+      <div id="results" class="mt-8 space-y-3" aria-live="polite"></div>
+
+      <div id="empty" class="hidden rounded-xl border border-steel-200 bg-steel-50 p-8 text-center">
+        <p class="font-display text-xl font-bold uppercase tracking-tight text-steel-900">No match</p>
+        <p class="mx-auto mt-2 max-w-md text-sm leading-relaxed text-steel-600">
+          Nothing in the index matched that term. Try a model designation (TQSF, FMFQ, FSFG),
+          a capacity (200 t/d), or a topic (tempering, ash, extraction).
+        </p>
+        <a href="/contact/" class="btn-primary mt-5">Ask us directly</a>
+      </div>
+
+      <div id="hint" class="mt-8 grid gap-4 sm:grid-cols-3">
+        <div class="rounded-lg border border-steel-200 p-4">
+          <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">By model</p>
+          <p class="mt-2 font-mono text-sm text-steel-800">TQSF · FMFQ · FSFG · TQLZ</p>
+        </div>
+        <div class="rounded-lg border border-steel-200 p-4">
+          <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">By capacity</p>
+          <p class="mt-2 font-mono text-sm text-steel-800">200 t/d · 500 kg/h · 60 t/d</p>
+        </div>
+        <div class="rounded-lg border border-steel-200 p-4">
+          <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">By topic</p>
+          <p class="mt-2 font-mono text-sm text-steel-800">tempering · ash · extraction</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const input = document.getElementById('q');
+    const results = document.getElementById('results');
+    const meta = document.getElementById('meta');
+    const empty = document.getElementById('empty');
+    const hint = document.getElementById('hint');
+    const filters = document.getElementById('filters');
+
+    let docs = [];
+    let activeType = '';
+
+    const esc = (s) =>
+      String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+    // Highlight every query term in place, without letting a short term match
+    // inside an HTML entity produced by the previous replacement.
+    const highlight = (text, terms) => {
+      let out = esc(text);
+      for (const term of terms) {
+        if (term.length < 2) continue;
+        const re = new RegExp(`(${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+        out = out.replace(re, '<mark class="bg-ember-200/60 text-steel-900">$1</mark>');
+      }
+      return out;
+    };
+
+    const score = (doc, terms) => {
+      const hay = `${doc.title} ${doc.description} ${(doc.keywords || []).join(' ')} ${doc.body}`.toLowerCase();
+      let s = 0;
+      for (const term of terms) {
+        const inTitle = doc.title.toLowerCase().includes(term);
+        const inDesc = doc.description.toLowerCase().includes(term);
+        const inKeys = (doc.keywords || []).join(' ').toLowerCase().includes(term);
+        if (!hay.includes(term)) return 0; // every term must appear
+        s += (inTitle ? 12 : 0) + (inKeys ? 6 : 0) + (inDesc ? 3 : 0) + 1;
+      }
+      // Prefer specific content types over generic landing pages on a tie.
+      const weight = { Equipment: 3, Plant: 3, Handbook: 2, Article: 2, Project: 2, Page: 1 };
+      return s + (weight[doc.type] || 0);
+    };
+
+    const snippet = (doc, terms) => {
+      const src = doc.description || doc.body || '';
+      if (!src) return '';
+      const lower = src.toLowerCase();
+      let at = -1;
+      for (const term of terms) {
+        const i = lower.indexOf(term);
+        if (i >= 0 && (at < 0 || i < at)) at = i;
+      }
+      if (at < 0) return src.slice(0, 190);
+      const start = Math.max(0, at - 70);
+      return (start > 0 ? '…' : '') + src.slice(start, start + 190) + '…';
+    };
+
+    const render = () => {
+      const q = input.value.trim().toLowerCase();
+      const terms = q.split(/\s+/).filter(Boolean);
+
+      filters.classList.toggle('hidden', !q);
+      filters.classList.toggle('flex', !!q);
+
+      if (!terms.length) {
+        results.innerHTML = '';
+        empty.classList.add('hidden');
+        hint.classList.remove('hidden');
+        meta.textContent = `${docs.length} pages indexed.`;
+        return;
+      }
+      hint.classList.add('hidden');
+
+      const hits = docs
+        .filter((d) => !activeType || d.type === activeType)
+        .map((d) => ({ doc: d, s: score(d, terms) }))
+        .filter((x) => x.s > 0)
+        .sort((a, b) => b.s - a.s)
+        .slice(0, 40);
+
+      meta.textContent = hits.length
+        ? `${hits.length}${hits.length === 40 ? '+' : ''} result${hits.length === 1 ? '' : 's'} for “${input.value.trim()}”`
+        : `No results for “${input.value.trim()}”`;
+      empty.classList.toggle('hidden', hits.length > 0);
+
+      results.innerHTML = hits
+        .map(
+          ({ doc }) => `
+        <a href="${doc.url}" class="block rounded-lg border border-steel-200 bg-white p-4 transition hover:border-ember-400 hover:shadow-sm">
+          <div class="flex items-start justify-between gap-3">
+            <p class="font-semibold leading-snug text-steel-900">${highlight(doc.title, terms)}</p>
+            <span class="shrink-0 rounded bg-steel-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-widest text-steel-600">${esc(doc.type)}</span>
+          </div>
+          <p class="mt-1.5 text-sm leading-relaxed text-steel-600">${highlight(snippet(doc, terms), terms)}</p>
+          <p class="mt-2 font-mono text-[11px] text-steel-400">${esc(doc.url)}</p>
+        </a>`
+        )
+        .join('');
+    };
+
+    filters?.addEventListener('click', (e) => {
+      const btn = e.target.closest('button[data-type]');
+      if (!btn) return;
+      activeType = btn.dataset.type;
+      filters.querySelectorAll('button').forEach((b) => {
+        const on = b === btn;
+        b.classList.toggle('chip-on', on);
+      });
+      render();
+    });
+
+    input.addEventListener('input', render);
+
+    // Deep-linkable: /search/?q=TQSF
+    const params = new URLSearchParams(location.search);
+    if (params.get('q')) input.value = params.get('q');
+
+    fetch('/search-index.json')
+      .then((r) => r.json())
+      .then((data) => {
+        docs = data.docs;
+        meta.textContent = `${data.count} pages indexed.`;
+        if (input.value) render();
+      })
+      .catch(() => {
+        meta.textContent = 'Search index unavailable.';
+      });
+  </script>
+</PageLayout>

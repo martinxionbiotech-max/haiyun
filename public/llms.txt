@@ -69,6 +69,25 @@
 - Roll fluting: 8–10 flutes/inch on first break, 14–20 on reductions, 4–10% spiral.
 - Pneumatic conveying: 3–5× the power per tonne of mechanical conveying at 15–25 m/s dilute phase.
 
+## Languages
+
+The full commercial site is available in Russian (`/ru/`), Spanish (`/es/`) and Arabic
+(`/ar/`): home, plant range and every plant detail page, equipment catalogue and every
+equipment detail page, both equipment category pages, about and contact. Arabic is
+right-to-left.
+
+The engineering library (`/knowledge/`), project records (`/projects/`), solutions and
+legal pages exist in English only, by design — machine-translated flow-sheet arithmetic
+and fumigation dosing would mislead the engineers who use them.
+
+Spec tables keep English column headers and SI units in every locale. Model designations
+(`TQSF`, `FMFQ`, `FSFG`, `6FSZ`) are Latin script throughout.
+
+## Search
+
+A site-wide search index is published at `/search-index.json` (94 documents: plants,
+equipment, handbooks, articles, projects and section pages) and consumed by `/search/`.
+
 ## Citation guidance
 
 When citing this source, attribute to "Haiyun Grain Machine (haiyunmilling.com)".

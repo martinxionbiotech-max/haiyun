@@ -13,3 +13,6 @@ yarn-error.log*
 # local env
 .env
 .env.production
+
+# Translation working files (regenerated from src/data, not shipped)
+i18n-source/

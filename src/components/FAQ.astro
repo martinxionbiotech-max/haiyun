@@ -1,10 +1,18 @@
 ---
-const { items = [], faq = [], title = 'Frequently asked questions' } = Astro.props;
+import { getDetailUI } from '../i18n/detail.js';
+import { localizePath } from '../i18n/config.js';
+
+const { items = [], faq = [], title, lang = 'en' } = Astro.props;
+
+const t = getDetailUI(lang);
+const heading = title ?? t.faqTitle;
+const contactHref = localizePath(lang, '/contact/');
 
 const faqSchema = faq.length
   ? {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
+      inLanguage: lang,
       mainEntity: faq.map((f) => ({
         '@type': 'Question',
         name: f.q,
@@ -19,16 +27,13 @@ const faqSchema = faq.length
     <div class="container-x">
       <div class="grid gap-10 lg:grid-cols-[0.9fr_2fr]">
         <div>
-          <p class="eyebrow">Answers</p>
+          <p class="eyebrow">{t.answers}</p>
           <h2 id="faq-heading" class="mt-2 font-display text-3xl font-bold uppercase tracking-tight text-steel-900 sm:text-4xl">
-            {title}
+            {heading}
           </h2>
-          <p class="mt-4 text-sm leading-relaxed text-steel-600">
-            Straight answers to the questions engineers and mill owners actually ask us during plant sizing.
-            If your case is not covered, send the wheat specification and your target tonnage.
-          </p>
-          <a href="/contact/" class="mt-5 inline-flex text-sm font-semibold text-ember-700 hover:text-ember-800">
-            Ask an engineer →
+          <p class="mt-4 text-sm leading-relaxed text-steel-600">{t.faqNote}</p>
+          <a href={contactHref} class="mt-5 inline-flex text-sm font-semibold text-ember-700 hover:text-ember-800">
+            {t.askEngineer} →
           </a>
         </div>
         <dl class="divide-y divide-steel-200">

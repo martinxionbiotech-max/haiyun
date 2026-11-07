@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import { site } from '../data/site.js';
-import { localeMeta, translatedPaths, defaultLocale } from '../i18n/config.js';
+import { localeMeta, isTranslatedPath } from '../i18n/config.js';
 
 const {
   title,
@@ -96,7 +96,7 @@ const allSchema = [orgSchema, websiteSchema, breadcrumbSchema, ...schema].filter
 // hreflang: only emit alternates for paths that actually exist in that locale.
 const barePath = Astro.url.pathname.replace(/^\/(ru|es|ar)(?=\/|$)/, '') || '/';
 const bareKey = barePath === '/' ? '' : barePath.replace(/^\//, '');
-const hasTranslation = translatedPaths.includes(bareKey) || bareKey === '';
+const hasTranslation = isTranslatedPath(bareKey);
 const alternates = hasTranslation
   ? [
       { lang: 'en', href: new URL(barePath, site.url).href },

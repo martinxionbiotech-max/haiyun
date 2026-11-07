@@ -68,6 +68,19 @@ const others = locales.filter((l) => l !== lang);
     </nav>
 
     <div class="flex items-center gap-2">
+      <!-- Search is English-only, so this links to the bare path in every locale. -->
+      <a
+        href="/search/"
+        class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-steel-300 text-steel-700 hover:bg-steel-50"
+        aria-label={t.nav.search}
+        title={t.nav.search}
+      >
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+          <path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </a>
+
       <!-- Language switcher -->
       <div class="relative" id="lang-wrap">
         <button
@@ -131,6 +144,13 @@ const others = locales.filter((l) => l !== lang);
           {item.label}
         </a>
       ))}
+      <a href="/search/" class="flex items-center gap-2 rounded-md px-3 py-3 text-sm font-medium text-steel-800 hover:bg-steel-50">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+          <path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        {t.nav.search}
+      </a>
       <a href={href('/contact/')} class="btn-primary mt-2">{t.cta.quote}</a>
       <a href={`tel:${site.phoneRaw}`} class="mt-2 rounded-md px-3 py-3 text-sm font-semibold text-ember-700">
         {t.cta.call} {site.phone}

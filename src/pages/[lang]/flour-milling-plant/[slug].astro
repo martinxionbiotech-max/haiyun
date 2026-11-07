@@ -1,0 +1,19 @@
+---
+import PlantDetail from '../../../components/pages/PlantDetail.astro';
+import { plantSeries } from '../../../data/plants.js';
+import { getPlantContent } from '../../../i18n/content.js';
+import { translatedLocales } from '../../../i18n/config.js';
+
+export function getStaticPaths() {
+  return translatedLocales.flatMap((lang) =>
+    plantSeries.map((p) => ({
+      params: { lang, slug: p.slug },
+      props: { plant: getPlantContent(lang, p.slug), lang },
+    }))
+  );
+}
+
+const { plant, lang } = Astro.props;
+---
+
+<PlantDetail plant={plant} lang={lang} />

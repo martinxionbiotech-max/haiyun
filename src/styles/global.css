@@ -52,6 +52,15 @@
   .chip {
     @apply inline-flex items-center rounded-full border border-steel-200 bg-steel-50 px-3 py-1 text-xs font-medium text-steel-700;
   }
+  .chip-on {
+    @apply border-steel-900 bg-steel-900 text-white;
+  }
+  button.chip {
+    @apply cursor-pointer transition hover:border-steel-400 hover:bg-steel-100;
+  }
+  button.chip-on {
+    @apply border-steel-900 bg-steel-900 text-white hover:border-steel-900 hover:bg-steel-800;
+  }
   .prose-hy {
     @apply prose max-w-none;
   }
