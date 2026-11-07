@@ -79,13 +79,13 @@ export default {
         choose:
           'Clima frío o producción sensible al polvo. El aire vuelve al circuito, así que no entra frío en la nave ni se emite polvo.',
         mind:
-          'Más compleja: ventilador, ciclones y equilibrado del circuito. Exige un diseño más cuidadoso que la aspiración simple.',
+          'El aire recirculado absorbe humedad y polvo, así que la eficacia de separación se degrada a lo largo del turno. Necesita una purga y un filtro.',
       },
       'aspiration-separator': {
         choose:
           'Cuando ya hay filtro de mangas y la nave tiene margen de aspiración. Máquina sencilla con el mínimo de piezas móviles.',
         mind:
-          'El aire de una sola pasada se lleva el calor de la nave y carga el filtro. En clima frío eso es dinero real.',
+          'El aire de una sola pasada debe filtrarse antes de la descarga: el colector de polvo forma parte del coste del sistema, no es un extra opcional.',
       },
     },
     rule:
