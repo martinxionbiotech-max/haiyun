@@ -21,8 +21,9 @@ Deploy `dist/` to Cloudflare Pages, Netlify, Vercel or any static host.
 
 ```
 src/
-  data/            plants.js (7 plant classes, 30+ models), equipment.js (22 families), site.js
-  content/knowledge/  36 markdown articles (6 pillar + 30 cluster)
+  data/            plants.js (7 plant classes, 30+ models), equipment.js (23 families),
+                   selection.js (8 selection matrices), projects.js (4 case studies), site.js
+  content/knowledge/  52 markdown articles (7 pillar + 45 cluster)
   layouts/         Base.astro (SEO/Schema), PageLayout.astro
   components/      Header, Footer, PageHero, FAQ, CTABand
   pages/           index, flour-milling-plant, equipment, knowledge, solutions, projects, about, contact, privacy, terms
@@ -32,8 +33,9 @@ public/            97 brochure images, favicon, og-image, robots.txt, llms.txt
 ## Content inventory
 
 - 7 plant class pages with full parameter tables
-- 22 equipment detail pages with spec tables + FAQ schema
-- 36 engineering articles, ~36,000 words
+- 23 equipment detail pages with spec tables, selection cross-checks + FAQ schema
+- 4 project case-study pages (brief, constraints, as-built, measured outcome)
+- 52 engineering articles, ~57,000 words, in 7 pillar + 45 cluster structure
 - Schema: Organization, Manufacturer, WebSite, BreadcrumbList, Product, TechArticle, FAQPage, CollectionPage, AboutPage
 - robots.txt allows GPTBot, ClaudeBot, PerplexityBot, OAI-SearchBot, Google-Extended
 - llms.txt with structured citation guidance

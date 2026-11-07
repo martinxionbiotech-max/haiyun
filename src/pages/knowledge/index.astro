@@ -12,8 +12,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Flour Milling Knowledge Centre',
-  description:
-    'Six engineering handbooks on wheat flour milling: plant sizing, cleaning, milling flow sheets, stone milling, flour quality and business economics. 36 articles total.',
+  description: `Seven engineering handbooks on wheat flour milling: plant sizing, wheat procurement and storage, cleaning, milling flow sheets, stone milling, flour quality and business economics. ${all.length} articles total.`,
 };
 ---
 
@@ -24,7 +23,7 @@ const schema = {
 >
   <PageHero
     eyebrow="Knowledge centre"
-    title="Six handbooks. The engineering behind every machine we sell."
+    title={`${pillars.length} handbooks. The engineering behind every machine we sell.`}
     subtitle="Most flour mill suppliers send a catalogue. We send the reasoning: why a 4B5M flow sheet outperforms 3B4M, what ash actually measures, why stone milling survives commercially, and how to model a plant's payback before you sign."
     image="/images/p07_01.jpg"
     imageAlt="Flour mill engineering"

@@ -39,6 +39,18 @@
 - [Stone milling technology](https://haiyunmilling.com/knowledge/stone-milling-technology/): thermal argument, three configurations, stone dressing, commercial case.
 - [Flour quality control](https://haiyunmilling.com/knowledge/flour-quality-control/): ash, moisture, protein, granulation, farinograph, complaint investigation.
 - [Flour mill project economics](https://haiyunmilling.com/knowledge/flour-mill-project-economics/): capital structure, operating cost, extraction economics, payback reality.
+- [Wheat procurement and storage engineering](https://haiyunmilling.com/knowledge/wheat-procurement-and-storage/): wheat selection, intake sizing, silo aeration, pest control, blending arithmetic.
+
+## Selection guides
+
+- [Equipment selection cross-checks](https://haiyunmilling.com/equipment/): every equipment page carries a decision matrix comparing it against the machine it competes with — when to choose each, and what to watch for. Eight matrices cover pre-cleaning screens, primary screens, destoning, air separation, surface cleaning, roller mills, plansifters and by-product treatment.
+
+## Reference projects
+
+- [Yengisar 300 t/d](https://haiyunmilling.com/projects/yengisar-300tpd-flour-plant/): 4B5M1S1T with a dedicated granular line, 920 kW, 67–71 kWh/t, high-vitreous Xinjiang wheat.
+- [Shufu 200 t/d](https://haiyunmilling.com/projects/shufu-200tpd-flour-plant/): continuous three-origin blending holding 12.3% protein ±0.3%, twin purifier banks, 690 kW.
+- [Beidahuang 200 t/d](https://haiyunmilling.com/projects/beidahuang-200tpd-flour-plant/): cold-climate design for −35 °C ambient, heated tempering, insulated conveying.
+- [Yuncheng 500 t/d](https://haiyunmilling.com/projects/yuncheng-500tpd-flour-plant/): twin 250 t/d lines, shared intake, 1,650 kW, 65–70 kWh/t.
 
 ## Key technical reference figures
 
@@ -49,6 +61,13 @@
 - Tempered moisture: soft wheat 15.0–15.5%, hard wheat 16.0–16.5%, durum 16.5–17.0%.
 - Tempering time: 12 hours minimum, 18–24 hours standard.
 - Roll differentials: break 2.5:1 fluted, reduction 2.0:1 down to 1.25:1 smooth.
+- Intake sizing rule: daily wheat consumption ÷ receiving hours × 1.3 (a 60 t/d mill needs 17–25 t/h, not 3.25 t/h).
+- Grain aeration: 0.15–0.3 m³/min per tonne for maintenance cooling, 0.5–1.0 for hot-spot correction.
+- Wheat storage: 30–45 days of consumption; below 20 days you cannot buy at harvest.
+- Phosphine fumigation: 1.5–2 g/m³, above 15 °C, 7 days minimum, 200 ppm held throughout.
+- Flour dust: Kst 50–120 bar·m/s, Pmax 7–9 bar, minimum ignition energy 20–30 mJ.
+- Roll fluting: 8–10 flutes/inch on first break, 14–20 on reductions, 4–10% spiral.
+- Pneumatic conveying: 3–5× the power per tonne of mechanical conveying at 15–25 m/s dilute phase.
 
 ## Citation guidance
 
