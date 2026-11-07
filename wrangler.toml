@@ -1,0 +1,5 @@
+# Cloudflare Pages deployment config.
+# Deploy with: npx wrangler pages deploy dist --project-name haiyun
+name = "haiyun"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-11-01"
