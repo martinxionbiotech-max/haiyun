@@ -1,8 +1,8 @@
 ---
-// Figure — a single brochure image with its original caption.
-// Captions come from src/data/images.js and are never invented.
-// `showNote` adds the catalogue note as a second, lighter line — useful where
-// several images on one page share the same brochure caption.
+// Figure — a single brochure image with its captions.
+// English caption is the primary line (this is an English-language site);
+// the original Chinese caption is kept below it in small type so no source
+// text is lost and buyers who read Chinese can match it to the printed brochure.
 import { img } from '../data/images.js';
 
 const {
@@ -13,7 +13,7 @@ const {
   rounded = 'rounded-lg',
   eager = false,
   showCaption = true,
-  showNote = false,
+  showOriginal = true,
   captionPrefix = 'Fig.',
   index,
   class: className = '',
@@ -21,8 +21,8 @@ const {
 
 const meta = img(file);
 const text = alt ?? meta.note ?? caption ?? '';
-const label = caption || meta.caption || '';
-const note = meta.note && meta.note !== label ? meta.note : '';
+const primary = caption || meta.captionEn || meta.caption || '';
+const original = meta.caption && meta.caption !== primary ? meta.caption : '';
 const src = `/images/${file}`;
 ---
 
@@ -38,17 +38,19 @@ const src = `/images/${file}`;
       class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
     />
   </div>
-  {showCaption && label && (
-    <figcaption class="mt-2 text-[11px] leading-snug text-steel-500">
+  {showCaption && primary && (
+    <figcaption class="mt-2 text-[11px] leading-snug">
       <span class="flex gap-2">
         {index != null && (
           <span class="shrink-0 font-bold uppercase tracking-wider text-ember-600">
             {captionPrefix} {index}
           </span>
         )}
-        <span class="font-medium text-steel-700">{label}</span>
+        <span class="font-medium text-steel-700">{primary}</span>
       </span>
-      {showNote && note && <span class="mt-0.5 block pl-0 text-steel-400">{note}</span>}
+      {showOriginal && original && (
+        <span class="mt-0.5 block text-[10px] leading-snug text-steel-400">{original}</span>
+      )}
     </figcaption>
   )}
 </figure>
