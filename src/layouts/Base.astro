@@ -1,0 +1,138 @@
+---
+import '../styles/global.css';
+import { site } from '../data/site.js';
+
+const {
+  title,
+  description,
+  canonical,
+  image = '/og-default.jpg',
+  type = 'website',
+  noindex = false,
+  schema = [],
+} = Astro.props;
+
+const pageTitle = title ? `${title} | ${site.name}` : `${site.name} — Wheat Flour Milling Plants 10–500 t/d`;
+const pageDesc = description || site.description;
+const canonicalUrl = canonical ? new URL(canonical, site.url).href : new URL(Astro.url.pathname, site.url).href;
+const ogImage = image.startsWith('http') ? image : new URL(image, site.url).href;
+
+const orgSchema = {
+  '@context': 'https://schema.org',
+  '@type': ['Organization', 'Manufacturer'],
+  '@id': `${site.url}/#organization`,
+  name: site.legalName,
+  alternateName: ['Haiyun Grain Machine', 'Shandong Sishui Haiyun Grain Machine Co., Ltd.'],
+  url: site.url,
+  logo: `${site.url}/logo.png`,
+  image: `${site.url}/og-default.jpg`,
+  description: site.description,
+  foundingDate: site.founded,
+  telephone: site.phone,
+  email: site.email,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: site.address.street,
+    addressLocality: site.address.city,
+    addressRegion: site.address.region,
+    postalCode: site.address.postalCode,
+    addressCountry: site.address.country,
+  },
+  areaServed: site.markets.map((m) => ({ '@type': 'Place', name: m })),
+  knowsAbout: [
+    'Wheat flour milling',
+    'Flour mill plant engineering',
+    'Grain cleaning equipment',
+    'Roller mill technology',
+    'Stone mill flour production',
+    'Plansifter technology',
+  ],
+  hasCredential: site.certifications,
+};
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${site.url}/#website`,
+  url: site.url,
+  name: site.name,
+  publisher: { '@id': `${site.url}/#organization` },
+  inLanguage: 'en',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: `${site.url}/search/?q={search_term_string}`,
+    'query-input': 'required name=search_term_string',
+  },
+};
+
+const breadcrumbSchema = Astro.url.pathname !== '/'
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: 'Home', item: site.url },
+        ...Astro.url.pathname
+          .split('/')
+          .filter(Boolean)
+          .map((seg, i, arr) => ({
+            '@type': 'ListItem',
+            position: i + 2,
+            name: seg.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase()),
+            item: `${site.url}/${arr.slice(0, i + 1).join('/')}/`,
+          })),
+      ],
+    }
+  : null;
+
+const allSchema = [orgSchema, websiteSchema, breadcrumbSchema, ...schema].filter(Boolean);
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDesc} />
+    <link rel="canonical" href={canonicalUrl} />
+    {noindex && <meta name="robots" content="noindex,nofollow" />}
+    {!noindex && <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />}
+
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDesc} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDesc} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    {allSchema.map((s) => (
+      <script type="application/ld+json" set:html={JSON.stringify(s)} />
+    ))}
+  </head>
+  <body>
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-steel-900 focus:px-4 focus:py-2 focus:text-white">
+      Skip to content
+    </a>
+    <slot name="header" />
+    <main id="main">
+      <slot />
+    </main>
+    <slot name="footer" />
+  </body>
+</html>

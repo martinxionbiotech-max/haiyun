@@ -1,0 +1,48 @@
+export const site = {
+  name: 'HAIYUN Milling',
+  legalName: 'Shandong Sishui Haiyun Grain Machine Co., Ltd.',
+  shortName: 'Haiyun Grain Machine',
+  url: 'https://haiyunmilling.com',
+  tagline: 'Wheat flour milling plants, 10–500 t/d — engineered, built and commissioned.',
+  description:
+    'Haiyun builds complete wheat flour milling plants from 10 to 500 tonnes per day, plus cleaning equipment, roller mills, plansifters and stone mills. 60+ years of grain machinery manufacturing, 100+ patents, ISO 9001:2015, exported to 40+ countries.',
+  phone: '+86 537 423 9999',
+  phoneRaw: '+865374239999',
+  mobile: '+86 132 1049 8999',
+  mobileRaw: '+8613210498999',
+  whatsapp: '8613210498999',
+  email: 'export@cnhylj.com',
+  emailAlt: 'sales@haiyunmilling.com',
+  address: {
+    street: 'Shengcheng Road 7, Sishui Economic Development Zone',
+    city: 'Jining',
+    region: 'Shandong',
+    postalCode: '273200',
+    country: 'CN',
+    full: 'Shengcheng Road 7, Sishui Economic Development Zone, Sishui County, Jining, Shandong 273200, China',
+  },
+  founded: '2010',
+  heritage: '1963',
+  employees: '260+',
+  area: '60,000 m²',
+  workshop: '20,000 m²',
+  patents: '100+',
+  certifications: ['ISO 9001:2015', 'CE (selected models)', 'Import & Export License', 'National High-Tech Enterprise'],
+  markets: ['Eastern Europe', 'CIS', 'Mongolia', 'South Korea', 'Japan', 'South America', 'Africa', 'Southeast Asia', 'Middle East'],
+  hours: 'Mon–Sat 08:00–18:00 (GMT+8)',
+  social: {
+    youtube: '',
+    linkedin: '',
+    alibaba: '',
+  },
+  responseTime: 'Under 12 working hours',
+};
+
+export const nav = [
+  { label: 'Flour Milling Plants', href: '/flour-milling-plant/' },
+  { label: 'Equipment', href: '/equipment/' },
+  { label: 'Solutions', href: '/solutions/' },
+  { label: 'Knowledge', href: '/knowledge/' },
+  { label: 'Projects', href: '/projects/' },
+  { label: 'About', href: '/about/' },
+];

@@ -1,0 +1,81 @@
+/** @type {import('tailwindcss').Config} */
+import typography from '@tailwindcss/typography';
+
+export default {
+  content: ['./src/**/*.{astro,html,js,jsx,ts,tsx,md,mdx}'],
+  theme: {
+    extend: {
+      colors: {
+        steel: {
+          50: '#f4f6f8',
+          100: '#e6ebf0',
+          200: '#cbd7e2',
+          300: '#a3b8ca',
+          400: '#7292ac',
+          500: '#4f7391',
+          600: '#3c5b76',
+          700: '#324960',
+          800: '#2c3e51',
+          900: '#1b2836',
+          950: '#0f1922',
+        },
+        ember: {
+          50: '#fff8ed',
+          100: '#ffefd4',
+          200: '#ffdba8',
+          300: '#ffc070',
+          400: '#ff9c37',
+          500: '#fd7e14',
+          600: '#ee6107',
+          700: '#c54808',
+          800: '#9c380f',
+          900: '#7e300f',
+          950: '#441605',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        display: ['"Barlow Condensed"', 'Inter', 'system-ui', 'sans-serif'],
+      },
+      maxWidth: { prose: '48rem' },
+      boxShadow: {
+        card: '0 1px 2px 0 rgb(16 24 40 / 0.05), 0 1px 3px 0 rgb(16 24 40 / 0.1)',
+        'card-hover': '0 12px 28px -8px rgb(16 24 40 / 0.18), 0 8px 12px -6px rgb(16 24 40 / 0.1)',
+        inset: 'inset 0 1px 0 0 rgb(255 255 255 / 0.06)',
+      },
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            '--tw-prose-body': theme('colors.steel.700'),
+            '--tw-prose-headings': theme('colors.steel.900'),
+            '--tw-prose-links': theme('colors.ember.700'),
+            '--tw-prose-bold': theme('colors.steel.900'),
+            '--tw-prose-counters': theme('colors.ember.600'),
+            '--tw-prose-bullets': theme('colors.ember.500'),
+            '--tw-prose-quotes': theme('colors.steel.700'),
+            '--tw-prose-quote-borders': theme('colors.ember.400'),
+            '--tw-prose-hr': theme('colors.steel.200'),
+            '--tw-prose-th-borders': theme('colors.steel.300'),
+            '--tw-prose-td-borders': theme('colors.steel.200'),
+            maxWidth: 'none',
+            fontSize: '1.0625rem',
+            lineHeight: '1.75',
+            a: { textDecoration: 'none', fontWeight: '600', '&:hover': { textDecoration: 'underline' } },
+            h1: { fontFamily: '"Barlow Condensed", Inter, sans-serif', fontWeight: '700', letterSpacing: '-0.01em', textTransform: 'none' },
+            h2: { fontFamily: '"Barlow Condensed", Inter, sans-serif', fontWeight: '700', letterSpacing: '0', marginTop: '2.5em', marginBottom: '0.75em', fontSize: '1.75rem' },
+            h3: { fontWeight: '700', marginTop: '1.8em', fontSize: '1.2rem' },
+            'thead th': { color: theme('colors.steel.900'), fontWeight: '700', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.03em' },
+            td: { fontSize: '0.95rem' },
+            'tbody tr': { '&:nth-child(even)': { backgroundColor: theme('colors.steel.50') } },
+            table: { fontSize: '0.95rem', display: 'block', overflowX: 'auto' },
+            img: { borderRadius: theme('borderRadius.lg') },
+            blockquote: { fontStyle: 'normal', fontWeight: '500', backgroundColor: theme('colors.ember.50'), borderLeftWidth: '4px', padding: '1rem 1.25rem', borderRadius: '0.5rem' },
+            'blockquote p:first-of-type::before': { content: 'none' },
+            'blockquote p:last-of-type::after': { content: 'none' },
+          },
+        },
+      }),
+    },
+  },
+  plugins: [typography],
+};

@@ -1,0 +1,92 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import CTABand from '../../components/CTABand.astro';
+import { getCollection } from 'astro:content';
+
+const all = await getCollection('knowledge');
+const pillars = all.filter((p) => p.data.type === 'pillar').sort((a, b) => a.data.order - b.data.order);
+const clusters = all.filter((p) => p.data.type === 'cluster');
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Flour Milling Knowledge Centre',
+  description:
+    'Six engineering handbooks on wheat flour milling: plant sizing, cleaning, milling flow sheets, stone milling, flour quality and business economics. 36 articles total.',
+};
+---
+
+<PageLayout
+  title="Flour Milling Knowledge Centre — 6 Engineering Handbooks"
+  description="Six in-depth handbooks on wheat flour milling engineering: how to size a plant, build a cleaning line, design a flow sheet, run stone mills, control flour quality, and model the economics. Written by mill engineers."
+  schema={[schema]}
+>
+  <PageHero
+    eyebrow="Knowledge centre"
+    title="Six handbooks. The engineering behind every machine we sell."
+    subtitle="Most flour mill suppliers send a catalogue. We send the reasoning: why a 4B5M flow sheet outperforms 3B4M, what ash actually measures, why stone milling survives commercially, and how to model a plant's payback before you sign."
+    image="/images/p07_01.jpg"
+    imageAlt="Flour mill engineering"
+  />
+
+  <section class="section">
+    <div class="container-x">
+      <div class="flex flex-wrap items-baseline justify-between gap-3 border-b border-steel-200 pb-4">
+        <h2 class="font-display text-3xl font-bold uppercase tracking-tight text-steel-900">Pillar handbooks</h2>
+        <p class="text-sm text-steel-500">{pillars.length} handbooks · {all.length} articles total</p>
+      </div>
+
+      <div class="mt-8 grid gap-6 lg:grid-cols-2">
+        {pillars.map((p) => {
+          const children = clusters.filter((c) => c.data.pillar === p.id);
+          return (
+            <article class="card flex flex-col p-7">
+              <p class="text-[11px] font-bold uppercase tracking-widest text-ember-600">Handbook {String(p.data.order).padStart(2, '0')}</p>
+              <h3 class="mt-2 font-display text-2xl font-bold uppercase leading-tight text-steel-900">
+                <a href={`/knowledge/${p.id}/`} class="hover:text-ember-700">{p.data.title}</a>
+              </h3>
+              <p class="mt-3 flex-1 text-sm leading-relaxed text-steel-600">{p.data.description}</p>
+              {children.length > 0 && (
+                <div class="mt-5 border-t border-steel-100 pt-4">
+                  <p class="text-[11px] font-bold uppercase tracking-wider text-steel-500">{children.length} articles in this cluster</p>
+                  <ul class="mt-2 space-y-1.5">
+                    {children.map((c) => (
+                      <li>
+                        <a href={`/knowledge/${c.id}/`} class="text-sm text-steel-700 hover:text-ember-700">→ {c.data.title}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              <a href={`/knowledge/${p.id}/`} class="mt-5 text-sm font-bold text-ember-700 hover:text-ember-800">Read the handbook →</a>
+            </article>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-steel-50">
+    <div class="container-x">
+      <div class="max-w-3xl">
+        <h2 class="font-display text-3xl font-bold uppercase tracking-tight text-steel-900">All articles</h2>
+        <p class="mt-3 text-[15px] leading-relaxed text-steel-600">
+          Every article is written from engineering practice — parameters, tolerances, failure modes and
+          commercial consequences — not from marketing copy.
+        </p>
+      </div>
+      <div class="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {all.sort((a, b) => a.data.title.localeCompare(b.data.title)).map((a) => (
+          <a href={`/knowledge/${a.id}/`} class="group rounded-lg border border-steel-200 bg-white p-5 shadow-card transition hover:shadow-card-hover">
+            <p class="text-[10px] font-bold uppercase tracking-widest text-ember-600">{a.data.type}</p>
+            <h3 class="mt-1.5 text-sm font-bold leading-snug text-steel-900 group-hover:text-ember-700">{a.data.title}</h3>
+            <p class="mt-2 line-clamp-2 text-xs leading-relaxed text-steel-600">{a.data.description}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CTABand heading="Have a specific engineering question?" body="Send it to our engineering desk. We answer technical questions from anyone — customer or not. If we do not know, we will say so." />
+</PageLayout>

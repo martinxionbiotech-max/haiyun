@@ -1,0 +1,54 @@
+---
+// Figure — a single brochure image with its original caption.
+// Captions come from src/data/images.js and are never invented.
+// `showNote` adds the catalogue note as a second, lighter line — useful where
+// several images on one page share the same brochure caption.
+import { img } from '../data/images.js';
+
+const {
+  file,
+  caption,
+  alt,
+  ratio = '4/3',
+  rounded = 'rounded-lg',
+  eager = false,
+  showCaption = true,
+  showNote = false,
+  captionPrefix = 'Fig.',
+  index,
+  class: className = '',
+} = Astro.props;
+
+const meta = img(file);
+const text = alt ?? meta.note ?? caption ?? '';
+const label = caption || meta.caption || '';
+const note = meta.note && meta.note !== label ? meta.note : '';
+const src = `/images/${file}`;
+---
+
+<figure class={`group ${className}`}>
+  <div class={`overflow-hidden ${rounded} bg-steel-100`} style={`aspect-ratio: ${ratio}`}>
+    <img
+      src={src}
+      alt={text}
+      width={meta.w || undefined}
+      height={meta.h || undefined}
+      loading={eager ? 'eager' : 'lazy'}
+      decoding="async"
+      class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+    />
+  </div>
+  {showCaption && label && (
+    <figcaption class="mt-2 text-[11px] leading-snug text-steel-500">
+      <span class="flex gap-2">
+        {index != null && (
+          <span class="shrink-0 font-bold uppercase tracking-wider text-ember-600">
+            {captionPrefix} {index}
+          </span>
+        )}
+        <span class="font-medium text-steel-700">{label}</span>
+      </span>
+      {showNote && note && <span class="mt-0.5 block pl-0 text-steel-400">{note}</span>}
+    </figcaption>
+  )}
+</figure>

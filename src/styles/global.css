@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-white text-steel-800 antialiased;
+  }
+  ::selection {
+    @apply bg-ember-200 text-steel-950;
+  }
+  h1, h2, h3, h4 {
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+  }
+  .btn-primary {
+    @apply btn bg-ember-600 text-white shadow-sm hover:bg-ember-700 focus-visible:ring-ember-500;
+  }
+  .btn-dark {
+    @apply btn bg-steel-900 text-white hover:bg-steel-800 focus-visible:ring-steel-700;
+  }
+  .btn-outline {
+    @apply btn border border-steel-300 bg-white text-steel-800 hover:border-steel-400 hover:bg-steel-50 focus-visible:ring-steel-400;
+  }
+  .btn-ghost-light {
+    @apply btn border border-white/30 text-white hover:bg-white/10;
+  }
+  .eyebrow {
+    @apply text-xs font-bold uppercase tracking-[0.18em] text-ember-600;
+  }
+  .eyebrow-light {
+    @apply text-xs font-bold uppercase tracking-[0.18em] text-ember-300;
+  }
+  .card {
+    @apply rounded-xl border border-steel-200 bg-white shadow-card transition hover:shadow-card-hover;
+  }
+  .chip {
+    @apply inline-flex items-center rounded-full border border-steel-200 bg-steel-50 px-3 py-1 text-xs font-medium text-steel-700;
+  }
+  .prose-hy {
+    @apply prose max-w-none;
+  }
+  .prose-hy table {
+    @apply my-6 w-full border-separate border-spacing-0 overflow-hidden rounded-lg border border-steel-200 text-sm;
+  }
+  .prose-hy thead th {
+    @apply whitespace-nowrap border-b border-steel-200 bg-steel-50 px-3 py-2 text-left align-bottom;
+  }
+  .prose-hy tbody td {
+    @apply border-b border-steel-100 px-3 py-2 align-top;
+  }
+  .prose-hy tbody tr:last-child td {
+    @apply border-b-0;
+  }
+  .section {
+    @apply py-16 sm:py-20;
+  }
+  .hairline {
+    @apply border-t border-steel-200;
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .grid-lines {
+    background-image:
+      linear-gradient(to right, rgb(255 255 255 / 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(255 255 255 / 0.05) 1px, transparent 1px);
+    background-size: 44px 44px;
+  }
+}

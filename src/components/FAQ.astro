@@ -1,0 +1,47 @@
+---
+const { items = [], faq = [], title = 'Frequently asked questions' } = Astro.props;
+
+const faqSchema = faq.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faq.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    }
+  : null;
+---
+
+{faq.length > 0 && (
+  <section class="section hairline" aria-labelledby="faq-heading">
+    <div class="container-x">
+      <div class="grid gap-10 lg:grid-cols-[0.9fr_2fr]">
+        <div>
+          <p class="eyebrow">Answers</p>
+          <h2 id="faq-heading" class="mt-2 font-display text-3xl font-bold uppercase tracking-tight text-steel-900 sm:text-4xl">
+            {title}
+          </h2>
+          <p class="mt-4 text-sm leading-relaxed text-steel-600">
+            Straight answers to the questions engineers and mill owners actually ask us during plant sizing.
+            If your case is not covered, send the wheat specification and your target tonnage.
+          </p>
+          <a href="/contact/" class="mt-5 inline-flex text-sm font-semibold text-ember-700 hover:text-ember-800">
+            Ask an engineer →
+          </a>
+        </div>
+        <dl class="divide-y divide-steel-200">
+          {faq.map((f) => (
+            <div class="py-5 first:pt-0">
+              <dt class="text-base font-bold text-steel-900">{f.q}</dt>
+              <dd class="mt-2 text-[15px] leading-relaxed text-steel-700">{f.a}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </div>
+  </section>
+)}
+
+{faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}

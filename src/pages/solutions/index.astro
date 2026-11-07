@@ -1,0 +1,132 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import CTABand from '../../components/CTABand.astro';
+
+const solutions = [
+  {
+    slug: 'village-milling-service',
+    title: 'Village & Farm Milling Service',
+    capacity: '200–450 kg/h',
+    problem: 'You want to mill for the surrounding farms but have no building, limited power and no trained staff.',
+    answer: 'A single-frame 6FSZ unit that arrives assembled. Three-phase power, a poured slab and two days of commissioning.',
+    plant: '/flour-milling-plant/small-flour-mill-unit/',
+    metrics: [['Capital', 'Lowest in the range'], ['Power', '10.45–16.5 kW'], ['Staff', '1'], ['Payback', '1–2 years']],
+  },
+  {
+    slug: 'premium-stone-flour',
+    title: 'Premium Stone-Milled Flour Brand',
+    capacity: '50–600 kg/h',
+    problem: 'You sell into health-food or artisan channels and need a flour that carries a premium story.',
+    answer: 'Cold stone grinding at 28–30 rpm, in pure or hybrid configuration depending on the volume you can actually sell.',
+    plant: '/flour-milling-plant/stone-mill-unit/',
+    metrics: [['Price premium', '1.5–2× roller flour'], ['Power', '6–80 kW'], ['Extraction', '76–92%'], ['Risk', 'Volume absorption']],
+  },
+  {
+    slug: 'regional-flour-brand',
+    title: 'Regional Flour Brand',
+    capacity: '20–30 t/d',
+    problem: 'You need to supply bakeries and retailers within a district with two or three consistent grades.',
+    answer: 'A 6FTDP plant with a full cleaning section, 4B4M flow sheet and two twin-bin plansifters. No tower required.',
+    plant: '/flour-milling-plant/20-30tpd-flour-plant/',
+    metrics: [['Building', '18 × 6 × 6.5 m'], ['Power', '92 kW'], ['Grades', '3 simultaneous'], ['Staff', '3–4 per shift']],
+  },
+  {
+    slug: 'industrial-milling-company',
+    title: 'Industrial Milling Company',
+    capacity: '60–500 t/d',
+    problem: 'You are building for national distribution or export, and need guaranteed tonnage and power consumption.',
+    answer: 'A storey-typed turnkey plant engineered as one system, commissioned to a 72-hour performance test.',
+    plant: '/flour-milling-plant/100-500tpd-flour-plant/',
+    metrics: [['Power', '65–74 kWh/t'], ['Lead time', '8–11 months'], ['Guarantee', 'Contracted tonnage'], ['Extraction', '76–80%']],
+  },
+  {
+    slug: 'contract-milling',
+    title: 'Contract Milling Operation',
+    capacity: '20–60 t/d',
+    problem: 'A buyer wants you to mill their wheat on toll. The wheat changes every week and quality must be consistent.',
+    answer: 'A cone-sieve configuration: near-zero material retention means switching grain costs minutes, not hours.',
+    plant: '/flour-milling-plant/five-mill-unit/',
+    metrics: [['Retention', 'Near zero'], ['Changeover', 'Minutes'], ['Temperature', 'Lower than flat sieve'], ['Flexibility', 'High']],
+  },
+  {
+    slug: 'multigrain-specialty',
+    title: 'Multigrain & Specialty Flour',
+    capacity: '200 kg/h – 30 t/d',
+    problem: 'You mill buckwheat, sorghum, millet, maize or rice flour alongside wheat, on the same equipment.',
+    answer: 'Units designed for granular material beyond wheat, with fast changeover and easy cleaning between products.',
+    plant: '/flour-milling-plant/double-mill-unit/',
+    metrics: [['Materials', 'Wheat, maize, rice, sorghum'], ['Changeover', 'Fast'], ['Cleaning', 'Between products required'], ['Market', 'Growing']],
+  },
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Flour Milling Solutions by Business Model',
+  description: 'Six application profiles — village milling, premium stone flour, regional brand, industrial milling, contract milling and specialty grains — each mapped to the plant architecture that fits.',
+};
+---
+
+<PageLayout
+  title="Flour Milling Solutions by Business Model"
+  description="Six flour milling application profiles mapped to plant architecture: village milling services, premium stone flour, regional brands, industrial turnkey plants, contract milling and multigrain specialty production."
+  schema={[schema]}
+>
+  <PageHero
+    eyebrow="Solutions"
+    title="The plant follows the business model, not the other way round"
+    subtitle="Two buyers with the same tonnage target often need different plants — because one sells to bakeries on contract and the other sells bags at a farm gate. Here is how the six common models map to architecture."
+    image="/images/p13_05.jpg"
+    imageAlt="Flour milling plant"
+  />
+
+  <section class="section">
+    <div class="container-x space-y-6">
+      {solutions.map((s, i) => (
+        <article class="card overflow-hidden">
+          <div class="grid lg:grid-cols-[2fr_1fr]">
+            <div class="p-7 lg:p-9">
+              <div class="flex flex-wrap items-center gap-3">
+                <span class="rounded bg-steel-100 px-2.5 py-1 text-[10px] font-bold uppercase tracking-widest text-steel-600">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <span class="text-[11px] font-bold uppercase tracking-widest text-ember-600">{s.capacity}</span>
+              </div>
+              <h2 class="mt-3 font-display text-2xl font-bold uppercase leading-tight text-steel-900 sm:text-3xl">{s.title}</h2>
+
+              <div class="mt-5 grid gap-4 sm:grid-cols-2">
+                <div>
+                  <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">The problem</p>
+                  <p class="mt-1.5 text-sm leading-relaxed text-steel-700">{s.problem}</p>
+                </div>
+                <div>
+                  <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">The answer</p>
+                  <p class="mt-1.5 text-sm leading-relaxed text-steel-700">{s.answer}</p>
+                </div>
+              </div>
+
+              <a href={s.plant} class="mt-6 inline-flex text-sm font-bold text-ember-700 hover:text-ember-800">
+                View the plant specification →
+              </a>
+            </div>
+
+            <div class="border-t border-steel-200 bg-steel-50 p-7 lg:border-l lg:border-t-0">
+              <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">Key figures</p>
+              <dl class="mt-3 space-y-3 text-sm">
+                {s.metrics.map(([k, v]) => (
+                  <div class="flex justify-between gap-3 border-b border-steel-200 pb-2.5 last:border-0">
+                    <dt class="text-steel-600">{k}</dt>
+                    <dd class="text-right font-semibold text-steel-900">{v}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+  </section>
+
+  <CTABand heading="Not sure which model fits your situation?" body="Tell us who buys your flour today and who you want to sell to in three years. We will tell you which architecture that implies — and which it rules out." />
+</PageLayout>

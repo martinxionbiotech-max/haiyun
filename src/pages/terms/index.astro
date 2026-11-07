@@ -1,0 +1,49 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import CTABand from '../../components/CTABand.astro';
+import { site } from '../../data/site.js';
+---
+<PageLayout title="Terms of Use" description="Terms governing use of the Haiyun Grain Machine website, technical information, and the limits of the engineering guidance published here.">
+  <section class="bg-steel-950">
+    <div class="container-x py-14">
+      <p class="eyebrow-light">Legal</p>
+      <h1 class="mt-2 font-display text-4xl font-bold uppercase tracking-tight text-white">Terms of Use</h1>
+      <p class="mt-3 text-sm text-steel-400">Last updated: 7 November 2026</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-x max-w-3xl">
+      <div class="prose-hy">
+        <h2>Scope</h2>
+        <p>These terms govern your use of this website and the technical information published on it. They do not govern the sale of equipment, which is governed by the signed contract for each project.</p>
+
+        <h2>Technical information is guidance, not specification</h2>
+        <p>Parameter tables, capacities, power figures, dimensions and flow sheet descriptions on this site are indicative. They describe standard configurations at assumed conditions. Actual performance depends on your wheat, your building, your power supply, your operators and your product mix.</p>
+        <p><strong>Only the signed contract drawings and the performance test define what we are obligated to deliver.</strong> Do not size a plant, order third-party equipment, or commit capital on the basis of a figure on this website alone.</p>
+
+        <h2>Capacity and consumption figures</h2>
+        <p>Published capacities assume 380 V / 50 Hz supply, wheat at 12.5% incoming moisture, 76% extraction and continuous operation. Deviations of ±8% are normal. Power consumption figures assume nominal roll condition and a balanced flow sheet.</p>
+
+        <h2>Engineering articles</h2>
+        <p>The articles in the Knowledge Centre describe general milling practice as we understand it. They are written for professional readers and are not professional engineering advice for your specific project. Applying a general recommendation to a specific plant without site-specific assessment is at your own risk.</p>
+
+        <h2>Intellectual property</h2>
+        <p>The text, layout, photography, diagrams and parameter tables on this site are the property of {site.legalName} unless otherwise credited. You may read, print and share pages for internal evaluation. You may not republish substantial extracts commercially, or present our technical tables as your own work, without written permission.</p>
+
+        <h2>Third-party links</h2>
+        <p>Where we link to external sources, we do so because we believe them useful. We do not control them and are not responsible for their content or their accuracy.</p>
+
+        <h2>Limitation of liability</h2>
+        <p>To the extent permitted by law, we exclude liability for indirect or consequential loss arising from use of this website or reliance on its content. Nothing in these terms limits liability for death or personal injury caused by negligence, or for fraud.</p>
+
+        <h2>Governing law</h2>
+        <p>These terms are governed by the laws of the People's Republic of China. Disputes arising from website use are subject to the jurisdiction of the courts of Jining, Shandong. Contract disputes are governed by the dispute resolution clause in the relevant contract.</p>
+
+        <h2>Contact</h2>
+        <p>{site.legalName}<br />{site.address.full}<br /><a href={`mailto:${site.email}`}>{site.email}</a></p>
+      </div>
+    </div>
+  </section>
+  <CTABand />
+</PageLayout>

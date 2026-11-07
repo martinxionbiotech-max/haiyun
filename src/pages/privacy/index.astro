@@ -1,0 +1,55 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import CTABand from '../../components/CTABand.astro';
+import { site } from '../../data/site.js';
+---
+<PageLayout title="Privacy Policy" description="How Haiyun Grain Machine handles enquiry data, cookies and third-party services. No tracking cookies, no advertising networks, no data selling." noindex={false}>
+  <section class="bg-steel-950">
+    <div class="container-x py-14">
+      <p class="eyebrow-light">Legal</p>
+      <h1 class="mt-2 font-display text-4xl font-bold uppercase tracking-tight text-white">Privacy Policy</h1>
+      <p class="mt-3 text-sm text-steel-400">Last updated: 7 November 2026</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-x max-w-3xl">
+      <div class="prose-hy">
+        <h2>What we collect</h2>
+        <p>When you contact us by email, telephone or WhatsApp, we receive whatever information you choose to send: your name, company, country, contact details, technical requirements and any documents you attach.</p>
+        <p>We do not operate a user account system, we do not require registration to read this site, and we do not collect payment information through this website.</p>
+
+        <h2>Cookies and analytics</h2>
+        <p>This website sets no tracking cookies and runs no advertising networks. It loads web fonts from Google Fonts, which means your browser makes a request to Google's servers and your IP address is visible to them. Beyond that, no third-party scripts execute on these pages.</p>
+        <p>If we later add privacy-respecting analytics, this section will be updated before any such tool is deployed.</p>
+
+        <h2>How we use enquiry data</h2>
+        <p>Enquiry information is used only to respond to your enquiry, prepare a technical proposal, and follow up on an active project. We retain it in our email system and project files for as long as the commercial relationship is active plus seven years for accounting and warranty records.</p>
+        <p>We do not sell, rent or trade contact data. We do not add enquirers to marketing lists without explicit consent.</p>
+
+        <h2>Sharing</h2>
+        <p>Enquiry information may be seen by our sales and engineering staff, and by our authorised overseas representatives where one covers your territory. We do not share it with any other third party except where required by law.</p>
+
+        <h2>International transfers</h2>
+        <p>Our operations are based in China. If you contact us from the European Economic Area, the United Kingdom or another jurisdiction with data transfer rules, your data will be transferred to and processed in China. By sending an enquiry you consent to this transfer for the purpose of handling your enquiry.</p>
+
+        <h2>Your rights</h2>
+        <p>You may ask us to confirm what data we hold about you, to correct it, or to delete it. Write to <a href={`mailto:${site.email}`}>{site.email}</a> with the subject line "Data request". We respond within 30 days.</p>
+        <p>Deletion requests are honoured except where records must be retained for legal, tax or warranty purposes.</p>
+
+        <h2>Security</h2>
+        <p>This website is served over HTTPS. Enquiry data is stored in access-controlled systems. We do not accept credit card details through any channel; payments are handled by bank transfer against a formal contract.</p>
+
+        <h2>Children</h2>
+        <p>This site is a business-to-business engineering resource. It is not directed at children and we do not knowingly collect data from anyone under 16.</p>
+
+        <h2>Changes</h2>
+        <p>If this policy changes materially, the revised version will be posted here with a new date.</p>
+
+        <h2>Contact</h2>
+        <p>{site.legalName}<br />{site.address.full}<br />Email: <a href={`mailto:${site.email}`}>{site.email}</a><br />Telephone: {site.phone}</p>
+      </div>
+    </div>
+  </section>
+  <CTABand />
+</PageLayout>

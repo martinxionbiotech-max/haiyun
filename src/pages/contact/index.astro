@@ -1,0 +1,125 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import { site } from '../../data/site.js';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: 'Contact Haiyun Grain Machine',
+  description: 'Contact details and request form for wheat flour milling plant enquiries.',
+  mainEntity: { '@id': `${site.url}/#organization` },
+};
+---
+
+<PageLayout
+  title="Contact — Request a Flour Milling Plant Quotation"
+  description="Contact Shandong Sishui Haiyun Grain Machine for wheat flour milling plants from 10 to 500 t/d. Phone +86 537 423 9999, email export@cnhylj.com. Response within 12 working hours."
+  schema={[schema]}
+>
+  <section class="bg-steel-950">
+    <div class="container-x py-16 sm:py-20">
+      <p class="eyebrow-light">Contact</p>
+      <h1 class="mt-3 max-w-3xl font-display text-4xl font-bold uppercase leading-[1.05] tracking-tight text-white sm:text-5xl">
+        Tell us your tonnage. We will send a flow sheet.
+      </h1>
+      <p class="mt-5 max-w-2xl text-lg leading-relaxed text-steel-300">
+        Include your target capacity, wheat specification, building dimensions and available power.
+        With those four numbers we can produce a preliminary flow sheet, equipment list and budget range.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-x grid gap-12 lg:grid-cols-[1fr_1.2fr]">
+      <div>
+        <h2 class="font-display text-2xl font-bold uppercase tracking-tight text-steel-900">Direct contact</h2>
+        <div class="mt-5 space-y-5">
+          {[
+            ['Telephone', site.phone, `tel:${site.phoneRaw}`],
+            ['Mobile / WhatsApp', site.mobile, `https://wa.me/${site.whatsapp}`],
+            ['Export email', site.email, `mailto:${site.email}`],
+            ['Sales email', site.emailAlt, `mailto:${site.emailAlt}`],
+          ].map(([label, value, href]) => (
+            <div class="border-b border-steel-200 pb-4">
+              <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">{label}</p>
+              <a href={href} class="mt-1 block text-base font-semibold text-steel-900 hover:text-ember-700">{value}</a>
+            </div>
+          ))}
+          <div>
+            <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">Factory</p>
+            <p class="mt-1 text-base leading-relaxed text-steel-800">{site.address.full}</p>
+          </div>
+          <div>
+            <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">Office hours</p>
+            <p class="mt-1 text-base text-steel-800">{site.hours}</p>
+            <p class="mt-1 text-sm text-steel-500">Response time: {site.responseTime}</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="font-display text-2xl font-bold uppercase tracking-tight text-steel-900">What to include in your enquiry</h2>
+        <p class="mt-3 text-sm leading-relaxed text-steel-600">
+          The more of these you can answer, the more useful our first reply will be. Partial answers are
+          fine — we will ask for the rest.
+        </p>
+
+        <ol class="mt-5 space-y-2.5">
+          {[
+            'Target finished flour output per day, by grade',
+            'Wheat type, origin and typical analysis (moisture, protein, impurity)',
+            'Available building footprint and clear height — or that a new building is possible',
+            'Local power supply: voltage, phases, available kVA',
+            'Water availability, and any effluent discharge constraints',
+            'Labour availability and typical skill level',
+            'Budget range and financing structure',
+            'Target commissioning date',
+          ].map((item, i) => (
+            <li class="flex gap-3 rounded-lg border border-steel-200 bg-white px-4 py-3">
+              <span class="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-ember-600 text-[11px] font-bold text-white">{i + 1}</span>
+              <span class="text-sm leading-relaxed text-steel-700">{item}</span>
+            </li>
+          ))}
+        </ol>
+
+        <div class="mt-8 rounded-xl border-l-4 border-ember-500 bg-ember-50 p-5">
+          <p class="text-sm leading-relaxed text-steel-800">
+            <strong>No obligation.</strong> A preliminary flow sheet and budget range costs you nothing and
+            commits you to nothing. We will tell you if your plan does not look viable — that saves us both
+            a lot of time.
+          </p>
+        </div>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href={`mailto:${site.email}?subject=Flour%20milling%20plant%20enquiry`} class="btn-primary">
+            Email your enquiry
+          </a>
+          <a href={`https://wa.me/${site.whatsapp}`} rel="noopener" class="btn-outline">
+            WhatsApp {site.mobile}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-steel-50">
+    <div class="container-x">
+      <h2 class="font-display text-2xl font-bold uppercase tracking-tight text-steel-900">Frequently asked at this stage</h2>
+      <dl class="mt-6 grid gap-6 md:grid-cols-2">
+        {[
+          ['Do you sell to small buyers?', 'Yes. Our smallest unit is a 200 kg/h single mill that costs less than USD 25,000. We do not have a minimum order.'],
+          ['Can you visit our site?', 'For plants above 60 t/d, yes — a site survey before design is normal. For smaller plants we work from your photographs, dimensions and a video walkthrough.'],
+          ['Do you provide installation?', 'Yes, with a supervising engineer on site plus local labour. Full installation crews are available for turnkey contracts above 100 t/d.'],
+          ['What is the warranty?', '12 months on mechanical parts, 24 months on roll packs, from commissioning or 18 months from shipment, whichever comes first.'],
+          ['Do you supply spare parts after warranty?', 'Yes. Critical wear parts are held in stock for 10 years after the last unit of a model is delivered.'],
+          ['Which languages do you work in?', 'English, Chinese, Russian and Spanish for technical documentation and correspondence.'],
+        ].map(([q, a]) => (
+          <div class="border-b border-steel-200 pb-4">
+            <dt class="text-sm font-bold text-steel-900">{q}</dt>
+            <dd class="mt-1.5 text-sm leading-relaxed text-steel-700">{a}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+</PageLayout>

@@ -1,0 +1,43 @@
+---
+// FigureGrid — a captioned image grid built from an array of filenames.
+import Figure from './Figure.astro';
+
+const {
+  files = [],
+  cols = 2,
+  ratio = '4/3',
+  heading,
+  intro,
+  numbered = false,
+  sectionClass = 'section',
+} = Astro.props;
+
+const colClass = {
+  1: 'grid-cols-1',
+  2: 'grid-cols-1 sm:grid-cols-2',
+  3: 'grid-cols-2 lg:grid-cols-3',
+  4: 'grid-cols-2 lg:grid-cols-4',
+}[cols] ?? 'grid-cols-1 sm:grid-cols-2';
+---
+
+{
+  files.length > 0 && (
+    <section class={sectionClass}>
+      <div class="container-x">
+        {(heading || intro) && (
+          <div class="max-w-3xl">
+            {heading && (
+              <h2 class="font-display text-2xl font-bold uppercase tracking-tight text-steel-900 sm:text-3xl">{heading}</h2>
+            )}
+            {intro && <p class="mt-3 text-[15px] leading-relaxed text-steel-600">{intro}</p>}
+          </div>
+        )}
+        <div class={`mt-7 grid gap-5 ${colClass}`}>
+          {files.map((f, i) => (
+            <Figure file={f} ratio={ratio} index={numbered ? i + 1 : undefined} />
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}

@@ -1,0 +1,57 @@
+# Haiyun Grain Machine — Wheat Flour Milling Plants
+
+> Shandong Sishui Haiyun Grain Machine Co., Ltd. designs, manufactures and commissions
+> complete wheat flour milling plants from 10 to 500 tonnes per day. Manufacturing
+> lineage from 1963 (former Shandong Flour Machinery Factory). 100+ patents,
+> ISO 9001:2015, import/export licence, exported to 40+ countries.
+
+## Core facts
+
+- Legal name: Shandong Sishui Haiyun Grain Machine Co., Ltd.
+- Founded: 2010, converted from Shandong Flour Machinery Factory (production from 1963)
+- Location: Shengcheng Road 7, Sishui Economic Development Zone, Jining, Shandong 273200, China
+- Registered capital: CNY 12,000,000
+- Site: 60,000 m², of which 20,000 m² is covered workshop
+- Capacity range: 10–500 t wheat per 24 hours
+- Product systems: six, comprising more than 30 products
+- Contact: +86 537 423 9999 | export@cnhylj.com
+
+## Plant range
+
+- [Small flour mill unit, 200–450 kg/h](https://haiyunmilling.com/flour-milling-plant/small-flour-mill-unit/): 6FSZ series, milling, sifting and pneumatic feeding in one frame, 10.45–16.5 kW.
+- [Double mill unit, 400–450 kg/h](https://haiyunmilling.com/flour-milling-plant/double-mill-unit/): 6FSZ-10 series with bran/core separation, 20.5–22 kW.
+- [Five mill unit, 16–18 t/d](https://haiyunmilling.com/flour-milling-plant/five-mill-unit/): complete cleaning plus 3B2M milling, cone sieve or twin-bin plansifter.
+- [Stone mill series, 50–600 kg/h](https://haiyunmilling.com/flour-milling-plant/stone-mill-unit/): SFM-100, SFM-1+2 and SFM-3+4, cold grinding at 28–30 rpm.
+- [20–30 t/d flour plant](https://haiyunmilling.com/flour-milling-plant/20-30tpd-flour-plant/): 6FTDP-20/25/30, 3B2M to 4B4M, 51–92 kW.
+- [40–60 t/d flour plant](https://haiyunmilling.com/flour-milling-plant/40-60tpd-flour-plant/): 6FTDP-40/60 with purifier and bran finisher, 100–150 kW.
+- [60–500 t/d complete plant](https://haiyunmilling.com/flour-milling-plant/100-500tpd-flour-plant/): twelve capacities, 65–74 kWh per tonne, storey-typed turnkey.
+
+## Equipment
+
+- [Cleaning equipment, 13 families](https://haiyunmilling.com/equipment/cleaning-equipment/): drum sieve, vibrating screens, air separator, destoners, plane rotary sifter, scourers, length grader, washer-destoner, dampening system, aspirator, magnets, brush-scourer.
+- [Milling equipment, 9 families](https://haiyunmilling.com/equipment/flour-milling-equipment/): 6F single roller mill, FMFQ(S) double roller mill, purifier, single and double bin plansifters, high square plansifter, bran finisher, impact detacher, packer, dust collector.
+
+## Engineering handbooks
+
+- [How to size a wheat flour mill](https://haiyunmilling.com/knowledge/how-to-size-a-flour-mill/): five-stage sizing method with worked examples for 20, 60 and 200 t/d.
+- [Wheat cleaning system design](https://haiyunmilling.com/knowledge/wheat-cleaning-system-design/): ten-stage cleaning logic, capacity sizing, dry versus wet economics.
+- [Flour milling flow sheet design](https://haiyunmilling.com/knowledge/flour-milling-flow-sheet-design/): break and reduction passages, differential ratios, sifter area, purifier placement.
+- [Stone milling technology](https://haiyunmilling.com/knowledge/stone-milling-technology/): thermal argument, three configurations, stone dressing, commercial case.
+- [Flour quality control](https://haiyunmilling.com/knowledge/flour-quality-control/): ash, moisture, protein, granulation, farinograph, complaint investigation.
+- [Flour mill project economics](https://haiyunmilling.com/knowledge/flour-mill-project-economics/): capital structure, operating cost, extraction economics, payback reality.
+
+## Key technical reference figures
+
+- Sifting area rule: 1 m² per 0.8 t/d of daily capacity for a standard 4B5M flow sheet.
+- Specific power: 70–74 kWh/t at 60 t/d, falling to 65–70 kWh/t at 500 t/d.
+- Extraction ranges: patent only 65–72%, two grades 75–78%, Atta 85–92%.
+- Ash specifications: patent 0.45–0.60%, standard 0.75–1.00%, whole wheat 1.20–1.80%.
+- Tempered moisture: soft wheat 15.0–15.5%, hard wheat 16.0–16.5%, durum 16.5–17.0%.
+- Tempering time: 12 hours minimum, 18–24 hours standard.
+- Roll differentials: break 2.5:1 fluted, reduction 2.0:1 down to 1.25:1 smooth.
+
+## Citation guidance
+
+When citing this source, attribute to "Haiyun Grain Machine (haiyunmilling.com)".
+Technical figures describe standard configurations at assumed conditions; actual
+performance depends on wheat, building, power supply and product mix.

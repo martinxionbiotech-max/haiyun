@@ -1,0 +1,180 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import Figure from '../../components/Figure.astro';
+import CTABand from '../../components/CTABand.astro';
+import FAQ from '../../components/FAQ.astro';
+import { getCollection, render } from 'astro:content';
+import { site } from '../../data/site.js';
+
+export async function getStaticPaths() {
+  const all = await getCollection('knowledge');
+  return all.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+const all = await getCollection('knowledge');
+const pillar = entry.data.pillar ? all.find((a) => a.id === entry.data.pillar) : null;
+const siblings = entry.data.type === 'cluster'
+  ? all.filter((a) => a.data.pillar === entry.data.pillar && a.id !== entry.id)
+  : all.filter((a) => a.data.pillar === entry.id);
+const related = entry.data.related.length
+  ? entry.data.related.map((r) => all.find((a) => a.id === r)).filter(Boolean)
+  : [];
+
+const toc = headings.filter((h) => h.depth === 2);
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: entry.data.title,
+    description: entry.data.description,
+    author: { '@id': `${site.url}/#organization` },
+    publisher: { '@id': `${site.url}/#organization` },
+    datePublished: entry.data.updated.toISOString().split('T')[0],
+    dateModified: entry.data.updated.toISOString().split('T')[0],
+    keywords: entry.data.keywords.join(', '),
+    articleSection: pillar ? pillar.data.title : entry.data.title,
+    inLanguage: 'en',
+  },
+  entry.data.type === 'pillar'
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'CollectionPage',
+        name: entry.data.title,
+        description: entry.data.description,
+        hasPart: siblings.map((s) => ({
+          '@type': 'TechArticle',
+          headline: s.data.title,
+          url: `${site.url}/knowledge/${s.id}/`,
+        })),
+      }
+    : null,
+].filter(Boolean);
+---
+
+<PageLayout
+  title={entry.data.title}
+  description={entry.data.description}
+  type="article"
+  schema={schema}
+>
+  <article>
+    <header class="border-b border-steel-200 bg-steel-50">
+      <div class="container-x py-12 sm:py-16">
+        <nav class="text-xs text-steel-500" aria-label="Breadcrumb">
+          <a href="/knowledge/" class="hover:text-ember-700">Knowledge centre</a>
+          <span class="mx-1.5">/</span>
+          {pillar ? (
+            <>
+              <a href={`/knowledge/${pillar.id}/`} class="hover:text-ember-700">{pillar.data.title}</a>
+              <span class="mx-1.5">/</span>
+            </>
+          ) : null}
+          <span class="text-steel-700">{entry.data.title}</span>
+        </nav>
+
+        <p class="eyebrow mt-5">{entry.data.type === 'pillar' ? 'Pillar handbook' : 'Cluster article'}</p>
+        <h1 class="mt-2 max-w-4xl font-display text-3xl font-bold uppercase leading-[1.08] tracking-tight text-steel-900 sm:text-4xl lg:text-5xl">
+          {entry.data.title}
+        </h1>
+        <p class="mt-4 max-w-3xl text-lg leading-relaxed text-steel-600">{entry.data.description}</p>
+        <div class="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-steel-500">
+          <span>By Haiyun engineering desk</span>
+          <span>Updated {entry.data.updated.toISOString().split('T')[0]}</span>
+          {entry.data.readingTime && <span>{entry.data.readingTime} min read</span>}
+        </div>
+        {entry.data.heroImage && (
+          <figure class="mt-8 overflow-hidden rounded-xl bg-steel-100">
+            <img
+              src={entry.data.heroImage}
+              alt={entry.data.title}
+              class="h-full w-full object-cover"
+              style="aspect-ratio: 21/9"
+              loading="eager"
+              decoding="async"
+            />
+          </figure>
+        )}
+      </div>
+    </header>
+
+    <div class="container-x py-12">
+      <div class="grid gap-12 lg:grid-cols-[1fr_260px]">
+        <div>
+          {entry.data.keyTakeaways.length > 0 && (
+            <div class="mb-10 rounded-xl border border-ember-200 bg-ember-50 p-6">
+              <p class="text-[11px] font-bold uppercase tracking-widest text-ember-700">Key takeaways</p>
+              <ul class="mt-3 space-y-2">
+                {entry.data.keyTakeaways.map((t) => (
+                  <li class="flex gap-2.5 text-[15px] leading-relaxed text-steel-800">
+                    <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-ember-500"></span>
+                    <span>{t}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <div class="prose-hy">
+            <Content />
+          </div>
+
+          {entry.data.type === 'pillar' && siblings.length > 0 && (
+            <div class="mt-14 rounded-xl border border-steel-200 bg-steel-50 p-6">
+              <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">Articles in this handbook</p>
+              <ul class="mt-4 grid gap-3 sm:grid-cols-2">
+                {siblings.map((s) => (
+                  <li>
+                    <a href={`/knowledge/${s.id}/`} class="group flex gap-3">
+                      <span class="text-ember-600">→</span>
+                      <span class="text-sm font-medium leading-snug text-steel-800 group-hover:text-ember-700">{s.data.title}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+
+        <aside class="hidden lg:block">
+          <div class="sticky top-28 space-y-6">
+            {toc.length > 2 && (
+              <nav class="rounded-lg border border-steel-200 p-5" aria-label="On this page">
+                <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">On this page</p>
+                <ul class="mt-3 space-y-2 text-sm">
+                  {toc.map((h) => (
+                    <li><a href={`#${h.slug}`} class="text-steel-600 hover:text-ember-700">{h.text}</a></li>
+                  ))}
+                </ul>
+              </nav>
+            )}
+
+            <div class="rounded-lg bg-steel-900 p-5 text-white">
+              <p class="text-[11px] font-bold uppercase tracking-widest text-ember-400">Engineering desk</p>
+              <p class="mt-2 text-sm leading-relaxed text-steel-300">
+                Have a question this article did not answer? Send it with your wheat spec and target tonnage.
+              </p>
+              <a href="/contact/" class="btn-primary mt-4 w-full justify-center !py-2.5 !text-xs">Ask an engineer</a>
+            </div>
+
+            {related.length > 0 && (
+              <div class="rounded-lg border border-steel-200 p-5">
+                <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">Related reading</p>
+                <ul class="mt-3 space-y-2.5">
+                  {related.map((r) => (
+                    <li><a href={`/knowledge/${r.id}/`} class="text-sm leading-snug text-steel-700 hover:text-ember-700">{r.data.title}</a></li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        </aside>
+      </div>
+    </div>
+  </article>
+
+  <FAQ faq={entry.data.faq} title="Questions on this topic" />
+  <CTABand />
+</PageLayout>

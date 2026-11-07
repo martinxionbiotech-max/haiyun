@@ -1,0 +1,239 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import FAQ from '../../components/FAQ.astro';
+import CTABand from '../../components/CTABand.astro';
+import Figure from '../../components/Figure.astro';
+import { plantSeries } from '../../data/plants.js';
+import { plantGallery } from '../../data/gallery.js';
+import { site } from '../../data/site.js';
+
+export async function getStaticPaths() {
+  return plantSeries.map((p, i) => ({
+    params: { slug: p.slug },
+    props: { plant: p, index: i },
+  }));
+}
+
+const { plant, index } = Astro.props;
+const others = plantSeries.filter((p) => p.slug !== plant.slug);
+const next = plantSeries[(index + 1) % plantSeries.length];
+const shots = plantGallery[plant.slug] ?? { hero: null, gallery: [] };
+const heroFile = shots.hero;
+const galleryFiles = shots.gallery.filter((f) => f !== heroFile);
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: plant.name,
+    description: plant.intro.slice(0, 300),
+    brand: { '@type': 'Brand', name: 'HAIYUN' },
+    manufacturer: { '@id': `${site.url}/#organization` },
+    category: 'Wheat flour milling plant',
+    offers: {
+      '@type': 'AggregateOffer',
+      priceCurrency: 'USD',
+      lowPrice: 8000,
+      highPrice: 4500000,
+      availability: 'https://schema.org/InStock',
+      offerCount: plant.models.length,
+      seller: { '@id': `${site.url}/#organization` },
+    },
+    additionalProperty: [
+      { '@type': 'PropertyValue', name: 'Capacity', value: plant.capacity },
+      { '@type': 'PropertyValue', name: 'Models available', value: String(plant.models.length) },
+      { '@type': 'PropertyValue', name: 'Scale class', value: plant.scale },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: plant.name,
+    description: plant.intro.slice(0, 200),
+    author: { '@id': `${site.url}/#organization` },
+    publisher: { '@id': `${site.url}/#organization` },
+    datePublished: '2026-01-15',
+    dateModified: '2026-11-07',
+  },
+];
+---
+
+<PageLayout
+  title={`${plant.name} — ${plant.capacity} Wheat Flour Plant`}
+  description={`${plant.tagline} ${plant.name}: ${plant.capacity}, ${plant.models.length} standard models. Full parameter tables, flow sheet, selection guidance and lead time.`}
+  image={heroFile ? `/images/${heroFile}` : undefined}
+  schema={schema}
+>
+  <PageHero
+    eyebrow={`${plant.scale} · ${plant.capacity}`}
+    title={plant.name}
+    subtitle={plant.tagline}
+    image={heroFile ? `/images/${heroFile}` : undefined}
+    imageAlt={`${plant.name} — ${plant.capacity} wheat flour production line`}
+  />
+
+  <section class="section">
+    <div class="container-x grid gap-12 lg:grid-cols-[2fr_1fr]">
+      <div>
+        <p class="eyebrow">Overview</p>
+        <h2 class="mt-2 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">
+          What this plant actually is
+        </h2>
+        <p class="mt-4 text-[16px] leading-relaxed text-steel-700">{plant.intro}</p>
+
+        <div class="mt-8 grid gap-3 sm:grid-cols-2">
+          {plant.highlights.map((h) => (
+            <div class="flex gap-3 rounded-lg border border-steel-200 bg-steel-50/60 p-4">
+              <svg class="mt-0.5 h-5 w-5 shrink-0 text-ember-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.7 5.3a1 1 0 0 1 0 1.4l-7.5 7.5a1 1 0 0 1-1.4 0L3.3 9.7a1 1 0 1 1 1.4-1.4l3.8 3.8 6.8-6.8a1 1 0 0 1 1.4 0Z" clip-rule="evenodd"/>
+              </svg>
+              <p class="text-sm leading-relaxed text-steel-700">{h}</p>
+            </div>
+          ))}
+        </div>
+
+        <h2 class="mt-14 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">
+          Standard models and parameters
+        </h2>
+        <p class="mt-3 text-sm leading-relaxed text-steel-600">
+          All figures are nominal at 380 V / 50 Hz with wheat at 12.5% incoming moisture and 76% extraction.
+          Deviations of ±8% are normal and depend on wheat hardness, roll condition and operator settings.
+        </p>
+
+        <div class="mt-6 overflow-x-auto rounded-lg border border-steel-200">
+          <table class="w-full border-collapse text-sm">
+            <thead class="bg-steel-50 text-left">
+              <tr>
+                <th class="border-b border-steel-200 px-4 py-3 font-bold text-steel-900">Model</th>
+                <th class="border-b border-steel-200 px-4 py-3 font-bold text-steel-900">Capacity</th>
+                <th class="border-b border-steel-200 px-4 py-3 font-bold text-steel-900">Power / consumption</th>
+                <th class="border-b border-steel-200 px-4 py-3 font-bold text-steel-900">Weight / footprint</th>
+                <th class="border-b border-steel-200 px-4 py-3 font-bold text-steel-900">Configuration</th>
+              </tr>
+            </thead>
+            <tbody>
+              {plant.models.map((m) => (
+                <tr class="even:bg-steel-50/50">
+                  <td class="border-b border-steel-100 px-4 py-3 font-bold text-steel-900">{m.model}</td>
+                  <td class="border-b border-steel-100 px-4 py-3 text-steel-700">{m.capacity}</td>
+                  <td class="border-b border-steel-100 px-4 py-3 text-steel-700">{m.power}</td>
+                  <td class="border-b border-steel-100 px-4 py-3 text-steel-700">{m.weight}<br/>{m.dims}</td>
+                  <td class="border-b border-steel-100 px-4 py-3 text-steel-600">{m.note || '—'}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h2 class="mt-14 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">Process flow</h2>
+        <ol class="mt-5 grid gap-2 sm:grid-cols-2">
+          {plant.flow.map((step, i) => (
+            <li class="flex items-center gap-3 rounded-lg border border-steel-200 bg-white px-4 py-3 shadow-card">
+              <span class="grid h-7 w-7 shrink-0 place-items-center rounded-full bg-steel-900 text-xs font-bold text-white">
+                {i + 1}
+              </span>
+              <span class="text-sm font-medium text-steel-800">{step}</span>
+            </li>
+          ))}
+        </ol>
+
+        <h2 class="mt-14 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">How to select</h2>
+        <div class="mt-4 rounded-lg border-l-4 border-ember-500 bg-ember-50 p-5">
+          <p class="text-[15px] leading-relaxed text-steel-800">{plant.selection}</p>
+        </div>
+
+        <h2 class="mt-14 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">Typical applications</h2>
+        <ul class="mt-4 flex flex-wrap gap-2">
+          {plant.applications.map((a) => (
+            <li class="chip">{a}</li>
+          ))}
+        </ul>
+      </div>
+
+      <aside class="lg:sticky lg:top-28 lg:self-start">
+        <div class="rounded-xl border border-steel-200 bg-steel-50 p-6">
+          <p class="text-[11px] font-bold uppercase tracking-widest text-ember-600">Quick specification</p>
+          <dl class="mt-4 space-y-3 text-sm">
+            <div class="flex justify-between gap-3 border-b border-steel-200 pb-3">
+              <dt class="text-steel-600">Capacity</dt>
+              <dd class="text-right font-bold text-steel-900">{plant.capacity}</dd>
+            </div>
+            <div class="flex justify-between gap-3 border-b border-steel-200 pb-3">
+              <dt class="text-steel-600">Models</dt>
+              <dd class="text-right font-bold text-steel-900">{plant.models.length}</dd>
+            </div>
+            <div class="flex justify-between gap-3 border-b border-steel-200 pb-3">
+              <dt class="text-steel-600">Scale class</dt>
+              <dd class="text-right font-bold text-steel-900">{plant.scale}</dd>
+            </div>
+            <div class="flex justify-between gap-3">
+              <dt class="text-steel-600">Lead time</dt>
+              <dd class="text-right font-bold text-steel-900">See quotation</dd>
+            </div>
+          </dl>
+          <a href="/contact/" class="btn-primary mt-6 w-full justify-center">Request pricing</a>
+          <a href={`https://wa.me/${site.whatsapp}`} rel="noopener" class="btn-outline mt-2 w-full justify-center">
+            WhatsApp engineering
+          </a>
+          <p class="mt-4 text-center text-xs text-steel-500">Response within 12 working hours</p>
+        </div>
+
+        <div class="mt-6 rounded-xl border border-steel-200 p-6">
+          <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">Other plant classes</p>
+          <ul class="mt-4 space-y-3 text-sm">
+            {others.slice(0, 5).map((o) => (
+              <li>
+                <a href={`/flour-milling-plant/${o.slug}/`} class="group block">
+                  <span class="block font-semibold text-steel-800 group-hover:text-ember-700">{o.name}</span>
+                  <span class="block text-xs text-steel-500">{o.capacity}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  {
+    galleryFiles.length > 0 && (
+      <section class="section bg-steel-50">
+        <div class="container-x">
+          <p class="eyebrow">From the brochure</p>
+          <h2 class="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-steel-900 sm:text-3xl">
+            {plant.name} in detail
+          </h2>
+          <p class="mt-3 max-w-2xl text-[15px] leading-relaxed text-steel-600">
+            Photographs and parameter panels reproduced from the 2026 wheat milling catalogue.
+            Dimension drawings and equipment lists are the original manufacturer figures.
+          </p>
+          <div class="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {galleryFiles.map((f, i) => (
+              <Figure file={f} ratio="4/3" index={i + 1} showNote />
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <FAQ faq={plant.faq} />
+
+  <section class="section pt-0">
+    <div class="container-x">
+      <div class="rounded-xl bg-steel-900 p-8 text-white sm:p-10">
+        <p class="eyebrow-light">Continue</p>
+        <h2 class="mt-2 font-display text-2xl font-bold uppercase text-white sm:text-3xl">
+          Next: {next.name}
+        </h2>
+        <p class="mt-3 max-w-2xl text-sm text-steel-300">{next.tagline} — {next.capacity}</p>
+        <a href={`/flour-milling-plant/${next.slug}/`} class="mt-5 inline-flex text-sm font-bold text-ember-400 hover:text-ember-300">
+          View {next.name} →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <CTABand />
+</PageLayout>
