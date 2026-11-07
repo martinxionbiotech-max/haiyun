@@ -84,3 +84,29 @@
     background-size: 44px 44px;
   }
 }
+
+/* Arabic typography.
+   Inter and Barlow Condensed have no Arabic coverage, so without an explicit
+   family the AR pages render in whatever fallback the reader's device picks —
+   which is inconsistent across Windows, Android and iOS. Barlow Condensed is
+   also a display face that looks wrong for Arabic script, so headings switch
+   to Noto Kufi, which carries the same geometric authority. */
+html[lang='ar'] body {
+  font-family: 'Noto Sans Arabic', 'Segoe UI', Tahoma, sans-serif;
+}
+html[lang='ar'] .font-display,
+html[lang='ar'] h1,
+html[lang='ar'] h2,
+html[lang='ar'] h3 {
+  font-family: 'Noto Kufi Arabic', 'Noto Sans Arabic', sans-serif;
+  letter-spacing: 0;
+}
+html[lang='ar'] .eyebrow,
+html[lang='ar'] .eyebrow-light {
+  letter-spacing: 0.06em;
+}
+
+/* RTL corrections: uppercase/wide tracking are Latin conventions. */
+html[dir='rtl'] .uppercase {
+  text-transform: none;
+}

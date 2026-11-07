@@ -4,10 +4,11 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 const props = Astro.props;
+const lang = props.lang ?? 'en';
 ---
 
 <Base {...props}>
-  <Header slot="header" />
+  <Header slot="header" lang={lang} />
   <slot />
-  <Footer slot="footer" />
+  <Footer slot="footer" lang={lang} />
 </Base>

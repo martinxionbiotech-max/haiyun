@@ -1,0 +1,33 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import HomeContent from '../../components/pages/HomeContent.astro';
+import { site } from '../../data/site.js';
+import { getUI } from '../../i18n/ui.js';
+import { localeMeta, translatedLocales, defaultLocale } from '../../i18n/config.js';
+
+export function getStaticPaths() {
+  return translatedLocales.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang;
+const t = getUI(lang);
+const meta = localeMeta[lang];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: `Haiyun — ${t.plants.title}`,
+  description: t.home.lead,
+  inLanguage: meta.htmlLang,
+  about: { '@id': `${site.url}/#organization` },
+};
+---
+
+<PageLayout
+  title={`${t.home.h1a} ${t.home.h1b}`}
+  description={t.home.lead}
+  lang={lang}
+  schema={[schema]}
+>
+  <HomeContent lang={lang} />
+</PageLayout>

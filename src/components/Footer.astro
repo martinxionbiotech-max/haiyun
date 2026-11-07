@@ -1,8 +1,14 @@
 ---
 import { site } from '../data/site.js';
 import { plantSeries } from '../data/plants.js';
+import { getUI } from '../i18n/ui.js';
+import { defaultLocale, localeMeta, locales, switchLocalePath, localizePath } from '../i18n/config.js';
 
 const year = new Date().getFullYear();
+const lang = Astro.props.lang ?? 'en';
+const t = getUI(lang);
+const href = (p) => localizePath(lang, p);
+const current = Astro.url.pathname;
 ---
 
 <footer class="mt-20 bg-steel-950 text-steel-300">
@@ -17,12 +23,11 @@ const year = new Date().getFullYear();
         </span>
         <span class="leading-tight">
           <span class="block font-display text-xl font-bold uppercase tracking-wide text-white">Haiyun</span>
-          <span class="block text-[10px] font-semibold uppercase tracking-[0.16em] text-ember-400">Flour Milling Systems</span>
+          <span class="block text-[10px] font-semibold uppercase tracking-[0.16em] text-ember-400">{t.brandSub}</span>
         </span>
       </div>
       <p class="mt-4 max-w-sm text-sm leading-relaxed text-steel-400">
-        {site.legalName} — building complete wheat flour milling plants from 10 to 500 tonnes per day since 1963.
-        Design, manufacture, installation, commissioning and operator training under one contract.
+        {site.legalName} — {t.footer.about}
       </p>
       <ul class="mt-5 flex flex-wrap gap-2">
         {site.certifications.map((c) => (
@@ -40,46 +45,64 @@ const year = new Date().getFullYear();
     </div>
 
     <div>
-      <h2 class="text-sm font-bold uppercase tracking-wider text-white">Flour Plants</h2>
+      <h2 class="text-sm font-bold uppercase tracking-wider text-white">{t.footer.plantsHead}</h2>
       <ul class="mt-4 space-y-2.5 text-sm">
         {plantSeries.slice(0, 7).map((p) => (
-          <li><a href={`/flour-milling-plant/${p.slug}/`} class="hover:text-white">{p.name.replace(' 6FSZ', '').replace(' 6FTDP', '')}</a></li>
+          <li><a href={href(`/flour-milling-plant/${p.slug}/`)} class="hover:text-white">{p.name.replace(' 6FSZ', '').replace(' 6FTDP', '')}</a></li>
         ))}
       </ul>
     </div>
 
     <div>
-      <h2 class="text-sm font-bold uppercase tracking-wider text-white">Equipment</h2>
+      <h2 class="text-sm font-bold uppercase tracking-wider text-white">{t.footer.equipHead}</h2>
       <ul class="mt-4 space-y-2.5 text-sm">
-        <li><a href="/equipment/cleaning-equipment/" class="hover:text-white">Cleaning equipment</a></li>
-        <li><a href="/equipment/flour-milling-equipment/" class="hover:text-white">Milling equipment</a></li>
-        <li><a href="/equipment/gravity-destoner/" class="hover:text-white">Gravity destoner</a></li>
-        <li><a href="/equipment/fmfq-double-roller-mill/" class="hover:text-white">FMFQ roller mill</a></li>
-        <li><a href="/equipment/high-square-plansifter/" class="hover:text-white">High square plansifter</a></li>
-        <li><a href="/equipment/purifier/" class="hover:text-white">Purifier</a></li>
+        <li><a href={href('/equipment/cleaning-equipment/')} class="hover:text-white">{t.footer.cleaning}</a></li>
+        <li><a href={href('/equipment/flour-milling-equipment/')} class="hover:text-white">{t.footer.milling}</a></li>
+        <li><a href={href('/equipment/gravity-destoner/')} class="hover:text-white">TQSF</a></li>
+        <li><a href={href('/equipment/fmfq-double-roller-mill/')} class="hover:text-white">FMFQ(S)</a></li>
+        <li><a href={href('/equipment/high-square-plansifter/')} class="hover:text-white">FSFG</a></li>
+        <li><a href={href('/equipment/purifier/')} class="hover:text-white">FQFD</a></li>
       </ul>
     </div>
 
     <div>
-      <h2 class="text-sm font-bold uppercase tracking-wider text-white">Company</h2>
+      <h2 class="text-sm font-bold uppercase tracking-wider text-white">{t.footer.companyHead}</h2>
       <ul class="mt-4 space-y-2.5 text-sm">
-        <li><a href="/about/" class="hover:text-white">About Haiyun</a></li>
-        <li><a href="/projects/" class="hover:text-white">Reference projects</a></li>
-        <li><a href="/knowledge/" class="hover:text-white">Knowledge centre</a></li>
-        <li><a href="/solutions/" class="hover:text-white">Solutions by market</a></li>
-        <li><a href="/contact/" class="hover:text-white">Contact & RFQ</a></li>
+        <li><a href={href('/about/')} class="hover:text-white">{t.footer.aboutLink}</a></li>
+        <li><a href={href('/projects/')} class="hover:text-white">{t.footer.projectsLink}</a></li>
+        <li><a href={href('/knowledge/')} class="hover:text-white">{t.footer.kbLink}</a></li>
+        <li><a href={href('/solutions/')} class="hover:text-white">{t.footer.solutionsLink}</a></li>
+        <li><a href={href('/contact/')} class="hover:text-white">{t.footer.contactLink}</a></li>
         <li><a href="/llms.txt" class="hover:text-white">llms.txt</a></li>
       </ul>
+
+      <div class="mt-6 border-t border-steel-800 pt-4">
+        <p class="text-[10px] font-bold uppercase tracking-widest text-steel-500">{t.langLabel}</p>
+        <ul class="mt-2 flex flex-wrap gap-x-3 gap-y-1 text-xs">
+          {locales.map((l) => (
+            <li>
+              <a
+                href={switchLocalePath(current, l)}
+                lang={l}
+                hreflang={l}
+                class:list={[l === lang ? 'font-bold text-white' : 'text-steel-400 hover:text-white']}
+              >
+                {localeMeta[l].short}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   </div>
 
   <div class="border-t border-steel-800">
     <div class="container-x flex flex-col gap-2 py-5 text-xs text-steel-500 sm:flex-row sm:items-center sm:justify-between">
-      <p>© {year} {site.legalName}. All rights reserved. 鲁ICP备13005965号</p>
+      <p>© {year} {site.legalName}. {t.footer.rights} 鲁ICP备13005965号</p>
       <p class="flex gap-4">
-        <a href="/privacy/" class="hover:text-steel-300">Privacy</a>
-        <a href="/terms/" class="hover:text-steel-300">Terms</a>
-        <a href="/sitemap-index.xml" class="hover:text-steel-300">Sitemap</a>
+        <a href={href('/privacy/')} class="hover:text-steel-300">{t.footer.privacy}</a>
+        <a href={href('/terms/')} class="hover:text-steel-300">{t.footer.terms}</a>
+        <a href="/sitemap-index.xml" class="hover:text-steel-300">{t.footer.sitemap}</a>
       </p>
     </div>
   </div>

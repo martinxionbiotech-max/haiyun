@@ -1,0 +1,261 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import PageHero from '../../../components/PageHero.astro';
+import Figure from '../../../components/Figure.astro';
+import CTABand from '../../../components/CTABand.astro';
+import { site } from '../../../data/site.js';
+import { translatedLocales, localeMeta } from '../../../i18n/config.js';
+import { getUI } from '../../../i18n/ui.js';
+import { companyBanner, certificates, workshops } from '../../../data/gallery.js';
+
+export function getStaticPaths() {
+  return translatedLocales.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang;
+const t = getUI(lang);
+const meta = localeMeta[lang];
+
+const copy = {
+  ru: {
+    eyebrow: 'О компании',
+    hero: 'Шестьдесят лет одного дела: зерноперерабатывающее оборудование',
+    sub: 'Shandong Sishui Haiyun Grain Machine Co., Ltd. строит мельничные заводы производительностью от 10 до 500 тонн пшеницы в сутки.',
+    companyEyebrow: 'Компания',
+    companyTitle: 'Что мы делаем и чего не делаем',
+    companyP1: 'Мы проектируем, изготавливаем, монтируем и запускаем мельничные заводы. Мы не продаём отдельные машины в качестве основного бизнеса — хотя продаём и их. Разница принципиальная: ответственность за тоннаж и выход муки лежит на нас, а не распределяется между поставщиками.',
+    companyP2: 'Предшественник компании — Шаньдунский завод мельничного оборудования, производство с 1963 года. Сегодня это площадка 60 000 м² с цехом 20 000 м², более 260 сотрудников и более 100 патентов. Сертификация ISO 9001:2015, лицензия на экспорт, CE на отдельные модели.',
+    factsTitle: 'Ключевые факты',
+    facts: [
+      ['Основана', '2010 (производство с 1963)'],
+      ['Площадка', '60 000 м², цех 20 000 м²'],
+      ['Сотрудники', 'более 260'],
+      ['Патенты', 'более 100'],
+      ['Диапазон', '10–500 т пшеницы в сутки'],
+      ['Экспорт', 'более 40 стран'],
+      ['Сертификаты', 'ISO 9001:2015, CE (отдельные модели)'],
+      ['Уставный капитал', '12 млн юаней'],
+    ],
+    timeEyebrow: 'Хронология',
+    timeTitle: 'Шестьдесят лет в сжатом виде',
+    timeline: [
+      ['1963', 'Предшественник — Шаньдунский завод мельничного оборудования — начинает выпуск оборудования для зерна.'],
+      ['2010', 'Регистрация компании Shandong Sishui Haiyun Grain Machine Co., Ltd.'],
+      ['2013', 'Сертификация ISO 9001 и получение экспортной лицензии.'],
+      ['2016', 'Освоение линий для гречихи, риса и овса.'],
+      ['2019', 'Первый этажный завод под ключ на 200 т/сут.'],
+      ['2021', 'Поставлен завод на 300 т/сут; число патентов превысило 100.'],
+      ['2022', 'Введён завод на 500 т/сут — крупнейшая установка на сегодня.'],
+      ['2023', 'Сертификация CE на отдельные модели; экспорт более чем в 40 стран.'],
+    ],
+    workshopEyebrow: 'Цеха',
+    workshopTitle: 'Что происходит внутри',
+    workshops: [
+      ['Вальцовый цех Ⅰ и Ⅱ', 'Два отдельных пролёта для сборки вальцовых станков. Корпуса обрабатываются на станках с ЧПУ, затем собираются и выверяются здесь: параллельность вальцов проверяется до 0,05 мм, прежде чем станок покидает участок.'],
+      ['Сборочный цех Ⅰ и Ⅱ', 'Здесь собираются и испытываются рассевы, ситовейки и оборудование очистки, а затем комплектные заводы проходят предварительную сборку для приёмочных испытаний перед упаковкой.'],
+      ['Производственный цех', 'Общая металлообработка. Лист поступает лазерной резки; в цехе из него делают рамы, самоувязку и металлоконструкции завода.'],
+    ],
+    exportEyebrow: 'Экспорт',
+    exportTitle: 'Сорок с лишним стран, один стандарт',
+    exportBody: 'Экспортные поставки идут через морские порты Циндао и Ляньюньган. Документация — на английском, русском и испанском. Для проектов под ключ мы направляем шеф-инженера на площадку и обучаем местную команду.',
+    cta: 'Расскажите о вашем проекте',
+  },
+  es: {
+    eyebrow: 'Empresa',
+    hero: 'Sesenta años en una sola cosa: maquinaria para grano',
+    sub: 'Shandong Sishui Haiyun Grain Machine Co., Ltd. construye plantas de molienda de trigo de 10 a 500 toneladas al día.',
+    companyEyebrow: 'La empresa',
+    companyTitle: 'Qué hacemos y qué no hacemos',
+    companyP1: 'Diseñamos, fabricamos, montamos y ponemos en marcha plantas de molienda. No vendemos máquinas sueltas como negocio principal, aunque también las vendemos. La diferencia es sustancial: la responsabilidad del tonelaje y del rendimiento es nuestra, no se reparte entre proveedores.',
+    companyP2: 'El predecesor de la empresa es la Fábrica de Maquinaria Harinera de Shandong, con producción desde 1963. Hoy es un emplazamiento de 60.000 m² con 20.000 m² de nave, más de 260 empleados y más de 100 patentes. Certificación ISO 9001:2015, licencia de exportación y CE en modelos seleccionados.',
+    factsTitle: 'Datos clave',
+    facts: [
+      ['Fundación', '2010 (producción desde 1963)'],
+      ['Emplazamiento', '60.000 m², nave de 20.000 m²'],
+      ['Empleados', 'más de 260'],
+      ['Patentes', 'más de 100'],
+      ['Rango', '10–500 t de trigo al día'],
+      ['Exportación', 'más de 40 países'],
+      ['Certificados', 'ISO 9001:2015, CE (modelos seleccionados)'],
+      ['Capital social', '12 millones CNY'],
+    ],
+    timeEyebrow: 'Cronología',
+    timeTitle: 'Sesenta años, condensados',
+    timeline: [
+      ['1963', 'El predecesor, la Fábrica de Maquinaria Harinera de Shandong, inicia la producción de maquinaria para grano.'],
+      ['2010', 'Constitución de Shandong Sishui Haiyun Grain Machine Co., Ltd.'],
+      ['2013', 'Certificación ISO 9001 y obtención de la licencia de exportación.'],
+      ['2016', 'Desarrollo de líneas para trigo sarraceno, arroz y avena.'],
+      ['2019', 'Primera planta llave en mano de varias alturas, 200 t/día.'],
+      ['2021', 'Entrega de la planta de 300 t/día; se superan las 100 patentes.'],
+      ['2022', 'Puesta en marcha de la planta de 500 t/día, la mayor hasta la fecha.'],
+      ['2023', 'Certificación CE en modelos seleccionados; exportación a más de 40 países.'],
+    ],
+    workshopEyebrow: 'Los talleres',
+    workshopTitle: 'Qué ocurre dentro',
+    workshops: [
+      ['Taller de molinos Ⅰ y Ⅱ', 'Dos naves dedicadas al montaje de bancos de cilindros. Las carcasas se mecanizan en centros CNC y se montan y alinean aquí: el paralelismo de cilindros se verifica a 0,05 mm antes de que el banco salga de la nave.'],
+      ['Montaje integrado Ⅰ y Ⅱ', 'Aquí se montan y prueban cernidores, purificadores y equipos de limpieza; después las plantas completas se premontan para la prueba de aceptación en fábrica antes del embalaje.'],
+      ['Taller de producción', 'Fabricación y mecanizado general. La chapa llega cortada por láser; el taller la convierte en bastidores, canalizaciones y estructura para la planta.'],
+    ],
+    exportEyebrow: 'Exportación',
+    exportTitle: 'Más de cuarenta países, un solo estándar',
+    exportBody: 'Las exportaciones salen por los puertos de Qingdao y Lianyungang. La documentación está en inglés, ruso y español. En proyectos llave en mano enviamos un ingeniero supervisor y formamos al equipo local.',
+    cta: 'Cuéntenos su proyecto',
+  },
+  ar: {
+    eyebrow: 'عن الشركة',
+    hero: 'ستون عامًا في شيء واحد: ماكينات الحبوب',
+    sub: 'شركة شاندونغ سيشوي هايون لماكينات الحبوب المحدودة تبني مصانع طحن دقيق القمح من 10 إلى 500 طن يوميًا.',
+    companyEyebrow: 'الشركة',
+    companyTitle: 'ما نفعله وما لا نفعله',
+    companyP1: 'نصمم ونصنع ونركّب ونشغّل مصانع الطحن. لا نبيع ماكينات منفردة كعمل أساسي، وإن كنا نبيعها أيضًا. الفرق جوهري: مسؤولية الإنتاجية ونسبة الاستخلاص تقع علينا، لا توزَّع بين مورّدين.',
+    companyP2: 'سلف الشركة هو مصنع شاندونغ لماكينات طحن الدقيق، والإنتاج منذ 1963. اليوم موقع بمساحة 60,000 م² وورشة 20,000 م²، وأكثر من 260 موظفًا، وأكثر من 100 براءة اختراع. شهادة ISO 9001:2015 ورخصة تصدير وشهادة CE لموديلات مختارة.',
+    factsTitle: 'حقائق أساسية',
+    facts: [
+      ['التأسيس', '2010 (الإنتاج منذ 1963)'],
+      ['الموقع', '60,000 م²، ورشة 20,000 م²'],
+      ['الموظفون', 'أكثر من 260'],
+      ['براءات الاختراع', 'أكثر من 100'],
+      ['النطاق', '10–500 طن قمح يوميًا'],
+      ['التصدير', 'أكثر من 40 دولة'],
+      ['الشهادات', 'ISO 9001:2015، CE لموديلات مختارة'],
+      ['رأس المال المسجّل', '12 مليون يوان'],
+    ],
+    timeEyebrow: 'المسار الزمني',
+    timeTitle: 'ستون عامًا في سطور',
+    timeline: [
+      ['1963', 'السلف، مصنع شاندونغ لماكينات طحن الدقيق، يبدأ إنتاج ماكينات الحبوب.'],
+      ['2010', 'تأسيس شركة شاندونغ سيشوي هايون لماكينات الحبوب المحدودة.'],
+      ['2013', 'شهادة ISO 9001 والحصول على رخصة التصدير.'],
+      ['2016', 'تطوير خطوط معالجة الحنطة السوداء والأرز والشوفان.'],
+      ['2019', 'أول مصنع متعدد الطوابق تسليم مفتاح بطاقة 200 طن/يوم.'],
+      ['2021', 'تسليم مصنع 300 طن/يوم وتجاوز عدد البراءات 100.'],
+      ['2022', 'تشغيل مصنع 500 طن/يوم، أكبر منشأة حتى الآن.'],
+      ['2023', 'شهادة CE لموديلات مختارة، والتصدير يتجاوز 40 دولة.'],
+    ],
+    workshopEyebrow: 'الورش',
+    workshopTitle: 'ما يحدث في الداخل',
+    workshops: [
+      ['ورشة الدرفيل Ⅰ و Ⅱ', 'خليجان مخصصان لتجميع حوامل الدرفيل. تُشغَّل الأغلفة على مراكز CNC ثم تُجمَّع وتُستقام هنا — ويُتحقق من توازي الدرفيل حتى 0.05 مم قبل خروج الحامل من الورشة.'],
+      ['التجميع المتكامل Ⅰ و Ⅱ', 'تُجمَّع المناخل ومكنات التنقية ومعدات التنظيف وتُختبر هنا، ثم تُجمَّع المصانع الكاملة مسبقًا لاختبار القبول في المصنع قبل التغليف.'],
+      ['ورشة الإنتاج', 'التصنيع والتشغيل العام. يدخل الصلب مقطعًا بالليزر، وتُحوّله الورشة إلى هياكل ومجاري وصُلب إنشائي للمصنع.'],
+    ],
+    exportEyebrow: 'التصدير',
+    exportTitle: 'أكثر من أربعين دولة، ومعيار واحد',
+    exportBody: 'تخرج الشحنات عبر مينائي تشينغداو ليانيونقانغ. الوثائق بالإنجليزية والروسية والإسبانية. في مشاريع تسليم المفتاح نرسل مهندس إشراف وندرّب الفريق المحلي.',
+    cta: 'حدّثنا عن مشروعك',
+  },
+};
+
+const c = copy[lang];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: c.hero,
+  description: c.sub,
+  inLanguage: meta.htmlLang,
+  mainEntity: { '@id': `${site.url}/#organization` },
+};
+---
+
+<PageLayout title={c.hero} description={c.sub} lang={lang} image={`/images/${companyBanner}`} schema={[schema]}>
+  <PageHero eyebrow={c.eyebrow} title={c.hero} subtitle={c.sub} image={`/images/${companyBanner}`} imageAlt={c.hero} lang={lang} />
+
+  <section class="section">
+    <div class="container-x grid gap-12 lg:grid-cols-[1.2fr_1fr]">
+      <div>
+        <p class="eyebrow">{c.companyEyebrow}</p>
+        <h2 class="mt-2 font-display text-3xl font-bold uppercase tracking-tight text-steel-900 sm:text-4xl">
+          {c.companyTitle}
+        </h2>
+        <p class="mt-5 text-[16px] leading-relaxed text-steel-700">{c.companyP1}</p>
+        <p class="mt-4 text-[16px] leading-relaxed text-steel-700">{c.companyP2}</p>
+      </div>
+
+      <div class="rounded-xl border border-steel-200 bg-steel-50 p-6">
+        <h3 class="text-[11px] font-bold uppercase tracking-widest text-steel-500">{c.factsTitle}</h3>
+        <dl class="mt-4 space-y-3 text-sm">
+          {c.facts.map(([k, v]) => (
+            <div class="flex justify-between gap-4 border-b border-steel-200 pb-2">
+              <dt class="text-steel-500">{k}</dt>
+              <dd class="text-end font-semibold text-steel-900">{v}</dd>
+            </div>
+          ))}
+        </dl>
+        <div class="mt-5 text-sm">
+          <p class="font-semibold text-steel-900">{site.phone}</p>
+          <p class="text-steel-600">{site.email}</p>
+          <p class="mt-1 text-steel-500">{site.address.full}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-steel-50">
+    <div class="container-x">
+      <p class="eyebrow">{c.timeEyebrow}</p>
+      <h2 class="mt-2 font-display text-3xl font-bold uppercase tracking-tight text-steel-900 sm:text-4xl">
+        {c.timeTitle}
+      </h2>
+      <ol class="mt-8 space-y-3">
+        {c.timeline.map(([year, body]) => (
+          <li class="flex gap-5 rounded-lg border border-steel-200 bg-white p-4">
+            <p class="w-16 shrink-0 font-display text-xl font-bold text-ember-600">{year}</p>
+            <p class="text-sm leading-relaxed text-steel-700">{body}</p>
+          </li>
+        ))}
+      </ol>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-x">
+      <p class="eyebrow">{c.workshopEyebrow}</p>
+      <h2 class="mt-2 font-display text-3xl font-bold uppercase tracking-tight text-steel-900 sm:text-4xl">
+        {c.workshopTitle}
+      </h2>
+
+      <div class="mt-8 space-y-10">
+        {c.workshops.map(([title, body], i) => (
+          <div class="grid gap-6 lg:grid-cols-[1.1fr_1fr]">
+            <div class={i % 2 === 1 ? 'lg:order-2' : ''}>
+              <div class="grid gap-4 sm:grid-cols-2">
+                {(i === 0 ? [...workshops.rollerMill1, ...workshops.rollerMill2]
+                  : i === 1 ? [...workshops.assembly1, ...workshops.assembly2]
+                  : [...workshops.overview, ...workshops.detail]
+                ).slice(0, 2).map((f) => (
+                  <Figure file={f} ratio="4/3" showOriginal={false} />
+                ))}
+              </div>
+            </div>
+            <div class={i % 2 === 1 ? 'lg:order-1' : ''}>
+              <h3 class="font-display text-xl font-bold uppercase tracking-tight text-steel-900">{title}</h3>
+              <p class="mt-3 text-[15px] leading-relaxed text-steel-700">{body}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-steel-950">
+    <div class="container-x grid gap-8 lg:grid-cols-[1fr_1.2fr] lg:items-center">
+      <div>
+        <p class="eyebrow-light">{c.exportEyebrow}</p>
+        <h2 class="mt-2 font-display text-3xl font-bold uppercase tracking-tight text-white sm:text-4xl">
+          {c.exportTitle}
+        </h2>
+        <p class="mt-4 text-[15px] leading-relaxed text-steel-300">{c.exportBody}</p>
+      </div>
+      <div class="grid grid-cols-3 gap-3">
+        {certificates.slice(0, 3).map((f) => (
+          <Figure file={f} ratio="3/4" showCaption={false} rounded="rounded" />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <CTABand lang={lang} heading={c.cta} body={t.home.ctaBandBody} />
+</PageLayout>

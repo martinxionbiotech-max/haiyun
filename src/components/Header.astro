@@ -1,7 +1,28 @@
 ---
-import { site, nav } from '../data/site.js';
+import { site } from '../data/site.js';
+import { getUI } from '../i18n/ui.js';
+import { locales, localeMeta, defaultLocale, switchLocalePath, localizePath, translatedPaths } from '../i18n/config.js';
+
+const lang = Astro.props.lang ?? 'en';
+const t = getUI(lang);
 const current = Astro.url.pathname;
-const isActive = (href) => current === href || (href !== '/' && current.startsWith(href));
+
+// Path without the locale prefix, so nav links and active state work in every language.
+const bare = current.replace(/^\/(ru|es|ar)(?=\/|$)/, '') || '/';
+const href = (p) => localizePath(lang, p);
+const translated = (p) => translatedPaths.includes(p.replace(/^\//, ''));
+const isActive = (p) => bare === p || (p !== '/' && bare.startsWith(p));
+
+const navItems = [
+  { label: t.nav.plants, href: '/flour-milling-plant/' },
+  { label: t.nav.equipment, href: '/equipment/' },
+  { label: t.nav.solutions, href: '/solutions/' },
+  { label: t.nav.knowledge, href: '/knowledge/' },
+  { label: t.nav.projects, href: '/projects/' },
+  { label: t.nav.about, href: '/about/' },
+];
+
+const others = locales.filter((l) => l !== lang);
 ---
 
 <header class="sticky top-0 z-40 border-b border-steel-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/80">
@@ -9,7 +30,7 @@ const isActive = (href) => current === href || (href !== '/' && current.startsWi
     <div class="container-x flex h-9 items-center justify-between text-xs">
       <p class="flex items-center gap-2">
         <span class="inline-block h-1.5 w-1.5 rounded-full bg-ember-500"></span>
-        Manufacturer since 1963 · 100+ patents · ISO 9001:2015 · Exporting to 40+ countries
+        {t.topbar}
       </p>
       <p class="flex items-center gap-5">
         <a href={`tel:${site.phoneRaw}`} class="hover:text-white">{site.phone}</a>
@@ -19,7 +40,7 @@ const isActive = (href) => current === href || (href !== '/' && current.startsWi
   </div>
 
   <div class="container-x flex h-16 items-center justify-between gap-4 sm:h-20">
-    <a href="/" class="flex shrink-0 items-center gap-2.5" aria-label={`${site.name} home`}>
+    <a href={href('/')} class="flex shrink-0 items-center gap-2.5" aria-label={`${site.name} home`}>
       <span class="grid h-10 w-10 place-items-center rounded-lg bg-steel-900 text-white">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path d="M3 20h18M6 20V9l6-5 6 5v11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
@@ -28,14 +49,14 @@ const isActive = (href) => current === href || (href !== '/' && current.startsWi
       </span>
       <span class="leading-tight">
         <span class="block font-display text-xl font-bold uppercase tracking-wide text-steel-900">Haiyun</span>
-        <span class="block text-[10px] font-semibold uppercase tracking-[0.16em] text-ember-600">Flour Milling Systems</span>
+        <span class="block text-[10px] font-semibold uppercase tracking-[0.16em] text-ember-600">{t.brandSub}</span>
       </span>
     </a>
 
     <nav class="hidden items-center gap-1 lg:flex" aria-label="Main">
-      {nav.map((item) => (
+      {navItems.map((item) => (
         <a
-          href={item.href}
+          href={href(item.href)}
           class:list={[
             'rounded-md px-3 py-2 text-sm font-medium transition',
             isActive(item.href) ? 'bg-steel-100 text-steel-900' : 'text-steel-700 hover:bg-steel-50 hover:text-steel-900',
@@ -47,8 +68,46 @@ const isActive = (href) => current === href || (href !== '/' && current.startsWi
     </nav>
 
     <div class="flex items-center gap-2">
-      <a href="/contact/" class="hidden sm:inline-flex btn-primary !px-4 !py-2.5">
-        Request a quote
+      <!-- Language switcher -->
+      <div class="relative" id="lang-wrap">
+        <button
+          type="button"
+          id="lang-btn"
+          class="inline-flex h-10 items-center gap-1.5 rounded-lg border border-steel-300 px-2.5 text-xs font-bold uppercase tracking-wide text-steel-700 hover:bg-steel-50"
+          aria-expanded="false"
+          aria-haspopup="true"
+          aria-controls="lang-menu"
+          aria-label={t.langLabel}
+        >
+          <span aria-hidden="true">{localeMeta[lang].short}</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="m6 9 6 6 6-6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div
+          id="lang-menu"
+          class="absolute end-0 top-full z-50 mt-1 hidden w-44 overflow-hidden rounded-lg border border-steel-200 bg-white py-1 shadow-lg"
+        >
+          <p class="px-3 py-1.5 text-[10px] font-bold uppercase tracking-widest text-steel-400">EN · RU · ES · AR</p>
+          {locales.map((l) => (
+            <a
+              href={switchLocalePath(current, l)}
+              class:list={[
+                'flex items-center justify-between gap-2 px-3 py-2 text-sm',
+                l === lang ? 'bg-steel-50 font-semibold text-steel-900' : 'text-steel-700 hover:bg-steel-50',
+              ]}
+              hreflang={l}
+              lang={l}
+            >
+              <span>{localeMeta[l].label}</span>
+              <span class="text-[10px] font-bold tracking-widest text-steel-400">{localeMeta[l].short}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <a href={href('/contact/')} class="hidden sm:inline-flex btn-primary !px-4 !py-2.5">
+        {t.cta.quote}
       </a>
       <button
         type="button"
@@ -67,14 +126,14 @@ const isActive = (href) => current === href || (href !== '/' && current.startsWi
 
   <div id="mobile-menu" class="hidden border-t border-steel-200 bg-white lg:hidden">
     <nav class="container-x flex flex-col py-3" aria-label="Mobile">
-      {nav.map((item) => (
-        <a href={item.href} class="rounded-md px-3 py-3 text-sm font-medium text-steel-800 hover:bg-steel-50">
+      {navItems.map((item) => (
+        <a href={href(item.href)} class="rounded-md px-3 py-3 text-sm font-medium text-steel-800 hover:bg-steel-50">
           {item.label}
         </a>
       ))}
-      <a href="/contact/" class="btn-primary mt-2">Request a quote</a>
+      <a href={href('/contact/')} class="btn-primary mt-2">{t.cta.quote}</a>
       <a href={`tel:${site.phoneRaw}`} class="mt-2 rounded-md px-3 py-3 text-sm font-semibold text-ember-700">
-        Call {site.phone}
+        {t.cta.call} {site.phone}
       </a>
     </nav>
   </div>
@@ -86,5 +145,26 @@ const isActive = (href) => current === href || (href !== '/' && current.startsWi
   btn?.addEventListener('click', () => {
     const open = menu?.classList.toggle('hidden') === false;
     btn.setAttribute('aria-expanded', String(open));
+  });
+
+  const langBtn = document.getElementById('lang-btn');
+  const langMenu = document.getElementById('lang-menu');
+  const langWrap = document.getElementById('lang-wrap');
+  langBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const open = langMenu?.classList.toggle('hidden') === false;
+    langBtn.setAttribute('aria-expanded', String(open));
+  });
+  document.addEventListener('click', (e) => {
+    if (langWrap && !langWrap.contains(e.target as Node)) {
+      langMenu?.classList.add('hidden');
+      langBtn?.setAttribute('aria-expanded', 'false');
+    }
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      langMenu?.classList.add('hidden');
+      langBtn?.setAttribute('aria-expanded', 'false');
+    }
   });
 </script>

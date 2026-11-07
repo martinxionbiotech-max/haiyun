@@ -1,6 +1,20 @@
 ---
 import { site } from '../data/site.js';
-const { title, subtitle, image, imageAlt = '', eyebrow } = Astro.props;
+import { getUI } from '../i18n/ui.js';
+import { localizePath } from '../i18n/config.js';
+
+const { title, subtitle, image, imageAlt = '', eyebrow, lang = 'en', showCta = true } = Astro.props;
+const t = getUI(lang);
+const href = (p) => localizePath(lang, p);
+
+const points =
+  lang === 'ru'
+    ? ['60+ лет производства', 'Диапазон 10–500 т/сут', '100+ патентов', 'Пуск под ключ']
+    : lang === 'es'
+      ? ['60+ años fabricando', 'Rango 10–500 t/día', '100+ patentes', 'Puesta en marcha llave en mano']
+      : lang === 'ar'
+        ? ['+60 سنة تصنيع', 'نطاق 10–500 طن/يوم', '+100 براءة اختراع', 'تشغيل تسليم مفتاح']
+        : ['60+ years manufacturing', '10–500 t/d capacity range', '100+ patents', 'Turnkey commissioning'];
 ---
 
 <section class="relative overflow-hidden bg-steel-950">
@@ -16,15 +30,19 @@ const { title, subtitle, image, imageAlt = '', eyebrow } = Astro.props;
       {title}
     </h1>
     {subtitle && <p class="mt-5 max-w-3xl text-lg leading-relaxed text-steel-300">{subtitle}</p>}
-    <div class="mt-8 flex flex-wrap items-center gap-3">
-      <a href="/contact/" class="btn-primary">Request a technical proposal</a>
-      <a href={`https://wa.me/${site.whatsapp}`} class="btn-ghost-light" rel="noopener">WhatsApp engineering</a>
-    </div>
+    {showCta && (
+      <div class="mt-8 flex flex-wrap items-center gap-3">
+        <a href={href('/contact/')} class="btn-primary">{t.cta.proposal}</a>
+        <a href={`https://wa.me/${site.whatsapp}`} class="btn-ghost-light" rel="noopener">{t.cta.whatsapp}</a>
+      </div>
+    )}
     <ul class="mt-10 grid gap-3 text-sm text-steel-300 sm:grid-cols-2 lg:grid-cols-4">
-      <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-ember-500"></span>60+ years manufacturing</li>
-      <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-ember-500"></span>10–500 t/d capacity range</li>
-      <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-ember-500"></span>100+ patents</li>
-      <li class="flex items-center gap-2"><span class="h-1.5 w-1.5 rounded-full bg-ember-500"></span>Turnkey commissioning</li>
+      {points.map((p) => (
+        <li class="flex items-center gap-2">
+          <span class="h-1.5 w-1.5 rounded-full bg-ember-500"></span>
+          {p}
+        </li>
+      ))}
     </ul>
   </div>
 </section>

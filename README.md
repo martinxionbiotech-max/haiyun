@@ -40,6 +40,34 @@ public/            97 brochure images, favicon, og-image, robots.txt, llms.txt
 - robots.txt allows GPTBot, ClaudeBot, PerplexityBot, OAI-SearchBot, Google-Extended
 - llms.txt with structured citation guidance
 
+## Languages
+
+The commercial funnel is translated into Russian, Spanish and Arabic:
+
+```
+/            /ru/            /es/            /ar/
+/about/      /ru/about/      ...
+/contact/    ...
+/equipment/  ...
+/flour-milling-plant/ ...
+```
+
+Arabic renders right-to-left (`dir="rtl"`) and swaps to Noto Kufi/Sans Arabic, since
+Inter and Barlow Condensed carry no Arabic glyphs.
+
+**The engineering library stays in English by design.** Machine-translating 57,000
+words of technical prose (phosphine dosing, farinograph interpretation, flow-sheet
+arithmetic) produces text that is confidently wrong — worse than untranslated English
+for the mill engineers who read it. Those sections are linked from the localised
+navigation straight to the English pages, and each localised page says so.
+
+hreflang alternates are emitted only for paths that exist in that locale (see
+`translatedPaths` in `src/i18n/config.js`), so the tags can never point at a 404.
+
+Adding a language: add the locale to `src/i18n/config.js`, add its UI strings to
+`src/i18n/ui.js`, add one entry to the `copy` object in each file under
+`src/pages/[lang]/`, and add the path to `translatedPaths`.
+
 ## Domain
 
 Site config assumes `https://haiyunmilling.com`. Change `site` in `astro.config.mjs`

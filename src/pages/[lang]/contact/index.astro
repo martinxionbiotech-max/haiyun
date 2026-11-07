@@ -1,0 +1,211 @@
+---
+import PageLayout from '../../../layouts/PageLayout.astro';
+import CTABand from '../../../components/CTABand.astro';
+import { site } from '../../../data/site.js';
+import { translatedLocales, localeMeta } from '../../../i18n/config.js';
+import { getUI } from '../../../i18n/ui.js';
+
+export function getStaticPaths() {
+  return translatedLocales.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang;
+const t = getUI(lang);
+const meta = localeMeta[lang];
+
+const copy = {
+  ru: {
+    eyebrow: 'Контакты',
+    hero: 'Сообщите тоннаж — пришлём технологическую схему',
+    sub: 'Укажите целевую мощность, характеристики пшеницы, габариты здания и доступную мощность электросети. По этим четырём цифрам мы подготовим предварительную схему, перечень оборудования и диапазон бюджета.',
+    direct: 'Прямая связь',
+    labels: ['Телефон', 'Мобильный / WhatsApp', 'Экспортная почта', 'Почта отдела продаж', 'Завод', 'Часы работы'],
+    hours: 'Пн–Сб, 08:00–18:00 (GMT+8)',
+    response: 'Ответ в течение 12 рабочих часов',
+    includeTitle: 'Что указать в запросе',
+    includeLead: 'Чем больше пунктов вы заполните, тем полезнее будет первый ответ. Неполные данные — не проблема, остальное мы уточним.',
+    items: [
+      'Целевой выпуск готовой муки в сутки, по сортам',
+      'Тип и происхождение пшеницы, типичный анализ (влажность, белок, примеси)',
+      'Доступные габариты и высота здания — либо подтверждение, что новое строительство возможно',
+      'Электроснабжение: напряжение, число фаз, доступная мощность, кВА',
+      'Наличие воды и ограничения по сбросу стоков',
+      'Наличие персонала и типичный уровень квалификации',
+      'Диапазон бюджета и схема финансирования',
+      'Желаемая дата пуска',
+    ],
+    noObligation: 'Без обязательств.',
+    noObligationBody: 'Предварительная схема и диапазон бюджета ничего не стоят и ни к чему не обязывают. Если ваш план выглядит нежизнеспособным, мы скажем об этом прямо — это экономит время обеим сторонам.',
+    emailCta: 'Отправить запрос по почте',
+    faqTitle: 'Частые вопросы на этом этапе',
+    faq: [
+      ['Вы работаете с мелкими заказчиками?', 'Да. Наша самая малая установка — мельница 200 кг/ч стоимостью менее 25 000 долларов США. Минимального заказа нет.'],
+      ['Вы можете приехать на площадку?', 'Для заводов мощностью свыше 60 т/сут — да, обследование площадки до проектирования является нормой. Для малых заводов работаем по вашим фотографиям, размерам и видеозаписи.'],
+      ['Вы выполняете монтаж?', 'Да, с шеф-инженером на площадке и местной рабочей силой. Полные монтажные бригады доступны для контрактов под ключ свыше 100 т/сут.'],
+      ['Какая гарантия?', '12 месяцев на механические части, 24 месяца на вальцовые гарнитуры, с момента пуска или 18 месяцев с момента отгрузки — что наступит раньше.'],
+      ['Поставляете ли запчасти после гарантии?', 'Да. Критичные изнашиваемые детали держим на складе 10 лет после поставки последней машины модели.'],
+      ['На каких языках вы работаете?', 'Английский, китайский, русский и испанский — для документации и переписки.'],
+    ],
+  },
+  es: {
+    eyebrow: 'Contacto',
+    hero: 'Díganos su tonelaje. Le enviamos el diagrama.',
+    sub: 'Incluya la capacidad objetivo, la especificación del trigo, las dimensiones del edificio y la potencia disponible. Con esos cuatro datos preparamos un diagrama preliminar, una lista de equipos y un rango de presupuesto.',
+    direct: 'Contacto directo',
+    labels: ['Teléfono', 'Móvil / WhatsApp', 'Correo de exportación', 'Correo comercial', 'Fábrica', 'Horario'],
+    hours: 'Lun–Sáb, 08:00–18:00 (GMT+8)',
+    response: 'Respuesta en 12 horas hábiles',
+    includeTitle: 'Qué incluir en su consulta',
+    includeLead: 'Cuantos más puntos responda, más útil será nuestra primera respuesta. Con datos parciales también trabajamos: preguntaremos el resto.',
+    items: [
+      'Producción diaria objetivo de harina terminada, por clase',
+      'Tipo y origen del trigo, análisis típico (humedad, proteína, impurezas)',
+      'Superficie y altura libre disponibles — o confirmación de que se puede construir',
+      'Suministro eléctrico local: tensión, fases, kVA disponibles',
+      'Disponibilidad de agua y límites de vertido',
+      'Disponibilidad de mano de obra y nivel de cualificación',
+      'Rango de presupuesto y estructura de financiación',
+      'Fecha objetivo de puesta en marcha',
+    ],
+    noObligation: 'Sin compromiso.',
+    noObligationBody: 'Un diagrama preliminar y un rango de presupuesto no cuestan nada y no comprometen a nada. Le diremos si su plan no parece viable: eso nos ahorra tiempo a ambos.',
+    emailCta: 'Enviar consulta por correo',
+    faqTitle: 'Preguntas frecuentes en esta fase',
+    faq: [
+      ['¿Venden a compradores pequeños?', 'Sí. Nuestra unidad más pequeña es un molino de 200 kg/h que cuesta menos de 25.000 USD. No hay pedido mínimo.'],
+      ['¿Pueden visitar nuestra planta?', 'Para plantas de más de 60 t/día, sí: la inspección previa al diseño es lo normal. Para plantas menores trabajamos con sus fotos, dimensiones y un vídeo.'],
+      ['¿Realizan la instalación?', 'Sí, con un ingeniero supervisor en obra y mano de obra local. Para contratos llave en mano de más de 100 t/día hay cuadrillas completas.'],
+      ['¿Qué garantía ofrecen?', '12 meses en piezas mecánicas y 24 meses en juegos de cilindros, desde la puesta en marcha o 18 meses desde el embarque, lo que ocurra primero.'],
+      ['¿Suministran repuestos tras la garantía?', 'Sí. Las piezas de desgaste críticas se mantienen en stock 10 años después de entregar la última unidad de un modelo.'],
+      ['¿En qué idiomas trabajan?', 'Inglés, chino, ruso y español para documentación y correspondencia.'],
+    ],
+  },
+  ar: {
+    eyebrow: 'الاتصال',
+    hero: 'أخبرنا بإنتاجيتك. نرسل لك المخطط.',
+    sub: 'أدرج الطاقة المستهدفة، ومواصفات القمح، وأبعاد المبنى، والطاقة الكهربائية المتاحة. بهذه الأرقام الأربعة نُعد مخططًا أوليًا وقائمة معدات ونطاق ميزانية.',
+    direct: 'تواصل مباشر',
+    labels: ['الهاتف', 'الجوال / واتساب', 'بريد التصدير', 'بريد المبيعات', 'المصنع', 'ساعات العمل'],
+    hours: 'الاثنين–السبت، 08:00–18:00 (GMT+8)',
+    response: 'الرد خلال 12 ساعة عمل',
+    includeTitle: 'ما يجب تضمينه في استفسارك',
+    includeLead: 'كلما زادت الإجابات كان ردنا الأول أنفع. البيانات الجزئية لا مشكلة — سنسأل عن الباقي.',
+    items: [
+      'الإنتاج اليومي المستهدف من الدقيق الجاهز، حسب الدرجة',
+      'نوع القمح ومصدره والتحليل المعتاد (الرطوبة، البروتين، الشوائب)',
+      'المساحة والارتفاع الصافي المتاحان — أو تأكيد إمكانية بناء جديد',
+      'التغذية الكهربائية المحلية: الجهد، الأطوار، الكيلوفولت أمبير المتاح',
+      'توفر المياه وقيود تصريف المخلفات',
+      'توفر العمالة ومستوى المهارة المعتاد',
+      'نطاق الميزانية وهيكل التمويل',
+      'تاريخ التشغيل المستهدف',
+    ],
+    noObligation: 'دون التزام.',
+    noObligationBody: 'المخطط الأولي ونطاق الميزانية لا يكلفانك شيئًا ولا يلزمانك بشيء. وإن بدت خطتك غير قابلة للتنفيذ سنقولها بصراحة — وهذا يوفر الوقت للطرفين.',
+    emailCta: 'أرسل استفسارك بالبريد',
+    faqTitle: 'أسئلة متكررة في هذه المرحلة',
+    faq: [
+      ['هل تبيعون لمشترين صغار؟', 'نعم. أصغر وحدة لدينا مطحنة 200 كجم/ساعة بتكلفة أقل من 25,000 دولار. لا يوجد حد أدنى للطلب.'],
+      ['هل يمكنكم زيارة موقعنا؟', 'للمصانع فوق 60 طنًا يوميًا، نعم — المسح الميداني قبل التصميم أمر معتاد. للمصانع الأصغر نعمل من صوركم وأبعادكم ومقطع فيديو.'],
+      ['هل توفرون التركيب؟', 'نعم، بمهندس إشراف في الموقع وعمالة محلية. فرق تركيب كاملة متاحة لعقود تسليم المفتاح فوق 100 طن/يوم.'],
+      ['ما الضمان؟', '12 شهرًا على الأجزاء الميكانيكية و24 شهرًا على مجموعات الدرفيل، من التشغيل أو 18 شهرًا من الشحن، أيهما أسبق.'],
+      ['هل توفرون قطع غيار بعد الضمان؟', 'نعم. نحتفظ بقطع التآكل الحرجة في المخزون 10 سنوات بعد تسليم آخر وحدة من الموديل.'],
+      ['بأي لغات تعملون؟', 'الإنجليزية والصينية والروسية والإسبانية للوثائق والمراسلات.'],
+    ],
+  },
+};
+
+const c = copy[lang];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: c.hero,
+  description: c.sub,
+  inLanguage: meta.htmlLang,
+  mainEntity: { '@id': `${site.url}/#organization` },
+};
+---
+
+<PageLayout title={c.hero} description={c.sub} lang={lang} schema={[schema]}>
+  <section class="bg-steel-950">
+    <div class="container-x py-16 sm:py-20">
+      <p class="eyebrow-light">{c.eyebrow}</p>
+      <h1 class="mt-3 max-w-3xl font-display text-4xl font-bold uppercase leading-[1.05] tracking-tight text-white sm:text-5xl">
+        {c.hero}
+      </h1>
+      <p class="mt-5 max-w-2xl text-lg leading-relaxed text-steel-300">{c.sub}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-x grid gap-12 lg:grid-cols-[1fr_1.2fr]">
+      <div>
+        <h2 class="font-display text-2xl font-bold uppercase tracking-tight text-steel-900">{c.direct}</h2>
+        <div class="mt-5 space-y-5">
+          {[
+            [c.labels[0], site.phone, `tel:${site.phoneRaw}`],
+            [c.labels[1], site.mobile, `https://wa.me/${site.whatsapp}`],
+            [c.labels[2], site.email, `mailto:${site.email}`],
+            [c.labels[3], site.emailAlt, `mailto:${site.emailAlt}`],
+          ].map(([label, value, link]) => (
+            <div class="border-b border-steel-200 pb-4">
+              <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">{label}</p>
+              <a href={link} class="mt-1 block text-base font-semibold text-steel-900 hover:text-ember-700" dir="ltr">{value}</a>
+            </div>
+          ))}
+          <div>
+            <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">{c.labels[4]}</p>
+            <p class="mt-1 text-base leading-relaxed text-steel-800">{site.address.full}</p>
+          </div>
+          <div>
+            <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">{c.labels[5]}</p>
+            <p class="mt-1 text-base text-steel-800">{c.hours}</p>
+            <p class="mt-1 text-sm text-steel-500">{c.response}</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="font-display text-2xl font-bold uppercase tracking-tight text-steel-900">{c.includeTitle}</h2>
+        <p class="mt-3 text-sm leading-relaxed text-steel-600">{c.includeLead}</p>
+
+        <ol class="mt-5 space-y-2.5">
+          {c.items.map((item, i) => (
+            <li class="flex gap-3 rounded-lg border border-steel-200 bg-white px-4 py-3">
+              <span class="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-ember-600 text-[11px] font-bold text-white">{i + 1}</span>
+              <span class="text-sm leading-relaxed text-steel-700">{item}</span>
+            </li>
+          ))}
+        </ol>
+
+        <div class="mt-8 rounded-xl border-s-4 border-ember-500 bg-ember-50 p-5">
+          <p class="text-sm leading-relaxed text-steel-800">
+            <strong>{c.noObligation}</strong> {c.noObligationBody}
+          </p>
+        </div>
+
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href={`mailto:${site.email}?subject=Flour%20milling%20plant%20enquiry`} class="btn-primary">{c.emailCta}</a>
+          <a href={`https://wa.me/${site.whatsapp}`} rel="noopener" class="btn-outline">WhatsApp {site.mobile}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-steel-50">
+    <div class="container-x">
+      <h2 class="font-display text-2xl font-bold uppercase tracking-tight text-steel-900">{c.faqTitle}</h2>
+      <dl class="mt-6 grid gap-6 md:grid-cols-2">
+        {c.faq.map(([q, a]) => (
+          <div class="border-b border-steel-200 pb-4">
+            <dt class="text-sm font-bold text-steel-900">{q}</dt>
+            <dd class="mt-1.5 text-sm leading-relaxed text-steel-700">{a}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+
+  <CTABand lang={lang} heading={t.home.ctaBand} body={t.home.ctaBandBody} />
+</PageLayout>

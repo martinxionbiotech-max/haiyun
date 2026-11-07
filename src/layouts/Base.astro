@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import { site } from '../data/site.js';
+import { localeMeta, translatedPaths, defaultLocale } from '../i18n/config.js';
 
 const {
   title,
@@ -10,7 +11,13 @@ const {
   type = 'website',
   noindex = false,
   schema = [],
+  lang = 'en',
+  noTranslateBanner = false,
 } = Astro.props;
+
+const meta = localeMeta[lang] ?? localeMeta.en;
+const dir = meta.dir;
+const htmlLang = meta.htmlLang;
 
 const pageTitle = title ? `${title} | ${site.name}` : `${site.name} — Wheat Flour Milling Plants 10–500 t/d`;
 const pageDesc = description || site.description;
@@ -57,7 +64,7 @@ const websiteSchema = {
   url: site.url,
   name: site.name,
   publisher: { '@id': `${site.url}/#organization` },
-  inLanguage: 'en',
+  inLanguage: htmlLang,
   potentialAction: {
     '@type': 'SearchAction',
     target: `${site.url}/search/?q={search_term_string}`,
@@ -85,10 +92,25 @@ const breadcrumbSchema = Astro.url.pathname !== '/'
   : null;
 
 const allSchema = [orgSchema, websiteSchema, breadcrumbSchema, ...schema].filter(Boolean);
+
+// hreflang: only emit alternates for paths that actually exist in that locale.
+const barePath = Astro.url.pathname.replace(/^\/(ru|es|ar)(?=\/|$)/, '') || '/';
+const bareKey = barePath === '/' ? '' : barePath.replace(/^\//, '');
+const hasTranslation = translatedPaths.includes(bareKey) || bareKey === '';
+const alternates = hasTranslation
+  ? [
+      { lang: 'en', href: new URL(barePath, site.url).href },
+      ...['ru', 'es', 'ar'].map((l) => ({
+        lang: l,
+        href: new URL(`/${l}${barePath === '/' ? '/' : barePath}`, site.url).href,
+      })),
+      { lang: 'x-default', href: new URL(barePath, site.url).href },
+    ]
+  : [];
 ---
 
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang={htmlLang} dir={dir} class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -104,7 +126,7 @@ const allSchema = [orgSchema, websiteSchema, breadcrumbSchema, ...schema].filter
     <meta property="og:description" content={pageDesc} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={ogImage} />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content={meta.ogLocale} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={pageDesc} />
@@ -113,6 +135,9 @@ const allSchema = [orgSchema, websiteSchema, breadcrumbSchema, ...schema].filter
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="sitemap" href="/sitemap-index.xml" />
+    {alternates.map((a) => (
+      <link rel="alternate" hreflang={a.lang} href={a.href} />
+    ))}
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -120,6 +145,14 @@ const allSchema = [orgSchema, websiteSchema, breadcrumbSchema, ...schema].filter
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    {/* Inter and Barlow Condensed carry no Arabic glyphs — without this the AR
+        pages fall back to whatever system font the reader happens to have. */}
+    {htmlLang === 'ar' && (
+      <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@600;700&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+      />
+    )}
 
     {allSchema.map((s) => (
       <script type="application/ld+json" set:html={JSON.stringify(s)} />
@@ -127,7 +160,7 @@ const allSchema = [orgSchema, websiteSchema, breadcrumbSchema, ...schema].filter
   </head>
   <body>
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-steel-900 focus:px-4 focus:py-2 focus:text-white">
-      Skip to content
+      {lang === 'ru' ? 'Перейти к содержанию' : lang === 'es' ? 'Ir al contenido' : lang === 'ar' ? 'انتقل إلى المحتوى' : 'Skip to content'}
     </a>
     <slot name="header" />
     <main id="main">
