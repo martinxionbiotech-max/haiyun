@@ -6,14 +6,11 @@ export const site = {
   tagline: 'Wheat flour milling plants, 10–500 t/d — engineered, built and commissioned.',
   description:
     'Haiyun builds complete wheat flour milling plants from 10 to 500 tonnes per day, plus cleaning equipment, roller mills, plansifters and stone mills. 60+ years of grain machinery manufacturing, 100+ patents, ISO 9001:2015, exported to 40+ countries.',
-  phone: '+86 537 423 9999',
-  phoneRaw: '+865374239999',
-  // Mobile doubles as the WeChat number. Shown as text so buyers can add it.
-  mobile: '+86 151 5358 8090',
-  mobileRaw: '+8615153588090',
+  // One number serves as phone, WeChat and WhatsApp. It is printed once, as a
+  // tel: link; WhatsApp opens from a button, so the number is not repeated.
+  phone: '+86 151 5358 8090',
+  phoneRaw: '+8615153588090',
   wechat: '+86 151 5358 8090',
-  // WhatsApp clicks straight through to the same number; the number itself is
-  // never printed on the page, only the button label.
   whatsapp: '8615153588090',
   email: 'director@flourmillingpro.com',
   emails: [

@@ -37,10 +37,9 @@ const current = Astro.url.pathname;
         ))}
       </ul>
       <div class="mt-6 space-y-2 text-sm">
-        <p><a href={`tel:${site.phoneRaw}`} class="font-semibold text-white hover:text-ember-400">{site.phone}</a></p>
         <p class="text-steel-300">
-          <span class="text-steel-500">WeChat:</span>
-          <span class="font-semibold text-white" dir="ltr">{site.wechat}</span>
+          <span class="text-steel-500">Phone / WeChat:</span>{' '}
+          <a href={`tel:${site.phoneRaw}`} class="font-semibold text-white hover:text-ember-400" dir="ltr">{site.phone}</a>
         </p>
         <div class="pt-1">
           <a

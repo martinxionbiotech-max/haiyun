@@ -19,7 +19,7 @@ const copy = {
     hero: 'Сообщите тоннаж — пришлём технологическую схему',
     sub: 'Укажите целевую мощность, характеристики пшеницы, габариты здания и доступную мощность электросети. По этим четырём цифрам мы подготовим предварительную схему, перечень оборудования и диапазон бюджета.',
     direct: 'Прямая связь',
-    labels: ['Телефон', 'WeChat', 'Экспортная почта', 'Почта отдела продаж', 'Завод', 'Часы работы'],
+    labels: ['Телефон / WeChat', 'WeChat', 'Экспортная почта', 'Почта отдела продаж', 'Завод', 'Часы работы'],
     hours: 'Пн–Сб, 08:00–18:00 (GMT+8)',
     response: 'Ответ в течение 12 рабочих часов',
     includeTitle: 'Что указать в запросе',
@@ -55,7 +55,7 @@ const copy = {
     hero: 'Díganos su tonelaje. Le enviamos el diagrama.',
     sub: 'Incluya la capacidad objetivo, la especificación del trigo, las dimensiones del edificio y la potencia disponible. Con esos cuatro datos preparamos un diagrama preliminar, una lista de equipos y un rango de presupuesto.',
     direct: 'Contacto directo',
-    labels: ['Teléfono', 'WeChat', 'Correo de exportación', 'Correo comercial', 'Fábrica', 'Horario'],
+    labels: ['Teléfono / WeChat', 'WeChat', 'Correo de exportación', 'Correo comercial', 'Fábrica', 'Horario'],
     hours: 'Lun–Sáb, 08:00–18:00 (GMT+8)',
     response: 'Respuesta en 12 horas hábiles',
     includeTitle: 'Qué incluir en su consulta',
@@ -91,7 +91,7 @@ const copy = {
     hero: 'أخبرنا بإنتاجيتك. نرسل لك المخطط.',
     sub: 'أدرج الطاقة المستهدفة، ومواصفات القمح، وأبعاد المبنى، والطاقة الكهربائية المتاحة. بهذه الأرقام الأربعة نُعد مخططًا أوليًا وقائمة معدات ونطاق ميزانية.',
     direct: 'تواصل مباشر',
-    labels: ['الهاتف', 'WeChat', 'بريد التصدير', 'بريد المبيعات', 'المصنع', 'ساعات العمل'],
+    labels: ['الهاتف / WeChat', 'WeChat', 'بريد التصدير', 'بريد المبيعات', 'المصنع', 'ساعات العمل'],
     hours: 'الاثنين–السبت، 08:00–18:00 (GMT+8)',
     response: 'الرد خلال 12 ساعة عمل',
     includeTitle: 'ما يجب تضمينه في استفسارك',
@@ -152,7 +152,7 @@ const schema = {
       <div>
         <h2 class="font-display text-2xl font-bold uppercase tracking-tight text-steel-900">{c.direct}</h2>
         <div class="mt-5 space-y-5">
-          {[[c.labels[0], site.phone, `tel:${site.phoneRaw}`], [c.labels[1], site.wechat, null]].map(
+          {[[c.labels[0], site.phone, `tel:${site.phoneRaw}`]].map(
             ([label, value, link]) => (
               <div class="border-b border-steel-200 pb-4">
                 <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">{label}</p>

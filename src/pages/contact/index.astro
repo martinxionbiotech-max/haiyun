@@ -13,7 +13,7 @@ const schema = {
 
 <PageLayout
   title="Contact — Request a Flour Milling Plant Quotation"
-  description="Contact Shandong Sishui Haiyun Grain Machine for wheat flour milling plants from 10 to 500 t/d. Phone +86 537 423 9999, WeChat +86 151 5358 8090, email director@flourmillingpro.com. Response within 12 working hours."
+  description="Contact Shandong Sishui Haiyun Grain Machine for wheat flour milling plants from 10 to 500 t/d. Phone and WeChat +86 151 5358 8090, email director@, laura@ or admin@flourmillingpro.com. Response within 12 working hours."
   schema={[schema]}
 >
   <section class="bg-steel-950">
@@ -35,8 +35,7 @@ const schema = {
         <h2 class="font-display text-2xl font-bold uppercase tracking-tight text-steel-900">Direct contact</h2>
         <div class="mt-5 space-y-5">
           {[
-            ['Telephone', site.phone, `tel:${site.phoneRaw}`],
-            ['WeChat', site.wechat, null],
+            ['Phone / WeChat', site.phone, `tel:${site.phoneRaw}`],
           ].map(([label, value, href]) => (
             <div class="border-b border-steel-200 pb-4">
               <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">{label}</p>
