@@ -36,7 +36,7 @@ const schema = [
     sku: plant.slug,
     url: `${site.url}${href(`/flour-milling-plant/${plant.slug}/`)}`,
     '@id': `${site.url}${href(`/flour-milling-plant/${plant.slug}/`)}#product`,
-    image: [`${site.url}/images/${heroFile ?? 'og-default.jpg'}`],
+    image: [heroFile ? `${site.url}/images/${heroFile}` : `${site.url}/og-default.jpg`],
     mainEntityOfPage: { '@id': `${site.url}${href(`/flour-milling-plant/${plant.slug}/`)}` },
     offers: {
       '@type': 'AggregateOffer',

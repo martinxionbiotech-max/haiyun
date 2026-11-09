@@ -54,7 +54,7 @@ const schema = [
     sku: item.model ?? item.slug,
     url: `${site.url}${href(`/equipment/${item.slug}/`)}`,
     '@id': `${site.url}${href(`/equipment/${item.slug}/`)}#product`,
-    image: [`${site.url}/images/${heroFile ?? 'og-default.jpg'}`],
+    image: [heroFile ? `${site.url}/images/${heroFile}` : `${site.url}/og-default.jpg`],
     mainEntityOfPage: { '@id': `${site.url}${href(`/equipment/${item.slug}/`)}` },
     // Quote-based sale: no price is published, so the offer points at the
     // enquiry form rather than carrying a misleading priceCurrency.
