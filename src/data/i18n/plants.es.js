@@ -302,8 +302,8 @@ export default {
     ],
     models: {
       '6FTDP-40': 'Molinos 6F2240/8, 1 cernidor plano de seis compartimentos, cernidor de control tipo 83, 3B4M1S',
-      '6FTDP-60 (simple)': 'Molinos 2240/12, 2 cernidores planos de cuatro compartimentos, 4B5M1S1T, 1B doble',
-      '6FTDP-60 (compuesto)': 'Cilindros compuestos neumáticos, mismo diagrama, menor carga de operador',
+      '6FTDP-60 (single)': 'Molinos 2240/12, 2 cernidores planos de cuatro compartimentos, 4B5M1S1T, 1B doble',
+      '6FTDP-60 (compound)': 'Cilindros compuestos neumáticos, mismo diagrama, menor carga de operador',
     },
   },
 

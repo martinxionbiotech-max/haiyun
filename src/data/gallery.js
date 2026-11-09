@@ -58,14 +58,14 @@ export const plantGallery = {
   },
   '40-60tpd-flour-plant': {
     hero: 'p11_01.jpg',
-    gallery: ['p11_01.jpg', 'p11_02.jpg', 'p12_01.jpg', 'p12_02.jpg', 'p14_01.jpg', 'p14_02.jpg'],
+    gallery: ['p11_01.jpg', 'p11_02.jpg', 'p12_01.webp', 'p12_02.jpg', 'p14_01.webp', 'p14_02.jpg'],
   },
   '100-500tpd-flour-plant': {
-    hero: 'p06_01.jpg',
+    hero: 'p06_01.webp',
     gallery: [
-      'p06_01.jpg', 'p15_01.jpg', 'p15_02.jpg', 'p15_03.jpg', 'p15_04.jpg',
-      'p16_01.jpg', 'p16_02.jpg', 'p17_01.jpg', 'p17_02.jpg', 'p17_03.jpg', 'p17_04.jpg',
-      'p18_01.jpg',
+      'p06_01.webp', 'p15_01.jpg', 'p15_02.jpg', 'p15_03.jpg', 'p15_04.jpg',
+      'p16_01.webp', 'p16_02.jpg', 'p17_01.jpg', 'p17_02.jpg', 'p17_03.jpg', 'p17_04.jpg',
+      'p18_01.webp',
     ],
   },
 };
@@ -139,7 +139,7 @@ export const workshops = {
   assembly1: ['p04_08.jpg', 'p04_09.jpg'],
   assembly2: ['p04_12.jpg', 'p04_13.jpg'],
   detail: ['p04_02.jpg'],
-  cover: ['p01_01.jpg'],
+  cover: ['p01_01.webp'],
   contents: ['p02_01.jpg'],
   backCover: ['p29_01.jpg'],
 };
@@ -151,9 +151,9 @@ export const certificates = [
 
 export const honoursPanel = 'p05_01.jpg';
 export const honoursWall = 'p05_08.jpg';
-export const companyBanner = 'p03_01.jpg';
+export const companyBanner = 'p03_01.webp';
 export const certificateStrip = 'p03_02.jpg';
-export const exportBanner = 'p28_01.jpg';
+export const exportBanner = 'p28_01.webp';
 
 // Reference plants — keyed to the project cards on /projects/.
 export const projectImages = {

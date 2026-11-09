@@ -10,7 +10,7 @@ import {
   companyBanner, certificateStrip, exportBanner,
 } from '../../data/gallery.js';
 
-const coverFile = 'p01_01.jpg';
+const coverFile = 'p01_01.webp';
 const backCoverFile = 'p29_01.jpg';
 
 const timeline = [
@@ -61,7 +61,7 @@ const schema = {
 >
   <PageHero
     eyebrow="About"
-    title="Sixty years of grain machinery, in one factory in Shandong"
+    title="Grain machinery since 1963, in one factory in Shandong"
     subtitle="The company's predecessor was the Shandong Flour Machinery Factory. That lineage is why our frames are heavier than they need to be, and why every wear part is designed to be replaced by a local workshop."
     image={`/images/${companyBanner}`}
     imageAlt={img(companyBanner).note}
@@ -78,7 +78,7 @@ const schema = {
           <p>
             Shandong Sishui Haiyun Grain Machine Co., Ltd. is located in the Sishui Economic Development
             Zone in Jining, Shandong. The company was incorporated in 2010, converted from the former
-            Shandong Flour Machinery Factory, and carries more than sixty years of accumulated grain
+            Shandong Flour Machinery Factory, and carries more than six decades of accumulated grain
             machinery manufacturing experience.
           </p>
           <p>
@@ -149,7 +149,7 @@ const schema = {
   <section class="section bg-steel-50">
     <div class="container-x">
       <p class="eyebrow">Timeline</p>
-      <h2 class="mt-2 font-display text-3xl font-bold uppercase tracking-tight text-steel-900 sm:text-4xl">Sixty years, condensed</h2>
+      <h2 class="mt-2 font-display text-3xl font-bold uppercase tracking-tight text-steel-900 sm:text-4xl">Six decades, condensed</h2>
       <ol class="mt-8 space-y-0">
         {timeline.map(([year, text]) => (
           <li class="grid gap-4 border-l-2 border-ember-500 pb-8 pl-6 sm:grid-cols-[100px_1fr] sm:gap-8">

@@ -46,6 +46,10 @@ import { site } from '../../data/site.js';
         <h2>Changes</h2>
         <p>If this policy changes materially, the revised version will be posted here with a new date.</p>
 
+        <h2>Data controller and retention</h2>
+        <p>The data controller is {site.legalName}, {site.address.full}. Enquiry records are retained for up to 24 months from the last contact, unless a contract or legal obligation requires a longer period.</p>
+        <p>You may request access, correction or deletion of your enquiry data at <a href={`mailto:${site.email}`}>{site.email}</a>. We respond within 30 days.</p>
+
         <h2>Contact</h2>
         <p>{site.legalName}<br />{site.address.full}<br />Email: <a href={`mailto:${site.email}`}>{site.email}</a><br />Telephone: {site.phone}</p>
       </div>

@@ -11,6 +11,7 @@ import { localizePath } from '../../i18n/config.js';
 import { site } from '../../data/site.js';
 import { plantGallery } from '../../data/gallery.js';
 import { plantSeries } from '../../data/plants.js';
+import { getPlantContent } from '../../i18n/content.js';
 
 const { plant, lang = 'en' } = Astro.props;
 
@@ -18,8 +19,8 @@ const t = getDetailUI(lang);
 const href = (p) => localizePath(lang, p);
 
 const index = plantSeries.findIndex((p) => p.slug === plant.slug);
-const others = plantSeries.filter((p) => p.slug !== plant.slug);
-const next = plantSeries[(index + 1) % plantSeries.length];
+const others = plantSeries.filter((p) => p.slug !== plant.slug).map((p) => getPlantContent(lang, p.slug));
+const next = getPlantContent(lang, plantSeries[(index + 1) % plantSeries.length].slug);
 const shots = plantGallery[plant.slug] ?? { hero: null, gallery: [] };
 const heroFile = shots.hero;
 const galleryFiles = shots.gallery.filter((f) => f !== heroFile);
@@ -66,7 +67,7 @@ const schema = [
   },
 ];
 
-const pageTitle = `${plant.name} — ${plant.capacity}`;
+const pageTitle = plant.name.includes(plant.capacity) ? plant.name : `${plant.name} — ${plant.capacity}`;
 const pageDesc = `${plant.tagline} ${plant.name}: ${plant.capacity}, ${plant.models.length} ${t.configurations}.`;
 ---
 
@@ -219,7 +220,7 @@ const pageDesc = `${plant.tagline} ${plant.name}: ${plant.capacity}, ${plant.mod
           <p class="mt-3 max-w-2xl text-[15px] leading-relaxed text-steel-600">{t.galleryNote}</p>
           <div class="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {galleryFiles.map((f, i) => (
-              <Figure file={f} ratio="4/3" index={i + 1} showNote />
+              <Figure file={f} ratio="4/3" index={i + 1} showNote caption={lang !== 'en' ? `${plant.name} — ${i + 1}` : undefined} showOriginal={lang === 'en'} />
             ))}
           </div>
         </div>

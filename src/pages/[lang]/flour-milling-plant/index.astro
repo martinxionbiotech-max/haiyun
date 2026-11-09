@@ -3,6 +3,7 @@ import PageLayout from '../../../layouts/PageLayout.astro';
 import PageHero from '../../../components/PageHero.astro';
 import CTABand from '../../../components/CTABand.astro';
 import { plantSeries } from '../../../data/plants.js';
+import { getPlantContent } from '../../../i18n/content.js';
 import { getUI } from '../../../i18n/ui.js';
 import { translatedLocales, localeMeta, localizePath } from '../../../i18n/config.js';
 
@@ -14,6 +15,7 @@ const lang = Astro.params.lang;
 const t = getUI(lang);
 const meta = localeMeta[lang];
 const href = (p) => localizePath(lang, p);
+const localizedPlants = plantSeries.map((p) => getPlantContent(lang, p.slug));
 
 const copy = {
   ru: {
@@ -84,13 +86,13 @@ const copy = {
 const c = copy[lang];
 
 const groups = [
-  { title: c.groups[0][0], note: c.groups[0][1], items: plantSeries.filter((p) => ['small-unit', 'double-unit', 'five-unit', 'stone-mill'].includes(p.id)) },
-  { title: c.groups[1][0], note: c.groups[1][1], items: plantSeries.filter((p) => ['plant-20-30', 'plant-40-60'].includes(p.id)) },
-  { title: c.groups[2][0], note: c.groups[2][1], items: plantSeries.filter((p) => ['plant-100-500'].includes(p.id)) },
+  { title: c.groups[0][0], note: c.groups[0][1], items: localizedPlants.filter((p) => ['small-unit', 'double-unit', 'five-unit', 'stone-mill'].includes(p.id)) },
+  { title: c.groups[1][0], note: c.groups[1][1], items: localizedPlants.filter((p) => ['plant-20-30', 'plant-40-60'].includes(p.id)) },
+  { title: c.groups[2][0], note: c.groups[2][1], items: localizedPlants.filter((p) => ['plant-100-500'].includes(p.id)) },
 ];
 
 const tableRows = [
-  ['200–450 kg/h', 'Плита + ангар', 'Опц. одна ступень', '1–2 станка', 'Встроенное', '1', '30–45 дней'],
+  ['200–400 kg/h', 'Плита + ангар', 'Опц. одна ступень', '1–2 станка', 'Встроенное', '1', '30–45 дней'],
   ['16–18 т/сут', 'Пролёт 10 × 5 × 3,5 м', 'Камнеотборник + обоечная + мойка', '2 станка, 3B2M', 'Конус или двухсекционный', '3', '60–80 дней'],
   ['20–30 т/сут', '12–18 × 5–6 м', 'Полная сухая секция', '5–10 станков, 3B2M–4B4M', '2 двухсекционных', '3–4', '80–100 дней'],
   ['40–60 т/сут', '18–24 × 8 × 8 м', 'Полная сухая + 2 обоечные', '8–12 станков, 3B4M1S–4B5M1S1T', 'Высокий рассев + ситовейка', '4–6', '100–130 дней'],
@@ -98,7 +100,7 @@ const tableRows = [
 ];
 
 const tableRowsEs = [
-  ['200–450 kg/h', 'Losa + nave', 'Una etapa opcional', '1–2 bancos', 'Integrado', '1', '30–45 días'],
+  ['200–400 kg/h', 'Losa + nave', 'Una etapa opcional', '1–2 bancos', 'Integrado', '1', '30–45 días'],
   ['16–18 t/día', 'Bahía 10 × 5 × 3,5 m', 'Despedregador + descascarillador + lavado', '2 bancos, 3B2M', 'Cónico o doble compartimento', '3', '60–80 días'],
   ['20–30 t/día', '12–18 × 5–6 m', 'Sección seca completa', '5–10 bancos, 3B2M–4B4M', '2 de doble compartimento', '3–4', '80–100 días'],
   ['40–60 t/día', '18–24 × 8 × 8 m', 'Seca completa + 2 descascarilladores', '8–12 bancos, 3B4M1S–4B5M1S1T', 'Cernidor alto + purificador', '4–6', '100–130 días'],
@@ -106,7 +108,7 @@ const tableRowsEs = [
 ];
 
 const tableRowsAr = [
-  ['200–450 كجم/ساعة', 'بلاطة + سقيفة', 'مرحلة واحدة اختيارية', '1–2 حامل', 'مدمج', '1', '30–45 يومًا'],
+  ['200–400 كجم/ساعة', 'بلاطة + سقيفة', 'مرحلة واحدة اختيارية', '1–2 حامل', 'مدمج', '1', '30–45 يومًا'],
   ['16–18 طن/يوم', 'خليج 10 × 5 × 3.5 م', 'فارزة حجر + فرّاكة + غسالة', 'حاملان، 3B2M', 'مخروطي أو مزدوج', '3', '60–80 يومًا'],
   ['20–30 طن/يوم', '12–18 × 5–6 م', 'قسم جاف كامل', '5–10 حوامل، 3B2M–4B4M', 'منخلان مزدوجان', '3–4', '80–100 يوم'],
   ['40–60 طن/يوم', '18–24 × 8 × 8 م', 'جاف كامل + فرّاكتان', '8–12 حاملًا، 3B4M1S–4B5M1S1T', 'منخل عالٍ + مكنة تنقية', '4–6', '100–130 يومًا'],
@@ -129,7 +131,7 @@ const schema = {
     eyebrow={c.eyebrow}
     title={c.hero}
     subtitle={c.sub}
-    image="/images/p06_01.jpg"
+    image="/images/p06_01.webp"
     imageAlt={c.hero}
     lang={lang}
   />

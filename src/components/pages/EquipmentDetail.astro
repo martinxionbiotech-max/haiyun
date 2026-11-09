@@ -7,7 +7,7 @@ import PageHero from '../PageHero.astro';
 import Figure from '../Figure.astro';
 import FAQ from '../FAQ.astro';
 import CTABand from '../CTABand.astro';
-import { getDetailUI } from '../../i18n/detail.js';
+import { getDetailUI, specHeaderMap } from '../../i18n/detail.js';
 import { getSelectionContent } from '../../i18n/content.js';
 import { localizePath } from '../../i18n/config.js';
 import { site } from '../../data/site.js';
@@ -119,7 +119,7 @@ const schema = [
               <tr>
                 {item.specs.headers.map((h) => (
                   <th class="whitespace-nowrap border-b border-steel-200 px-3 py-2.5 text-start text-xs font-bold uppercase tracking-wide text-steel-800">
-                    {h}
+                    {specHeaderMap[lang]?.[h] ?? h}
                   </th>
                 ))}
               </tr>
@@ -255,7 +255,7 @@ const schema = [
                   >
                     <span class="mt-0.5 text-ember-600">→</span>
                     <span class="text-sm font-semibold leading-snug text-steel-800 group-hover:text-ember-700">
-                      {r.title}
+                      {lang === 'en' ? r.title : lang === 'ru' ? 'Техническое руководство (на английском)' : lang === 'es' ? 'Guía técnica (en inglés)' : 'دليل فني (بالإنجليزية)'}
                     </span>
                   </a>
                 </li>
@@ -280,7 +280,7 @@ const schema = [
           <p class="mt-3 max-w-2xl text-[15px] leading-relaxed text-steel-600">{t.catalogueNote}</p>
           <div class="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {galleryFiles.map((f, i) => (
-              <Figure file={f} ratio="4/3" index={i + 1} showNote />
+              <Figure file={f} ratio="4/3" index={i + 1} showNote caption={lang !== 'en' ? `${item.name} — ${i + 1}` : undefined} showOriginal={lang === 'en'} />
             ))}
           </div>
         </div>

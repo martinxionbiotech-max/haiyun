@@ -5,11 +5,11 @@
 
 export const imageCatalogue = [
   // ── Front matter ───────────────────────────────────────────────
-  { file: 'p01_01.jpg', page: 1, section: 'Cover', caption: 'Cover', note: 'Cover visual, full page', w: 1246, h: 1618 },
+  { file: 'p01_01.webp', page: 1, section: 'Cover', caption: 'Cover', note: 'Cover visual, full page', w: 1246, h: 1618 },
   { file: 'p02_01.jpg', page: 2, section: 'Contents', captionEn: 'Production workshop', caption: '生产车间', note: 'Contents page with production workshop photo', w: 1498, h: 1008 },
 
   // ── Company profile ────────────────────────────────────────────
-  { file: 'p03_01.jpg', page: 3, section: 'Company profile', captionEn: 'Company profile', caption: '公司简介', note: 'Company profile banner', w: 1600, h: 681 },
+  { file: 'p03_01.webp', page: 3, section: 'Company profile', captionEn: 'Company profile', caption: '公司简介', note: 'Company profile banner', w: 1600, h: 681 },
   { file: 'p03_02.jpg', page: 3, section: 'Company profile', captionEn: 'Holder of an import and export products licence, certified to ISO 9001:2015', caption: '已获得进出口产品许可证，并通过了 ISO9001-2015 国际质量体系认证', note: 'Certification strip: import/export licence and ISO 9001:2015', w: 1600, h: 221 },
 
   // ── Production workshop ────────────────────────────────────────
@@ -41,7 +41,7 @@ export const imageCatalogue = [
   { file: 'p05_11.jpg', page: 5, section: 'Qualifications', caption: 'QUALIFICATION HONOR', note: 'Certificate 9', w: 284, h: 401 },
 
   // ── Production line overview ───────────────────────────────────
-  { file: 'p06_01.jpg', page: 6, section: 'Plant overview', captionEn: '6FTDP-100T flour production line', caption: '6FTDP-100T 面粉生产线', note: '6FTDP-100T flour production line, full view', w: 1600, h: 1563 },
+  { file: 'p06_01.webp', page: 6, section: 'Plant overview', captionEn: '6FTDP-100T flour production line', caption: '6FTDP-100T 面粉生产线', note: '6FTDP-100T flour production line, full view', w: 1600, h: 1563 },
   { file: 'p06_02.jpg', page: 6, section: 'Plant overview', caption: 'Wheat flour production line', note: 'Wheat flour production line', w: 442, h: 564 },
   { file: 'p06_03.jpg', page: 6, section: 'Plant overview', caption: '6FSZ-40(50)B', note: '6FSZ-40B / 6FSZ-50B small mill unit', w: 419, h: 484 },
 
@@ -67,7 +67,7 @@ export const imageCatalogue = [
   { file: 'p11_02.jpg', page: 11, section: '40 t/d plant', captionEn: 'Power', caption: '动力 Power', note: '6FTDP-40T power table', w: 620, h: 413 },
 
   // ── 60 t/d single ──────────────────────────────────────────────
-  { file: 'p12_01.jpg', page: 12, section: '60 t/d plant', captionEn: '6FTDP-60T: three screens, two scourers, two destoners; 4B5M1T1T flow sheet (twin 1B) with two high square plansifters, one bran finisher, one bran brush and one purifier', caption: '6FTDP-60T: 三筛二打二去石清理，四皮五芯一渣一尾工艺（双 1B），2 台高方平筛、1 台打麸机、1 台刷麸机、1 台清粉机', note: '6FTDP-60T single mill line overview', w: 1024, h: 733 },
+  { file: 'p12_01.webp', page: 12, section: '60 t/d plant', captionEn: '6FTDP-60T: three screens, two scourers, two destoners; 4B5M1T1T flow sheet (twin 1B) with two high square plansifters, one bran finisher, one bran brush and one purifier', caption: '6FTDP-60T: 三筛二打二去石清理，四皮五芯一渣一尾工艺（双 1B），2 台高方平筛、1 台打麸机、1 台刷麸机、1 台清粉机', note: '6FTDP-60T single mill line overview', w: 1024, h: 733 },
   { file: 'p12_02.jpg', page: 12, section: '60 t/d plant', captionEn: 'Process characteristics', caption: '工艺特性 Workmanship', note: '6FTDP-60T process characteristics table', w: 853, h: 370 },
 
   // ── 60–500 t/d reference plants ────────────────────────────────
@@ -79,7 +79,7 @@ export const imageCatalogue = [
   { file: 'p13_06.jpg', page: 13, section: 'Reference plants', captionEn: 'Yuncheng 500 t/d flour plant', caption: '郓城 500 吨面粉厂 (Yuncheng 500 t/d)', note: 'Yuncheng 500 t/d plant', w: 500, h: 375 },
 
   // ── 60 t/d compound ────────────────────────────────────────────
-  { file: 'p14_01.jpg', page: 14, section: '60 t/d compound', caption: '6FTDP-60T flour production line (pneumatic compound mill)', note: '6FTDP-60T compound mill line', w: 1009, h: 588 },
+  { file: 'p14_01.webp', page: 14, section: '60 t/d compound', caption: '6FTDP-60T flour production line (pneumatic compound mill)', note: '6FTDP-60T compound mill line', w: 1009, h: 588 },
   { file: 'p14_02.jpg', page: 14, section: '60 t/d compound', captionEn: 'Process flow diagram', caption: '工艺流程图 Process flow diagram', note: '6FTDP-60T process flow diagram', w: 1032, h: 605 },
 
   // ── 100 t/d ────────────────────────────────────────────────────
@@ -89,7 +89,7 @@ export const imageCatalogue = [
   { file: 'p15_04.jpg', page: 15, section: '100 t/d plant', captionEn: 'Milling process', caption: '制粉工艺流程 Milling process display', note: '6FTDP-100T milling flow diagram', w: 583, h: 400 },
 
   // ── 200 t/d steel frame ────────────────────────────────────────
-  { file: 'p16_01.jpg', page: 16, section: '200 t/d plant', captionEn: '6FTDP-200T flour production line, steel-frame type', caption: '6FTDP-200T 面粉生产线（钢架式）', note: '6FTDP-200T steel-frame plant', w: 1194, h: 516 },
+  { file: 'p16_01.webp', page: 16, section: '200 t/d plant', captionEn: '6FTDP-200T flour production line, steel-frame type', caption: '6FTDP-200T 面粉生产线（钢架式）', note: '6FTDP-200T steel-frame plant', w: 1194, h: 516 },
   { file: 'p16_02.jpg', page: 16, section: '200 t/d plant', captionEn: 'Milling process', caption: '制粉工艺流程 Milling process display', note: '6FTDP-200T milling flow diagram', w: 960, h: 480 },
 
   // ── 200 t/d ────────────────────────────────────────────────────
@@ -99,7 +99,7 @@ export const imageCatalogue = [
   { file: 'p17_04.jpg', page: 17, section: '200 t/d plant', captionEn: 'Milling process', caption: '制粉工艺流程 Milling process display', note: '6FTDP-200T milling flow diagram', w: 488, h: 499 },
 
   // ── 300 t/d ────────────────────────────────────────────────────
-  { file: 'p18_01.jpg', page: 18, section: '300 t/d plant', caption: 'Wheat flour production line', note: '6FTDP-300T plant, tall elevation', w: 1111, h: 1253 },
+  { file: 'p18_01.webp', page: 18, section: '300 t/d plant', caption: 'Wheat flour production line', note: '6FTDP-300T plant, tall elevation', w: 1111, h: 1253 },
 
   // ── Cleaning equipment ─────────────────────────────────────────
   { file: 'p19_01.jpg', captionEn: 'Drum sieve pre-cleaner (SCQY), catalogue page 19', page: 19, section: 'Cleaning equipment', caption: '圆筒初清筛 SCQY', note: 'Drum sieve pre-cleaner, SCQY series, catalogue page 19', w: 458, h: 564 },
@@ -136,7 +136,7 @@ export const imageCatalogue = [
   { file: 'p27_04.jpg', page: 27, section: 'Bran finisher', captionEn: 'Weight (kg)', caption: '重量 Weight (kg)', note: 'Bran finisher weight detail', w: 216, h: 240 },
 
   // ── Closing ────────────────────────────────────────────────────
-  { file: 'p28_01.jpg', page: 28, section: 'Closing', captionEn: 'Six decades of manufacturing experience — import and export licensed, exported to Eastern Europe and the CIS', caption: '六十余载制造经验 — 已获得进出口产品许可证，远销东欧、独联体', note: 'Export and experience banner', w: 1600, h: 1045 },
+  { file: 'p28_01.webp', page: 28, section: 'Closing', captionEn: 'Six decades of manufacturing experience — import and export licensed, exported to Eastern Europe and the CIS', caption: '六十余载制造经验 — 已获得进出口产品许可证，远销东欧、独联体', note: 'Export and experience banner', w: 1600, h: 1045 },
   { file: 'p29_01.jpg', page: 29, section: 'Back cover', caption: 'Back cover', note: 'Back cover visual', w: 1246, h: 1099 },
 
   // ── Machine photographs ────────────────────────────────────────

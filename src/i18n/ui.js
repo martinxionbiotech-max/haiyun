@@ -50,7 +50,7 @@ export const ui = {
       rangeBody: 'Every capacity class implies a different building, a different flow sheet and a different operating team. The links below open the full parameter tables, process diagrams and selection guidance for each.',
       modelsLabel: 'standard models',
       whyEyebrow: 'Why mills buy from us',
-      whyTitle: 'Sixty years of one thing: grain machinery.',
+      whyTitle: 'Since 1963: one thing, grain machinery.',
       whyP1: 'The company’s predecessor was the Shandong Flour Machinery Factory. That means our engineering lineage runs back to the era when a flour mill was assembled from castings made on site. What survived from that period is a bias toward over-building: heavier frames, replaceable wear parts, and machines that a local workshop can repair.',
       whyP2: 'What changed is precision. Raw material now arrives as laser-cut plate; roll housings are machined on CNC centres. The result is a plant that costs what a mid-market plant costs and holds tolerance like a premium one.',
       whyLink: 'About the factory',

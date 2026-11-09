@@ -304,3 +304,43 @@ export const detailUI = {
 };
 
 export const getDetailUI = (lang) => detailUI[lang] ?? detailUI.en;
+
+// Equipment specification table headers (English → locale).
+export const specHeaderMap = {
+  ru: {
+    'Model': 'Модель', 'Capacity': 'Производительность', 'Power': 'Мощность',
+    'Dimensions (mm)': 'Габариты (мм)', 'Dimensions (m)': 'Габариты (м)',
+    'Weight': 'Масса', 'Speed': 'Скорость', 'Gyration': 'Частота вращения',
+    'Sifting area': 'Площадь просеивания', 'Motor': 'Двигатель',
+    'Min. install height': 'Мин. высота установки', 'Air volume (m³/h)': 'Расход воздуха (м³/ч)',
+    'Air supply': 'Подача воздуха', 'Filter area (m²)': 'Площадь фильтра (м²)',
+    'Drum dia.': 'Диаметр барабана', 'Drum length': 'Длина барабана',
+    'Roll dia. × length': 'Диаметр × длина вальца', 'Screen size (cm)': 'Размер сита (см)',
+    'Type': 'Тип', 'Parameter': 'Параметр', 'Value': 'Значение', 'Range': 'Диапазон',
+    'Accuracy': 'Точность', 'Bags': 'Мешки', 'Decks': 'Деки', 'Differential': 'Дифференциал'
+  },
+  es: {
+    'Model': 'Modelo', 'Capacity': 'Capacidad', 'Power': 'Potencia',
+    'Dimensions (mm)': 'Dimensiones (mm)', 'Dimensions (m)': 'Dimensiones (m)',
+    'Weight': 'Peso', 'Speed': 'Velocidad', 'Gyration': 'Giro',
+    'Sifting area': 'Superficie de cribado', 'Motor': 'Motor',
+    'Min. install height': 'Altura mínima de instalación', 'Air volume (m³/h)': 'Caudal de aire (m³/h)',
+    'Air supply': 'Suministro de aire', 'Filter area (m²)': 'Superficie de filtro (m²)',
+    'Drum dia.': 'Diámetro de tambor', 'Drum length': 'Longitud de tambor',
+    'Roll dia. × length': 'Diámetro × longitud de cilindro', 'Screen size (cm)': 'Tamaño de tamiz (cm)',
+    'Type': 'Tipo', 'Parameter': 'Parámetro', 'Value': 'Valor', 'Range': 'Rango',
+    'Accuracy': 'Precisión', 'Bags': 'Sacos', 'Decks': 'Cribas', 'Differential': 'Diferencial'
+  },
+  ar: {
+    'Model': 'الموديل', 'Capacity': 'الطاقة', 'Power': 'القدرة',
+    'Dimensions (mm)': 'الأبعاد (مم)', 'Dimensions (m)': 'الأبعاد (م)',
+    'Weight': 'الوزن', 'Speed': 'السرعة', 'Gyration': 'الحركة الدورانية',
+    'Sifting area': 'مساحة النخل', 'Motor': 'المحرك',
+    'Min. install height': 'أدنى ارتفاع للتركيب', 'Air volume (m³/h)': 'حجم الهواء (م³/س)',
+    'Air supply': 'إمداد الهواء', 'Filter area (m²)': 'مساحة الفلتر (م²)',
+    'Drum dia.': 'قطر الأسطوانة', 'Drum length': 'طول الأسطوانة',
+    'Roll dia. × length': 'قطر × طول الدرافيل', 'Screen size (cm)': 'مقاس المنخل (سم)',
+    'Type': 'النوع', 'Parameter': 'المعامل', 'Value': 'القيمة', 'Range': 'النطاق',
+    'Accuracy': 'الدقة', 'Bags': 'الأكياس', 'Decks': 'الطوابق', 'Differential': 'التفاضل'
+  }
+};
