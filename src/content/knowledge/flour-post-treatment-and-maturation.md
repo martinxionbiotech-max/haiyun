@@ -1,5 +1,6 @@
 ---
 title: "Flour Post-Treatment: Maturation, Blending and Why Fresh Flour Bakes Badly"
+seoTitle: "Flour Post-Treatment: Maturation and Blending"
 description: "Why flour needs weeks to mature, what oxidation actually does to gluten, and the treatment options — natural ageing, chemical maturation, bleaching and…"
 type: cluster
 pillar: flour-quality-control

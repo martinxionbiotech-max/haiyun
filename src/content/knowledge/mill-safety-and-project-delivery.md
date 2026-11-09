@@ -1,5 +1,6 @@
 ---
 title: "Safety, Installation and Project Delivery: Getting the Mill Built and Accepted"
+seoTitle: "Safety, Installation and Project Delivery"
 description: "How mill safety gets designed into a project rather than added afterwards: layout, dust control, guarding, permits and the handover documents that keep a."
 type: pillar
 order: 9

@@ -55,7 +55,7 @@ const schema = [
 ---
 
 <PageLayout
-  title={entry.data.title}
+  title={entry.data.seoTitle ?? entry.data.title}
   description={entry.data.description}
   type="article"
   schema={schema}

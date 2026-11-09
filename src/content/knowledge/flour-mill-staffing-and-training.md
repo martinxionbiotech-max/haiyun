@@ -1,5 +1,6 @@
 ---
 title: "Staffing a Flour Mill: Headcount, Roles and Training"
+seoTitle: "Staffing a Flour Mill: Headcount, Roles, Training"
 description: "How many people a flour mill needs, what each role does, the skills that take years to build, and the training that keeps a mill running when the head."
 type: cluster
 pillar: flour-mill-operations-and-maintenance

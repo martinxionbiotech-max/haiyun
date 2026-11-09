@@ -1,5 +1,6 @@
 ---
 title: "Understanding Flour Extraction: Definitions, Measurement and Benchmarks"
+seoTitle: "Flour Extraction: Definitions, Measurement and Benchmarks"
 description: "A technical note on flour extraction rate — how it is measured, why mill extraction differs from commercial extraction, and benchmark figures by wheat type."
 type: cluster
 pillar: flour-milling-flow-sheet-design

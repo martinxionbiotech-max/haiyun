@@ -1,5 +1,6 @@
 ---
 title: "Stone Dressing: Interval, Method and the Cost of Skipping It"
+seoTitle: "Stone Dressing: Interval, Method and Cost"
 description: "How often stone millstones need dressing, what happens when they don't get it, the dressing method, and how to tell from flour temperature and colour that."
 type: cluster
 pillar: stone-milling-technology

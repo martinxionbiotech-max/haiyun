@@ -1,5 +1,6 @@
 ---
 title: "Flour Mill Building Requirements: Height, Loading, Floors and Layout"
+seoTitle: "Flour Mill Building Requirements: Height, Floors, Layout"
 description: "Civil requirements for a wheat flour mill — clear height, floor loading, vibration isolation, dust zoning, and how building choice changes between a…"
 type: cluster
 pillar: how-to-size-a-flour-mill

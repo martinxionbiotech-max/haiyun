@@ -1,5 +1,6 @@
 ---
 title: "Flour Fortification: Premix, Dosage and the Errors That Get Shipments Rejected"
+seoTitle: "Flour Fortification: Premix, Dosage and Rejection Risks"
 description: "How mandatory flour fortification actually works in a mill — premix composition, dosing equipment, the two failure modes that fail laboratory checks, and…"
 type: cluster
 pillar: flour-quality-control

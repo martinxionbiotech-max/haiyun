@@ -350,6 +350,7 @@ export const equipment = [
     slug: 'wheat-brush-scourer-combination',
     name: 'Wheat Roller-Brush Combination Machine',
     altName: '小麦碾打刷组合机',
+    model: 'TNSW',
     category: 'cleaning',
     stage: 'Surface cleaning',
     tagline: 'Kernel-by-kernel cleaning that leaves the bran intact.',

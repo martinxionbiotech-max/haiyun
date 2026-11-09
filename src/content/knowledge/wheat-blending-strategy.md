@@ -1,5 +1,6 @@
 ---
 title: "Wheat Blending Strategy: How to Hit a Protein Target Every Day"
+seoTitle: "Wheat Blending Strategy: Hitting a Protein Target"
 description: "Batch versus continuous blending, proportioning equipment, the arithmetic of hitting a specification, and why most mills lose money by blending badly rather."
 type: cluster
 pillar: wheat-procurement-and-storage

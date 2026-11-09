@@ -33,6 +33,11 @@ const schema = [
     brand: { '@type': 'Brand', name: 'HAIYUN' },
     manufacturer: { '@id': `${site.url}/#organization` },
     category: t.plantType,
+    sku: plant.slug,
+    url: `${site.url}${href(`/flour-milling-plant/${plant.slug}/`)}`,
+    '@id': `${site.url}${href(`/flour-milling-plant/${plant.slug}/`)}#product`,
+    image: [`${site.url}/images/${heroFile ?? 'og-default.jpg'}`],
+    mainEntityOfPage: { '@id': `${site.url}${href(`/flour-milling-plant/${plant.slug}/`)}` },
     offers: {
       '@type': 'AggregateOffer',
       priceCurrency: 'USD',

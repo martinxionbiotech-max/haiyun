@@ -1,5 +1,6 @@
 ---
 title: "Downtime and OEE in a Flour Mill: Measuring What Actually Stops You"
+seoTitle: "Downtime and OEE in a Flour Mill: What Stops You"
 description: "How to calculate OEE for a flour mill honestly, why the standard formula misleads in milling, the four downtime categories that matter, and the measurement."
 type: cluster
 pillar: flour-mill-operations-and-maintenance

@@ -1,5 +1,6 @@
 ---
 title: "Flour Quality Control: Ash, Protein, Moisture, Granulation and Farinograph"
+seoTitle: "Flour Quality Control: Ash, Protein, Moisture, Farinograph"
 description: "The complete laboratory and process control framework for a wheat flour mill — which tests matter, what the numbers should be, sampling frequency, and how…"
 type: pillar
 order: 5

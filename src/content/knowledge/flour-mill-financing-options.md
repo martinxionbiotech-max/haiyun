@@ -1,5 +1,6 @@
 ---
 title: "Financing a Flour Mill: Seven Structures and What Each Costs"
+seoTitle: "Financing a Flour Mill: Seven Structures Compared"
 description: "How flour mill projects get financed — cash, bank debt, equipment leasing, supplier credit, export credit agencies and blended structures — with typical."
 type: cluster
 pillar: flour-mill-project-economics

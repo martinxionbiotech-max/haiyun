@@ -1,5 +1,6 @@
 ---
 title: "Performance Guarantee and Acceptance Testing: How to Write a Test That Can Fail"
+seoTitle: "Performance Guarantee and Acceptance Testing"
 description: "How tonnage, extraction and specific power are guaranteed and tested at commissioning, and what acceptance records protect both buyer and supplier."
 type: cluster
 pillar: mill-safety-and-project-delivery

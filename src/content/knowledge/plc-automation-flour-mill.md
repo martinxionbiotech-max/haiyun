@@ -1,5 +1,6 @@
 ---
 title: "PLC and Automation in Flour Mills: What to Automate and What to Leave Alone"
+seoTitle: "PLC and Automation in Flour Mills: What to Automate"
 description: "Control system architecture for a flour mill, the automation scope that pays back, sensor selection, and the interlocks that prevent a small fault becoming."
 type: cluster
 pillar: flour-mill-operations-and-maintenance

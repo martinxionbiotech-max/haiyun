@@ -1,5 +1,6 @@
 ---
 title: "SFM Stone Mill Configurations: 100, 1+2 and 3+4 Compared"
+seoTitle: "SFM Stone Mill Configurations: 100, 1+2 and 3+4"
 description: "Technical comparison of the three Haiyun stone mill configurations — capacity, power, footprint, extraction, roller-to-stone ratio and which buyer each one."
 type: cluster
 pillar: stone-milling-technology

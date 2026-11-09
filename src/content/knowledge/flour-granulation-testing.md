@@ -1,5 +1,6 @@
 ---
 title: "Flour Granulation: Why Particle Size Matters More Than You Think"
+seoTitle: "Flour Granulation: Why Particle Size Matters"
 description: "How to test and control flour granulation — sieve stacks, target distributions by application, what controls particle size, and why two flours at identical."
 type: cluster
 pillar: flour-quality-control

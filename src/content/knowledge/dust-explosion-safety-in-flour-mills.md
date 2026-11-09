@@ -1,5 +1,6 @@
 ---
 title: "Dust Explosion Safety in Flour Mills: The Engineering Controls That Actually Work"
+seoTitle: "Dust Explosion Safety in Flour Mills: Engineering Controls"
 description: "Why flour dust explodes, the five elements of a dust explosion, and the specific design measures that prevent primary and secondary explosions in a milling."
 type: cluster
 pillar: mill-safety-and-project-delivery

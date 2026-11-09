@@ -1,5 +1,6 @@
 ---
 title: "Flour Packing and Bulk Dispatch: The Part of the Mill That Decides Your Reputation"
+seoTitle: "Flour Packing and Bulk Dispatch: The Reputation Layer"
 description: "Packing scales, bag types, finished flour silos, bulk tankers and palletising — how the last fifty metres of a flour mill sets your giveaway cost, your."
 type: cluster
 pillar: flour-mill-operations-and-maintenance

@@ -1,5 +1,6 @@
 ---
 title: "Stone Mill vs Roller Mill: A Fair Comparison for Commercial Buyers"
+seoTitle: "Stone Mill vs Roller Mill: A Fair Comparison"
 description: "An honest comparison of stone and roller milling — output per kW, nutrient retention, flour behaviour, cost per tonne, product quality and which one suits."
 type: cluster
 pillar: stone-milling-technology

@@ -1,5 +1,6 @@
 ---
 title: "Flour Milling Flow Sheet Design: Break, Reduction, Sifting and Purification"
+seoTitle: "Flour Milling Flow Sheet Design: Break, Reduction, Sifting"
 description: "How to design a wheat flour milling flow sheet: break and reduction passages, differential ratios, sifter area per tonne and where the purifier belongs."
 type: pillar
 order: 3

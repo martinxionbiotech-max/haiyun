@@ -1,5 +1,6 @@
 ---
 title: "Flour Mill Energy Audit: Where the Kilowatt-Hours Actually Go"
+seoTitle: "Flour Mill Energy Audit: Where the kWh Actually Go"
 description: "A break-down of power consumption across a flour mill by process stage, the measurements that reveal waste, and the ten interventions ranked by payback period."
 type: cluster
 pillar: flour-mill-project-economics

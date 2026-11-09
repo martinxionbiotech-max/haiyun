@@ -1,5 +1,6 @@
 ---
 title: "Pneumatic Conveying in Flour Mills: When Air Beats a Bucket Elevator"
+seoTitle: "Pneumatic Conveying: When Air Beats a Bucket Elevator"
 description: "Positive and negative pressure systems, air-to-material ratios, power per tonne and the routing cases where pneumatic conveying is cheaper than mechanical."
 type: cluster
 pillar: flour-milling-flow-sheet-design

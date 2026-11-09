@@ -1,5 +1,6 @@
 ---
 title: "Flour Extraction Rate: Why One Point Is Worth More Than Your Power Bill"
+seoTitle: "Flour Extraction Rate: Why One Point Beats Your Power Bill"
 description: "What extraction rate means, how flow sheet design sets it, the difference between extraction and yield, and the arithmetic showing why 1% of extraction."
 type: cluster
 pillar: flour-mill-project-economics

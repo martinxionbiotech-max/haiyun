@@ -1,5 +1,6 @@
 ---
 title: "Flour Mill Capacity Calculation: From Demand to Tonnage in Four Steps"
+seoTitle: "Flour Mill Capacity Calculation: Demand to Tonnage"
 description: "A practical calculation method for specifying flour mill capacity — extraction rate, utilisation headroom, shift pattern and wheat quality all change the…"
 type: cluster
 pillar: how-to-size-a-flour-mill

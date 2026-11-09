@@ -1,5 +1,6 @@
 ---
 title: "Mycotoxin Control in Flour Milling: Why You Cannot Mill Your Way Out of a Bad Load"
+seoTitle: "Mycotoxin Control in Flour Milling: A Practical Guide"
 description: "Where DON, zearalenone and aflatoxin enter the milling process, what cleaning and milling can remove, and which control points defend the finished flour."
 type: cluster
 pillar: wheat-procurement-and-storage

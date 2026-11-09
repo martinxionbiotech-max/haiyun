@@ -1,5 +1,6 @@
 ---
 title: "Roll Fluting and Surface Technology: The Variable Most Mills Never Touch"
+seoTitle: "Roll Fluting and Surface Technology: The Hidden Variable"
 description: "Flute pitch, spiral, profile and surface hardness decide how a roll mill actually grinds. What each parameter does, how to specify a roll set, and when."
 type: cluster
 pillar: flour-milling-flow-sheet-design

@@ -1,5 +1,6 @@
 ---
 title: "What a Purifier Does in a Flour Mill (and Why 40 t/d Is the Threshold)"
+seoTitle: "What a Purifier Does in a Flour Mill"
 description: "How a purifier separates middlings by density rather than size, the ash and extraction gains it delivers, why it needs at least four break passages to be."
 type: cluster
 pillar: flour-milling-flow-sheet-design

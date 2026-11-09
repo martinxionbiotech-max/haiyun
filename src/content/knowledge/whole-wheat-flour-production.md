@@ -1,5 +1,6 @@
 ---
 title: "Whole Wheat Flour Production: Extraction, Shelf Life and Process Choices"
+seoTitle: "Whole Wheat Flour Production: Extraction and Shelf Life"
 description: "How to produce whole wheat flour commercially — target extraction, particle size, the germ problem, shelf-life extension options, and the difference between…"
 type: cluster
 pillar: stone-milling-technology

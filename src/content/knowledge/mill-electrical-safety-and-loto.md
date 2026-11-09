@@ -1,5 +1,6 @@
 ---
 title: "Electrical Safety and LOTO in a Flour Mill: The Two Systems Nobody Installs For You"
+seoTitle: "Electrical Safety and LOTO in a Flour Mill"
 description: "Lockout/tagout, arc-flash boundaries and safe isolation practice for flour mills, written for the people who will actually open a panel at 3 a.m."
 type: cluster
 pillar: mill-safety-and-project-delivery

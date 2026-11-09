@@ -1,5 +1,6 @@
 ---
 title: "Wheat Cleaning Process Flow: The Ten Stages and Why the Order Is Fixed"
+seoTitle: "Wheat Cleaning Process Flow: Ten Stages in Order"
 description: "The complete wheat cleaning flow for a flour mill, stage by stage, with the machine at each step, the impurity each removes, and what happens when stages."
 type: cluster
 pillar: wheat-cleaning-system-design

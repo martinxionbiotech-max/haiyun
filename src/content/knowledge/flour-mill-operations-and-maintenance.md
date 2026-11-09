@@ -1,5 +1,6 @@
 ---
 title: "Running a Flour Mill: Maintenance, Staffing, Spares and Automation"
+seoTitle: "Running a Flour Mill: Maintenance, Staffing, Spares"
 description: "The operational side of a flour mill — what breaks, how often, who fixes it, what to keep on the shelf, and which automation is worth paying for."
 type: pillar
 order: 8

@@ -1,5 +1,6 @@
 ---
 title: "Flour Mill Installation and Erection: Sequence and Interfaces"
+seoTitle: "Flour Mill Installation: Sequence and Interfaces"
 description: "The installation sequence that avoids rework, the interfaces between civil, mechanical and electrical scopes, and the 8% of project cost nobody budgets."
 type: cluster
 pillar: mill-safety-and-project-delivery

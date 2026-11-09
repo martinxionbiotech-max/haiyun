@@ -1,5 +1,6 @@
 ---
 title: "Gravity Destoner Selection Guide: Sizing, Air Volume and the 95% Test"
+seoTitle: "Gravity Destoner Selection Guide: Sizing and Air Volume"
 description: "How to size a gravity destoner for a flour mill, why the same screen width carries two very different capacities, and a simple field test to verify 95%."
 type: cluster
 pillar: wheat-cleaning-system-design

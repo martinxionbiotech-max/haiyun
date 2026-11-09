@@ -1,5 +1,6 @@
 ---
 title: "Flour Mill Power Consumption: What kWh per Tonne Really Means"
+seoTitle: "Flour Mill Power: What kWh per Tonne Really Means"
 description: "Why specific power consumption falls from 72 kWh/t at 60 t/d to 65 kWh/t at 500 t/d, what drives the difference, how to budget connected load versus actual."
 type: cluster
 pillar: how-to-size-a-flour-mill

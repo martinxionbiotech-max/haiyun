@@ -51,12 +51,19 @@ const schema = [
     manufacturer: { '@id': `${site.url}/#organization` },
     category: isCleaning ? t.cleaningCategory : t.millingCategory,
     model: item.model,
+    sku: item.model ?? item.slug,
+    url: `${site.url}${href(`/equipment/${item.slug}/`)}`,
+    '@id': `${site.url}${href(`/equipment/${item.slug}/`)}#product`,
+    image: [`${site.url}/images/${heroFile ?? 'og-default.jpg'}`],
+    mainEntityOfPage: { '@id': `${site.url}${href(`/equipment/${item.slug}/`)}` },
+    // Quote-based sale: no price is published, so the offer points at the
+    // enquiry form rather than carrying a misleading priceCurrency.
     offers: {
       '@type': 'Offer',
-      priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
+      businessFunction: 'http://purl.org/goodrelations/v1#Sell',
       seller: { '@id': `${site.url}/#organization` },
-      url: `${site.url}${href(`/equipment/${item.slug}/`)}`,
+      url: `${site.url}${href('/contact/')}`,
     },
   },
   {
@@ -73,7 +80,7 @@ const schema = [
 ---
 
 <PageLayout
-  title={`${item.name} — ${item.model}`}
+  title={item.model ? `${item.name} — ${item.model}` : item.name}
   description={`${item.tagline} ${item.name} (${item.model}) — ${t.technicalParameters}, ${t.selectionGuidance}, ${t.maintenance}.`}
   image={heroFile ? `/images/${heroFile}` : undefined}
   schema={schema}

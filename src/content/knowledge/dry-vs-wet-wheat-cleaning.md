@@ -1,5 +1,6 @@
 ---
 title: "Dry vs Wet Wheat Cleaning: The Real Trade-Off and When Each Wins"
+seoTitle: "Dry vs Wet Wheat Cleaning: The Real Trade-Off"
 description: "A commercial comparison of dry and wet wheat cleaning for flour mills — capital, water, effluent, ash improvement, residue removal and the market conditions."
 type: cluster
 pillar: wheat-cleaning-system-design

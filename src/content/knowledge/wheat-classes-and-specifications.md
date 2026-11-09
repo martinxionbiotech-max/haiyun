@@ -1,5 +1,6 @@
 ---
 title: "Wheat Classes and Specifications: How to Write a Wheat Contract for a Flour Mill"
+seoTitle: "Wheat Classes and Specifications: Writing a Contract"
 description: "Wheat classes by protein and hardness, the parameters that actually matter on a purchase contract, and the tolerance clauses that decide who pays when a."
 type: cluster
 pillar: wheat-procurement-and-storage

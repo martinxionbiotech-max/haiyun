@@ -1,5 +1,6 @@
 ---
 title: "HACCP in a Flour Mill: The Four Control Points That Actually Matter"
+seoTitle: "HACCP in a Flour Mill: Four Control Points That Matter"
 description: "What HACCP and food-safety certification actually require of a flour mill, which records inspectors ask for, and how the plant design supports them."
 type: cluster
 pillar: flour-quality-control

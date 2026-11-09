@@ -1,5 +1,6 @@
 ---
 title: "Flour Mill Spare Parts: What to Stock, What to Order and What to Never Hold"
+seoTitle: "Flour Mill Spare Parts: What to Stock and What to Skip"
 description: "A criticality-based spares strategy for flour mills — the parts that stop production, the parts that only cost money, and the stock levels that balance."
 type: cluster
 pillar: flour-mill-operations-and-maintenance

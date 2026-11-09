@@ -1,5 +1,6 @@
 ---
 title: "Plansifter Sizing: How Much Sifting Area Does Your Mill Need?"
+seoTitle: "Plansifter Sizing: How Much Sifting Area You Need"
 description: "The sifting-area rule (1 m² per 0.8 t/d), how to distribute area across streams, when to choose twin-bin over high-square, and what happens when sifting is."
 type: cluster
 pillar: flour-milling-flow-sheet-design

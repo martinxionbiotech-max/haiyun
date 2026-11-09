@@ -1,5 +1,6 @@
 ---
 title: "The Stone-Milled Flour Market: Who Pays the Premium and Why"
+seoTitle: "The Stone-Milled Flour Market: Who Pays the Premium"
 description: "Commercial analysis of the stone-milled flour market — price premiums by channel, volume realities, packaging and labelling, and how to build distribution."
 type: cluster
 pillar: stone-milling-technology

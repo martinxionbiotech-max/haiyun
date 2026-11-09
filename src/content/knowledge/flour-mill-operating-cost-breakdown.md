@@ -1,5 +1,6 @@
 ---
 title: "Flour Mill Operating Cost: The Full Breakdown by Line Item"
+seoTitle: "Flour Mill Operating Cost: The Full Breakdown"
 description: "Operating cost structure for a wheat flour mill — wheat, labour, power, maintenance, packaging and overheads — with a worked 60 t/d example and the levers."
 type: cluster
 pillar: flour-mill-project-economics

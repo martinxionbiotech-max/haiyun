@@ -1,5 +1,6 @@
 ---
 title: "Stone Milling Technology: The Complete Commercial Guide"
+seoTitle: "Stone Milling Technology: The Commercial Guide"
 description: "How stone mills work, why 28–30 rpm preserves what roller milling destroys, the hybrid roller-plus-stone architecture, stone dressing intervals, and the…"
 type: pillar
 order: 4

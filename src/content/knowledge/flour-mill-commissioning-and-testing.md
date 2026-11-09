@@ -1,5 +1,6 @@
 ---
 title: "Flour Mill Commissioning: The 30 Days That Decide the Next Ten Years"
+seoTitle: "Flour Mill Commissioning: The First 30 Days"
 description: "A structured commissioning sequence for a new flour mill — mechanical completion, dry running, load testing, performance acceptance and the documentation."
 type: cluster
 pillar: mill-safety-and-project-delivery

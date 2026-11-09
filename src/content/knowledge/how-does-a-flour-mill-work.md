@@ -1,5 +1,6 @@
 ---
 title: "How Does a Flour Mill Work? From Wheat Kernel to Flour Bag"
+seoTitle: "How Does a Flour Mill Work? Wheat Kernel to Flour Bag"
 description: "A plain-language walkthrough of what happens inside a flour mill — cleaning, tempering, breaking, reducing, sifting, purifying and packing — with the."
 type: cluster
 pillar: how-to-size-a-flour-mill

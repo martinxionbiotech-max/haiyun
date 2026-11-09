@@ -1,5 +1,6 @@
 ---
 title: "Flour Mill Feasibility Study: What a Real One Must Contain"
+seoTitle: "Flour Mill Feasibility Study: What It Must Contain"
 description: "The seven sections a credible flour mill feasibility study needs — demand analysis, wheat supply, technical design, capital cost, operating cost, financial…"
 type: cluster
 pillar: flour-mill-project-economics

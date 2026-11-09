@@ -1,5 +1,6 @@
 ---
 title: "Flour Ash Content: What It Measures and Why It Decides Your Price"
+seoTitle: "Flour Ash Content: What It Measures and Why It Matters"
 description: "Ash content explained for mill operators — what it physically measures, typical specifications by market, how to test it, and how to trace a rise back to a."
 type: cluster
 pillar: flour-quality-control

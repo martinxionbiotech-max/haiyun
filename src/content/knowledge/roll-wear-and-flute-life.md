@@ -1,5 +1,6 @@
 ---
 title: "Roll Wear and Flute Life: The Consumable Nobody Puts in the Budget"
+seoTitle: "Roll Wear and Flute Life: The Unbudgeted Consumable"
 description: "How fast roller mill chills actually wear, what the wear does to extraction before anyone notices, how to measure it without a specialist, and why refluting…"
 type: cluster
 pillar: flour-milling-flow-sheet-design

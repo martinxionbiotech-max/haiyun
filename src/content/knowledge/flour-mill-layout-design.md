@@ -1,5 +1,6 @@
 ---
 title: "Flour Mill Layout Design: Workflow, Access and the Cost of Bad Geometry"
+seoTitle: "Flour Mill Layout Design: Workflow and Access"
 description: "How to lay out a flour mill so material flows in one direction, maintenance access is preserved, and future expansion is possible. Includes the layout."
 type: cluster
 pillar: how-to-size-a-flour-mill

@@ -1,5 +1,6 @@
 ---
 title: "Setting Up a Flour Mill Laboratory: Equipment, Staff and Budget"
+seoTitle: "Setting Up a Flour Mill Laboratory: Equipment and Staff"
 description: "A three-tier laboratory specification for flour mills — minimum viable, standard and full — with equipment lists, costs, staff requirements and the tests."
 type: cluster
 pillar: flour-quality-control

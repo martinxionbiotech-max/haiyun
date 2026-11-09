@@ -1,5 +1,6 @@
 ---
 title: "Wheat Procurement and Storage Engineering for Flour Mills"
+seoTitle: "Wheat Procurement and Storage Engineering"
 description: "How wheat selection, intake, storage and blending determine what your mill can physically produce — and the engineering decisions that must be made before."
 type: pillar
 order: 7

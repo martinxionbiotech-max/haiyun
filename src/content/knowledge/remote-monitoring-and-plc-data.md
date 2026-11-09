@@ -1,5 +1,6 @@
 ---
 title: "Remote Monitoring for Flour Mills: What Telemetry Tells You"
+seoTitle: "Remote Monitoring for Flour Mills: What Telemetry Tells"
 description: "Which PLC signals are worth transmitting from a flour mill, what the data actually proves, and where remote monitoring stops being useful."
 type: cluster
 pillar: flour-mill-operations-and-maintenance

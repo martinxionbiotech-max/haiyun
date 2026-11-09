@@ -1,5 +1,6 @@
 ---
 title: "Grain Intake and Weighing: Sizing the Front Door of a Flour Mill"
+seoTitle: "Grain Intake and Weighing: Sizing the Front Door"
 description: "Intake capacity, weighbridge selection, receiving pit design and the truck-queue arithmetic that decides whether your mill can take a harvest at all."
 type: cluster
 pillar: wheat-procurement-and-storage

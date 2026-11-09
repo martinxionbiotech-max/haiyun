@@ -1,5 +1,6 @@
 ---
 title: "Flour Mill Preventive Maintenance: A Schedule Built on Failure Modes"
+seoTitle: "Flour Mill Preventive Maintenance: A Failure-Based Schedule"
 description: "A complete preventive maintenance programme for a roller mill plant — daily, weekly, monthly and annual tasks, the failure modes they prevent, and the."
 type: cluster
 pillar: flour-mill-operations-and-maintenance

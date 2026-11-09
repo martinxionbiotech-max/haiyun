@@ -1,5 +1,6 @@
 ---
 title: "Wheat Cleaning System Design: A Machine-by-Machine Engineering Guide"
+seoTitle: "Wheat Cleaning System Design: A Machine-by-Machine Guide"
 description: "How to design a wheat cleaning line for a flour mill — impurity classes, machine sequence, capacity sizing rules, wet versus dry process economics, and the…"
 type: pillar
 order: 2

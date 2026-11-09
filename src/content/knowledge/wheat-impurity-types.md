@@ -1,5 +1,6 @@
 ---
 title: "Wheat Impurities: The Six Classes and How Each Is Removed"
+seoTitle: "Wheat Impurities: Six Classes and How Each Is Removed"
 description: "A field guide to wheat contamination — coarse, size-graded, density, surface, shape and ferrous impurities — with the machine that removes each, typical."
 type: cluster
 pillar: wheat-cleaning-system-design

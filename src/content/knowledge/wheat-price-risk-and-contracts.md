@@ -1,5 +1,6 @@
 ---
 title: "Wheat Price Risk and Contracts: The Hedge You Buy Without Knowing It"
+seoTitle: "Wheat Price Risk and Contracts: The Hedge You Buy"
 description: "How flour mills actually carry wheat price risk — basis versus flat price, the storage-and-carry trap, contract clauses that shift risk to the mill, and why…"
 type: cluster
 pillar: wheat-procurement-and-storage

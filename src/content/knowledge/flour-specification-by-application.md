@@ -1,5 +1,6 @@
 ---
 title: "Flour Specification by Application: Bread, Noodle, Biscuit, Cake and Atta"
+seoTitle: "Flour Specification by Application: Bread to Atta"
 description: "Target specifications for the main flour applications — protein, ash, moisture, granulation and rheology — and the wheat selection and milling adjustments."
 type: cluster
 pillar: flour-quality-control

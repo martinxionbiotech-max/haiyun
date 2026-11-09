@@ -1,5 +1,6 @@
 ---
 title: "How Much Does a Flour Mill Cost? Equipment and Turnkey Prices by Capacity"
+seoTitle: "How Much Does a Flour Mill Cost? Prices by Capacity"
 description: "Realistic cost ranges for wheat flour mills from 20 to 500 t/d — equipment only versus turnkey, what drives the price up or down, and the six cost lines."
 type: cluster
 pillar: flour-mill-project-economics

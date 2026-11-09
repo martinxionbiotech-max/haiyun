@@ -1,5 +1,6 @@
 ---
 title: "Roller Mill Differential Ratio: Why 2.5:1 Breaks and 1.25:1 Reduces"
+seoTitle: "Roller Mill Differential Ratio: 2.5:1 vs 1.25:1"
 description: "The engineering reason break and reduction rolls run different speed differentials, what happens when you fit the wrong ratio, and how to verify roll."
 type: cluster
 pillar: flour-milling-flow-sheet-design

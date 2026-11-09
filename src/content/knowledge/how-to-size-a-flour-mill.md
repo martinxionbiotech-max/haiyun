@@ -1,5 +1,6 @@
 ---
 title: "How to Size a Wheat Flour Mill: The Complete Engineering Method"
+seoTitle: "How to Size a Wheat Flour Mill: The Engineering Method"
 description: "The five-stage method for sizing a wheat flour mill from a market demand figure: extraction, utilisation, flow sheet, sifter area and power budget, with."
 type: pillar
 order: 1

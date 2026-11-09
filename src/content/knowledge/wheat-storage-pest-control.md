@@ -1,5 +1,6 @@
 ---
 title: "Wheat Storage Pest Control: Monitoring, Fumigation and Residue Compliance"
+seoTitle: "Wheat Storage Pest Control: Monitoring and Fumigation"
 description: "Integrated pest management for stored wheat — insect species, monitoring methods, fumigation protocols, phosphine resistance and the residue limits that."
 type: cluster
 pillar: wheat-procurement-and-storage
