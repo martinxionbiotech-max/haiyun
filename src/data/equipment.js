@@ -3,7 +3,7 @@
 
 export const equipmentCategories = [
   { id: 'cleaning', name: 'Cleaning Equipment', slug: 'cleaning-equipment', count: 13, blurb: 'Everything between the weighbridge and the tempering bin: screens, destoners, scourers, washers, dampeners, magnets and aspirators.' },
-  { id: 'milling', name: 'Flour Milling Equipment', slug: 'flour-milling-equipment', count: 9, blurb: 'Roll stands, plansifters, purifiers, bran finishers, impact detachers, packers and dust collectors — the core of any flour line.' },
+  { id: 'milling', name: 'Flour Milling Equipment', slug: 'flour-milling-equipment', count: 10, blurb: 'Roll stands, plansifters, purifiers, bran finishers, impact detachers, packers and dust collectors — the core of any flour line.' },
 ];
 
 export const equipment = [

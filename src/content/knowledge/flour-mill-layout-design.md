@@ -1,10 +1,10 @@
 ---
 title: "Flour Mill Layout Design: Workflow, Access and the Cost of Bad Geometry"
-description: "How to lay out a flour mill so material flows in one direction, maintenance access is preserved, and future expansion is possible. Includes the layout mistakes that add 15% to operating cost."
+description: "How to lay out a flour mill so material flows in one direction, maintenance access is preserved, and future expansion is possible. Includes the layout."
 type: cluster
 pillar: how-to-size-a-flour-mill
 updated: 2026-11-07
-readingTime: 9
+readingTime: 3
 keywords: ["flour mill layout", "flour mill plant layout design", "flour mill flow layout"]
 related: ["how-to-size-a-flour-mill", "flour-mill-building-requirements", "flour-milling-flow-sheet-design"]
 keyTakeaways:
@@ -91,7 +91,7 @@ Plan services before machines, because retrofitting pipes through a full mill fl
 
 Leave one free bay. Always.
 
-A plant designed at 30 t/d that might reach 60 t/d should have:
+A plant designed at 30 t/d that might reach [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/) should have:
 
 - Wheat intake and weighing sized for 60 t/d
 - Packing area sized for 60 t/d

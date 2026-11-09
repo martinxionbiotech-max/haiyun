@@ -1,10 +1,10 @@
 ---
 title: "Roller Mill Differential Ratio: Why 2.5:1 Breaks and 1.25:1 Reduces"
-description: "The engineering reason break and reduction rolls run different speed differentials, what happens when you fit the wrong ratio, and how to verify roll condition before it silently degrades your flour."
+description: "The engineering reason break and reduction rolls run different speed differentials, what happens when you fit the wrong ratio, and how to verify roll."
 type: cluster
 pillar: flour-milling-flow-sheet-design
 updated: 2026-11-07
-readingTime: 8
+readingTime: 3
 keywords: ["roller mill differential", "roll speed ratio flour mill", "break roll reduction roll", "fluted roll flour milling"]
 related: ["flour-milling-flow-sheet-design", "impact-detacher-role", "flour-mill-power-consumption"]
 keyTakeaways:
@@ -20,6 +20,8 @@ faq:
   - q: "How often should roller mill rolls be re-fluted?"
     a: "Every 1,500–2,500 operating hours depending on wheat hardness. Hard wheat and high extraction accelerate wear."
 ---
+
+Break rolls run at 2.5:1 to open the kernel and scrape endosperm off bran; reduction rolls step from 2.0:1 down to 1.25:1 so they reduce by attrition rather than cutting. Set one position wrong and you generate heat, fine bran and ash with no obvious mechanical symptom — the machine sounds perfectly healthy while it damages your product.
 
 ## What the differential does
 
@@ -77,7 +79,7 @@ The mill keeps running. Power consumption may even fall slightly, because a poli
 | 1,800–2,500 | Rounded, polishing | Re-flute |
 | > 2,500 | Smearing | Re-flute immediately |
 
-Re-fluting costs a fraction of the losses. Schedule it by hours, not by symptom.
+Re-[fluting](/knowledge/roll-fluting-and-surface-technology/) costs a fraction of the losses. Schedule it by hours, not by symptom.
 
 ## Checking alignment
 

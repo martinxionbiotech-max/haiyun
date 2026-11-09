@@ -1,12 +1,12 @@
 ---
 title: "Flour Milling Flow Sheet Design: Break, Reduction, Sifting and Purification"
-description: "Why 3B2M cannot reach 78% extraction and 4B5M1S1T can. A complete guide to flow sheet notation, passage selection, roll differential ratios, sifter sizing and purifier placement for wheat flour mills from 20 to 500 t/d."
+description: "How to design a wheat flour milling flow sheet: break and reduction passages, differential ratios, sifter area per tonne and where the purifier belongs."
 type: pillar
 order: 3
 updated: 2026-11-07
-readingTime: 24
+readingTime: 7
 keywords: ["flour milling flow sheet", "3B2M flow sheet", "break and reduction rolls", "flour extraction rate", "roller mill differential"]
-related: ["roller-mill-differential-ratio", "plansifter-sizing-guide", "purifier-function-flour-milling", "flour-extraction-rate-explained", "impact-detacher-role"]
+related: ["roller-mill-differential-ratio", "plansifter-sizing-guide", "purifier-function-flour-milling", "flour-extraction-rate-explained", "impact-detacher-role", "pneumatic-conveying-in-flour-mills", "roll-wear-and-flute-life", "roll-fluting-and-surface-technology"]
 keyTakeaways:
   - "Flow sheet notation counts passages: B = break, M = reduction, S = scratch/sizing, T = tailing. 4B5M1S1T means 4 breaks, 5 reductions, 1 scratch, 1 tailing."
   - "Each extra break passage scrapes more endosperm off bran. Below 2 breaks you cannot make clean flour; below 4 you cannot exceed ~76% extraction."
@@ -30,6 +30,12 @@ heroImage: "/images/p14_02.jpg"
 A flow sheet is a diagram of decisions. Where you break the wheat, how hard, what you sift out, and what you send back determine your extraction, your ash, your power bill and your product range — all before a single machine is ordered.
 
 This article explains the reasoning behind the flow sheets we publish, so that a buyer can evaluate a competing quotation on engineering rather than on machine count.
+
+
+<figure class="my-8">
+  <img src="/images/figure-flow-sheet.svg" alt="A 4B5M1S1T flow sheet. Each break passage scrapes more endosperm off the bran; each reduction grinds it finer. Stop early and you leave flour on the bran." width="1000" loading="lazy" class="w-full rounded-lg border border-steel-200" />
+  <figcaption class="mt-3 text-sm leading-relaxed text-steel-500">A 4B5M1S1T flow sheet. Each break passage scrapes more endosperm off the bran; each reduction grinds it finer. Stop early and you leave flour on the bran.</figcaption>
+</figure>
 
 ## The notation
 
@@ -112,7 +118,7 @@ Two caveats. First, the rule assumes a standard 4B5M flow sheet; more passages n
 
 ## Where the purifier belongs
 
-A purifier takes middlings from the break sifters and separates them by **density** rather than size. Pure endosperm is lighter and more angular, so it floats on the air stream and travels further; bran-contaminated particles of the same size settle and are rejected.
+A [purifier](/equipment/purifier/) takes middlings from the break sifters and separates them by **density** rather than size. Pure endosperm is lighter and more angular, so it floats on the air stream and travels further; bran-contaminated particles of the same size settle and are rejected.
 
 The consequences are large:
 
@@ -134,7 +140,7 @@ Neither is glamorous. Both are pure margin.
 
 Smooth reduction rolls produce flat flakes. Flakes blind sifter screens and lock flour inside their structure, so the sifter rejects material that is actually finished flour.
 
-An impact detacher throws the stock against pins at ~2,900 rpm, breaking flakes apart without grinding bran finer. The effect on sifting efficiency is immediate and measurable.
+An [impact detacher](/equipment/impact-detacher/) throws the stock against pins at ~2,900 rpm, breaking flakes apart without grinding bran finer. The effect on sifting efficiency is immediate and measurable.
 
 **Fit one after each group of smooth reduction mills.** It costs 3–5.5 kW and typically lifts sifting throughput by 8–15% on the affected streams.
 
@@ -148,7 +154,7 @@ Consider two quotations for a 60 t/d plant:
 | Roll stands | 9 | 12 |
 | High square sifters | 1 × FSFG6×24 | 2 × FSFG6×24 |
 | Purifier | None | 1 bank |
-| Installed power | 118 kW | 150 kW |
+| Installed power | 118 kW (floor-mounted) | 190 kW (tower) |
 | Extraction | 74% | 78% |
 | Patent ash | 0.68% | 0.52% |
 

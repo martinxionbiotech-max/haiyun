@@ -4,27 +4,33 @@ description: "A break-down of power consumption across a flour mill by process s
 type: cluster
 pillar: flour-mill-project-economics
 updated: 2026-11-07
-readingTime: 8
+readingTime: 4
 keywords: ["flour mill energy audit", "flour milling power consumption", "kwh per tonne flour", "flour mill energy saving"]
-related: ["flour-mill-power-consumption", "flour-mill-operating-cost-breakdown", "flour-milling-flow-sheet-design"]
+related: ["flour-mill-project-economics", "flour-mill-power-consumption", "flour-mill-operating-cost-breakdown", "flour-milling-flow-sheet-design"]
 keyTakeaways:
   - "Milling consumes 60–70% of plant power; cleaning 12–18%; conveying 8–15%; packing and dust collection the rest."
-  - "Specific power falls from ~72 kWh/t at 60 t/d to ~67 kWh/t at 500 t/d — scale efficiency is worth 7%."
+  - "Specific power falls from ~72 kWh/t of flour at 60 t/d to ~67 kWh/t at 500 t/d — scale efficiency is worth 7%."
   - "The three highest-return interventions are gap optimisation, sifter screen condition and eliminating idle running."
 faq:
   - q: "How much electricity does a flour mill use per tonne?"
-    a: "65–74 kWh per tonne of wheat milled for a well-run roller mill plant. Small plants under 30 t/d run 75–85 kWh/t; 500 t/d plants reach 63–68 kWh/t."
+    a: "65–74 kWh per tonne of flour for a well-run roller mill plant. Small plants under 30 t/d run 80–88 kWh/t; 500 t/d plants reach 63–68 kWh/t. Figures on a wheat basis are 24% lower at a 76% extraction rate."
   - q: "What is the biggest energy consumer in a flour mill?"
     a: "The roll mills, at 55–65% of total plant power. Sifters take 10–15%, pneumatic conveying 8–15%, cleaning 12–18% and dust collection 3–6%."
   - q: "How can a flour mill reduce energy costs?"
     a: "In payback order: fix idle running, optimise roll gaps, replace worn sifter screens, convert pneumatic to mechanical conveying where routing allows, add VFDs to fans, and correct power factor."
 ---
 
+A 200 t/d plant spends roughly USD 350,000 a year on electricity, and most of it passes through roll stands whose gaps nobody has checked since commissioning. The highest-return savings are not capital projects: they are idle running, roll gap settings and blinded sifter screens, all of which are found by measurement rather than by purchase.
+
+This article is about **diagnosing an existing mill** — what to meter, where the kilowatt-hours actually go, and the ten interventions ranked by payback. For budgeting power on a new plant, and for why specific consumption falls with scale, see [flour mill power consumption](/knowledge/flour-mill-power-consumption/).
+
 ## The baseline
 
-A 200 t/d plant at 68 kWh/t consuming 260 t of wheat per day uses 17,680 kWh daily — about 6.5 GWh a year. At USD 0.10/kWh that is USD 646,000 annually, typically **8–14% of total operating cost**.
+A 200 t/d plant milling 200 t of wheat a day produces 152 t of flour. At 70 kWh/t of flour that is 10,640 kWh daily — about 3.5 GWh a year at 330 operating days. At USD 0.10/kWh that is USD 351,000 annually, typically **15–22% of conversion cost** once the wheat itself is excluded.
 
-A 5% reduction is USD 32,000 a year, every year, for interventions that mostly cost engineering time.
+That is an average draw of about 440 kW against 690 kW installed — the bottom of the 0.65–0.80 load-factor band, which is where large plants with sequential start-up sit.
+
+A 5% reduction is USD 17,500 a year, every year, for interventions that mostly cost engineering time.
 
 ## Where the power goes
 
@@ -39,10 +45,10 @@ A 5% reduction is USD 32,000 a year, every year, for interventions that mostly c
 
 ### Specific power by plant size
 
-| Capacity | kWh/t wheat | Why |
+| Capacity | kWh/t flour | Why |
 |---|---|---|
-| 20 t/d | 80–88 | Small motors, no load optimisation |
-| 40 t/d | 74–80 | Better but still single-line |
+| 20 t/d | 80–85 | Small motors, no load optimisation |
+| 40 t/d | 72–78 | Better but still single-line |
 | 60 t/d | 70–74 | Standard reference point |
 | 100 t/d | 68–72 | Multiple lines, better matching |
 | 200 t/d | 66–70 | Optimised flow sheet pays off |

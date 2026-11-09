@@ -1,10 +1,10 @@
 ---
 title: "Wheat Classes and Specifications: How to Write a Wheat Contract for a Flour Mill"
-description: "Wheat classes by protein and hardness, the parameters that actually matter on a purchase contract, and the tolerance clauses that decide who pays when a load fails."
+description: "Wheat classes by protein and hardness, the parameters that actually matter on a purchase contract, and the tolerance clauses that decide who pays when a."
 type: cluster
 pillar: wheat-procurement-and-storage
 updated: 2026-11-07
-readingTime: 8
+readingTime: 3
 keywords: ["wheat classes", "wheat specification flour mill", "wheat purchase contract", "hard red winter wheat", "wheat protein spec"]
 related: ["wheat-procurement-and-storage", "wheat-blending-strategy", "wheat-protein-and-flour-quality"]
 keyTakeaways:
@@ -19,6 +19,8 @@ faq:
   - q: "Is test weight important?"
     a: "Yes, as a proxy for soundness and expected extraction. Wheat below 74 kg/hl yields 2–4 points less flour and produces more bran per tonne."
 ---
+
+Write a wheat contract on five parameters: moisture, [protein](/knowledge/wheat-protein-and-flour-quality/), test weight, falling number and impurity. Everything else is noise. Set protein as ±0.3% with pro-rata pricing outside the band rather than a pass/fail cliff — a cliff turns ordinary variation into a rejected load and a broken relationship.
 
 ## The five classes that matter commercially
 
@@ -110,3 +112,8 @@ The contract means nothing without a sampling protocol.
 | Dispute resolution | Independent laboratory, cost to the losing party |
 
 Hand-scooping from the top of a truck samples the driest, cleanest wheat in the load. It is the single most common way buyers get cheated and the easiest thing to fix.
+
+
+## Specification references
+
+Wheat class definitions and typical analysis ranges are published by [US Wheat Associates](https://www.grains.org/buyingselling/wheat) and are the basis of most internationally traded contracts. Your domestic standard may differ; write the contract against the standard your buyer actually tests to.

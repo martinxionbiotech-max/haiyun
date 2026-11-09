@@ -1,10 +1,10 @@
 ---
 title: "Wheat Tempering: Moisture Targets, Time and Why ±0.2% Matters"
-description: "How to temper wheat for milling — target moisture by wheat class, minimum and optimum tempering time, the effect of temperature, and why automatic dampening beats manual water addition."
+description: "How to temper wheat for milling — target moisture by wheat class, minimum and optimum tempering time, the effect of temperature, and why automatic dampening."
 type: cluster
 pillar: wheat-cleaning-system-design
 updated: 2026-11-07
-readingTime: 8
+readingTime: 3
 keywords: ["wheat tempering", "wheat moisture for milling", "wheat dampening", "tempering time wheat"]
 related: ["wheat-cleaning-system-design", "wheat-cleaning-process-flow", "flour-ash-content-explained"]
 keyTakeaways:
@@ -20,6 +20,8 @@ faq:
   - q: "Does tempering temperature matter?"
     a: "Yes. Water penetrates faster at 25–30 °C than at 10 °C. In cold climates, tempering time must be extended or the wheat warmed."
 ---
+
+Tempering targets are 15.0–15.5% for soft wheat, 16.0–16.5% for hard wheat and 16.5–17.0% for durum, held for at least twelve hours so water reaches the crease. Manual addition varies ±1.5% between operators; automatic dampening holds ±0.2% — and that gap is the usual explanation for 'the mill behaved differently today'.
 
 ## Why temper at all
 
@@ -79,9 +81,9 @@ The consequence of the difference is visible in the mill:
 | ±0.7% (careful manual) | +0.03 points | −0.5 points |
 | ±1.5% (typical manual) | +0.08 points | −1.5 points |
 
-At 60 t/d, 1.5 points of extraction is roughly 0.9 t of flour per day — USD 360/day, USD 118,000 a year.
+At [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/), 1.5 points of extraction is roughly 0.9 t of flour per day — USD 360/day, USD 118,000 a year.
 
-An automatic dampening system costs USD 12,000–25,000. It pays back in under three months.
+An [automatic dampening system](/equipment/automatic-dampening-system/) costs USD 12,000–25,000. It pays back in under three months.
 
 ## Multi-wheat blending
 
@@ -100,3 +102,10 @@ Solutions:
 3. **Check for surface water.** Free water on kernels means over-addition; the wheat will smear on the rolls.
 4. **Log tempering time per bin.** Rotation discipline matters more than any instrument.
 5. **Watch for sprout damage** if tempering exceeds 30 hours, especially in warm weather.
+
+
+## Why ±0.2% is achievable and ±1.5% is not
+
+The difference between manual and automatic dampening is not operator care — it is that manual addition has no feedback loop. The operator adds water based on incoming moisture from a meter reading taken hours earlier, on wheat that has since dried or absorbed moisture in the silo.
+
+Automatic systems measure moisture at the dampener inlet and adjust the water valve continuously. That closed loop is the whole mechanism, and it is worth more than any amount of operator training.

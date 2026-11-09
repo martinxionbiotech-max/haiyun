@@ -1,12 +1,12 @@
 ---
 title: "Flour Quality Control: Ash, Protein, Moisture, Granulation and Farinograph"
-description: "The complete laboratory and process control framework for a wheat flour mill — which tests matter, what the numbers should be, sampling frequency, and how to trace a quality complaint back to a specific passage or machine."
+description: "The complete laboratory and process control framework for a wheat flour mill — which tests matter, what the numbers should be, sampling frequency, and how…"
 type: pillar
 order: 5
 updated: 2026-11-07
-readingTime: 23
+readingTime: 6
 keywords: ["flour quality control", "flour ash content", "flour specification", "farinograph flour", "flour moisture content"]
-related: ["flour-ash-content-explained", "flour-specification-by-application", "flour-mill-laboratory-setup", "flour-granulation-testing", "wheat-protein-and-flour-quality"]
+related: ["flour-ash-content-explained", "flour-specification-by-application", "flour-mill-laboratory-setup", "flour-granulation-testing", "wheat-protein-and-flour-quality", "haccp-and-food-safety-certification", "flour-post-treatment-and-maturation", "flour-fortification-and-premix"]
 keyTakeaways:
   - "Ash is the single most useful process control measurement in a flour mill — it is a direct proxy for bran contamination and it costs pennies to run."
   - "Patent flour typically sits at 0.45–0.60% ash; every 0.01 point above your specification is roughly 1.5% of price at the premium end."
@@ -50,8 +50,8 @@ Because bran contains roughly 20× the mineral content of endosperm, **ash is a 
 - A worn roll that is polishing rather than cutting bran
 - A torn sifter screen leaking oversize into flour
 - A destoner that has lost air volume and is passing stones
-- A purifier whose air balance has drifted
-- A scourer with worn beaters that has stopped scouring
+- A [purifier](/equipment/purifier/) whose air balance has drifted
+- A [scourer](/equipment/horizontal-wheat-scourer/) with worn beaters that has stopped scouring
 
 Any of these can degrade ash by 0.05–0.20 points without any other visible symptom. Ash is the only measurement that catches all five.
 
@@ -69,7 +69,7 @@ Drift almost always traces to one of four sources:
 
 1. **Tempering water not reaching target** — check the dampener calibration against an oven-dry reference monthly
 2. **Ambient humidity change** with an unsealed pneumatic conveying system
-3. **Wheat moisture variation** that the automatic dampener has not compensated for
+3. **Wheat moisture variation** that the [automatic dampener](/equipment/automatic-dampening-system/) has not compensated for
 4. **Packaging line** not compensating for ambient conditions
 
 ## Protein: the specification measurement
@@ -99,7 +99,7 @@ Granulation is controlled by:
 
 - **Roll gap and differential** on reduction passages
 - **Sifter screen aperture** on the flour passages
-- **Impact detacher settings** (flaking and de-flaking)
+- **[Impact detacher](/equipment/impact-detacher/) settings** (flaking and de-flaking)
 
 Test with a sieve stack (typically 100, 150, 200, 250 mesh) on every significant product change, and whenever a customer reports a behaviour change.
 

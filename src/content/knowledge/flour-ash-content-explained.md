@@ -1,10 +1,10 @@
 ---
 title: "Flour Ash Content: What It Measures and Why It Decides Your Price"
-description: "Ash content explained for mill operators — what it physically measures, typical specifications by market, how to test it, and how to trace a rise back to a specific machine."
+description: "Ash content explained for mill operators — what it physically measures, typical specifications by market, how to test it, and how to trace a rise back to a."
 type: cluster
 pillar: flour-quality-control
 updated: 2026-11-07
-readingTime: 8
+readingTime: 3
 keywords: ["flour ash content", "flour ash specification", "ash content wheat flour", "flour quality ash"]
 related: ["flour-quality-control", "flour-mill-laboratory-setup", "flour-specification-by-application"]
 keyTakeaways:
@@ -20,6 +20,8 @@ faq:
   - q: "How is ash tested?"
     a: "Weigh 2–5 g of flour into a pre-weighed crucible, incinerate at 550–600 °C for 3–5 hours until only white/grey ash remains, cool in a desiccator and reweigh. Report as percentage of dry matter."
 ---
+
+Ash is what remains after burning flour at 550–600 °C, and it is the most reliable proxy you have for bran contamination. Bran carries roughly twenty times the minerals of endosperm, so one-hundredth of a point tells you more about your sifting and purification than any visual inspection of the flour.
 
 ## What ash physically is
 
@@ -48,7 +50,7 @@ Premium buyers — industrial bakeries, noodle manufacturers, export customers �
 | Medium (0.65%) | Slightly darker, more flavour, lower cost |
 | High (0.85%) | Noticeably darker, shorter shelf life, cheap |
 
-A bakery buying 20 t/month will pay 4–8% more for 0.52% ash than for 0.62%. That 8% on a 60 t/d plant at USD 400/t is roughly USD 700 per day.
+A bakery buying 20 t/month will pay 4–8% more for 0.52% ash than for 0.62%. That 8% on a [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/) plant at USD 400/t is roughly USD 700 per day.
 
 ## Testing procedure
 
@@ -85,10 +87,17 @@ If only one stream is out, you have found the machine. If all streams are unifor
 
 **3. Destoner inefficiency (15%).** Stones that reach the rolls create sparks and fine dust; more importantly, poor destoning correlates with poor overall cleaning. Run the 200-stone test quarterly.
 
-The remaining 15%: purifier out of air balance, scourer with worn beaters, dampener drift causing over- or under-tempering.
+The remaining 15%: [purifier](/equipment/purifier/) out of air balance, scourer with worn beaters, dampener drift causing over- or under-tempering.
 
 ## Ash versus extraction
 
 These two move in opposite directions. Every point of extraction beyond about 78% adds bran and raises ash.
 
 The correct target is not minimum ash. It is **maximum extraction at the specified ash**. A mill producing 74% extraction at 0.50% ash is underperforming; one producing 78% at 0.62% ash may be exactly right for its market.
+
+
+## Standards and measurement
+
+Ash is measured by incineration at 550–600 °C to constant weight. The method is specified in national and international standards, and the temperature matters: at 550 °C you retain some mineral salts that volatilise above 600 °C, so two labs using different temperatures will disagree by a few hundredths of a point.
+
+If you are buying against a specification, agree the method and the temperature in the contract, not just the number.

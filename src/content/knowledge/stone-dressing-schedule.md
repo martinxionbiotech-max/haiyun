@@ -1,10 +1,10 @@
 ---
 title: "Stone Dressing: Interval, Method and the Cost of Skipping It"
-description: "How often stone millstones need dressing, what happens when they don't get it, the dressing method, and how to tell from flour temperature and colour that it is overdue."
+description: "How often stone millstones need dressing, what happens when they don't get it, the dressing method, and how to tell from flour temperature and colour that."
 type: cluster
 pillar: stone-milling-technology
 updated: 2026-11-07
-readingTime: 6
+readingTime: 3
 keywords: ["stone mill dressing", "millstone sharpening", "stone mill maintenance", "millstone dressing interval"]
 related: ["stone-milling-technology", "sfm-stone-mill-configurations", "stone-milled-flour-market"]
 keyTakeaways:
@@ -19,6 +19,8 @@ faq:
   - q: "Can I dress stones myself?"
     a: "Yes with the right tools and training. Most mills have one technician trained for it. It takes 2–5 hours depending on stone size and condition."
 ---
+
+Dress stones every 300–500 operating hours, depending on wheat and load. Undressed stones smear instead of cut, flour temperature climbs and colour darkens. Because the decline is gradual and invisible, the only reliable trigger is a logged schedule plus hourly stone temperature — not the operator's judgement.
 
 ## Why dressing matters
 
@@ -60,7 +62,7 @@ Log stone surface temperature hourly.
 | Ambient + 18 to +25 °C | Dull, dress now |
 | Above 45 °C absolute | Stop and dress immediately |
 
-A cheap infrared thermometer is the most valuable instrument in a stone mill.
+A cheap infrared thermometer is the most valuable instrument in a [stone mill](/flour-milling-plant/stone-mill-unit/).
 
 ## Dressing method
 

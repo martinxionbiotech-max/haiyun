@@ -1,4 +1,4 @@
-# robots.txt — haiyunmilling.com
+# robots.txt — flourmillingpro.com
 User-agent: *
 Allow: /
 Disallow: /search/
@@ -34,4 +34,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://haiyunmilling.com/sitemap-index.xml
+Sitemap: https://flourmillingpro.com/sitemap-index.xml

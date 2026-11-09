@@ -18,12 +18,14 @@ export const projects = [
     files: ['p13_01.jpg', 'p13_02.jpg'],
     summary:
       'A storey-typed 300 t/d plant with a 4B5M1S1T flow sheet and a dedicated granular flour line, built for high-vitreous Xinjiang wheat and a local bread market that buys by the bag.',
+    seoDescription:
+      'A 300 t/d storey-typed plant with a 4B5M1S1T flow sheet and a dedicated granular line, built for high-vitreous Xinjiang wheat.',
     figures: [
       ['Capacity', '300 t/d'],
       ['Installed power', '920 kW'],
       ['Specific power', '67–71 kWh/t'],
       ['Flow sheet', '4B5M1S1T'],
-      ['Building', '48 × 9 × 21 m'],
+      ['Building', '60 × 11 × 27.5 m'],
       ['Extraction', '76% patent + 4% clear'],
     ],
     brief: [
@@ -63,7 +65,7 @@ export const projects = [
       },
       {
         label: 'Sifting',
-        value: 'Two FSFG high square plansifters, 62 m² total sifting area — 0.83 t/d per m², at the upper end of the standard range.',
+        value: 'Seven FSFG8×24 high square plansifters, 369 m² total sifting area — 0.81 t/d per m², sized on the standard 0.8 t/d per m² rate for a 4B5M1S1T flow sheet.',
       },
       {
         label: 'Purification',
@@ -104,7 +106,9 @@ export const projects = [
     scope: 'Turnkey — design, supply, installation, commissioning',
     files: ['p13_03.jpg'],
     summary:
-      'A 200 t/d plant with a double-purifier bank feeding two high square plansifters, and automatic proportioning across three wheat origins to hold a 12.3% protein specification year-round.',
+      'A 200 t/d plant with a double-purifier bank feeding five high square plansifters, and automatic proportioning across three wheat origins to hold a 12.3% protein specification year-round.',
+    seoDescription:
+      'A 200 t/d plant with twin purifier banks and automatic three-origin blending holding 12.3% protein year-round.',
     figures: [
       ['Capacity', '200 t/d'],
       ['Installed power', '690 kW'],
@@ -154,7 +158,7 @@ export const projects = [
       },
       {
         label: 'Sifting',
-        value: 'Two FSFG high square plansifters, 44 m² total — 0.88 t/d per m².',
+        value: 'Five FSFG8×24 high square plansifters, 264 m² total — 0.76 t/d per m².',
       },
       {
         label: 'Purification',
@@ -188,6 +192,8 @@ export const projects = [
     files: ['p13_04.jpg'],
     summary:
       'A 200 t/d plant designed for −35 °C ambient: heated tempering bins, insulated conveying, enclosed intake and a building envelope rated for a Heilongjiang winter.',
+    seoDescription:
+     'A 200 t/d cold-climate plant for −35 °C ambient: heated tempering, insulated conveying and an enclosed intake.',
     figures: [
       ['Capacity', '200 t/d'],
       ['Installed power', '690 kW'],
@@ -233,11 +239,11 @@ export const projects = [
       },
       {
         label: 'Milling',
-        value: '4B5M on six FMFQ(S) double roller mills. Building envelope 40 × 8 × 18.5 m, insulated to 150 mm walls and 200 mm roof.',
+        value: '4B5M on six FMFQ(S) double roller mills. Building envelope 40 × 8 × 18.5 m — narrower and taller than the 50 × 7.5 × 22.5 m standard for 200 t/d, because the plot was fixed at 42 × 30 m. Insulated to 150 mm walls and 200 mm roof.',
       },
       {
         label: 'Sifting',
-        value: 'Two FSFG high square plansifters, 44 m². Sifter room separately heated to hold 15 °C minimum.',
+        value: 'Five FSFG8×24 high square plansifters, 264 m². Sifter room separately heated to hold 15 °C minimum.',
       },
       {
         label: 'Conveying',
@@ -271,12 +277,14 @@ export const projects = [
     files: ['p13_06.jpg'],
     summary:
       'The largest plant delivered to date: two parallel 250 t/d lines with shared intake, separate milling floors and a common packing hall, running at 65–70 kWh/t.',
+    seoDescription:
+     'Two parallel 250 t/d lines with shared intake, separate milling floors and a common packing hall — the largest plant delivered to date.',
     figures: [
       ['Capacity', '500 t/d'],
       ['Installed power', '1,650 kW'],
       ['Specific power', '65–70 kWh/t'],
       ['Lines', '2 × 250 t/d'],
-      ['Building', '60 × 10 × 24 m'],
+      ['Building', '55 × 17 × 27.5 m'],
       ['Extraction', '77% patent'],
     ],
     brief: [
@@ -298,7 +306,7 @@ export const projects = [
       },
       {
         title: 'Building height',
-        body: '24 m to the eaves, 27.5 m total. Two independent gravity flow paths stacked in one building, with separate sifter floors so a sifter intervention on one line does not affect the other.',
+        body: '27.5 m total height. Two independent gravity flow paths stacked in one building, with separate sifter floors so a sifter intervention on one line does not affect the other.',
       },
     ],
     design: [
@@ -324,7 +332,7 @@ export const projects = [
       },
       {
         label: 'Sifting',
-        value: 'Three FSFG high square plansifters per line, 68 m² per line, 136 m² total — 0.74 t/d per m².',
+        value: 'Six FSFG8×24 high square plansifters per line, 316 m² per line, 632 m² total — 0.79 t/d per m².',
       },
       {
         label: 'Purification',

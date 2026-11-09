@@ -1,10 +1,10 @@
 ---
 title: "Understanding Flour Extraction: Definitions, Measurement and Benchmarks"
-description: "A technical note on flour extraction rate — how it is measured, why mill extraction differs from commercial extraction, and benchmark figures by wheat type and product."
+description: "A technical note on flour extraction rate — how it is measured, why mill extraction differs from commercial extraction, and benchmark figures by wheat type."
 type: cluster
 pillar: flour-milling-flow-sheet-design
 updated: 2026-11-07
-readingTime: 6
+readingTime: 3
 keywords: ["flour extraction definition", "mill extraction rate", "flour yield calculation"]
 related: ["flour-extraction-rate-economics", "flour-milling-flow-sheet-design", "flour-ash-content-explained"]
 keyTakeaways:
@@ -17,6 +17,10 @@ faq:
   - q: "What extraction should a mill achieve on hard wheat?"
     a: "76–79% for a 4B5M1S1T flow sheet with a purifier. A laboratory test mill might reach 79–81% on the same wheat; production losses account for the gap."
 ---
+
+Three different numbers all get called 'extraction', and on the same wheat they can differ by six points. A supplier quoting 78% may be quoting a laboratory test mill; your production mill, measured against wheat purchased rather than wheat milled, may read 72%. Ask which definition before you compare anything.
+
+This article is about **what extraction means and how to measure it** — the three definitions, the benchmarks, and the arithmetic that reconciles them. For the commercial case — what a point is worth, why flow sheet design sets it, and where the ash ceiling sits — see [why one point of extraction is worth more than your power bill](/knowledge/flour-extraction-rate-economics/).
 
 ## Three definitions that get confused
 
@@ -34,7 +38,7 @@ faq:
 
 The 2.5-point gap between mill and commercial is cleaning loss plus moisture shrinkage. The 3-point gap between laboratory and mill is scale, flow sheet differences and operator reality.
 
-**When a supplier quotes an extraction figure, ask which definition.** The difference between 78% and 74% commercial is USD 165,000 a year at 60 t/d.
+**When a supplier quotes an extraction figure, ask which definition.** At [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/) over 330 days, four points of commercial extraction is 792 t of flour — about USD 317,000 a year at USD 400/t. Even the 2.5-point gap between a mill figure and a commercial figure is worth roughly USD 198,000.
 
 ## Benchmarks
 
@@ -80,3 +84,10 @@ Common measurement errors:
 | Improve tempering control | +0.5–1.5 points | USD 12,000–25,000 |
 
 The first three are cheap or free and are the reason well-maintained older mills outperform neglected newer ones.
+
+
+## Comparing a quoted figure to your own
+
+If you want to know what a supplier's quoted extraction actually means, ask three questions: on what wheat, by which definition, and measured over what period. A laboratory figure on hard wheat and a commercial figure on a blend are not comparable, and the gap between them can be six points.
+
+[UK Flour Millers](https://www.ukflourmillers.org/) publishes the industry's own description of the milling process and the terms used in it, which is useful when a supplier uses a term differently from the way you do.

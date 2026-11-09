@@ -2,7 +2,7 @@ export const site = {
   name: 'HAIYUN Milling',
   legalName: 'Shandong Sishui Haiyun Grain Machine Co., Ltd.',
   shortName: 'Haiyun Grain Machine',
-  url: 'https://haiyunmilling.com',
+  url: 'https://flourmillingpro.com',
   tagline: 'Wheat flour milling plants, 10–500 t/d — engineered, built and commissioned.',
   description:
     'Haiyun builds complete wheat flour milling plants from 10 to 500 tonnes per day, plus cleaning equipment, roller mills, plansifters and stone mills. 60+ years of grain machinery manufacturing, 100+ patents, ISO 9001:2015, exported to 40+ countries.',
@@ -12,7 +12,7 @@ export const site = {
   mobileRaw: '+8613210498999',
   whatsapp: '8613210498999',
   email: 'export@cnhylj.com',
-  emailAlt: 'sales@haiyunmilling.com',
+  emailAlt: 'sales@flourmillingpro.com',
   address: {
     street: 'Shengcheng Road 7, Sishui Economic Development Zone',
     city: 'Jining',

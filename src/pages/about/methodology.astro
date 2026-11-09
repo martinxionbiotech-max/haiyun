@@ -1,0 +1,122 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import CTABand from '../../components/CTABand.astro';
+import { site } from '../../data/site.js';
+---
+<PageLayout
+  title="Editorial Method — How Our Milling Articles Are Written"
+  description="Who writes the Haiyun Knowledge Centre, what the figures are based on, how the data is checked, and how corrections are handled."
+>
+  <section class="bg-steel-950">
+    <div class="container-x py-14">
+      <p class="eyebrow-light">Editorial</p>
+      <h1 class="mt-2 font-display text-4xl font-bold uppercase tracking-tight text-white">How these articles are written</h1>
+      <p class="mt-3 max-w-2xl text-sm leading-relaxed text-steel-400">
+        Fifty-two technical articles is a lot of claim-making. This page sets out where the
+        numbers come from, who is accountable for them, and what to do when one is wrong.
+      </p>
+      <p class="mt-2 text-sm text-steel-500">Last updated: 8 November 2026</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-x max-w-3xl">
+      <div class="prose-hy">
+        <h2>Who writes this</h2>
+        <p>
+          The Knowledge Centre is written by the engineering desk at {site.legalName} — the
+          same team that sizes flow sheets, specifies equipment and commissions plants. Articles
+          are drafted by an engineer working on live projects, then reviewed by the technical
+          director before publication. Nothing is published by a marketing function without
+          engineering sign-off.
+        </p>
+        <p>
+          We are an equipment manufacturer, not an independent research body. That is a real
+          limitation and you should weigh it: our commercial interest is in plants that are
+          specified properly, which is not the same as an interest in the largest possible
+          quotation. Where our advice costs you less than the alternative, we say so.
+        </p>
+
+        <h2>What the figures are based on</h2>
+        <p>Numbers on this site come from four places, in descending order of authority:</p>
+        <ol>
+          <li>
+            <strong>Commissioning and acceptance-test records</strong> from plants we have built
+            — tonnage, extraction, ash, specific power, moisture accuracy. These are the source
+            for the project case studies.
+          </li>
+          <li>
+            <strong>Factory test data</strong> for individual machines — capacity, power draw,
+            dimensions, weight — measured on our own test floor before crating.
+          </li>
+          <li>
+            <strong>Standard milling practice</strong> for rules of thumb such as sifting area
+            per tonne per day, passage counts per flow sheet, and tempering times. These are
+            industry conventions, not proprietary findings, and they are stated as ranges
+            because the underlying conditions vary.
+          </li>
+          <li>
+            <strong>Published technical literature</strong> — miller's handbooks, manufacturer
+            technical bulletins, and standards bodies — for physical constants such as dust
+            Kst, minimum ignition energy, and ash measurement temperatures.
+          </li>
+        </ol>
+        <p>
+          Where a number is an estimate rather than a measurement, it is written as a range.
+          Where a range would be misleading because the answer depends entirely on local
+          conditions, we say what it depends on instead of inventing a midpoint.
+        </p>
+
+        <h2>Why the case studies are specific</h2>
+        <p>
+          The four project records report figures to one decimal place — 76.4% extraction,
+          68.9 kWh/t, 12.28% blend protein. That precision is deliberate: it comes from the
+          acceptance-test sheets and the plant historian, and rounding it to "about 76%" would
+          hide the variation that matters to a buyer comparing two quotations.
+        </p>
+        <p>
+          Client names are withheld at the request of the plant owners. Locations, tonnages,
+          flow sheets and performance figures are unchanged. A plant built to the same design
+          will not reproduce these numbers exactly — wheat, climate, shift pattern and operator
+          skill all move the result, and the case study pages say so.
+        </p>
+
+        <h2>Corrections</h2>
+        <p>
+          Technical content goes out of date, and we make mistakes. If you find a figure that
+          contradicts another page, does not survive its own arithmetic, or conflicts with your
+          operating experience, write to <a href={`mailto:${site.email}`}>{site.email}</a> with
+          the page address and the discrepancy.
+        </p>
+        <p>
+          Verified corrections are published with the article's updated date changed. We do not
+          silently edit a number and leave the date alone — if you cite us, you should be able
+          to tell whether the page changed since you read it.
+        </p>
+
+        <h2>What this site does not do</h2>
+        <p>
+          We do not publish sponsored content, we do not accept payment for product mentions,
+          and we do not run affiliate links. There are no advertising networks on these pages.
+        </p>
+        <p>
+          We also do not claim to be independent. Every article is written by the company that
+          would like to sell you the plant. Read it as the considered view of a supplier who
+          has to live with the consequences of their own advice — which is a different kind of
+          accountability, and worth something, but not the same as a peer-reviewed journal.
+        </p>
+
+        <h2>How to use this material</h2>
+        <p>
+          Use it to ask better questions, to sanity-check a quotation, and to notice when two
+          suppliers are quoting different things. Do not use it to size a plant without
+          site-specific assessment — the{' '}
+          <a href="/terms/">terms of use</a> explain why, and the
+          <a href="/knowledge/">knowledge centre index</a> is the fastest way to find the
+          article that covers your question.
+        </p>
+      </div>
+    </div>
+  </section>
+  <CTABand />
+</PageLayout>

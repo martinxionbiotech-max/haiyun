@@ -1,10 +1,10 @@
 ---
 title: "Flour Granulation: Why Particle Size Matters More Than You Think"
-description: "How to test and control flour granulation — sieve stacks, target distributions by application, what controls particle size, and why two flours at identical ash can behave completely differently."
+description: "How to test and control flour granulation — sieve stacks, target distributions by application, what controls particle size, and why two flours at identical."
 type: cluster
 pillar: flour-quality-control
 updated: 2026-11-07
-readingTime: 7
+readingTime: 3
 keywords: ["flour granulation", "flour particle size", "flour sieve test", "flour fineness"]
 related: ["flour-quality-control", "flour-specification-by-application", "impact-detacher-role"]
 keyTakeaways:
@@ -19,6 +19,8 @@ faq:
   - q: "Why does granulation matter?"
     a: "Fine particles hydrate faster and feed fermentation; coarse particles hydrate slowly and affect crust colour and texture. Uniformity matters as much as average size."
 ---
+
+Two flours with identical protein and ash can bake completely differently, and granulation is usually why. It is set by roll gap, sifter aperture and detacher condition — three variables that drift quietly between services. It is also the first thing to check when a customer says the flour changed but the analysis sheet looks the same.
 
 ## Why it matters
 
@@ -74,7 +76,7 @@ This is why "the flour changed" complaints are so often traceable to granulation
 
 Smooth reduction rolls produce flat flakes. Those flakes behave as large particles in a sieve test but are actually thin and fragile.
 
-An impact detacher breaks them apart, which:
+An [impact detacher](/equipment/impact-detacher/) breaks them apart, which:
 
 - Increases the passing fraction by 5–12%
 - Improves sifting efficiency

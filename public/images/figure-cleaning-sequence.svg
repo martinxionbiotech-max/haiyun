@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" width="1000" height="440" role="img" aria-labelledby="t d">
+  <title id="t">Wheat cleaning sequence — ten stages in fixed order</title>
+  <desc id="d">Ten boxes in the order wheat passes through a cleaning house: intake and weighing, coarse pre-cleaning, size grading, density separation, surface scouring, length grading, wet cleaning, dampening, magnetic separation, aspiration.</desc>
+  <style>
+    .b { fill:#f4f6f8; stroke:#cbd7e2; stroke-width:1.5; }
+    .b2 { fill:#fff8ed; stroke:#ffdba8; stroke-width:1.5; }
+    .n { font:700 15px/1 ui-sans-serif,system-ui,sans-serif; fill:#fd7e14; }
+    .h { font:700 13px/1.25 ui-sans-serif,system-ui,sans-serif; fill:#1b2836; }
+    .s { font:400 11px/1.2 ui-sans-serif,system-ui,sans-serif; fill:#3c5b76; }
+    .a { stroke:#7292ac; stroke-width:2; fill:none; marker-end:url(#ar); }
+    .cap { font:400 12px/1.4 ui-sans-serif,system-ui,sans-serif; fill:#4f7391; }
+    .lbl { font:700 11px/1 ui-sans-serif,system-ui,sans-serif; fill:#c54808; letter-spacing:.08em; }
+  </style>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#7292ac"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="440" fill="#ffffff"/>
+  <text x="28" y="30" class="lbl">DRY SECTION</text>
+  <line x1="120" y1="26" x2="972" y2="26" stroke="#e6ebf0" stroke-width="1"/>
+
+  <!-- row 1 -->
+  <g>
+    <rect class="b" x="28" y="48" width="172" height="72" rx="8"/>
+    <text class="n" x="44" y="72">1</text>
+    <text class="h" x="44" y="90">Intake &amp; weighing</text>
+    <text class="s" x="44" y="107">Weighbridge, scale</text>
+  </g>
+  <g>
+    <rect class="b" x="228" y="48" width="172" height="72" rx="8"/>
+    <text class="n" x="244" y="72">2</text>
+    <text class="h" x="244" y="90">Coarse pre-clean</text>
+    <text class="s" x="244" y="107">Drum sieve</text>
+  </g>
+  <g>
+    <rect class="b" x="428" y="48" width="172" height="72" rx="8"/>
+    <text class="n" x="444" y="72">3</text>
+    <text class="h" x="444" y="90">Size grading</text>
+    <text class="s" x="444" y="107">Vibrating screen</text>
+  </g>
+  <g>
+    <rect class="b" x="628" y="48" width="172" height="72" rx="8"/>
+    <text class="n" x="644" y="72">4</text>
+    <text class="h" x="644" y="90">Density separation</text>
+    <text class="s" x="644" y="107">Gravity destoner</text>
+  </g>
+  <g>
+    <rect class="b" x="828" y="48" width="144" height="72" rx="8"/>
+    <text class="n" x="844" y="72">5</text>
+    <text class="h" x="844" y="90">Surface scouring</text>
+    <text class="s" x="844" y="107">Scourer</text>
+  </g>
+  <path class="a" d="M200 84 H222"/>
+  <path class="a" d="M400 84 H422"/>
+  <path class="a" d="M600 84 H622"/>
+  <path class="a" d="M800 84 H822"/>
+  <path class="a" d="M900 120 V152 H100 V186"/>
+
+  <text x="28" y="182" class="lbl">OPTIONAL STAGES — CAPACITY DEPENDENT</text>
+  <line x1="330" y1="178" x2="972" y2="178" stroke="#e6ebf0" stroke-width="1"/>
+
+  <!-- row 2 -->
+  <g>
+    <rect class="b2" x="28" y="200" width="172" height="72" rx="8"/>
+    <text class="n" x="44" y="224">6</text>
+    <text class="h" x="44" y="242">Length grading</text>
+    <text class="s" x="44" y="259">Indent cylinder</text>
+  </g>
+  <g>
+    <rect class="b2" x="228" y="200" width="172" height="72" rx="8"/>
+    <text class="n" x="244" y="224">7</text>
+    <text class="h" x="244" y="242">Wet cleaning</text>
+    <text class="s" x="244" y="259">Washer-destoner-dryer</text>
+  </g>
+  <g>
+    <rect class="b" x="428" y="200" width="172" height="72" rx="8"/>
+    <text class="n" x="444" y="224">8</text>
+    <text class="h" x="444" y="242">Dampening</text>
+    <text class="s" x="444" y="259">Automatic dampener</text>
+  </g>
+  <g>
+    <rect class="b" x="628" y="200" width="172" height="72" rx="8"/>
+    <text class="n" x="644" y="224">9</text>
+    <text class="h" x="644" y="242">Magnetic separation</text>
+    <text class="s" x="644" y="259">Plate / drum magnets</text>
+  </g>
+  <g>
+    <rect class="b" x="828" y="200" width="144" height="72" rx="8"/>
+    <text class="n" x="844" y="224">10</text>
+    <text class="h" x="844" y="242">Aspiration</text>
+    <text class="s" x="844" y="259">Aspirator</text>
+  </g>
+  <path class="a" d="M200 236 H222"/>
+  <path class="a" d="M400 236 H422"/>
+  <path class="a" d="M600 236 H622"/>
+  <path class="a" d="M800 236 H822"/>
+
+  <!-- tempering note -->
+  <rect x="28" y="300" width="944" height="52" rx="8" fill="#0f1922"/>
+  <text x="48" y="322" class="h" style="fill:#ffffff">Tempering — 12 to 24 hours in bins, after dampening and before the first break</text>
+  <text x="48" y="340" class="s" style="fill:#a3b8ca">Water must reach the crease. Below twelve hours it has not, and the bran shatters on the first break.</text>
+
+  <text x="28" y="382" class="cap">Order is fixed by physics: coarse before fine, dry before wet, size before density, magnets last.</text>
+  <text x="28" y="402" class="cap">Stages 6 and 7 are optional below 30 t/d and standard above 60 t/d.</text>
+  <text x="28" y="424" class="cap">Orange outline = optional. Everything else is present on every flow sheet we build, from 200 kg/h to 500 t/d.</text>
+</svg>

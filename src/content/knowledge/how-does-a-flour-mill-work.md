@@ -1,10 +1,10 @@
 ---
 title: "How Does a Flour Mill Work? From Wheat Kernel to Flour Bag"
-description: "A plain-language walkthrough of what happens inside a flour mill — cleaning, tempering, breaking, reducing, sifting, purifying and packing — with the physics behind each step."
+description: "A plain-language walkthrough of what happens inside a flour mill — cleaning, tempering, breaking, reducing, sifting, purifying and packing — with the."
 type: cluster
 pillar: how-to-size-a-flour-mill
 updated: 2026-11-07
-readingTime: 8
+readingTime: 3
 keywords: ["how does a flour mill work", "flour milling process", "wheat to flour process"]
 related: ["how-to-size-a-flour-mill", "flour-milling-flow-sheet-design", "wheat-cleaning-process-flow"]
 keyTakeaways:
@@ -17,6 +17,8 @@ faq:
   - q: "Does flour milling remove the germ?"
     a: "Commercial white flour does — germ is separated early because its oils go rancid. Whole wheat flour keeps it, which shortens shelf life to 3–6 months."
 ---
+
+A flour mill does not grind wheat into powder. It opens the kernel gradually across nine to fifteen passages, scraping endosperm off bran a little at a time and sifting the result after every one — because the objective is separation, not size reduction. Everything else in the plant exists to support that sequence.
 
 ## The kernel you are trying to take apart
 
@@ -68,13 +70,13 @@ Reduction produces flour. Break passages produce the material that reduction wor
 
 ## Step 6 — Sifting
 
-Every passage output goes to a sifter. A plansifter is a stack of frames with different mesh sizes, gyrating at 245 rpm.
+Every passage output goes to a sifter. A [plansifter](/equipment/high-square-plansifter/) is a stack of frames with different mesh sizes, gyrating at 245 rpm.
 
 It separates each stream into flour, coarse middlings, fine middlings and bran. The fine material goes forward; the coarse goes back to another passage.
 
 ## Step 7 — Purifying
 
-Middlings of the same size but different purity are separated in a purifier, which uses airflow over a vibrating deck. Pure endosperm is lighter and more angular, so it floats and travels. Bran-contaminated particles settle.
+Middlings of the same size but different purity are separated in a [purifier](/equipment/purifier/), which uses airflow over a vibrating deck. Pure endosperm is lighter and more angular, so it floats and travels. Bran-contaminated particles settle.
 
 This is the machine that turns "well-sifted flour" into "low-ash patent flour".
 
@@ -96,3 +98,10 @@ Flour is check-sifted one last time, magnets remove any ferrous material, and th
 Flour milling does not grind wheat into powder. It **takes wheat apart**, one passage at a time, and each passage is designed to separate rather than to pulverise.
 
 That is why a mill with more passages extracts more flour from the same wheat — and why a 4B5M flow sheet beats a 3B4M on economics even though it costs more.
+
+
+## Reading further
+
+The [UK Flour Millers](https://www.ukflourmillers.org/) technical pages describe the same process from the trade body's side, and [Bühler's milling resources](https://www.buhlergroup.com/global/en/innovations/milling.html) show how the passage structure is drawn on a modern flow sheet. If you want the physics of what happens inside a roll nip rather than the sequence of the plant, those are the places to start.
+
+For the raw material side, [US Wheat Associates](https://www.grains.org/buyingselling/wheat) publishes the class specifications that most export contracts are written against.

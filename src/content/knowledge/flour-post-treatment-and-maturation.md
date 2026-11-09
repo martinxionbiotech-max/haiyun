@@ -1,10 +1,10 @@
 ---
 title: "Flour Post-Treatment: Maturation, Blending and Why Fresh Flour Bakes Badly"
-description: "Why flour needs weeks to mature, what oxidation actually does to gluten, and the treatment options — natural ageing, chemical maturation, bleaching and enrichment — with the regulatory limits that apply."
+description: "Why flour needs weeks to mature, what oxidation actually does to gluten, and the treatment options — natural ageing, chemical maturation, bleaching and…"
 type: cluster
 pillar: flour-quality-control
 updated: 2026-11-07
-readingTime: 7
+readingTime: 4
 keywords: ["flour maturation", "flour bleaching", "flour treatment agents", "flour enrichment", "flour ageing"]
 related: ["flour-quality-control", "flour-specification-by-application", "flour-granulation-testing"]
 keyTakeaways:
@@ -19,6 +19,8 @@ faq:
   - q: "Is flour bleaching legal?"
     a: "In the EU, chemical bleaching agents are prohibited; only natural ageing or ascorbic acid is used. In the US, benzoyl peroxide and chlorine are permitted. Rules vary widely by market, and export contracts specify them."
 ---
+
+Freshly milled flour bakes badly — tight, bucky dough that no formula change will fix — because it needs two to six weeks of oxidation first. Maturation changes gluten; bleaching only changes colour. Confusing the two produces flour that looks right on the shelf and performs wrong in the bakery.
 
 ## The freshness paradox
 
@@ -60,7 +62,7 @@ The flour has not changed in composition. It has changed in oxidation state.
 - **Temperature**: 18–25 °C is optimal; cold storage slows it
 - **Rotation**: FIFO, with date marking
 
-For a 60 t/d mill, that means 840–1,680 t of finished flour storage. This is a real capital item that is frequently omitted from project budgets, and its absence is why new mills cannot sell their first month of production.
+For a [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/) mill, that means 840–1,680 t of finished flour storage. This is a real capital item that is frequently omitted from project budgets, and its absence is why new mills cannot sell their first month of production.
 
 ## Accelerated maturation
 

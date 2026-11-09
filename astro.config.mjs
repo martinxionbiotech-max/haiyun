@@ -18,6 +18,6 @@ export default defineConfig({
       filter: (page) => !page.endsWith('/search/'),
     }),
   ],
-  site: 'https://haiyunmilling.com',
+  site: 'https://flourmillingpro.com',
   build: { inlineStylesheets: 'auto' },
 });

@@ -1,10 +1,10 @@
 ---
 title: "Flour Mill Building Requirements: Height, Loading, Floors and Layout"
-description: "Civil requirements for a wheat flour mill — clear height, floor loading, vibration isolation, dust zoning, and how building choice changes between a floor-mounted 30 t/d plant and a storey-typed 300 t/d tower."
+description: "Civil requirements for a wheat flour mill — clear height, floor loading, vibration isolation, dust zoning, and how building choice changes between a…"
 type: cluster
 pillar: how-to-size-a-flour-mill
 updated: 2026-11-07
-readingTime: 10
+readingTime: 3
 keywords: ["flour mill building design", "flour mill height requirement", "flour mill floor loading", "flour mill construction"]
 related: ["how-to-size-a-flour-mill", "flour-mill-layout-design", "flour-mill-capacity-calculation"]
 keyTakeaways:
@@ -33,7 +33,7 @@ Building cost is 20–30% of project capital and almost never appears in an equi
 | 25 t/d | 15 × 5 m | 4 m |
 | 30 t/d | 18 × 6 m | 6.5 m |
 
-Floor-mounted twin-bin plansifters sit at ground level; product is lifted by bucket elevator or pneumatic line and falls by gravity through short runs.
+Floor-mounted twin-bin [plansifters](/equipment/high-square-plansifter/) sit at ground level; product is lifted by bucket elevator or pneumatic line and falls by gravity through short runs.
 
 Advantages: cheapest civil cost, easy maintenance access, simple ventilation, can be built from standard industrial frames.
 

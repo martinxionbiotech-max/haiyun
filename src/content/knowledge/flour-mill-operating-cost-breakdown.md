@@ -1,10 +1,10 @@
 ---
 title: "Flour Mill Operating Cost: The Full Breakdown by Line Item"
-description: "Operating cost structure for a wheat flour mill — wheat, labour, power, maintenance, packaging and overheads — with a worked 60 t/d example and the levers that move each line."
+description: "Operating cost structure for a wheat flour mill — wheat, labour, power, maintenance, packaging and overheads — with a worked 60 t/d example and the levers."
 type: cluster
 pillar: flour-mill-project-economics
 updated: 2026-11-07
-readingTime: 9
+readingTime: 3
 keywords: ["flour mill operating cost", "flour milling cost per tonne", "flour mill expenses"]
 related: ["flour-mill-project-economics", "flour-mill-power-consumption", "flour-extraction-rate-economics"]
 keyTakeaways:
@@ -17,6 +17,8 @@ faq:
   - q: "Which cost line is easiest to reduce?"
     a: "Extraction rate — not a cost line but the multiplier on wheat cost. A 1-point extraction gain is worth more than eliminating your entire maintenance budget."
 ---
+
+Wheat is 65–80% of what it costs to make flour. Everything else — labour, power, packaging, maintenance — is rounding error by comparison. That single fact should reorganise your priorities, because it means extraction and wheat buying matter more than every cost line you can directly control.
 
 ## The structure
 
@@ -37,15 +39,15 @@ Assumptions: 330 operating days, 76% extraction, wheat at USD 280/t, power at US
 |---|---|---|---|
 | Wheat | 19,800 t × 280 | 5,544,000 | 368.4 |
 | Labour | 12 staff | 95,000 | 6.3 |
-| Power | 853,000 kWh | 85,300 | 5.7 |
+| Power | 1,083,000 kWh | 108,300 | 7.2 |
 | Packaging | 602k bags | 210,672 | 14.0 |
 | Maintenance | 4% of equipment | 12,000 | 0.8 |
 | Overheads | admin, insurance, transport | 85,000 | 5.6 |
-| **Total** | | **6,031,972** | **400.8** |
+| **Total** | | **6,054,972** | **402.3** |
 
 Revenue: flour 15,048 t × 400 = 6,019,200, plus bran 3,960 t × 120 = 475,200. Total 6,494,400.
 
-Gross margin: USD 462,428 — about 7.1%. Better than the 3% in the pillar example because bran recovery and packaging are modelled more favourably here; real projects land somewhere in between depending on local prices.
+Gross margin: USD 439,428 — about 6.8%. Better than the 3% in the pillar example because bran recovery and packaging are modelled more favourably here; real projects land somewhere in between depending on local prices.
 
 ## Labour by scale
 
@@ -107,3 +109,5 @@ Under-budgeting maintenance is the classic path to a plant that runs well for th
 | −10% packaging | +USD 21,000 |
 
 Extraction dominates everything you control inside the plant. It is worth more than eliminating your entire power bill.
+
+If you are building this kind of business rather than a general mill, the [contract milling operation](/solutions/#contract-milling) page sets out the capacity, flow sheet and staffing that model assumes.

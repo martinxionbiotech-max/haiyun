@@ -1,10 +1,10 @@
 ---
 title: "Wheat Impurities: The Six Classes and How Each Is Removed"
-description: "A field guide to wheat contamination — coarse, size-graded, density, surface, shape and ferrous impurities — with the machine that removes each, typical levels by origin, and acceptable limits."
+description: "A field guide to wheat contamination — coarse, size-graded, density, surface, shape and ferrous impurities — with the machine that removes each, typical."
 type: cluster
 pillar: wheat-cleaning-system-design
 updated: 2026-11-07
-readingTime: 7
+readingTime: 3
 keywords: ["wheat impurities", "grain impurity types", "wheat contamination", "grain cleaning"]
 related: ["wheat-cleaning-system-design", "wheat-cleaning-process-flow", "destoner-selection-guide"]
 keyTakeaways:
@@ -18,11 +18,13 @@ faq:
     a: "Stones. They damage roll flutes, contaminate flour and can reach a customer's food. They are also the class most often missed by undersized cleaning lines because field stone is wheat-sized."
 ---
 
+Wheat arrives with six classes of impurity, and each needs a different separation principle — which is why no single machine handles more than one or two of them properly. The class that most often escapes undersized cleaning lines is field stone: same size as wheat, twice the density, invisible to any screen.
+
 ## Class 1 — Coarse impurities
 
 **Examples**: straw, rope, cob, string, plastic, wood, stones larger than 8 mm.
 
-**Removed by**: drum sieve (SCQY series).
+**Removed by**: [drum sieve](/equipment/drum-sieve-pre-cleaner/) (SCQY series).
 
 **Typical level**: 0.1–0.8% depending on harvest method. Combine-harvested wheat carries more straw than hand-harvested.
 
@@ -42,7 +44,7 @@ faq:
 
 **Examples**: field stones, glass, mud balls, coal, brick fragments.
 
-**Removed by**: gravity destoner (TQSF).
+**Removed by**: [gravity destoner](/equipment/gravity-destoner/) (TQSF).
 
 **Typical level**: 0.05–0.5%.
 
@@ -52,7 +54,7 @@ faq:
 
 **Examples**: dirt, dust, wheat beard, smut spores, bacteria, mould spores, pesticide residue.
 
-**Removed by**: scourer (FDMW), brush machine (TNSW), aspirator (TXFY).
+**Removed by**: [scourer](/equipment/horizontal-wheat-scourer/) (FDMW), brush machine (TNSW), aspirator (TXFY).
 
 **Typical level**: variable; measured as ash contribution.
 

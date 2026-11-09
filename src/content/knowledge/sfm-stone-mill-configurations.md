@@ -1,10 +1,10 @@
 ---
 title: "SFM Stone Mill Configurations: 100, 1+2 and 3+4 Compared"
-description: "Technical comparison of the three Haiyun stone mill configurations — capacity, power, footprint, extraction, roller-to-stone ratio and which buyer each one fits."
+description: "Technical comparison of the three Haiyun stone mill configurations — capacity, power, footprint, extraction, roller-to-stone ratio and which buyer each one."
 type: cluster
 pillar: stone-milling-technology
 updated: 2026-11-07
-readingTime: 7
+readingTime: 3
 keywords: ["SFM stone mill", "stone mill configuration", "stone flour mill capacity", "SFM-1+2"]
 related: ["stone-milling-technology", "stone-mill-vs-roller-mill", "stone-dressing-schedule"]
 keyTakeaways:
@@ -17,6 +17,8 @@ faq:
   - q: "Why does the hybrid need roller mills?"
     a: "Roller mills split the wheat and extract clean core particles, which the stones then grind. This removes bran before stoning, raising yield and throughput without losing the cold-grind character."
 ---
+
+The SFM range spans 50 to 600 kg/h across three configurations, and the choice comes down to whether you need cold grinding, roller extraction, or both. The 1+2 hybrid is the commercial sweet spot: a roller splits and extracts, a stone grinds without heat, and one frame carries both.
 
 ## SFM-100 — pure stone, entry level
 
@@ -48,7 +50,7 @@ Automatic feeding, sifting and grinding in one unit. The stones turn at 28–30 
 | Extraction | 78–85% |
 | Shift output | 1.6 t over 8 hours |
 
-One roller mill does the first break — splitting wheat and releasing core particles, which are screened out and sent to two stone mills. The stones grind clean endosperm rather than whole kernels.
+One [roller mill](/equipment/fmfq-double-roller-mill/) does the first break — splitting wheat and releasing core particles, which are screened out and sent to two stone mills. The stones grind clean endosperm rather than whole kernels.
 
 The effect is significant: **you keep the cold-grind character while raising yield and throughput.** Rolling before stoning removes bran early, so the stones spend their limited capacity grinding endosperm instead of rubbing bran.
 

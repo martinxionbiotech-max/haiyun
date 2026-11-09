@@ -1,10 +1,10 @@
 ---
 title: "Whole Wheat Flour Production: Extraction, Shelf Life and Process Choices"
-description: "How to produce whole wheat flour commercially — target extraction, particle size, the germ problem, shelf-life extension options, and the difference between true wholemeal and reconstituted whole wheat."
+description: "How to produce whole wheat flour commercially — target extraction, particle size, the germ problem, shelf-life extension options, and the difference between…"
 type: cluster
 pillar: stone-milling-technology
 updated: 2026-11-07
-readingTime: 8
+readingTime: 3
 keywords: ["whole wheat flour production", "wholemeal flour milling", "atta production", "whole grain flour shelf life"]
 related: ["stone-milling-technology", "stone-milled-flour-market", "flour-specification-by-application"]
 keyTakeaways:
@@ -19,6 +19,8 @@ faq:
   - q: "Is stone ground whole wheat better than roller whole wheat?"
     a: "For baking, usually yes — larger bran flakes cut the gluten network less than fine bran powder, giving better volume. For shelf life, no difference."
 ---
+
+True whole wheat is 100% of the cleaned kernel; commercial 'whole wheat' usually runs 85–95% because some bran is removed to keep the flour handleable and the shelf life survivable. The defining constraint is not extraction but rancidity — the germ's oils go off in three to six months at ambient temperature.
 
 ## What "whole wheat" actually means
 
@@ -74,7 +76,7 @@ The bran flake size is the technical differentiator. Large flakes are visible in
 
 **Option 1 — Straight stone grinding.** Whole kernel into stone, flour out. Simplest, produces the best-textured wholemeal, lowest throughput.
 
-**Option 2 — Roller with all streams recombined.** Roller mill separates streams then remixes them. High output, consistent, but bran is finely divided.
+**Option 2 — Roller with all streams recombined.** [Roller mill](/equipment/fmfq-double-roller-mill/) separates streams then remixes them. High output, consistent, but bran is finely divided.
 
 **Option 3 — Hybrid (SFM-1+2).** Roller splits and extracts core, stones grind, bran recombined at controlled particle size. Balances texture and throughput.
 

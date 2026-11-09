@@ -4,7 +4,7 @@ description: "Silo types, capacity sizing, aeration rates, temperature monitorin
 type: cluster
 pillar: wheat-procurement-and-storage
 updated: 2026-11-07
-readingTime: 8
+readingTime: 4
 keywords: ["grain silo design", "wheat aeration system", "silo capacity flour mill", "grain storage temperature"]
 related: ["wheat-procurement-and-storage", "wheat-storage-pest-control", "grain-intake-and-weighing"]
 keyTakeaways:
@@ -20,6 +20,8 @@ faq:
     a: "At 12% moisture and below 15 °C, twelve months or more with aeration. At 14% and 25 °C, quality loss becomes measurable within three months."
 ---
 
+Aeration at 0.15–0.3 m³ per minute per tonne is the highest-return investment in grain storage. Wheat above 20 °C respires and loses dry matter — at 30 °C a stored lot can shed half a percent of its mass per month. Four large silos beat twelve small ones on every metric except flexibility.
+
 ## Why storage exists at all
 
 A flour mill does not need wheat storage because wheat is difficult to store. It needs storage because wheat price is seasonal.
@@ -31,7 +33,7 @@ A flour mill does not need wheat storage because wheat is difficult to store. It
 | Harvest + 6 | 108–114 |
 | Harvest + 9 | 110–118 |
 
-Buying at harvest and milling through the year is worth 8–18% on the wheat bill. For a 60 t/d mill consuming 24,000 t/year at USD 300/t, that is USD 570,000–1,300,000 per year.
+Buying at harvest and milling through the year is worth 8–18% on the wheat bill. For a [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/) mill consuming 24,000 t/year at USD 300/t, that is USD 570,000–1,300,000 per year.
 
 Storage capacity is not a cost. It is the mechanism that captures that spread.
 

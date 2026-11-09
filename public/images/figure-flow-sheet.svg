@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="1000" height="520" role="img" aria-labelledby="t d">
+  <title id="t">4B5M1S1T flow sheet — break, reduction, sizing and tailing passages</title>
+  <desc id="d">A schematic of a 4B5M1S1T wheat flour milling flow sheet showing four break passages, five reduction passages, one sizing passage and one tailing passage, with sifting after each, purifier feed from middlings, and three product streams.</desc>
+  <style>
+    .brk { fill:#1b2836; }
+    .red { fill:#324960; }
+    .siz { fill:#4f7391; }
+    .tal { fill:#7292ac; }
+    .bt { font:700 13px/1 ui-sans-serif,system-ui,sans-serif; fill:#ffffff; }
+    .bs { font:400 10px/1 ui-sans-serif,system-ui,sans-serif; fill:#cbd7e2; }
+    .h { font:700 12px/1 ui-sans-serif,system-ui,sans-serif; fill:#1b2836; }
+    .s { font:400 11px/1.3 ui-sans-serif,system-ui,sans-serif; fill:#3c5b76; }
+    .lbl { font:700 11px/1 ui-sans-serif,system-ui,sans-serif; fill:#c54808; letter-spacing:.08em; }
+    .ln { stroke:#a3b8ca; stroke-width:1.6; fill:none; }
+    .prod { fill:#fff8ed; stroke:#ff9c37; stroke-width:1.5; }
+  </style>
+  <defs>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#a3b8ca"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="520" fill="#ffffff"/>
+
+  <text x="28" y="28" class="lbl">WHEAT IN</text>
+  <line x1="28" y1="36" x2="972" y2="36" stroke="#e6ebf0"/>
+
+  <!-- BREAK passages -->
+  <text x="28" y="62" class="h">BREAK — 4 passages, 2.5:1 differential, fluted</text>
+  <g>
+    <rect class="brk" x="28" y="72" width="150" height="56" rx="6"/>
+    <text class="bt" x="42" y="94">1B</text><text class="bs" x="42" y="112">opens kernel</text>
+  </g>
+  <g>
+    <rect class="brk" x="198" y="72" width="150" height="56" rx="6"/>
+    <text class="bt" x="212" y="94">2B</text><text class="bs" x="212" y="112">scrapes endosperm</text>
+  </g>
+  <g>
+    <rect class="brk" x="368" y="72" width="150" height="56" rx="6"/>
+    <text class="bt" x="382" y="94">3B</text><text class="bs" x="382" y="112">thins bran</text>
+  </g>
+  <g>
+    <rect class="brk" x="538" y="72" width="150" height="56" rx="6"/>
+    <text class="bt" x="552" y="94">4B</text><text class="bs" x="552" y="112">final scrape</text>
+  </g>
+  <path class="ln" d="M178 100 H192" marker-end="url(#a2)"/>
+  <path class="ln" d="M348 100 H362" marker-end="url(#a2)"/>
+  <path class="ln" d="M518 100 H532" marker-end="url(#a2)"/>
+
+  <!-- sifting bar -->
+  <rect x="28" y="146" width="660" height="34" rx="6" fill="#f4f6f8" stroke="#cbd7e2"/>
+  <text x="44" y="168" class="s">Plansifter — every passage is sifted; oversize returns to the next passage, throughs go to the next break or to reduction</text>
+
+  <!-- middlings to purifier -->
+  <path class="ln" d="M358 146 V132 H804 V146" marker-end="url(#a2)"/>
+  <rect x="742" y="72" width="230" height="56" rx="6" fill="#ee6107"/>
+  <text class="bt" x="758" y="94">PURIFIER</text><text class="bs" x="758" y="112">density separation of middlings</text>
+
+  <!-- REDUCTION -->
+  <text x="28" y="212" class="h">REDUCTION — 5 passages, 2.0:1 down to 1.25:1, smooth</text>
+  <g>
+    <rect class="red" x="28" y="222" width="118" height="52" rx="6"/>
+    <text class="bt" x="42" y="244">1M</text><text class="bs" x="42" y="261">2.0:1</text>
+  </g>
+  <g>
+    <rect class="red" x="166" y="222" width="118" height="52" rx="6"/>
+    <text class="bt" x="180" y="244">2M</text><text class="bs" x="180" y="261">1.7:1</text>
+  </g>
+  <g>
+    <rect class="red" x="304" y="222" width="118" height="52" rx="6"/>
+    <text class="bt" x="318" y="244">3M</text><text class="bs" x="318" y="261">1.5:1</text>
+  </g>
+  <g>
+    <rect class="red" x="442" y="222" width="118" height="52" rx="6"/>
+    <text class="bt" x="456" y="244">4M</text><text class="bs" x="456" y="261">1.35:1</text>
+  </g>
+  <g>
+    <rect class="red" x="580" y="222" width="118" height="52" rx="6"/>
+    <text class="bt" x="594" y="244">5M</text><text class="bs" x="594" y="261">1.25:1</text>
+  </g>
+  <path class="ln" d="M146 248 H160" marker-end="url(#a2)"/>
+  <path class="ln" d="M284 248 H298" marker-end="url(#a2)"/>
+  <path class="ln" d="M422 248 H436" marker-end="url(#a2)"/>
+  <path class="ln" d="M560 248 H574" marker-end="url(#a2)"/>
+  <path class="ln" d="M256 128 V206" marker-end="url(#a2)"/>
+
+  <!-- SIZING + TAILING -->
+  <text x="28" y="312" class="h">SIZING &amp; TAILING</text>
+  <g>
+    <rect class="siz" x="28" y="322" width="150" height="52" rx="6"/>
+    <text class="bt" x="42" y="344">1S</text><text class="bs" x="42" y="361">coarse middlings</text>
+  </g>
+  <g>
+    <rect class="tal" x="198" y="322" width="150" height="52" rx="6"/>
+    <text class="bt" x="212" y="344">1T</text><text class="bs" x="212" y="361">recovers flour from bran</text>
+  </g>
+  <path class="ln" d="M639 274 V300 H103 V316" marker-end="url(#a2)"/>
+  <path class="ln" d="M178 348 H192" marker-end="url(#a2)"/>
+
+  <!-- OUTPUTS -->
+  <text x="28" y="404" class="lbl">THREE PRODUCT STREAMS</text>
+  <g>
+    <rect class="prod" x="28" y="414" width="290" height="60" rx="6"/>
+    <text class="h" x="42" y="436">Patent flour</text>
+    <text class="s" x="42" y="454">lowest ash, 1M–3M throughs</text>
+  </g>
+  <g>
+    <rect class="prod" x="338" y="414" width="290" height="60" rx="6"/>
+    <text class="h" x="352" y="436">Standard / clear flour</text>
+    <text class="s" x="352" y="454">higher ash, later reductions</text>
+  </g>
+  <g>
+    <rect class="prod" x="648" y="414" width="324" height="60" rx="6"/>
+    <text class="h" x="662" y="436">Bran &amp; by-product</text>
+    <text class="s" x="662" y="454">22–28% of intake, from 4B and 1T</text>
+  </g>
+
+  <text x="28" y="500" class="s">4 = break passages · 5 = reduction · 1S = sizing · 1T = tailing. More passages reach higher extraction; they also cost more capital.</text>
+</svg>

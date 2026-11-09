@@ -1,10 +1,10 @@
 ---
 title: "Flour Mill Power Consumption: What kWh per Tonne Really Means"
-description: "Why specific power consumption falls from 72 kWh/t at 60 t/d to 65 kWh/t at 500 t/d, what drives the difference, how to budget connected load versus actual draw, and how to cut energy cost by 8–12%."
+description: "Why specific power consumption falls from 72 kWh/t at 60 t/d to 65 kWh/t at 500 t/d, what drives the difference, how to budget connected load versus actual."
 type: cluster
 pillar: how-to-size-a-flour-mill
 updated: 2026-11-07
-readingTime: 10
+readingTime: 3
 keywords: ["flour mill power consumption", "kwh per tonne flour", "flour mill electricity cost", "roller mill power"]
 related: ["how-to-size-a-flour-mill", "flour-mill-operating-cost-breakdown", "roller-mill-differential-ratio"]
 keyTakeaways:
@@ -22,6 +22,8 @@ faq:
 ---
 
 Power is 5–8% of operating cost, which sounds small until you annualise it. A 300 t/d plant consuming 7 million kWh a year at USD 0.10/kWh spends USD 700,000 on electricity.
+
+This article covers **how much power a mill uses and how to budget for it** — specific consumption by scale, connected load versus actual draw, transformer sizing. For measuring an existing plant and ranking the interventions by payback, see [flour mill energy audit](/knowledge/flour-mill-energy-audit/).
 
 Specific consumption — kWh per tonne — is the number to compare, and it depends on four things.
 
@@ -92,6 +94,6 @@ For a feasibility study, assume:
 - Operating hours = 6,000–7,900 per year
 - Price = your local industrial tariff
 
-A 60 t/d plant: 150 kW × 0.72 = 108 kW × 7,900 h = 853,000 kWh. At USD 0.10 that is USD 85,300 a year.
+A 60 t/d plant with 190 kW installed: 190 × 0.72 = 137 kW average × 7,900 h = 1,083,000 kWh. At USD 0.10 that is USD 108,300 a year.
 
-Add 12% for lighting, offices, laboratory and workshop. Total roughly USD 95,000.
+Add 12% for lighting, offices, laboratory and workshop. Total roughly USD 121,000.

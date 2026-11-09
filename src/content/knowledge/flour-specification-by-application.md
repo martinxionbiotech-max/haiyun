@@ -1,10 +1,10 @@
 ---
 title: "Flour Specification by Application: Bread, Noodle, Biscuit, Cake and Atta"
-description: "Target specifications for the main flour applications — protein, ash, moisture, granulation and rheology — and the wheat selection and milling adjustments each one requires."
+description: "Target specifications for the main flour applications — protein, ash, moisture, granulation and rheology — and the wheat selection and milling adjustments."
 type: cluster
 pillar: flour-quality-control
 updated: 2026-11-07
-readingTime: 9
+readingTime: 3
 keywords: ["flour specification", "bread flour specification", "noodle flour", "biscuit flour specification", "atta specification"]
 related: ["flour-quality-control", "wheat-protein-and-flour-quality", "flour-granulation-testing"]
 keyTakeaways:
@@ -18,6 +18,8 @@ faq:
     a: "Maida is refined white flour at 72–76% extraction with low ash (0.45–0.58%). Atta is whole wheat at 85–95% extraction with high ash (1.20–1.80%) and coarser granulation."
 ---
 
+Protein is decided in the wheat, not in the mill: you cannot mill low-protein wheat into bread flour, and no amount of passages will fix it. What the mill actually controls is granulation and ash — and for noodle and biscuit flour those matter as much as protein does.
+
 ## Bread (pan / sandwich)
 
 | Parameter | Target |
@@ -30,7 +32,7 @@ faq:
 | Stability | 8–15 min |
 | Granulation | 90%+ through 200 mesh |
 
-Wheat: hard red winter or hard red spring, 11.5–13% protein. Milling: full 4B5M1S1T with purifier; patent streams blended for consistent protein.
+Wheat: hard red winter or hard red spring, 11.5–13% protein. Milling: full 4B5M1S1T with [purifier](/equipment/purifier/); patent streams blended for consistent protein.
 
 ## Noodle
 
@@ -119,3 +121,5 @@ Durum requires separate milling with higher tempering moisture (16.5–17.0%) an
 **Milling cannot add protein.** It can concentrate it slightly through stream selection — patent streams run 0.2–0.5 points higher than the mill mix — but if the wheat is 9%, no flow sheet produces bread flour.
 
 This is why wheat sourcing is a strategic decision, not a purchasing one.
+
+If you are building this kind of business rather than a general mill, the [regional flour brand](/solutions/#regional-flour-brand) page sets out the capacity, flow sheet and staffing that model assumes.

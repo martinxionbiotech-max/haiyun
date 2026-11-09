@@ -1,10 +1,10 @@
 ---
 title: "Setting Up a Flour Mill Laboratory: Equipment, Staff and Budget"
-description: "A three-tier laboratory specification for flour mills — minimum viable, standard and full — with equipment lists, costs, staff requirements and the tests each tier enables."
+description: "A three-tier laboratory specification for flour mills — minimum viable, standard and full — with equipment lists, costs, staff requirements and the tests."
 type: cluster
 pillar: flour-quality-control
 updated: 2026-11-07
-readingTime: 7
+readingTime: 3
 keywords: ["flour mill laboratory", "flour testing equipment", "flour quality lab setup"]
 related: ["flour-quality-control", "flour-ash-content-explained", "flour-granulation-testing"]
 keyTakeaways:
@@ -18,6 +18,8 @@ faq:
     a: "One technician per shift for a minimum lab at 60 t/d. Above 200 t/d, two per shift plus a laboratory supervisor."
 ---
 
+A laboratory covering moisture, ash and granulation costs USD 4,000–7,000 and will save several times that in rejected loads alone. Above 100 t/d an NIR analyser pays for itself in technician time. But one properly trained technician is worth more than an extra instrument at any scale.
+
 ## Tier 1 — Minimum viable (USD 4,000–7,000)
 
 | Equipment | Approx. cost | Tests enabled |
@@ -30,7 +32,7 @@ faq:
 
 **Enables**: moisture, ash, granulation. These three cover 80% of daily production control.
 
-This tier is sufficient for any mill up to 60 t/d that is selling to a market without formal certification requirements.
+This tier is sufficient for any mill up to [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/) that is selling to a market without formal certification requirements.
 
 ## Tier 2 — Standard (USD 12,000–20,000)
 

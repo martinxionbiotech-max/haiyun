@@ -123,7 +123,9 @@ const pageDesc = `${plant.tagline} ${plant.name}: ${plant.capacity}, ${plant.mod
                   <td class="border-b border-steel-100 px-4 py-3 font-bold text-steel-900" dir="ltr">{m.model}</td>
                   <td class="border-b border-steel-100 px-4 py-3 text-steel-700">{m.capacity}</td>
                   <td class="border-b border-steel-100 px-4 py-3 text-steel-700">{m.power}</td>
-                  <td class="border-b border-steel-100 px-4 py-3 text-steel-700">{m.weight}<br/>{m.dims}</td>
+                  <td class="border-b border-steel-100 px-4 py-3 text-steel-700">
+                    {m.specificPower ? `${m.specificPower} · ` : ''}{m.weight && m.weight !== '—' ? `${m.weight} · ` : ''}{m.dims}
+                  </td>
                   <td class="border-b border-steel-100 px-4 py-3 text-steel-600">{m.note || '—'}</td>
                 </tr>
               ))}

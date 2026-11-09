@@ -1,10 +1,10 @@
 ---
 title: "Pneumatic Conveying in Flour Mills: When Air Beats a Bucket Elevator"
-description: "Positive and negative pressure systems, air-to-material ratios, power per tonne and the routing cases where pneumatic conveying is cheaper than mechanical handling."
+description: "Positive and negative pressure systems, air-to-material ratios, power per tonne and the routing cases where pneumatic conveying is cheaper than mechanical."
 type: cluster
 pillar: flour-milling-flow-sheet-design
 updated: 2026-11-07
-readingTime: 7
+readingTime: 4
 keywords: ["pneumatic conveying flour mill", "air conveying grain", "flour transport system", "dilute phase conveying"]
 related: ["flour-milling-flow-sheet-design", "dust-explosion-safety-in-flour-mills", "flour-mill-energy-audit"]
 keyTakeaways:
@@ -19,6 +19,14 @@ faq:
   - q: "How much air does a pneumatic conveying system need?"
     a: "At an air-to-material ratio of 5:1 by mass, moving 5 t/h of flour needs about 1 t/h of air — roughly 800 m³/h at standard conditions."
 ---
+
+Pneumatic conveying costs three to five times the power per tonne of a bucket elevator. Use it where routing demands it and budget the energy accordingly — and never without a filter receiver, because the air has to be cleaned somewhere before it goes back into the building.
+
+
+<figure class="my-8">
+  <img src="/images/figure-pneumatic-conveying.svg" alt="Pneumatic conveying costs three to five times the power per tonne of a bucket elevator, and always needs a filter receiver." width="1000" loading="lazy" class="w-full rounded-lg border border-steel-200" />
+  <figcaption class="mt-3 text-sm leading-relaxed text-steel-500">Pneumatic conveying costs three to five times the power per tonne of a bucket elevator, and always needs a filter receiver.</figcaption>
+</figure>
 
 ## The comparison that decides it
 
@@ -140,7 +148,7 @@ Filter sizing: 0.8–1.2 m² of cloth per m³/min of air for flour. Undersized f
 
 ## Energy reality check
 
-A 60 t/d mill moving 78 t of wheat and 58 t of flour per day:
+A [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/) mill moving 78 t of wheat and 58 t of flour per day:
 
 | Transfer | Mechanical | Pneumatic |
 |---|---|---|

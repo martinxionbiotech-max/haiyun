@@ -1,10 +1,10 @@
 ---
 title: "Flour Mill Feasibility Study: What a Real One Must Contain"
-description: "The seven sections a credible flour mill feasibility study needs — demand analysis, wheat supply, technical design, capital cost, operating cost, financial model and risk — and the assumptions that most studies get wrong."
+description: "The seven sections a credible flour mill feasibility study needs — demand analysis, wheat supply, technical design, capital cost, operating cost, financial…"
 type: cluster
 pillar: flour-mill-project-economics
 updated: 2026-11-07
-readingTime: 9
+readingTime: 3
 keywords: ["flour mill feasibility study", "flour mill project report", "flour milling business plan"]
 related: ["flour-mill-project-economics", "how-much-does-a-flour-mill-cost", "flour-mill-financing-options"]
 keyTakeaways:
@@ -17,6 +17,8 @@ faq:
   - q: "How much does a feasibility study cost?"
     a: "USD 8,000–35,000 depending on scope and whether primary market research is included. It is the cheapest part of the project and the one that saves the most."
 ---
+
+Most feasibility studies are wrong in the same three places: they use national demand figures instead of the radius you can actually deliver to, they assume full capacity in year one, and they treat the equipment quotation as the project cost. Fix those three and the study becomes a decision tool rather than a funding document.
 
 ## Section 1 — Demand analysis (the one that matters)
 
@@ -58,7 +60,7 @@ Must include:
 - Storage capacities
 - Utility requirements (water, air, effluent)
 
-If a feasibility study says "a 60 t/d flour mill" without a flow sheet, it has not been designed — only specified.
+If a feasibility study says "a [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/) flour mill" without a flow sheet, it has not been designed — only specified.
 
 ## Section 4 and 5 — Capital and operating cost
 
@@ -105,7 +107,7 @@ Include:
 
 **3. Wheat at today's price forever.** Model +20% at minimum.
 
-**4. Equipment cost as project cost.** It is 35–45%.
+**4. Equipment cost as project cost.** It is 63–66% of the project, not the project.
 
 **5. Ignoring incumbent spare capacity.** The cheapest competitor sets your price.
 

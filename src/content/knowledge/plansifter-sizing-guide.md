@@ -1,10 +1,10 @@
 ---
 title: "Plansifter Sizing: How Much Sifting Area Does Your Mill Need?"
-description: "The sifting-area rule (1 m² per 0.8 t/d), how to distribute area across streams, when to choose twin-bin over high-square, and what happens when sifting is undersized."
+description: "The sifting-area rule (1 m² per 0.8 t/d), how to distribute area across streams, when to choose twin-bin over high-square, and what happens when sifting is."
 type: cluster
 pillar: flour-milling-flow-sheet-design
 updated: 2026-11-07
-readingTime: 7
+readingTime: 3
 keywords: ["plansifter sizing", "sifting area flour mill", "high square plansifter", "plansifter capacity"]
 related: ["flour-milling-flow-sheet-design", "purifier-function-flour-milling", "how-to-size-a-flour-mill"]
 keyTakeaways:
@@ -14,12 +14,14 @@ keyTakeaways:
   - "High-square compartment count is chosen by stream count; frame size is chosen by total area."
 faq:
   - q: "How much sifting area does a 100 t/d flour mill need?"
-    a: "About 125 m² for a standard 4B5M flow sheet. That is typically one FSFG8×24 (52.7 m²) plus one FSFG6×24 (39.5 m²) plus a twin-bin or a third high square."
+    a: "About 125 m² for a standard 4B5M flow sheet. That is typically two FSFG8×24 (105.4 m²) plus one FSFG6×24 (39.5 m²) — 145 m², which leaves the margin you want when the flow sheet sits at the top of its extraction range."
   - q: "What is the difference between a plansifter and a check sifter?"
     a: "A plansifter grades mill streams — many products, many passes, process function. A check sifter inspects finished flour before packing — one product, one pass, safety function."
   - q: "Can I have too much sifting area?"
     a: "In practice no, but beyond about 1.3× the rule the extra area runs under-loaded and the capital could have bought a better flow sheet."
 ---
+
+Sifting area runs at 0.8 tonnes per day per square metre on a standard 4B5M [flow sheet](/knowledge/flour-milling-flow-sheet-design/), and sifting — not roll capacity — is what binds most plants. The area also has to be distributed by stream: five streams need five separate grading paths, and a single large total can be completely wrong.
 
 ## The rule
 
@@ -27,14 +29,14 @@ faq:
 
 | Capacity | Area needed | Practical configuration |
 |---|---|---|
-| 20 t/d | 25 m² | 2 × twin-bin (5 m²/bin = 10 m² each) |
-| 25 t/d | 31 m² | 2 × twin-bin, or 1 × FSFG4×24 (26.3 m²) + twin-bin |
-| 30 t/d | 38 m² | 2 × twin-bin, or 1 × FSFG6×24 (39.5 m²) |
+| 20 t/d | 25 m² | 3 × twin-bin (30 m²) |
+| 25 t/d | 31 m² | 2 × FSFG4×24 (52.6 m²), or 3 × twin-bin (30 m²) |
+| 30 t/d | 38 m² | 1 × FSFG6×24 (39.5 m²) |
 | 40 t/d | 50 m² | 1 × FSFG8×24 (52.7 m²) |
 | 60 t/d | 75 m² | 2 × FSFG6×24 (79 m²) |
-| 100 t/d | 125 m² | FSFG8×24 + FSFG6×24 (92 m²) + twin-bin, or 3 × FSFG6×24 (118 m²) |
-| 200 t/d | 250 m² | 5 × FSFG8×24 (263 m²) |
-| 300 t/d | 375 m² | 7 × FSFG8×24 (369 m²) |
+| 100 t/d | 125 m² | 2 × FSFG8×24 + 1 × FSFG6×24 (145 m²) |
+| 200 t/d | 250 m² | 5 × FSFG8×24 (264 m²) |
+| 300 t/d | 375 m² | 7 × FSFG8×24 (369 m²) + twin-bin check sifter |
 
 The rule assumes a standard 4B5M flow sheet at 76–78% extraction on medium-hard wheat.
 
@@ -89,3 +91,12 @@ Sifting area is only real if the screens are intact and tensioned.
 | Gyration check | Annually with a vibrometer |
 
 A worn hanger bush changes the gyration path. Every compartment on the machine degrades simultaneously, and the effect is subtle enough to be mistaken for wheat variation.
+
+
+## Why the 0.8 figure is a convention, not a law
+
+The rule of 0.8 t/d per m² of sifting area comes from standard milling practice on a 4B5M flow sheet, and it is the number most equipment suppliers size against. It is not derived from first principles and it is not universal.
+
+[Miller Magazine's technical writing on sifters](https://millermagazine.com/blog/sifters-used-in-milling-industry-and-their-dynamic-behaviors-3435) sets out how passage count and sieve configuration change the effective area. Equipment datasheets list a *range* of screening area per machine — an FSFG8×24 is quoted anywhere from 60 to 107 m² depending on sieve build — precisely because the usable figure depends on what you put in it.
+
+Treat 0.8 as the starting point for a standard flow sheet and adjust from there. A single-grade whole wheat plant needs far less; a five-grade patent plant with two purifier banks needs more.

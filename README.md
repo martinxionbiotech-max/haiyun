@@ -96,5 +96,5 @@ Translation files carry prose only. Model tables, spec tables and drawings live 
 
 ## Domain
 
-Site config assumes `https://haiyunmilling.com`. Change `site` in `astro.config.mjs`
+Site config assumes `https://flourmillingpro.com`. Change `site` in `astro.config.mjs`
 and `url` in `src/data/site.js` if deploying elsewhere.

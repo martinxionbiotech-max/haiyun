@@ -1,10 +1,10 @@
 ---
 title: "Wheat Blending Strategy: How to Hit a Protein Target Every Day"
-description: "Batch versus continuous blending, proportioning equipment, the arithmetic of hitting a specification, and why most mills lose money by blending badly rather than buying well."
+description: "Batch versus continuous blending, proportioning equipment, the arithmetic of hitting a specification, and why most mills lose money by blending badly rather."
 type: cluster
 pillar: wheat-procurement-and-storage
 updated: 2026-11-07
-readingTime: 7
+readingTime: 4
 keywords: ["wheat blending", "grain proportioning system", "protein blending flour mill", "wheat blend calculation"]
 related: ["wheat-procurement-and-storage", "wheat-classes-and-specifications", "wheat-protein-and-flour-quality"]
 keyTakeaways:
@@ -19,6 +19,8 @@ faq:
   - q: "Can I blend to fix falling number?"
     a: "Partially. A low falling number wheat can be blended up to about 20% into sound wheat. Beyond that the enzyme load is too high regardless of the average."
 ---
+
+Blending holds protein within ±0.2%; without it you hold ±0.6% and lose contracts written tighter than that. Above [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/), continuous proportioning with weigh-belt feeders is the only method that works — and you should blend on cost as well as protein, because two wheats at the same protein can differ 20% in price.
 
 ## Why blend at all
 

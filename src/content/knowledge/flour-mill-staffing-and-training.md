@@ -1,12 +1,12 @@
 ---
-title: "Staffing a Flour Mill: Headcount, Roles and the Training That Separates Good Mills from Mediocre Ones"
-description: "How many people a flour mill actually needs, what each role does, the skills that take years to build, and the training structure that keeps a mill running when the head miller leaves."
+title: "Staffing a Flour Mill: Headcount, Roles and Training"
+description: "How many people a flour mill needs, what each role does, the skills that take years to build, and the training that keeps a mill running when the head."
 type: cluster
-pillar: flour-mill-project-economics
+pillar: flour-mill-operations-and-maintenance
 updated: 2026-11-07
-readingTime: 7
+readingTime: 4
 keywords: ["flour mill staffing", "mill operator training", "head miller role", "flour mill labour cost"]
-related: ["flour-mill-operating-cost-breakdown", "flour-mill-preventive-maintenance-schedule", "flour-mill-commissioning-and-testing"]
+related: ["flour-mill-operations-and-maintenance", "flour-mill-operating-cost-breakdown", "flour-mill-preventive-maintenance-schedule", "flour-mill-commissioning-and-testing"]
 keyTakeaways:
   - "Labour is 4–8% of flour mill operating cost, but the head miller decides 20–30% of your extraction rate."
   - "One head miller per 100–150 t/d is the norm; below 60 t/d the role is usually combined with production management."
@@ -19,6 +19,8 @@ faq:
   - q: "How long does it take to train a mill operator?"
     a: "6–12 months to run a section unsupervised; 2–3 years to understand the whole flow sheet; 5–10 years to become a head miller capable of setting a plant from scratch."
 ---
+
+Labour is only 4–8% of operating cost, but the head miller decides 20–30% of your extraction rate. That asymmetry explains why the most dangerous staffing structure in a flour mill is one person holding undocumented knowledge of how the plant actually runs — not one person holding a key role.
 
 ## Headcount by capacity
 
@@ -120,7 +122,7 @@ A head miller diagnosing a problem thinks like this:
 2. Check whether wheat changed — if yes, adjust dampening.
 3. If wheat unchanged, check break release. Break 1 release down means flutes worn or gap drifted.
 4. Check sifter tailings. Rising tailings on 2M means screen blinded.
-5. Check purifier. Reduced semolina purity raises ash in the patent stream.
+5. Check [purifier](/equipment/purifier/). Reduced semolina purity raises ash in the patent stream.
 6. Only then adjust.
 
 An untrained operator's version: close all the gaps and hope.

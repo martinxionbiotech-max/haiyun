@@ -1,16 +1,16 @@
 ---
 title: "Flour Mill Project Economics: Capital, Operating Cost and Payback"
-description: "A complete financial model for a wheat flour mill — capital cost by capacity class, operating cost structure, extraction economics, break-even analysis and realistic payback periods for 20, 60 and 200 t/d plants."
+description: "A complete financial model for a wheat flour mill — capital cost by capacity class, operating cost structure, extraction economics, break-even analysis and…"
 type: pillar
 order: 6
 updated: 2026-11-07
-readingTime: 25
+readingTime: 6
 keywords: ["flour mill cost", "flour mill project report", "flour mill profitability", "flour mill payback period", "flour milling business plan"]
-related: ["how-much-does-a-flour-mill-cost", "flour-mill-operating-cost-breakdown", "flour-extraction-rate-economics", "flour-mill-financing-options", "flour-mill-feasibility-study"]
+related: ["how-much-does-a-flour-mill-cost", "flour-mill-operating-cost-breakdown", "flour-extraction-rate-economics", "flour-mill-financing-options", "flour-mill-feasibility-study", "flour-mill-energy-audit"]
 keyTakeaways:
   - "Wheat is 65–80% of operating cost. Extraction rate is therefore the most powerful profit lever in the plant — more than labour, more than power, more than maintenance."
   - "A 1% improvement in extraction on a 60 t/d plant is worth roughly USD 79,000 a year at a USD 400/t flour price."
-  - "Equipment is typically 35–45% of total project capital; civil works, electrical and installation make up the rest — buyers routinely underbudget the second half."
+  - "Equipment is typically 63–66% of total project capital; civil works, electrical and installation make up the rest — buyers routinely underbudget the second half."
   - "Realistic payback on a well-specified plant in a market with genuine demand is 3–5 years. Anything promising 18 months is assuming a price premium that will not hold."
   - "Working capital — wheat inventory, receivables and spare parts — is usually 12–18% of project cost and is the most commonly forgotten line item."
 faq:
@@ -51,7 +51,7 @@ Extraction is the one you control inside the plant. And it is controllable to a 
 
 ### The arithmetic of extraction
 
-Take a 60 t/d plant at 330 operating days.
+Take a [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/) plant at 330 operating days.
 
 | Extraction | Flour produced | Wheat consumed |
 |---|---|---|
@@ -67,7 +67,7 @@ Same wheat, different flour. At USD 400/t flour:
 
 The 76% to 79% step is worth **USD 237,600 a year** — from the same 60 t/day of wheat.
 
-Now compare that to what it costs to get there. Moving from a 3B4M1S flow sheet (74–76%) to a 4B5M1S1T with a purifier bank (77–79%) costs perhaps USD 90,000 extra in equipment.
+Now compare that to what it costs to get there. Moving from a 3B4M1S flow sheet (74–76%) to a 4B5M1S1T with a [purifier](/equipment/purifier/) bank (77–79%) costs perhaps USD 90,000 extra in equipment.
 
 Payback: under five months.
 
@@ -75,20 +75,22 @@ This is the single most important economic fact in flour milling, and it is why 
 
 ## Capital cost structure
 
-Buyers compare equipment quotations. Projects fail on the other 55–65%.
+Buyers compare equipment quotations. Projects fail on the other 34–37%.
 
 | Component | Share of total project capital |
 |---|---|
-| Process equipment | 35–45% |
-| Building / civil works | 20–30% |
-| Electrical infrastructure | 6–10% |
-| Installation & erection | 8–12% |
-| Engineering & project management | 3–5% |
+| Process equipment | 63–66% |
+| Building / civil works | 12–18% |
+| Electrical infrastructure | 4–6% |
+| Installation & erection | 5–9% |
+| Engineering & project management | 2–4% |
 | Commissioning & training | 1–2% |
-| Contingency | 5–8% |
+| Contingency | 3–5% |
+
+Mid-points sum to 100%. The ranges are independent — a project at the top of every band would total more than 100%, which is why contingency is the line that absorbs the difference.
 | **Working capital (separate)** | **12–18% of the above** |
 
-A buyer who receives a USD 400,000 equipment quotation and budgets USD 450,000 for the project is 40% short. This is the most common and most damaging feasibility error we see.
+A buyer who receives a USD 400,000 equipment quotation and budgets USD 450,000 for the project is 25–30% short — the equipment is only two thirds of what has to be paid for. This is the most common and most damaging feasibility error we see.
 
 ### Indicative turnkey ranges
 
@@ -112,11 +114,11 @@ Worked example: 60 t/d plant, 330 days, 76% extraction, wheat at USD 280/t.
 |---|---|---|
 | Wheat | 19,800 t × 280 | 5,544,000 |
 | Labour | 12 staff × 330d avg | 95,000 |
-| Power | 150 kW installed, 72 kWh/t, 0.10/kWh | 342,000 |
+| Power | 15,048 t flour × 72 kWh/t, 0.10/kWh | 108,300 |
 | Maintenance & spares | 4% of equipment value | 12,000 |
 | Packaging | 15,048 t / 0.025 t per bag × 0.35 | 210,672 |
 | Overheads | Insurance, admin, transport | 85,000 |
-| **Total** | | **6,288,672** |
+| **Total** | | **6,054,972** |
 
 Revenue at 76% extraction and USD 400/t flour, plus bran revenue:
 
@@ -126,9 +128,9 @@ Revenue at 76% extraction and USD 400/t flour, plus bran revenue:
 | Bran | 3,960 | 120 | 475,200 |
 | **Total** | | | **6,494,400** |
 
-Gross margin: USD 205,728 — about 3.2% of revenue.
+Gross margin: USD 439,428 — about 6.8% of revenue.
 
-That is the reality of commodity flour milling. A 3% margin on USD 6.5 million of turnover is USD 206,000 a year against a project cost of roughly USD 470,000. Payback about 2.3 years, which looks acceptable.
+That is the reality of commodity flour milling. A 6.8% margin on USD 6.5 million of turnover is USD 439,000 a year against a project cost of roughly USD 470,000 for a floor-mounted plant of this size. Payback about a year, which is why every point of extraction and every cent of wheat price matters.
 
 But notice how fragile it is. A 5% rise in wheat price without a matching flour price rise wipes out the entire margin. This is why flour mills hedge, blend wheat origins, and fight for every point of extraction.
 
@@ -136,10 +138,10 @@ But notice how fragile it is. A 5% rise in wheat price without a matching flour 
 
 | Lever | Effect on annual profit (60 t/d) |
 |---|---|
-| +1% extraction | +USD 79,000 |
+| +1% extraction | +USD 79,200 |
 | −5% wheat cost | +USD 277,000 |
 | +3% flour price | +USD 180,576 |
-| −10% power consumption | +USD 34,200 |
+| −10% power consumption | +USD 10,800 |
 | −10% labour cost | +USD 9,500 |
 | +2% bran recovery | +USD 9,500 |
 

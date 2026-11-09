@@ -4,7 +4,7 @@ description: "Intake capacity, weighbridge selection, receiving pit design and t
 type: cluster
 pillar: wheat-procurement-and-storage
 updated: 2026-11-07
-readingTime: 7
+readingTime: 3
 keywords: ["grain intake system", "flour mill weighbridge", "receiving pit design", "wheat intake capacity"]
 related: ["wheat-procurement-and-storage", "silo-design-and-aeration", "wheat-cleaning-process-flow"]
 keyTakeaways:
@@ -19,6 +19,8 @@ faq:
   - q: "How big should the receiving pit be?"
     a: "At least 1.5× the volume of the largest truck that will tip, with 45° slopes and a grid rated for the truck axle load."
 ---
+
+Intake has to swallow a full day's wheat in three or four hours, not twenty-four. A [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/) mill consumes 3.25 t/h but needs 8–10 t/h of receiving capacity, and the truck queue that forms when it doesn't is a land-purchase problem long before it becomes an equipment problem.
 
 ## The arithmetic everyone gets wrong
 

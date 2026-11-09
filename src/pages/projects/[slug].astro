@@ -45,7 +45,10 @@ const schema = [
 
 <PageLayout
   title={`${project.title} — Project Record`}
-  description={`${project.summary} Constraints, design decisions and measured results from a ${project.scope.toLowerCase()} project in ${project.region}.`}
+  description={
+    project.seoDescription ||
+    `${project.summary} Constraints, design decisions and measured results from a ${project.scope.toLowerCase()} project in ${project.region}.`
+  }
   image={`/images/${heroFile}`}
   schema={schema}
 >
@@ -140,6 +143,12 @@ const schema = [
         <div class="mt-3 space-y-3">
           {project.outcome.map((p) => <p class="text-[16px] leading-relaxed text-steel-700">{p}</p>)}
         </div>
+        <p class="mt-4 border-s-2 border-steel-300 ps-3 text-[13px] leading-relaxed text-steel-500">
+          Basis of the figures: acceptance-test records and the plant historian for the first twelve months of
+          operation, reported to the precision the instruments support. Client names are withheld at the request of
+          the plant owners; tonnages, extraction and specific power are unchanged. Results depend on wheat, climate,
+          shift pattern and operator skill — a plant of the same design will not reproduce them exactly.
+        </p>
 
         <h2 class="mt-12 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
           What we would do differently

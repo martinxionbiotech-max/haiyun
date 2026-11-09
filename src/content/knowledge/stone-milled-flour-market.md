@@ -1,10 +1,10 @@
 ---
 title: "The Stone-Milled Flour Market: Who Pays the Premium and Why"
-description: "Commercial analysis of the stone-milled flour market — price premiums by channel, volume realities, packaging and labelling, and how to build distribution before you build capacity."
+description: "Commercial analysis of the stone-milled flour market — price premiums by channel, volume realities, packaging and labelling, and how to build distribution."
 type: cluster
 pillar: stone-milling-technology
 updated: 2026-11-07
-readingTime: 8
+readingTime: 3
 keywords: ["stone milled flour market", "stone ground flour premium", "specialty flour market", "artisan flour business"]
 related: ["stone-milling-technology", "whole-wheat-flour-production", "sfm-stone-mill-configurations"]
 keyTakeaways:
@@ -20,6 +20,8 @@ faq:
   - q: "Is the premium sustainable?"
     a: "In markets where consumers understand the difference, yes — it has held for decades. In markets where it is purely a label claim, it erodes as competitors enter."
 ---
+
+Stone-milled flour sells at 1.5–2× roller flour, and the premium is a story premium rather than a technical one. It depends on packaging, labelling and a channel that repeats the story consistently — which is why the classic failure is a mill that installs capacity before it has distribution.
 
 ## The premium
 
@@ -104,3 +106,5 @@ The correct sequence:
 5. Add capacity when you are sold out for three consecutive months
 
 The wrong sequence, which is common: install SFM-3+4, produce 100 t/month, discover the market is 15 t/month, and watch inventory go rancid.
+
+If you are building this kind of business rather than a general mill, the [premium stone-milled flour brand](/solutions/#premium-stone-flour) page sets out the capacity, flow sheet and staffing that model assumes.

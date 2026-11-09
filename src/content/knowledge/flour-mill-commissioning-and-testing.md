@@ -1,12 +1,12 @@
 ---
 title: "Flour Mill Commissioning: The 30 Days That Decide the Next Ten Years"
-description: "A structured commissioning sequence for a new flour mill — mechanical completion, dry running, load testing, performance acceptance and the documentation that protects the buyer."
+description: "A structured commissioning sequence for a new flour mill — mechanical completion, dry running, load testing, performance acceptance and the documentation."
 type: cluster
-pillar: flour-mill-project-economics
+pillar: mill-safety-and-project-delivery
 updated: 2026-11-07
-readingTime: 8
+readingTime: 5
 keywords: ["flour mill commissioning", "mill installation testing", "flour mill performance test", "plant acceptance test"]
-related: ["flour-mill-project-economics", "how-to-size-a-flour-mill", "flour-mill-preventive-maintenance-schedule"]
+related: ["mill-safety-and-project-delivery", "flour-mill-project-economics", "how-to-size-a-flour-mill", "flour-mill-preventive-maintenance-schedule"]
 keyTakeaways:
   - "Most mills never run at design capacity because commissioning was treated as a handover ceremony rather than a test."
   - "Insist on a 72-hour continuous performance test at rated capacity before final payment — it is the only number that matters."
@@ -19,6 +19,8 @@ faq:
   - q: "Who should attend commissioning?"
     a: "The buyer's mill manager and head miller, the supplier's commissioning engineer, the electrical contractor, and the civil contractor. All four, for the whole period."
 ---
+
+Most flour mills never reach design capacity, and the equipment is almost never the reason. Commissioning gets treated as a handover ceremony instead of a test, so installation errors are signed off and paid for. A 72-hour continuous run at rated capacity before final payment is the only protection that reliably works.
 
 ## Why commissioning matters more than purchase price
 
@@ -176,7 +178,7 @@ A plant that passes its acceptance test is not yet a plant that runs well. Stabi
 - Operators learn the flow sheet's behaviour
 - Roll gaps are tuned to the actual wheat, not the design wheat
 - Sifter screen sizes are adjusted
-- Purifier settings are found
+- [Purifier](/equipment/purifier/) settings are found
 - Maintenance routines become habits
 - The first set of wear items is replaced
 

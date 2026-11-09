@@ -1,10 +1,10 @@
 ---
 title: "Flour Mill Capacity Calculation: From Demand to Tonnage in Four Steps"
-description: "A practical calculation method for specifying flour mill capacity — extraction rate, utilisation headroom, shift pattern and wheat quality all change the number you should buy. Includes worked examples."
+description: "A practical calculation method for specifying flour mill capacity — extraction rate, utilisation headroom, shift pattern and wheat quality all change the…"
 type: cluster
 pillar: how-to-size-a-flour-mill
 updated: 2026-11-07
-readingTime: 9
+readingTime: 3
 keywords: ["flour mill capacity calculation", "how many tonnes per day flour mill", "flour mill output calculation"]
 related: ["how-to-size-a-flour-mill", "flour-extraction-rate-economics", "flour-mill-power-consumption"]
 keyTakeaways:
@@ -21,6 +21,8 @@ faq:
 ---
 
 Capacity numbers in the milling industry are quoted in tonnes of **wheat per 24 hours**. This trips up almost every first-time buyer, because what they know is how much flour they can sell.
+
+This article is the **reverse check** — you have a tonnage in mind, and these four steps test whether it survives cleaning losses, utilisation and shift pattern. For building the target from market demand upwards, including flow sheet and sifter sizing, see [how to size a flour mill](/knowledge/how-to-size-a-flour-mill/).
 
 The conversion has four steps, and skipping any one of them gives you the wrong plant.
 
@@ -62,7 +64,7 @@ This is where buyers get badly caught. A 30 t/d plant run for one shift produces
 
 Two responses:
 
-- **Buy bigger.** A 60 t/d plant on one shift gives you 25 t/d of wheat throughput.
+- **Buy bigger.** A [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/) plant on one shift gives you 25 t/d of wheat throughput.
 - **Run more shifts.** Same plant, three shifts, full output — but you need three crews.
 
 Most new mills start with one or two shifts and buy capacity for three. Labour is easier to add than a building.
@@ -94,6 +96,8 @@ Once you have the tonnage, the building follows:
 | 60 t/d | 24 × 8 × 8 m | 150 kW |
 | 100 t/d | 35 × 7.5 × 18.5 m | 308 kW |
 | 200 t/d | 50 × 7.5 × 22.5 m | 690 kW |
+
+The 20–60 t/d rows above are the floor-mounted 6FTDP series. A tower-type plant of the same capacity draws more installed power — 60 t/d goes from 150 kW floor-mounted to 190 kW with pneumatic lift and a [purifier](/equipment/purifier/) bank — but needs a taller building instead of a longer one.
 
 If your available building cannot accommodate the tonnage you calculated, either the tonnage is wrong or the building is.
 

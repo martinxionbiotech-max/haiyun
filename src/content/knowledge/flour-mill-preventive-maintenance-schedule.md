@@ -1,12 +1,12 @@
 ---
 title: "Flour Mill Preventive Maintenance: A Schedule Built on Failure Modes"
-description: "A complete preventive maintenance programme for a roller mill plant — daily, weekly, monthly and annual tasks, the failure modes they prevent, and the records that make it work."
+description: "A complete preventive maintenance programme for a roller mill plant — daily, weekly, monthly and annual tasks, the failure modes they prevent, and the."
 type: cluster
-pillar: flour-mill-project-economics
+pillar: flour-mill-operations-and-maintenance
 updated: 2026-11-07
-readingTime: 8
+readingTime: 5
 keywords: ["flour mill maintenance schedule", "preventive maintenance flour mill", "mill maintenance checklist", "roller mill maintenance"]
-related: ["flour-mill-spare-parts-management", "roll-fluting-and-surface-technology", "flour-mill-operating-cost-breakdown"]
+related: ["flour-mill-operations-and-maintenance", "flour-mill-spare-parts-management", "roll-fluting-and-surface-technology", "flour-mill-operating-cost-breakdown"]
 keyTakeaways:
   - "Maintenance cost runs 3–5% of plant revenue; unplanned downtime runs 8–15%. The gap is the argument."
   - "80% of mill failures give warning through bearing temperature, vibration or power draw before they stop production."
@@ -19,6 +19,8 @@ faq:
   - q: "How long should a roller mill run between overhauls?"
     a: "8,000–12,000 operating hours for a full bearing replacement. Rolls need re-fluting every 12–24 months depending on tonnage and wheat hardness."
 ---
+
+Maintenance runs 3–5% of plant revenue; unplanned downtime runs 8–15%. The gap between those two numbers is the whole argument for a written schedule, and it is reinforced by a useful fact: 80% of mill failures announce themselves through bearing temperature, vibration or power draw before they stop the line.
 
 ## The economic case
 
@@ -176,7 +178,7 @@ A maintenance system without records is a set of good intentions. The signature 
 | 200 t/d | 3–4 (mechanical 2, electrical 1, instrument 1) |
 | 500 t/d | 6–9 |
 
-The ratio that matters: **one maintenance technician per 40–60 t/d of capacity** for a plant running 24/5. Below that, preventive tasks get deferred during busy periods, which is exactly when they matter most.
+The ratio that matters: **one maintenance technician per [40–60 t/d](/flour-milling-plant/40-60tpd-flour-plant/) of capacity** for a plant running 24/5. Below that, preventive tasks get deferred during busy periods, which is exactly when they matter most.
 
 ## The shutdown discipline
 
@@ -192,3 +194,10 @@ An annual overhaul only saves money if it is planned.
 | Written scope per area | Avoids "while we are in there" scope creep |
 
 A well-run 200 t/d plant completes a full overhaul in 5 days. The same work done as unplanned breakdowns takes 12–18 days spread across the year, and produces worse results.
+
+
+## The failure modes behind the schedule
+
+Every interval in this schedule exists because something specific fails at roughly that interval. Bearings degrade on a predictable curve once grease quality drops; sifter hanger bushes change gyration path before they break; roll flutes wear measurably within 400–600 hours on hard wheat.
+
+If you want to replace the calendar with condition monitoring, the parameters to watch are bearing temperature, vibration on the mill floor and power draw per tonne. All three move before the machine stops, which is the entire premise of predictive maintenance.

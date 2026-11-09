@@ -1,10 +1,10 @@
 ---
 title: "Wheat Cleaning Process Flow: The Ten Stages and Why the Order Is Fixed"
-description: "The complete wheat cleaning flow for a flour mill, stage by stage, with the machine at each step, the impurity each removes, and what happens when stages are reordered or omitted."
+description: "The complete wheat cleaning flow for a flour mill, stage by stage, with the machine at each step, the impurity each removes, and what happens when stages."
 type: cluster
 pillar: wheat-cleaning-system-design
 updated: 2026-11-07
-readingTime: 8
+readingTime: 3
 keywords: ["wheat cleaning process flow", "wheat cleaning stages", "flour mill cleaning line"]
 related: ["wheat-cleaning-system-design", "wheat-impurity-types", "dry-vs-wet-wheat-cleaning"]
 keyTakeaways:
@@ -17,6 +17,16 @@ faq:
   - q: "Can I skip pre-cleaning if the wheat looks clean?"
     a: "No. Pre-cleaning protects the machines downstream. A single rope entering a vibrating screen can wrap a shaft and stop the line for a day."
 ---
+
+Ten stages in a fixed order, and the order is physical rather than customary: coarse before fine, dry before wet, size before density, magnets last. Reorder any two and you will blind a screen or send stones into a roll. The sequence is not a convention you can improve on with a clever layout.
+
+This article describes **the sequence** — the ten stages in order, and why reordering them breaks separation. It does not size anything. For machine selection, capacity rules, and the wet-versus-dry capital decision, see [wheat cleaning system design](/knowledge/wheat-cleaning-system-design/).
+
+
+<figure class="my-8">
+  <img src="/images/figure-cleaning-sequence.svg" alt="The ten stages in fixed order. Stages 6 and 7 are capacity-dependent — standard above [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/), usually omitted below 30." width="1000" loading="lazy" class="w-full rounded-lg border border-steel-200" />
+  <figcaption class="mt-3 text-sm leading-relaxed text-steel-500">The ten stages in fixed order. Stages 6 and 7 are capacity-dependent — standard above 60 t/d, usually omitted below 30.</figcaption>
+</figure>
 
 ## The ten stages
 
@@ -64,3 +74,10 @@ The first is how fast you can scalp coarse material. The second is how fast you 
 | 300 t/d+ | 2 + brush | Standard | Standard | 6–7 |
 
 Below 30 t/d most plants omit wet cleaning and length grading. Above 60 t/d both become standard because the quality delta is worth more than the capital.
+
+
+## Further reading on the sequence
+
+The [UK Flour Millers](https://www.ukflourmillers.org/) technical pages cover the same cleaning sequence from the trade body's perspective, and are a useful cross-check that the order described here is standard practice rather than one supplier's habit.
+
+The one place suppliers genuinely differ is how many scourer passes they specify. Two is the norm above 60 t/d; one is common below 30 t/d and is usually enough for domestic commodity markets.

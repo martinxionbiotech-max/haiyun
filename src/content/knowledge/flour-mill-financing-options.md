@@ -1,10 +1,10 @@
 ---
 title: "Financing a Flour Mill: Seven Structures and What Each Costs"
-description: "How flour mill projects get financed — cash, bank debt, equipment leasing, supplier credit, export credit agencies and blended structures — with typical terms and the covenants lenders impose."
+description: "How flour mill projects get financed — cash, bank debt, equipment leasing, supplier credit, export credit agencies and blended structures — with typical."
 type: cluster
 pillar: flour-mill-project-economics
 updated: 2026-11-07
-readingTime: 8
+readingTime: 3
 keywords: ["flour mill financing", "flour mill loan", "equipment financing milling", "export credit flour mill"]
 related: ["flour-mill-project-economics", "how-much-does-a-flour-mill-cost", "flour-mill-feasibility-study"]
 keyTakeaways:
@@ -20,6 +20,8 @@ faq:
   - q: "What security do lenders require?"
     a: "A first charge over the plant and land, assignment of offtake contracts, personal guarantees from directors, and often a debt service reserve of three to six months."
 ---
+
+Flour mills are typically financed 50–70% debt and 30–50% equity, and lenders will want a feasibility study, offtake evidence and 30% equity before they look at a greenfield project. The most overlooked source is supplier credit: 20–40% of equipment value over 12–24 months is negotiable, and buyers rarely ask.
 
 ## The seven structures
 
@@ -91,7 +93,7 @@ Project finance covers the plant. Working capital covers wheat inventory, receiv
 | Spares | 2–3% of equipment value |
 | Cash buffer | 2 months of operating cost |
 
-For a 60 t/d plant, that totals roughly USD 400,000–600,000 — more than the equity in the equipment.
+For a [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/) plant, that totals roughly USD 400,000–600,000 — more than the equity in the equipment.
 
 Arrange a separate revolving credit facility secured on inventory and receivables. Do not try to fund working capital from project equity; you will run out during the harvest purchase season, which is exactly when wheat is cheapest.
 

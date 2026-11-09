@@ -1,10 +1,10 @@
 ---
 title: "Impact Detachers: The 3 kW Machine That Adds 10% Sifting Capacity"
-description: "Why smooth reduction rolls produce flakes that blind sifters, how an impact detacher fixes it, where to place one, and the maintenance that decides whether it keeps working."
+description: "Why smooth reduction rolls produce flakes that blind sifters, how an impact detacher fixes it, where to place one, and the maintenance that decides whether."
 type: cluster
 pillar: flour-milling-flow-sheet-design
 updated: 2026-11-07
-readingTime: 6
+readingTime: 3
 keywords: ["impact detacher flour mill", "entoleter flour milling", "flour flake breaking", "松粉机"]
 related: ["flour-milling-flow-sheet-design", "plansifter-sizing-guide", "roller-mill-differential-ratio"]
 keyTakeaways:
@@ -21,11 +21,13 @@ faq:
     a: "Yes, but you lose 8–15% of effective sifting capacity and typically 0.5–1 point of extraction, because finished flour stays locked inside flakes and is rejected by the sifter."
 ---
 
+A 3 kW detacher can add 8–15% of effective sifting capacity, because smooth [reduction rolls](/knowledge/roller-mill-differential-ratio/) produce flat flakes that behave like large particles and blind the screens. It is the cheapest capacity available on an existing mill, and it is routinely omitted from quotations to make them look cheaper.
+
 ## The flake problem
 
 Reduction rolls run smooth and close. Instead of cutting, they compress. The output contains flat, coherent flakes of compacted flour — some as large as 1–2 mm across but only tens of microns thick.
 
-A sifter sees a flake as a large particle. It is rejected and sent back for further reduction, even though the material inside is already finished flour.
+A [sifter](/equipment/double-bin-plansifter/) sees a flake as a large particle. It is rejected and sent back for further reduction, even though the material inside is already finished flour.
 
 The costs:
 

@@ -1,10 +1,10 @@
 ---
 title: "Roll Fluting and Surface Technology: The Variable Most Mills Never Touch"
-description: "Flute pitch, spiral, profile and surface hardness decide how a roll mill actually grinds. What each parameter does, how to specify a roll set, and when re-fluting pays back."
+description: "Flute pitch, spiral, profile and surface hardness decide how a roll mill actually grinds. What each parameter does, how to specify a roll set, and when."
 type: cluster
 pillar: flour-milling-flow-sheet-design
 updated: 2026-11-07
-readingTime: 8
+readingTime: 4
 keywords: ["roll fluting", "mill roll flute profile", "roll surface hardness", "refluting flour mill", "fluted roll specification"]
 related: ["flour-milling-flow-sheet-design", "roller-mill-differential-ratio", "flour-granulation-testing"]
 keyTakeaways:
@@ -19,6 +19,8 @@ faq:
   - q: "What is roll spiral?"
     a: "The helix angle of the flute, typically 4–10%. Spiral helps distribute wear along the roll length and improves the shearing action on the stock."
 ---
+
+Flute pitch decides whether a roll scratches or shears, and it is the variable most mills never revisit after commissioning. A worn roll loses 15–25% of its grinding capacity before anyone notices the flour has changed. Re-fluting costs 8–12% of a new roll and restores 85–95% of new performance, which makes it the best maintenance value in the mill.
 
 ## Why this matters more than the machine
 
@@ -130,7 +132,7 @@ A flute depth loss of 0.15 mm on a 10-flute roll is roughly 20% of the working d
 
 Re-fluting removes material from the roll diameter. A 250 mm roll can typically be re-fluted three to five times before the diameter is below the minimum for the bearing housing and gap adjustment range.
 
-**Rule: budget re-fluting at 1.5–2.5% of plant capital per year.** A 60 t/d plant with USD 900,000 of equipment should carry USD 14,000–22,000 annually for roll maintenance. Mills that do not budget this end up running dull rolls for two extra years and losing 2–3 points of extraction the whole time — which costs far more than the re-fluting would have.
+**Rule: budget re-fluting at 1.5–2.5% of plant capital per year.** A [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/) plant with USD 900,000 of equipment should carry USD 14,000–22,000 annually for roll maintenance. Mills that do not budget this end up running dull rolls for two extra years and losing 2–3 points of extraction the whole time — which costs far more than the re-fluting would have.
 
 ## Gap setting is not a substitute
 

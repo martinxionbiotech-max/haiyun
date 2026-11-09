@@ -1,12 +1,12 @@
 ---
 title: "PLC and Automation in Flour Mills: What to Automate and What to Leave Alone"
-description: "Control system architecture for a flour mill, the automation scope that pays back, sensor selection, and the interlocks that prevent a small fault becoming a plant shutdown."
+description: "Control system architecture for a flour mill, the automation scope that pays back, sensor selection, and the interlocks that prevent a small fault becoming."
 type: cluster
-pillar: flour-milling-flow-sheet-design
+pillar: flour-mill-operations-and-maintenance
 updated: 2026-11-07
-readingTime: 8
+readingTime: 4
 keywords: ["flour mill automation", "PLC flour milling", "mill control system", "flour mill SCADA"]
-related: ["flour-milling-flow-sheet-design", "flour-mill-energy-audit", "flour-mill-spare-parts-management"]
+related: ["flour-mill-operations-and-maintenance", "flour-milling-flow-sheet-design", "flour-mill-energy-audit", "flour-mill-spare-parts-management"]
 keyTakeaways:
   - "Automate interlocks, start/stop sequencing and ratio control first — they pay back in months and never argue."
   - "Full flow-sheet automation on a 60 t/d plant costs USD 60,000–120,000 and typically returns 3–6% on yield and energy."
@@ -19,6 +19,8 @@ faq:
   - q: "Is automation worth it for a small flour mill?"
     a: "For plants under 30 t/d, a basic PLC for sequencing and interlocks is worth it; full SCADA is usually not. Above 60 t/d, full automation pays back in 2–4 years through yield and energy alone."
 ---
+
+Automate interlocks, start-stop sequencing and ratio control first. They pay back in months, they never argue, and they are the only automation most plants actually need. Full flow-sheet automation on a [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/) mill costs USD 60,000–120,000 — and every sensor installed without an owner and a calibration interval becomes a lie the PLC believes.
 
 ## The automation ladder
 

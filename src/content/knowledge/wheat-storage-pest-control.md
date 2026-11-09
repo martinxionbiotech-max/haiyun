@@ -1,10 +1,10 @@
 ---
 title: "Wheat Storage Pest Control: Monitoring, Fumigation and Residue Compliance"
-description: "Integrated pest management for stored wheat — insect species, monitoring methods, fumigation protocols, phosphine resistance and the residue limits that decide export eligibility."
+description: "Integrated pest management for stored wheat — insect species, monitoring methods, fumigation protocols, phosphine resistance and the residue limits that."
 type: cluster
 pillar: wheat-procurement-and-storage
 updated: 2026-11-07
-readingTime: 7
+readingTime: 3
 keywords: ["stored grain pests", "wheat fumigation", "phosphine resistance", "grain storage insect control"]
 related: ["wheat-procurement-and-storage", "silo-design-and-aeration", "flour-quality-control"]
 keyTakeaways:
@@ -19,6 +19,8 @@ faq:
   - q: "What is the phosphine residue limit?"
     a: "Most jurisdictions set 0.01–0.1 mg/kg for grain. Export contracts are usually stricter than local law."
 ---
+
+Insects need grain above 20 °C and 13% moisture, which makes cooling below 15 °C a physical insecticide with no residue and no resistance pathway. Most failed fumigations are dose or sealing failures rather than resistance, and for export flour the binding constraint is residue limits, not pest mortality.
 
 ## The species that matter
 
@@ -86,7 +88,7 @@ Phosphine (hydrogen phosphide) from aluminium or magnesium phosphide tablets is 
 | Temperature too low | 12% |
 | Genuine resistance | 8% |
 
-Resistance is real and spreading, but it is blamed far more often than it occurs. The first question after a failed fumigation should be how well the silo sealed, not which chemical to switch to.
+Resistance is real and spreading, but it is blamed far more often than it occurs. The first question after a failed fumigation should be how well the [silo](/knowledge/silo-design-and-aeration/) sealed, not which chemical to switch to.
 
 ### Resistance management
 
@@ -134,3 +136,10 @@ Storage pests become mill pests through the intake conveyor. Physical exclusion:
 - Dead-leg spouting eliminated at design stage
 
 The cheapest pest control in a flour mill is a design that has no dead ends where flour can accumulate.
+
+
+## Reference points
+
+The [FAO's manual on grain storage](https://www.fao.org/4/x5467e/x5467e00.htm) remains the most practical single document on small-to-medium storage, and its treatment of aeration and fumigation sealing is still accurate decades after publication.
+
+Residue limits change, so check the current Codex or destination-market schedule rather than any figure quoted in an article — including this one.

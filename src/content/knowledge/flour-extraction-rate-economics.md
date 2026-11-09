@@ -1,10 +1,10 @@
 ---
 title: "Flour Extraction Rate: Why One Point Is Worth More Than Your Power Bill"
-description: "What extraction rate means, how flow sheet design sets it, the difference between extraction and yield, and the arithmetic showing why 1% of extraction outperforms every other operating lever."
+description: "What extraction rate means, how flow sheet design sets it, the difference between extraction and yield, and the arithmetic showing why 1% of extraction."
 type: cluster
 pillar: flour-mill-project-economics
 updated: 2026-11-07
-readingTime: 8
+readingTime: 3
 keywords: ["flour extraction rate", "flour yield percentage", "wheat to flour ratio", "flour milling yield"]
 related: ["flour-mill-project-economics", "flour-milling-flow-sheet-design", "flour-mill-operating-cost-breakdown"]
 keyTakeaways:
@@ -20,6 +20,10 @@ faq:
   - q: "Does higher extraction mean lower quality?"
     a: "Yes, at the margin. Every point above about 78% pulls more bran into the flour, raising ash. The art is maximising extraction at a given ash specification."
 ---
+
+One point of extraction on a [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/) plant is worth about USD 79,000 a year — more than the entire power bill. And it is decided before the plant is built, by passage count and [purifier](/equipment/purifier/) capacity, not by how hard the operator works. That is the most important economic fact in flour milling.
+
+This article is about **what extraction is worth commercially** — the money per point, the design decisions that set it, and the point where chasing more destroys margin. If your question is how extraction is defined and measured, or why a supplier's quoted figure differs from yours, read [understanding flour extraction](/knowledge/flour-extraction-rate-explained/) first.
 
 ## Definitions
 
@@ -94,7 +98,7 @@ The optimum is different for every market. In a market that pays a premium for l
 
 ## Three practical improvements
 
-**1. Add a bran finisher.** Recovering 1.5–3% of mill intake as saleable flour generally pays for the machine in under a year. It is the single best retrofit available.
+**1. Add a [bran finisher](/equipment/bran-finisher/).** Recovering 1.5–3% of mill intake as saleable flour generally pays for the machine in under a year. It is the single best retrofit available.
 
 **2. Re-flute on schedule.** Mills that wait for symptoms typically run 2–3 points below design extraction for months before anyone notices.
 

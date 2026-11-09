@@ -1,12 +1,12 @@
 ---
 title: "Wheat Procurement and Storage Engineering for Flour Mills"
-description: "How wheat selection, intake, storage and blending determine what your mill can physically produce — and the engineering decisions that must be made before the flow sheet is drawn."
+description: "How wheat selection, intake, storage and blending determine what your mill can physically produce — and the engineering decisions that must be made before."
 type: pillar
 order: 7
 updated: 2026-11-07
-readingTime: 20
+readingTime: 3
 keywords: ["wheat procurement flour mill", "wheat storage silo design", "grain intake system", "wheat blending mill", "wheat specification flour milling"]
-related: ["wheat-classes-and-specifications", "grain-intake-and-weighing", "silo-design-and-aeration", "wheat-storage-pest-control", "wheat-blending-strategy", "wheat-protein-and-flour-quality"]
+related: ["wheat-classes-and-specifications", "wheat-price-risk-and-contracts", "grain-intake-and-weighing", "silo-design-and-aeration", "wheat-storage-pest-control", "wheat-blending-strategy", "mycotoxin-control-in-flour-milling"]
 keyTakeaways:
   - "Milling cannot create protein. Wheat selection sets the ceiling on every product you can sell."
   - "Storage capacity of 30–45 days of consumption is the practical minimum; below 20 days you buy at harvest peak prices and lose the spread."
@@ -66,13 +66,14 @@ The difference between those two ends is not the mill. It is everything upstream
 
 ## Reading this handbook
 
-The five articles below work through the sequence in order:
+The six articles below work through the sequence in order:
 
 1. **Wheat classes and specifications** — what to buy and how to write the contract
 2. **Grain intake and weighing** — how wheat physically enters the plant
-3. **Silo design and aeration** — how to store it without losing it
+3. **[Silo](/knowledge/silo-design-and-aeration/) design and aeration** — how to store it without losing it
 4. **Storage pest control** — fumigation, monitoring and the legal constraints
 5. **Blending strategy** — how to hit a protein target every day
+6. **Wheat price risk and contracts** — what position you are actually holding, and why the flour contract decides it
 
 If you are at the feasibility stage, read them in that order. If you already operate a mill and are fighting inconsistent flour, start with blending — it is usually the cheapest fix.
 

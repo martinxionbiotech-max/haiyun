@@ -1,14 +1,14 @@
 ---
 title: "How Much Does a Flour Mill Cost? Equipment and Turnkey Prices by Capacity"
-description: "Realistic cost ranges for wheat flour mills from 20 to 500 t/d — equipment only versus turnkey, what drives the price up or down, and the six cost lines buyers forget to budget."
+description: "Realistic cost ranges for wheat flour mills from 20 to 500 t/d — equipment only versus turnkey, what drives the price up or down, and the six cost lines."
 type: cluster
 pillar: flour-mill-project-economics
 updated: 2026-11-07
-readingTime: 9
+readingTime: 3
 keywords: ["flour mill cost", "flour mill price", "wheat flour mill cost", "flour mill plant price"]
 related: ["flour-mill-project-economics", "flour-mill-operating-cost-breakdown", "flour-mill-financing-options"]
 keyTakeaways:
-  - "Equipment is 35–45% of project cost. Building, electrical, installation and working capital make up the rest."
+  - "Equipment is 63–66% of project cost. Building, electrical, installation and working capital make up the rest."
   - "20 t/d: USD 130k–190k turnkey. 60 t/d: USD 380k–560k. 200 t/d: USD 1.2–1.8M."
   - "Two quotations 30% apart usually differ in flow sheet passages, sifter area and cleaning completeness — not in margin."
 faq:
@@ -19,6 +19,8 @@ faq:
   - q: "Does the price include installation?"
     a: "Rarely. Equipment quotations normally exclude civil works, erection, electrical infrastructure and commissioning travel. Ask for an itemised turnkey scope, not a single number."
 ---
+
+Equipment is 63–66% of what a flour mill costs to build; civil works, electrical, installation and working capital make up the rest. Buyers who budget from the equipment quotation are typically 25–30% short, and that is the most common and most expensive feasibility error in the industry.
 
 ## Equipment cost by capacity
 
@@ -95,3 +97,5 @@ Never compare totals. Compare these five things on the same page:
 | Building dimensions | Determines civil cost |
 
 Two quotations that differ by 30% and match on all five are a genuine price difference. Two that differ by 30% and differ on three of the five are different products.
+
+If you are building this kind of business rather than a general mill, the [industrial milling company](/solutions/#industrial-milling-company) page sets out the capacity, flow sheet and staffing that model assumes.

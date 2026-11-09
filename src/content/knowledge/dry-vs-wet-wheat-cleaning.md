@@ -1,10 +1,10 @@
 ---
 title: "Dry vs Wet Wheat Cleaning: The Real Trade-Off and When Each Wins"
-description: "A commercial comparison of dry and wet wheat cleaning for flour mills — capital, water, effluent, ash improvement, residue removal and the market conditions that decide between them."
+description: "A commercial comparison of dry and wet wheat cleaning for flour mills — capital, water, effluent, ash improvement, residue removal and the market conditions."
 type: cluster
 pillar: wheat-cleaning-system-design
 updated: 2026-11-07
-readingTime: 8
+readingTime: 3
 keywords: ["dry wheat cleaning", "wet wheat cleaning", "wheat washing machine", "flour mill water use"]
 related: ["wheat-cleaning-system-design", "wheat-cleaning-process-flow", "wheat-tempering-moisture-guide"]
 keyTakeaways:
@@ -20,6 +20,8 @@ faq:
   - q: "Does wet cleaning reduce flour yield?"
     a: "It adds 3–5% to the drying load, not to yield loss. The wheat leaves the washer at 16–18% moisture and must be dried or tempered down to target."
 ---
+
+Wet cleaning buys 0.03–0.08 points of ash and genuinely cleans the crease, for 45–70% more capital and about a cubic metre of water per tonne. For most domestic commodity markets that is wasted money. For export or residue-tested markets it is the difference between winning the contract and being disqualified from it.
 
 ## The comparison
 
@@ -38,7 +40,7 @@ faq:
 
 ## Dry cleaning, done properly
 
-Dry cleaning plus two scourer passes with an intervening brush reaches:
+Dry cleaning plus two [scourer](/equipment/horizontal-wheat-scourer/) passes with an intervening brush reaches:
 
 - Ash reduction of 0.06–0.10 points versus single-pass
 - Microbial load reduction of 40–60%

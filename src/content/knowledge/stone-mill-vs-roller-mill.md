@@ -1,10 +1,10 @@
 ---
 title: "Stone Mill vs Roller Mill: A Fair Comparison for Commercial Buyers"
-description: "An honest comparison of stone and roller milling — output per kW, nutrient retention, flour behaviour, cost per tonne, product quality and which one suits which business."
+description: "An honest comparison of stone and roller milling — output per kW, nutrient retention, flour behaviour, cost per tonne, product quality and which one suits."
 type: cluster
 pillar: stone-milling-technology
 updated: 2026-11-07
-readingTime: 8
+readingTime: 3
 keywords: ["stone mill vs roller mill", "stone ground vs roller milled flour", "stone milling comparison"]
 related: ["stone-milling-technology", "stone-milled-flour-market", "whole-wheat-flour-production"]
 keyTakeaways:
@@ -15,10 +15,12 @@ faq:
   - q: "Is stone ground flour better than roller milled?"
     a: "It depends what you are measuring. Stone retains more heat-sensitive nutrients and produces a coarser, more flavourful wholemeal. Roller produces cleaner, whiter, more consistent flour at far higher output."
   - q: "Why can't stone mills make white flour?"
-    a: "They can, but inefficiently. Stone grinding whole kernels puts bran into the flour. To make white flour you need to separate bran from endosperm before grinding, which is what roller mills do."
+    a: "Only in a limited sense. A stone mill grinds whole kernels together, so bran ends up in the flour. You can sift some of it out afterwards and reach a low-grade white flour at low extraction, but you cannot make a graded patent flour — that requires separating bran from endosperm before fine grinding, which is what roller mills do across multiple passages."
   - q: "Which is cheaper to run?"
     a: "Roller milling, by a wide margin: 65–75 kWh per tonne versus 105–135 kWh for stone. Stone's economics depend on a price premium, not on cost efficiency."
 ---
+
+A stone mill produces 15–25% of a [roller mill](/equipment/fmfq-double-roller-mill/)'s output per kilowatt, and that single number explains most of the price premium on stone-milled flour. Roller milling wins on patent flour, extraction and scale; stone wins on whole wheat, heat and story. The hybrid configuration exists because both claims are true.
 
 ## The comparison
 
@@ -70,3 +72,5 @@ faq:
 | Building above 20 t/d of white flour | Roller, no question |
 
 Most commercial buyers who want stone character end up with the hybrid. It is the configuration that acknowledges both economics and positioning.
+
+If you are building this kind of business rather than a general mill, the [stone-milled flour operation](/solutions/#premium-stone-flour) page sets out the capacity, flow sheet and staffing that model assumes.

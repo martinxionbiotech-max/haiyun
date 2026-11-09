@@ -1,0 +1,49 @@
+---
+import Base from '../layouts/Base.astro';
+import { site } from '../data/site.js';
+
+const links = [
+  { label: 'Flour milling plants', href: '/flour-milling-plant/', note: '10–500 t/d turnkey plants' },
+  { label: 'Equipment catalogue', href: '/equipment/', note: '23 machine families' },
+  { label: 'Knowledge centre', href: '/knowledge/', note: 'Engineering handbooks and cluster articles' },
+  { label: 'Project record', href: '/projects/', note: 'Plants in operation' },
+  { label: 'About Haiyun', href: '/about/', note: 'Factory, lineage, method' },
+  { label: 'Contact', href: '/contact/', note: 'Send your duty and wheat spec' },
+];
+---
+
+<Base
+  title="Page not found"
+  description="That page does not exist on flourmillingpro.com. Use the links below to reach the plant range, the equipment catalogue or the engineering knowledge centre."
+  noindex={true}
+>
+  <section class="mx-auto max-w-4xl px-4 py-20 sm:py-28">
+    <p class="font-display text-sm font-bold uppercase tracking-[0.25em] text-ember-600">Error 404</p>
+    <h1 class="mt-4 font-display text-4xl font-bold uppercase tracking-tight text-steel-900 sm:text-5xl">
+      That page is not here
+    </h1>
+    <p class="mt-6 max-w-2xl text-lg leading-relaxed text-steel-700">
+      A URL may have changed when this site moved to <strong>flourmillingpro.com</strong>. Everything we publish is
+      reachable from the six entries below — if you arrived from a bookmark or an old link, pick the closest match.
+    </p>
+
+    <ul class="mt-10 grid gap-3 sm:grid-cols-2">
+      {links.map((l) => (
+        <li>
+          <a
+            href={l.href}
+            class="block rounded-lg border border-steel-200 px-5 py-4 transition hover:border-ember-500 hover:bg-steel-50"
+          >
+            <span class="block font-bold text-steel-900">{l.label}</span>
+            <span class="mt-1 block text-sm text-steel-600">{l.note}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+
+    <p class="mt-10 text-sm text-steel-600">
+      Still stuck? Mail <a class="font-semibold text-ember-700 underline" href={`mailto:${site.email}`}>{site.email}</a>
+      or call {site.phone} (Mon–Sat 08:00–18:00 GMT+8).
+    </p>
+  </section>
+</Base>

@@ -136,7 +136,7 @@ export const imageCatalogue = [
   { file: 'p27_04.jpg', page: 27, section: 'Bran finisher', captionEn: 'Weight (kg)', caption: '重量 Weight (kg)', note: 'Bran finisher weight detail', w: 216, h: 240 },
 
   // ── Closing ────────────────────────────────────────────────────
-  { file: 'p28_01.jpg', page: 28, section: 'Closing', captionEn: 'Seventy years of manufacturing experience — import and export licensed, exported to Eastern Europe and the CIS', caption: '70 载制造经验 — 已获得进出口产品许可证，远销东欧、独联体', note: 'Export and experience banner', w: 1600, h: 1045 },
+  { file: 'p28_01.jpg', page: 28, section: 'Closing', captionEn: 'Six decades of manufacturing experience — import and export licensed, exported to Eastern Europe and the CIS', caption: '六十余载制造经验 — 已获得进出口产品许可证，远销东欧、独联体', note: 'Export and experience banner', w: 1600, h: 1045 },
   { file: 'p29_01.jpg', page: 29, section: 'Back cover', caption: 'Back cover', note: 'Back cover visual', w: 1246, h: 1099 },
 ];
 

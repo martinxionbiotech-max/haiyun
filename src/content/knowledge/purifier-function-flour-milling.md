@@ -1,10 +1,10 @@
 ---
 title: "What a Purifier Does in a Flour Mill (and Why 40 t/d Is the Threshold)"
-description: "How a purifier separates middlings by density rather than size, the ash and extraction gains it delivers, why it needs at least four break passages to be worthwhile, and how to balance its air."
+description: "How a purifier separates middlings by density rather than size, the ash and extraction gains it delivers, why it needs at least four break passages to be."
 type: cluster
 pillar: flour-milling-flow-sheet-design
 updated: 2026-11-07
-readingTime: 8
+readingTime: 3
 keywords: ["purifier flour mill", "flour purifier function", "FQFD purifier", "middlings purification"]
 related: ["flour-milling-flow-sheet-design", "flour-ash-content-explained", "plansifter-sizing-guide"]
 keyTakeaways:
@@ -20,6 +20,8 @@ faq:
   - q: "Can I retrofit a purifier to an existing plant?"
     a: "Only if the flow sheet has enough middling streams and adequate headroom. Most retrofits also require an additional break passage, which is why the decision is best made at design stage."
 ---
+
+A [purifier](/equipment/purifier/) separates by density rather than size, which is the only way to pull clean endosperm out of particles that are the same size as bran-contaminated ones. It buys 0.08–0.15 points of ash and 5–8 points of patent extraction — but below four break passages there is not enough middlings to feed it, so it idles and burns air for nothing.
 
 ## The problem a purifier solves
 
@@ -57,7 +59,7 @@ The net result: **two streams of identical particle size, separated by purity.**
 | Energy per tonne | Baseline | +2–3% |
 | Capital | Baseline | +USD 45,000–90,000 |
 
-The extraction gain is the main prize. At 60 t/d, 5 points of extraction is 3 t of extra flour per day — around USD 1,200/day at USD 400/t.
+The extraction gain is the main prize. At [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/), 5 points of extraction is 3 t of extra flour per day — around USD 1,200/day at USD 400/t.
 
 ## The 40 t/d threshold
 

@@ -1,10 +1,10 @@
 ---
 title: "Gravity Destoner Selection Guide: Sizing, Air Volume and the 95% Test"
-description: "How to size a gravity destoner for a flour mill, why the same screen width carries two very different capacities, and a simple field test to verify 95% stone removal."
+description: "How to size a gravity destoner for a flour mill, why the same screen width carries two very different capacities, and a simple field test to verify 95%."
 type: cluster
 pillar: wheat-cleaning-system-design
 updated: 2026-11-07
-readingTime: 7
+readingTime: 3
 keywords: ["gravity destoner", "destoner selection", "wheat destoner capacity", "TQSF destoner"]
 related: ["wheat-cleaning-system-design", "wheat-impurity-types", "wheat-cleaning-process-flow"]
 keyTakeaways:
@@ -19,6 +19,8 @@ faq:
   - q: "How do I know if my destoner is working?"
     a: "Take a 1 kg sample from the stone outlet. It should be almost entirely stones. More than 10 wheat kernels per 100 stones means the air volume is too high or the deck angle is wrong."
 ---
+
+A [destoner](/equipment/gravity-destoner/) is the cheapest insurance in the plant and the machine most often left running badly. Size it by wheat throughput in tonnes per hour, not by screen width — the TQSFB family carries 60% more on the same 125 cm deck. Then set air, deck angle and amplitude together, because changing one alone destroys separation.
 
 ## Why the destoner is the machine people get wrong
 

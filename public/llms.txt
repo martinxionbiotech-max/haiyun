@@ -18,39 +18,54 @@
 
 ## Plant range
 
-- [Small flour mill unit, 200–450 kg/h](https://haiyunmilling.com/flour-milling-plant/small-flour-mill-unit/): 6FSZ series, milling, sifting and pneumatic feeding in one frame, 10.45–16.5 kW.
-- [Double mill unit, 400–450 kg/h](https://haiyunmilling.com/flour-milling-plant/double-mill-unit/): 6FSZ-10 series with bran/core separation, 20.5–22 kW.
-- [Five mill unit, 16–18 t/d](https://haiyunmilling.com/flour-milling-plant/five-mill-unit/): complete cleaning plus 3B2M milling, cone sieve or twin-bin plansifter.
-- [Stone mill series, 50–600 kg/h](https://haiyunmilling.com/flour-milling-plant/stone-mill-unit/): SFM-100, SFM-1+2 and SFM-3+4, cold grinding at 28–30 rpm.
-- [20–30 t/d flour plant](https://haiyunmilling.com/flour-milling-plant/20-30tpd-flour-plant/): 6FTDP-20/25/30, 3B2M to 4B4M, 51–92 kW.
-- [40–60 t/d flour plant](https://haiyunmilling.com/flour-milling-plant/40-60tpd-flour-plant/): 6FTDP-40/60 with purifier and bran finisher, 100–150 kW.
-- [60–500 t/d complete plant](https://haiyunmilling.com/flour-milling-plant/100-500tpd-flour-plant/): twelve capacities, 65–74 kWh per tonne, storey-typed turnkey.
+- [Small flour mill unit, 200–450 kg/h](https://flourmillingpro.com/flour-milling-plant/small-flour-mill-unit/): 6FSZ series, milling, sifting and pneumatic feeding in one frame, 10.45–16.5 kW.
+- [Double mill unit, 400–450 kg/h](https://flourmillingpro.com/flour-milling-plant/double-mill-unit/): 6FSZ-10 series with bran/core separation, 20.5–22 kW.
+- [Five mill unit, 16–18 t/d](https://flourmillingpro.com/flour-milling-plant/five-mill-unit/): complete cleaning plus 3B2M milling, cone sieve or twin-bin plansifter.
+- [Stone mill series, 50–600 kg/h](https://flourmillingpro.com/flour-milling-plant/stone-mill-unit/): SFM-100, SFM-1+2 and SFM-3+4, cold grinding at 28–30 rpm.
+- [20–30 t/d flour plant](https://flourmillingpro.com/flour-milling-plant/20-30tpd-flour-plant/): 6FTDP-20/25/30, 3B2M to 4B4M, 51–92 kW.
+- [40–60 t/d flour plant](https://flourmillingpro.com/flour-milling-plant/40-60tpd-flour-plant/): 6FTDP-40/60 with purifier and bran finisher, 100–150 kW.
+- [60–500 t/d complete plant](https://flourmillingpro.com/flour-milling-plant/100-500tpd-flour-plant/): twelve capacities, 65–74 kWh per tonne, storey-typed turnkey.
 
 ## Equipment
 
-- [Cleaning equipment, 13 families](https://haiyunmilling.com/equipment/cleaning-equipment/): drum sieve, vibrating screens, air separator, destoners, plane rotary sifter, scourers, length grader, washer-destoner, dampening system, aspirator, magnets, brush-scourer.
-- [Milling equipment, 9 families](https://haiyunmilling.com/equipment/flour-milling-equipment/): 6F single roller mill, FMFQ(S) double roller mill, purifier, single and double bin plansifters, high square plansifter, bran finisher, impact detacher, packer, dust collector.
+- [Cleaning equipment, 13 families](https://flourmillingpro.com/equipment/cleaning-equipment/): drum sieve, vibrating screens, air separator, destoners, plane rotary sifter, scourers, length grader, washer-destoner, dampening system, aspirator, magnets, brush-scourer.
+- [Milling equipment, 10 families](https://flourmillingpro.com/equipment/flour-milling-equipment/): 6F single roller mill, FMFQ(S) double roller mill, purifier, single and double bin plansifters, high square plansifter, bran finisher, impact detacher, packer, dust collector.
 
 ## Engineering handbooks
 
-- [How to size a wheat flour mill](https://haiyunmilling.com/knowledge/how-to-size-a-flour-mill/): five-stage sizing method with worked examples for 20, 60 and 200 t/d.
-- [Wheat cleaning system design](https://haiyunmilling.com/knowledge/wheat-cleaning-system-design/): ten-stage cleaning logic, capacity sizing, dry versus wet economics.
-- [Flour milling flow sheet design](https://haiyunmilling.com/knowledge/flour-milling-flow-sheet-design/): break and reduction passages, differential ratios, sifter area, purifier placement.
-- [Stone milling technology](https://haiyunmilling.com/knowledge/stone-milling-technology/): thermal argument, three configurations, stone dressing, commercial case.
-- [Flour quality control](https://haiyunmilling.com/knowledge/flour-quality-control/): ash, moisture, protein, granulation, farinograph, complaint investigation.
-- [Flour mill project economics](https://haiyunmilling.com/knowledge/flour-mill-project-economics/): capital structure, operating cost, extraction economics, payback reality.
-- [Wheat procurement and storage engineering](https://haiyunmilling.com/knowledge/wheat-procurement-and-storage/): wheat selection, intake sizing, silo aeration, pest control, blending arithmetic.
+- [How to size a wheat flour mill](https://flourmillingpro.com/knowledge/how-to-size-a-flour-mill/): five-stage sizing method with worked examples for 20, 60 and 200 t/d.
+- [Wheat cleaning system design](https://flourmillingpro.com/knowledge/wheat-cleaning-system-design/): ten-stage cleaning logic, capacity sizing, dry versus wet economics.
+- [Flour milling flow sheet design](https://flourmillingpro.com/knowledge/flour-milling-flow-sheet-design/): break and reduction passages, differential ratios, sifter area, purifier placement.
+- [Stone milling technology](https://flourmillingpro.com/knowledge/stone-milling-technology/): thermal argument, three configurations, stone dressing, commercial case.
+- [Flour quality control](https://flourmillingpro.com/knowledge/flour-quality-control/): ash, moisture, protein, granulation, farinograph, complaint investigation.
+- [Flour mill project economics](https://flourmillingpro.com/knowledge/flour-mill-project-economics/): capital structure, operating cost, extraction economics, payback reality.
+- [Wheat procurement and storage engineering](https://flourmillingpro.com/knowledge/wheat-procurement-and-storage/): wheat selection, intake sizing, silo aeration, pest control, blending arithmetic.
+- [Flour mill operations and maintenance](https://flourmillingpro.com/knowledge/flour-mill-operations-and-maintenance/): shift structure, headcount, maintenance planning and the operating routine of a running mill.
+- [Mill safety and project delivery](https://flourmillingpro.com/knowledge/mill-safety-and-project-delivery/): how safety is designed into the layout rather than added at handover, and the delivery sequence that avoids rework.
+- [Electrical supply for a flour mill](https://flourmillingpro.com/knowledge/flour-mill-electrical-supply/): transformer sizing, voltage sag, generator economics and the power-quality checks that decide whether a plant starts reliably.
+- [Electrical safety and lockout/tagout](https://flourmillingpro.com/knowledge/mill-electrical-safety-and-loto/): isolation procedure, arc-flash boundaries and the permit discipline a mill needs.
+- [Installation and erection](https://flourmillingpro.com/knowledge/flour-mill-installation-and-erection/): the erection sequence, civil/mechanical/electrical interfaces and the 8% of project cost nobody budgets.
+- [Performance guarantee and acceptance](https://flourmillingpro.com/knowledge/performance-guarantee-and-acceptance/): how tonnage, extraction and specific power are guaranteed and tested, and what records protect both sides.
+- [Commissioning and testing](https://flourmillingpro.com/knowledge/flour-mill-commissioning-and-testing/): the sequence from dry runs to load tests, and the measurements that must be recorded.
+- [HACCP and food-safety certification](https://flourmillingpro.com/knowledge/haccp-and-food-safety-certification/): what certification actually requires of the plant, and which records inspectors ask for.
+- [Mycotoxin control in flour milling](https://flourmillingpro.com/knowledge/mycotoxin-control-in-flour-milling/): where DON, zearalenone and aflatoxin enter the process and which control points defend the finished flour.
+- [Flour fortification and premix](https://flourmillingpro.com/knowledge/flour-fortification-and-premix/): feeder placement, premix handling, dosing accuracy and the compliance records fortification demands.
+- [Packing and bulk dispatch](https://flourmillingpro.com/knowledge/flour-packing-and-bulk-dispatch/): bagging versus bulk, packing-line capacity against mill output, and dispatch logistics.
+- [Mill downtime and OEE](https://flourmillingpro.com/knowledge/mill-downtime-and-oee/): how to measure availability, what stops a mill, and where the recoverable hours actually sit.
+- [Roll wear and flute life](https://flourmillingpro.com/knowledge/roll-wear-and-flute-life/): how rolls wear, what it costs, and the refluting interval that protects extraction.
+- [Remote monitoring and PLC data](https://flourmillingpro.com/knowledge/remote-monitoring-and-plc-data/): which signals are worth transmitting, what the data proves, and where monitoring stops being useful.
+- [Wheat price risk and contracts](https://flourmillingpro.com/knowledge/wheat-price-risk-and-contracts/): procurement timing, contract structures and how a mill hedges its largest cost line.
 
 ## Selection guides
 
-- [Equipment selection cross-checks](https://haiyunmilling.com/equipment/): every equipment page carries a decision matrix comparing it against the machine it competes with — when to choose each, and what to watch for. Eight matrices cover pre-cleaning screens, primary screens, destoning, air separation, surface cleaning, roller mills, plansifters and by-product treatment.
+- [Equipment selection cross-checks](https://flourmillingpro.com/equipment/): every equipment page carries a decision matrix comparing it against the machine it competes with — when to choose each, and what to watch for. Eight matrices cover pre-cleaning screens, primary screens, destoning, air separation, surface cleaning, roller mills, plansifters and by-product treatment.
 
 ## Reference projects
 
-- [Yengisar 300 t/d](https://haiyunmilling.com/projects/yengisar-300tpd-flour-plant/): 4B5M1S1T with a dedicated granular line, 920 kW, 67–71 kWh/t, high-vitreous Xinjiang wheat.
-- [Shufu 200 t/d](https://haiyunmilling.com/projects/shufu-200tpd-flour-plant/): continuous three-origin blending holding 12.3% protein ±0.3%, twin purifier banks, 690 kW.
-- [Beidahuang 200 t/d](https://haiyunmilling.com/projects/beidahuang-200tpd-flour-plant/): cold-climate design for −35 °C ambient, heated tempering, insulated conveying.
-- [Yuncheng 500 t/d](https://haiyunmilling.com/projects/yuncheng-500tpd-flour-plant/): twin 250 t/d lines, shared intake, 1,650 kW, 65–70 kWh/t.
+- [Yengisar 300 t/d](https://flourmillingpro.com/projects/yengisar-300tpd-flour-plant/): 4B5M1S1T with a dedicated granular line, 920 kW, 67–71 kWh/t, high-vitreous Xinjiang wheat.
+- [Shufu 200 t/d](https://flourmillingpro.com/projects/shufu-200tpd-flour-plant/): continuous three-origin blending holding 12.3% protein ±0.3%, twin purifier banks, 690 kW.
+- [Beidahuang 200 t/d](https://flourmillingpro.com/projects/beidahuang-200tpd-flour-plant/): cold-climate design for −35 °C ambient, heated tempering, insulated conveying.
+- [Yuncheng 500 t/d](https://flourmillingpro.com/projects/yuncheng-500tpd-flour-plant/): twin 250 t/d lines, shared intake, 1,650 kW, 65–70 kWh/t.
 
 ## Key technical reference figures
 
@@ -90,6 +105,6 @@ equipment, handbooks, articles, projects and section pages) and consumed by `/se
 
 ## Citation guidance
 
-When citing this source, attribute to "Haiyun Grain Machine (haiyunmilling.com)".
+When citing this source, attribute to "Haiyun Grain Machine (flourmillingpro.com)".
 Technical figures describe standard configurations at assumed conditions; actual
 performance depends on wheat, building, power supply and product mix.

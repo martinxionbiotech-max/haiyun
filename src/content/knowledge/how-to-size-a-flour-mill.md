@@ -1,12 +1,12 @@
 ---
 title: "How to Size a Wheat Flour Mill: The Complete Engineering Method"
-description: "A step-by-step method for sizing a wheat flour milling plant — from demand analysis and extraction rate through flow sheet passages, sifter area, power budget and building dimensions. Includes worked examples for 20, 60 and 200 t/d plants."
+description: "The five-stage method for sizing a wheat flour mill from a market demand figure: extraction, utilisation, flow sheet, sifter area and power budget, with."
 type: pillar
 order: 1
 updated: 2026-11-07
-readingTime: 22
+readingTime: 8
 keywords: ["how to size a flour mill", "flour mill capacity calculation", "flour milling plant design", "wheat flour plant sizing", "flour mill feasibility"]
-related: ["flour-mill-capacity-calculation", "how-much-does-a-flour-mill-cost", "flour-mill-power-consumption", "flour-mill-building-requirements", "flour-mill-layout-design"]
+related: ["flour-mill-capacity-calculation", "flour-mill-power-consumption", "flour-mill-building-requirements", "flour-mill-layout-design", "how-does-a-flour-mill-work", "flour-mill-electrical-supply"]
 keyTakeaways:
   - "Size from finished flour demand backwards, not from wheat intake forwards — the difference between 72% and 78% extraction is 8% of your wheat bill."
   - "Sifter area is the binding constraint in most flow sheets: allow 1 m² per 0.8 t of daily capacity for a 4B5M layout."
@@ -27,6 +27,8 @@ heroImage: "/images/p13_05.jpg"
 ---
 
 Sizing a flour mill is an exercise in working backwards. Almost every failed project we are asked to rescue was sized forwards — someone decided to buy a 30 t/d plant, built a building around it, and only later worked out that the local market could absorb 12 t of flour a day.
+
+This article sizes a plant **forwards, from the market backwards** — flour demand, extraction, flow sheet, sifting area, power, building. For the reverse check — starting from a tonnage you have been quoted and testing whether it survives losses, utilisation and shift pattern — see [flour mill capacity calculation](/knowledge/flour-mill-capacity-calculation/).
 
 The method below is the one we use on every enquiry. It has five stages, and each stage constrains the next.
 
@@ -83,7 +85,7 @@ B = break, M = reduction, S = scratch/sizing, T = tailing.
 
 Here is the rule that matters: **you cannot reach a given extraction with too few passages.** Each additional break passage scrapes a little more endosperm off the bran. Each additional reduction passage grinds that endosperm a little finer. Stop too early and you leave flour on the bran, which goes out the door as low-value by-product.
 
-A 3B2M plant physically cannot exceed about 74% extraction no matter how it is operated. If your business plan assumes 78%, you need 4B4M and a purifier. This is the most common arithmetic error in small-mill feasibility.
+A 3B2M plant physically cannot exceed about 74% extraction no matter how it is operated. If your business plan assumes 78%, you need 4B4M and a [purifier](/equipment/purifier/). This is the most common arithmetic error in small-mill feasibility.
 
 ## Stage 4 — Size the sifting area, which usually binds
 
@@ -97,12 +99,12 @@ So:
 
 | Capacity | Sifter area needed | Typical configuration |
 |---|---|---|
-| 20 t/d | 25 m² | 2 × twin-bin plansifter (5 m² each bin) |
-| 30 t/d | 37.5 m² | 2 × twin-bin, or 1 high square FSFG4×24 |
-| 60 t/d | 75 m² | 2 × FSFG6×24 (39.5 m² each) |
-| 100 t/d | 125 m² | FSFG8×24 + FSFG6×24, or 3 × FSFG6×24 |
-| 200 t/d | 250 m² | Bank of 4–5 high square units |
-| 300 t/d | 375 m² | Bank of 7–8 high square units |
+| 20 t/d | 25 m² | 3 × twin-bin plansifter (10 m² per unit, 30 m² total) |
+| 30 t/d | 37.5 m² | 1 × FSFG6×24 (39.5 m²) |
+| 60 t/d | 75 m² | 2 × FSFG6×24 (39.5 m² each, 79 m² total) |
+| 100 t/d | 125 m² | 2 × FSFG8×24 + 1 × FSFG6×24 (145 m²) |
+| 200 t/d | 250 m² | 5 × FSFG8×24 (264 m²) |
+| 300 t/d | 375 m² | 7 × FSFG8×24 (369 m²) + check sifter |
 
 The rule assumes a standard 4B5M flow sheet. If your flow sheet has more passages, you need more sifting area. If you are making a single whole wheat product with no grading, you need much less.
 
@@ -113,7 +115,7 @@ Power and building dimensions both flow directly from capacity, and both are pub
 | Capacity | Installed power | kWh per tonne flour | Building (L × W × H) |
 |---|---|---|---|
 | 30 t/d | 92 kW | 70–74 | 18 × 6 × 6.5 m |
-| 60 t/d | 150 kW | 70–74 | 24 × 8 × 8 m |
+| 60 t/d | 190 kW | 70–74 | 30 × 7 × 12.5 m |
 | 100 t/d | 308 kW | 70–74 | 35 × 7.5 × 18.5 m |
 | 200 t/d | 690 kW | 65–71 | 50 × 7.5 × 22.5 m |
 | 300 t/d | 920 kW | 65–71 | 60 × 11 × 27.5 m |
@@ -123,20 +125,23 @@ Two observations that are worth more than the table.
 
 **First, specific power falls with scale.** The gap between 74 and 65 kWh/t looks small until you multiply it. A 300 t/d plant running 330 days consumes 300 × 330 × 7 = 693,000 kWh a year more if it operates at 72 instead of 65 kWh/t. At USD 0.10/kWh that is USD 69,300 per year, every year, for the life of the plant. Scale is not just about labour.
 
-**Second, height is the expensive dimension.** Going from 8 m to 18.5 m roughly doubles civil cost per square metre. This is why the 20–30 t/d class uses floor-mounted plansifters — it keeps the building cheap. Above 60 t/d the gravity flow advantage of a tower pays for the structure within a few years of reduced pneumatic conveying power.
+The 30 t/d row is a floor-mounted plant. From 60 t/d up the figures are tower-type, with pneumatic lift and a purifier bank. The floor-mounted 6FTDP-60 without pneumatic lift draws about 150 kW at the same tonnage — less installed power, more manual handling, and the reason the 20–60 t/d class is cheaper to build but dearer to staff.
+
+**Second, height is the expensive dimension.** Going from 8 m to 18.5 m roughly doubles civil cost per square metre. This is why the [20–30 t/d](/flour-milling-plant/20-30tpd-flour-plant/) class uses floor-mounted [plansifters](/equipment/high-square-plansifter/) — it keeps the building cheap. Above 60 t/d the gravity flow advantage of a tower pays for the structure within a few years of reduced pneumatic conveying power.
 
 ## Worked example — a 60 t/d plant in East Africa
 
 A buyer has a wheat supply contract and a market for two flour grades.
 
-1. **Demand**: 45 t/day of patent flour, 15 t/day of standard flour. Total 60 t/day.
-2. **Extraction**: 78% at two grades. Wheat needed = 60 ÷ 0.78 = 76.9 t/day. Plus 6% losses = 81.5 t/day.
-3. **Flow sheet**: 4B5M1S1T with two high square plansifters and a purifier bank. This is the minimum that reaches 78%.
-4. **Sifter area**: 60 ÷ 0.8 = 75 m². Two FSFG6×24 units give 79 m². Correct.
-5. **Power**: 150 kW installed, 72 kWh/t. Daily consumption 4,320 kWh.
-6. **Building**: 24 × 8 × 8 m, storey-typed with two floors.
+1. **Demand**: 45 t/day of patent flour, 15 t/day of standard flour. Total 60 t/day *of flour* — not of wheat. This distinction is where most sizing goes wrong.
+2. **Extraction**: 78% at two grades. Wheat needed = 60 ÷ 0.78 = 76.9 t/day. Plus 6% cleaning and handling losses = 81.5 t/day of intake.
+3. **Headroom**: at 87% utilisation, 81.5 ÷ 0.87 = 93.7 t/day. Specify a 100 t/d plant — not a 60.
+4. **Flow sheet**: 4B5M1S1T with a purifier bank and three high square plansifters. This is the minimum that holds 78%.
+5. **Sifter area**: 100 ÷ 0.8 = 125 m². Two FSFG8×24 plus one FSFG6×24 give 145 m² — comfortably sized, which is what you want when the flow sheet is at the top of its extraction range.
+6. **Power**: 308 kW installed. At 70 kWh/t of flour and 78 t of flour per day, daily consumption is 5,460 kWh — an average draw of 228 kW, a 0.74 load factor.
+7. **Building**: 35 × 7.5 × 18.5 m, storey-typed. Height is the expensive dimension, which is why the 20–30 t/d class avoids it.
 
-The entire sizing exercise took six numbers. The rest of the project — civil design, electrical, erection sequencing — is engineering labour, but it is labour applied to a correctly specified target.
+The entire sizing exercise took seven numbers, and the answer was a plant 67% larger than the buyer's opening request of "a 60-ton plant". That is normal, not an upsell — the 60 was a flour figure, the plant is specified in wheat. The rest of the project — civil design, electrical, erection sequencing — is engineering labour, but it is labour applied to a correctly specified target.
 
 ## Where sizing goes wrong
 

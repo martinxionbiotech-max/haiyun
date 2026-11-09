@@ -1,12 +1,12 @@
 ---
 title: "Flour Mill Spare Parts: What to Stock, What to Order and What to Never Hold"
-description: "A criticality-based spares strategy for flour mills — the parts that stop production, the parts that only cost money, and the stock levels that balance working capital against downtime."
+description: "A criticality-based spares strategy for flour mills — the parts that stop production, the parts that only cost money, and the stock levels that balance."
 type: cluster
-pillar: flour-mill-project-economics
+pillar: flour-mill-operations-and-maintenance
 updated: 2026-11-07
-readingTime: 7
+readingTime: 4
 keywords: ["flour mill spare parts", "mill maintenance inventory", "critical spares list", "flour mill downtime cost"]
-related: ["flour-mill-preventive-maintenance-schedule", "flour-mill-operating-cost-breakdown", "plc-automation-flour-mill"]
+related: ["flour-mill-operations-and-maintenance", "flour-mill-preventive-maintenance-schedule", "flour-mill-operating-cost-breakdown", "plc-automation-flour-mill"]
 keyTakeaways:
   - "Spares should be sized by downtime cost, not by part price. A USD 40 bearing that stops a 200 t/d plant for a day costs USD 20,000."
   - "Stock 100% of parts whose lead time exceeds your tolerable downtime, and nothing else."
@@ -19,6 +19,8 @@ faq:
   - q: "How long should parts be stored?"
     a: "Rubber and elastomer parts degrade — rotate stock every 3 years. Bearings stored over 5 years should be inspected before use. Electronic components over 10 years are suspect."
 ---
+
+Spares should be sized by what a stoppage costs, not by what the part costs. A USD 40 bearing that idles a 200 t/d plant for a day costs roughly USD 20,000 in lost margin — which makes stocking a financial decision that purchasing departments are usually not equipped to make.
 
 ## The arithmetic that drives everything
 
@@ -34,7 +36,7 @@ Downtime cost per day for a flour mill:
 
 Add contract penalties, spoilage of in-process material and the cost of restarting a mill (2–6 hours of off-specification flour) and the real figure is 1.3–1.6× the above.
 
-Against that, a bearing costs USD 40. A sifter screen costs USD 60. The decision to hold them or not is not a purchasing decision, it is an arithmetic one.
+Against that, a bearing costs USD 40. A [sifter screen](/equipment/high-square-plansifter/) costs USD 60. The decision to hold them or not is not a purchasing decision, it is an arithmetic one.
 
 ## The criticality matrix
 

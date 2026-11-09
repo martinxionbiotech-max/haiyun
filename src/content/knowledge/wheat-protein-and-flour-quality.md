@@ -4,7 +4,7 @@ description: "How wheat protein content and quality determine flour performance,
 type: cluster
 pillar: flour-quality-control
 updated: 2026-11-07
-readingTime: 8
+readingTime: 3
 keywords: ["wheat protein flour quality", "gluten quality wheat", "flour protein content", "wheat blending flour"]
 related: ["flour-quality-control", "flour-specification-by-application", "flour-granulation-testing"]
 keyTakeaways:
@@ -19,6 +19,8 @@ faq:
   - q: "How do mills hit a protein specification?"
     a: "By blending wheat origins at intake. An electronic proportioning system mixes high- and low-protein wheat to hit the target within ±0.2 points."
 ---
+
+Milling can shift flour protein by about ±0.5 points through [stream selection](/knowledge/flour-milling-flow-sheet-design/), and that is the hard limit — it cannot create protein the wheat does not contain. Quantity and quality are also separate things: a 13% protein wheat with weak gluten still makes poor bread, and no mill setting will change that.
 
 ## Quantity versus quality
 

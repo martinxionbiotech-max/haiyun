@@ -1,10 +1,10 @@
 ---
 title: "Wheat Cleaning System Design: A Machine-by-Machine Engineering Guide"
-description: "How to design a wheat cleaning line for a flour mill — impurity classes, machine sequence, capacity sizing rules, wet versus dry process economics, and the five cleaning mistakes that quietly destroy flour ash."
+description: "How to design a wheat cleaning line for a flour mill — impurity classes, machine sequence, capacity sizing rules, wet versus dry process economics, and the…"
 type: pillar
 order: 2
 updated: 2026-11-07
-readingTime: 26
+readingTime: 8
 keywords: ["wheat cleaning process", "flour mill cleaning section", "wheat cleaning machine", "destoner flour mill", "wheat tempering"]
 related: ["wheat-cleaning-process-flow", "dry-vs-wet-wheat-cleaning", "wheat-tempering-moisture-guide", "wheat-impurity-types", "destoner-selection-guide"]
 keyTakeaways:
@@ -29,11 +29,13 @@ heroImage: "/images/p19_02.jpg"
 
 A flour mill has two halves. The milling half is visible, expensive and interesting. The cleaning half is invisible, cheap and decisive.
 
+This article is about **designing and sizing** a cleaning line — impurity classes, capacity rules, wet versus dry economics, and the mistakes that destroy ash. For the stage-by-stage process sequence itself, see [wheat cleaning process flow](/knowledge/wheat-cleaning-process-flow/).
+
 That asymmetry is why cleaning sections get under-specified. A buyer comparing two quotations sees a 30-stand milling floor in both and a cleaning section with four machines in one and six in the other, and reads the difference as margin rather than engineering. Then the plant runs and the flour ash is 0.72% instead of 0.58%, and nobody can explain where the extra bran came from — because it came in with the wheat and never left.
 
 ## What cleaning actually has to remove
 
-Wheat arrives with roughly four classes of contamination, and each one requires a physically different separation principle. No single machine handles more than one or two classes properly.
+Wheat arrives with six classes of contamination, and each one requires a physically different separation principle. No single machine handles more than one or two classes properly.
 
 | Impurity class | Examples | Separation principle | Machine |
 |---|---|---|---|
@@ -44,7 +46,7 @@ Wheat arrives with roughly four classes of contamination, and each one requires 
 | Shape/length | Broken kernels, shrivelled grain, ergot | Length | Indent cylinder |
 | Ferrous | Wire, bolts, staples, wear particles | Magnetism | Plate or drum magnet |
 
-A destoner cannot remove straw. A scourer cannot remove stones. A screen cannot remove a stone that happens to be the same size as a wheat kernel — and that is exactly what most field stones are, which is why density separation is the one stage you cannot skip.
+A destoner cannot remove straw. A [scourer](/equipment/horizontal-wheat-scourer/) cannot remove stones. A screen cannot remove a stone that happens to be the same size as a wheat kernel — and that is exactly what most field stones are, which is why density separation is the one stage you cannot skip.
 
 ## The fixed sequence
 
@@ -52,11 +54,11 @@ Every Haiyun flow sheet uses the same order, from a 200 kg/h unit to a 500 t/d t
 
 **1. Intake and weighing.** Establish the tonnage. Every subsequent calculation and every payment depends on this number being right.
 
-**2. Coarse pre-cleaning — drum sieve.** Removes material larger than the screen aperture: straw, rope, cobs, plastic bags. This stage exists to protect everything downstream. A rope entering a vibrating screen wraps a shaft and takes the line down for a day.
+**2. Coarse pre-cleaning — [drum sieve](/equipment/drum-sieve-pre-cleaner/).** Removes material larger than the screen aperture: straw, rope, cobs, plastic bags. This stage exists to protect everything downstream. A rope entering a vibrating screen wraps a shaft and takes the line down for a day.
 
 **3. Size grading — vibrating screen.** Separates by particle size in two or three decks. Large impurities stay on top; small sand and broken grain drop through; wheat travels over the middle deck.
 
-**4. Density separation — gravity destoner.** The critical stage. Wheat and stone have similar dimensions but different densities, so only a combined airflow and vibration deck separates them. **Sized correctly, this machine removes 95%+ of stones. Undersized, it removes almost none, and the failure is completely invisible from the outside.**
+**4. Density separation — [gravity destoner](/equipment/gravity-destoner/).** The critical stage. Wheat and stone have similar dimensions but different densities, so only a combined airflow and vibration deck separates them. **Sized correctly, this machine removes 95%+ of stones. Undersized, it removes almost none, and the failure is completely invisible from the outside.**
 
 **5. Surface cleaning — scourer (one or two passes).** Beats the kernel against a perforated drum, removing surface dirt, beard and a measurable fraction of the microbial load. A single heavy-beat pass typically removes 0.03–0.06 percentage points of ash from the whole meal.
 
@@ -111,9 +113,42 @@ One warning: wet cleaning without effluent treatment is illegal in most jurisdic
 
 **3. Running one scourer pass instead of two.** Two passes with an intervening brush reach 0.08 points of ash reduction. One pass reaches half that, and the difference is invisible until you test.
 
-**4. Omitting the automatic dampener.** Manual water addition varies by ±1.5% between operators. Automatic microwave-controlled dampening holds ±0.2%. Tempered moisture variation is the leading cause of "the mill behaved differently today".
+**4. Omitting the [automatic dampener](/equipment/automatic-dampening-system/).** Manual water addition varies by ±1.5% between operators. Automatic microwave-controlled dampening holds ±0.2%. Tempered moisture variation is the leading cause of "the mill behaved differently today".
 
 **5. No magnets on flour streams.** Magnets on wheat only protect the rolls. Magnets before the packer protect the customer, and the customer is the one who brings a claim.
+
+## Air, and where it goes
+
+Every cleaning stage that removes light material — chaff, dust, beard, smut — needs air to carry it. The question that decides a great deal of your capital cost and your relationship with your neighbours is where that air ends up.
+
+There are two architectures, and the choice is made almost by accident.
+
+**Open circuit.** Air is drawn from the building, passes through the machine, and is exhausted to atmosphere through a dust collector. This is the default in most designs, and it is correct where you have space outdoors, a bag filter you are maintaining anyway, and no neighbours.
+
+**Closed circuit.** The air is recirculated through the machine rather than exhausted. A [cycling air separator](/equipment/cycling-air-separator/) does this internally: the same air volume lifts the light fraction, drops it into a collection point, and returns to the fan. No external dust collector, no duct run to the roof, no plume.
+
+| | Open circuit | Closed circuit |
+|---|---|---|
+| Dust collector required | Yes | No |
+| Duct run to atmosphere | Yes | No |
+| Heat loss from building | Continuous | None |
+| Visible dust plume | Yes, if the filter fails | None |
+| Capital cost, small plant | Higher (filter + ducting) | Lower |
+| Maintenance burden | Filter bags, differential pressure | Fan and air path only |
+
+Where closed circuit wins, decisively:
+
+**Plants inside town limits.** A visible dust plume from a flour mill is the single fastest way to attract a regulator, and the complaint usually arrives before the filter has actually failed — a torn bag for one shift is enough. A closed circuit does not have a plume to see.
+
+**Cold climates.** An open-circuit aspiration system pulls heated building air to atmosphere continuously. In a plant that is heated, that is a permanent energy loss, and the make-up air arrives cold at the mill floor.
+
+**Small plants with no maintenance culture.** A bag filter that nobody checks is worse than no filter: it works until it does not, and then it dusts the neighbourhood. A closed circuit has fewer things to neglect.
+
+Where open circuit still wins: large plants with a centralised aspiration system, an existing filter house, and maintenance staff who actually change bags on schedule. At 200 t/d and above, the ducting and filter are already there for the pneumatic conveying, and centralising aspiration into the same system is more efficient than a dozen small closed loops.
+
+The mistake we see most often is neither of these. It is a plant that has open-circuit aspiration on the cleaning line, no dust collector specified, and a duct terminating at a wall louvre. That is not a design; it is a dust emission with a fan attached.
+
+One sizing note that catches people: a cycling air separator is quoted with two capacities — cleaning capacity and pre-cleaning capacity — and they differ by a factor of three to four, exactly like a vibrating screen. A TFXH100 is 16 t/h cleaning and 65 t/h pre-cleaning. Size it on the first number.
 
 ## What a complete cleaning section costs
 

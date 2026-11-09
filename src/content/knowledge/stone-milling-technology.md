@@ -1,10 +1,10 @@
 ---
 title: "Stone Milling Technology: The Complete Commercial Guide"
-description: "How stone mills work, why 28–30 rpm preserves what roller milling destroys, the hybrid roller-plus-stone architecture, stone dressing intervals, and the commercial case for selling stone-milled flour at a 1.5–2× premium."
+description: "How stone mills work, why 28–30 rpm preserves what roller milling destroys, the hybrid roller-plus-stone architecture, stone dressing intervals, and the…"
 type: pillar
 order: 4
 updated: 2026-11-07
-readingTime: 21
+readingTime: 6
 keywords: ["stone milled flour", "stone grinding flour", "stone flour mill", "whole wheat flour stone mill", "stone mill vs roller mill"]
 related: ["stone-mill-vs-roller-mill", "stone-dressing-schedule", "whole-wheat-flour-production", "stone-milled-flour-market", "sfm-stone-mill-configurations"]
 keyTakeaways:
@@ -33,7 +33,7 @@ Not tradition, not romance, not the texture. Heat. Every other claimed advantage
 
 ## The thermal argument, quantified
 
-A roller mill reduces wheat by passing it between two steel rolls turning at high speed with a differential. The work of reduction is concentrated in a very small gap, and the energy goes into the flour as heat. Flour leaving a reduction roll can sit at 45–60 °C.
+A [roller mill](/equipment/fmfq-double-roller-mill/) reduces wheat by passing it between two steel rolls turning at high speed with a differential. The work of reduction is concentrated in a very small gap, and the energy goes into the flour as heat. Flour leaving a reduction roll can sit at 45–60 °C.
 
 A stone mill grinds by attrition between two abrasive surfaces moving slowly against each other. The same reduction work is spread over a much larger area and a much longer time. Flour leaving a stone mill typically sits at 5–15 °C above ambient.
 
@@ -152,3 +152,5 @@ It is the wrong choice when:
 - Your operating team cannot maintain a dressing schedule
 
 The hybrid configurations exist precisely to soften this trade. SFM-1+2 lets a commercial miller enter the premium market without abandoning yield. That is usually the right answer.
+
+If you are building this kind of business rather than a general mill, the [premium stone-flour business](/solutions/#premium-stone-flour) page sets out the capacity, flow sheet and staffing that model assumes.

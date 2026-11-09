@@ -1,14 +1,14 @@
 ---
 title: "Dust Explosion Safety in Flour Mills: The Engineering Controls That Actually Work"
-description: "Why flour dust explodes, the six elements of a dust hazard analysis, and the specific design measures that prevent primary and secondary explosions in a milling plant."
+description: "Why flour dust explodes, the five elements of a dust explosion, and the specific design measures that prevent primary and secondary explosions in a milling."
 type: cluster
-pillar: flour-milling-flow-sheet-design
+pillar: mill-safety-and-project-delivery
 updated: 2026-11-07
-readingTime: 8
+readingTime: 6
 keywords: ["flour dust explosion", "dust hazard analysis flour mill", "grain dust explosion prevention", "ATEX flour mill"]
-related: ["flour-milling-flow-sheet-design", "pneumatic-conveying-in-flour-mills", "flour-mill-building-requirements"]
+related: ["mill-safety-and-project-delivery", "flour-milling-flow-sheet-design", "pneumatic-conveying-in-flour-mills", "flour-mill-building-requirements"]
 keyTakeaways:
-  - "Flour dust has a Kst of 50–120 bar·m/s and a minimum ignition energy under 30 mJ — a static spark will do it."
+  - "Flour dust has a Kst of 50–120 bar·m/s and a minimum ignition energy of 50–100 mJ — a static spark will do it."
   - "Secondary explosions kill. The primary event usually just ruptures a filter; the secondary destroys the building."
   - "Housekeeping is an engineering control, not a cleaning schedule. If dust accumulates, the design is wrong."
 faq:
@@ -20,17 +20,25 @@ faq:
     a: "A layer of 1 mm over 5% of a room's floor area is enough to produce a secondary explosion at lethal overpressure if suspended. Most standards use 1/32 inch (0.8 mm) as the housekeeping threshold."
 ---
 
+Flour dust has a Kst of 50–120 bar·m/s and ignites on 50–100 mJ, which is well inside the range of a static discharge. The primary explosion rarely kills anyone — it ruptures a filter or a duct. The secondary one, fed by the dust lying on beams and ledges, destroys the building. That is why housekeeping is an engineering control, not a cleaning rota.
+
+
+<figure class="my-8">
+  <img src="/images/figure-dust-defence.svg" alt="Five elements must be present at once; the controls that remove each, and the four-layer defence in order of effectiveness." width="1000" loading="lazy" class="w-full rounded-lg border border-steel-200" />
+  <figcaption class="mt-3 text-sm leading-relaxed text-steel-500">Five elements must be present at once; the controls that remove each, and the four-layer defence in order of effectiveness.</figcaption>
+</figure>
+
 ## The mechanism
 
 A dust explosion requires five things simultaneously:
 
 1. **Fuel** — flour dust, minimum explosive concentration around 40–60 g/m³
 2. **Oxygen** — present in any open building
-3. **Ignition** — 20–30 mJ is enough; static, friction, hot surface
+3. **Ignition** — 50–100 mJ is enough for wheat flour dust; static, friction, hot surface. Fine, dry, low-moisture fractions can fall below 30 mJ, which is why the figure is measured rather than assumed
 4. **Dispersion** — dust suspended as a cloud, not lying in a layer
 5. **Confinement** — a vessel, duct, filter or room
 
-Remove any one and there is no explosion. Engineering controls target the ones you can actually remove.
+Remove any one and there is no explosion. Engineering controls target the ones you can actually remove — the [pulse-jet dust collector](/equipment/pulse-jet-dust-collector/) removes fuel at the source, and bonding and earthing, covered in [electrical safety and LOTO](/knowledge/mill-electrical-safety-and-loto/), removes the ignition.
 
 ### The numbers that matter
 
@@ -39,7 +47,7 @@ Remove any one and there is no explosion. Engineering controls target the ones y
 | Kst (deflagration index) | 50–120 bar·m/s |
 | Pmax | 7–9 bar |
 | Minimum explosive concentration | 40–60 g/m³ |
-| Minimum ignition energy | 20–30 mJ |
+| Minimum ignition energy | 50–100 mJ |
 | Minimum ignition temperature (layer) | 220–280 °C |
 | Minimum ignition temperature (cloud) | 380–440 °C |
 | Limiting oxygen concentration | 10–12% by volume |
@@ -56,7 +64,7 @@ This distinction is the whole safety case.
 
 **In every major grain or flour dust disaster on record, the fatalities came from secondary explosions.**
 
-The consequence: the most important control is not explosion venting. It is **eliminating dust accumulation**.
+The consequence: the most important control is not explosion venting. It is **eliminating dust accumulation** — which is a matter of [mill layout and geometry](/knowledge/flour-mill-layout-design/) before it is a matter of cleaning discipline.
 
 ## Control hierarchy
 
@@ -187,3 +195,12 @@ In order of how often they are the finding:
 8. Inadequate housekeeping records
 
 A dust hazard analysis — a documented, room-by-room, equipment-by-equipment assessment — is now a legal requirement in most jurisdictions and the first thing an insurer asks for. It is also the document that turns a list of generic concerns into a specific capital plan.
+
+
+## Where the numbers come from
+
+The explosion parameters in this article are measured values, not estimates, and they are measured per lot — wheat flour from two suppliers can differ by a factor of two on minimum ignition energy.
+
+For the regulatory framework, [NFPA 61](https://www.nfpa.org/codes-and-standards/nfpa-61-standard-development/61) covers dust hazard control in grain and food processing, and [OSHA's combustible dust guidance](https://www.osha.gov/combustible-dust) sets out what an inspection will look for. [HSE's dust pages](https://www.hse.gov.uk/dust/) are the clearest plain-language explanation of why secondary explosions dominate the casualties.
+
+What none of these will do is tell you the Kst of *your* dust. That requires a lab test on a sample from your own collectors, and it is the cheapest safety spend in the project.

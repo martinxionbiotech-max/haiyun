@@ -84,7 +84,7 @@ const schema = {
   <section class="section">
     <div class="container-x space-y-6">
       {solutions.map((s, i) => (
-        <article class="card overflow-hidden">
+        <article id={s.slug} class="card scroll-mt-24 overflow-hidden">
           <div class="grid lg:grid-cols-[2fr_1fr]">
             <div class="p-7 lg:p-9">
               <div class="flex flex-wrap items-center gap-3">
