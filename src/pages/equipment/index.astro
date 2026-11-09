@@ -2,9 +2,16 @@
 import PageLayout from '../../layouts/PageLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import CTABand from '../../components/CTABand.astro';
+import HubFAQ from '../../components/HubFAQ.astro';
 import { equipmentCategories, equipment, equipmentByCategory } from '../../data/equipment.js';
 import { equipmentGallery } from '../../data/gallery.js';
 
+
+const faq = [
+  { q: 'How do I choose between JIS, DIN and BCI equipment?', a: 'Start from the case size and the vehicle or plant interface, not from the standard name. JIS, DIN/EN and BCI use different case envelopes; the correct family is the one that fits the tray or the flow sheet. CCA and capacity are then selected inside that family.' },
+  { q: 'Can I buy a single machine rather than a complete line?', a: 'Yes. Every machine in the catalogue is available individually, with its own parameter table and commissioning support. Most first-time buyers start with one bottleneck machine and expand the line later.' },
+  { q: 'What information do you need to quote a machine?', a: 'Throughput required, wheat type and quality, available building dimensions, local power supply and the destination market. With those four inputs we can propose a model and a budget range within 12 working hours.' },
+];
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
@@ -105,6 +112,8 @@ const schema = {
       </div>
     </div>
   </section>
+
+  <HubFAQ items={faq} />
 
   <CTABand heading="Not sure which machine your flow sheet is missing?" />
 </PageLayout>

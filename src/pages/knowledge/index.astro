@@ -2,12 +2,19 @@
 import PageLayout from '../../layouts/PageLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import CTABand from '../../components/CTABand.astro';
+import HubFAQ from '../../components/HubFAQ.astro';
 import { getCollection } from 'astro:content';
 
 const all = await getCollection('knowledge');
 const pillars = all.filter((p) => p.data.type === 'pillar').sort((a, b) => a.data.order - b.data.order);
 const clusters = all.filter((p) => p.data.type === 'cluster');
 
+
+const faq = [
+  { q: 'Who writes these engineering handbooks?', a: 'The Haiyun engineering desk writes them from project work — flow-sheet design, equipment sizing, commissioning and operating feedback. Figures are typical ranges from real projects, not catalogue claims.' },
+  { q: 'Are the numbers generic or project-specific?', a: 'They are engineering ranges at stated assumptions (wheat quality, extraction, voltage, moisture). Use them for feasibility and compare them with a project-specific quotation before committing capital.' },
+  { q: 'Can I use these articles for a feasibility study?', a: 'Yes. The sizing, power and economics articles are structured for feasibility work. For an investment decision, validate the assumptions against your wheat, building and local energy price.' },
+];
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
@@ -86,6 +93,8 @@ const schema = {
       </div>
     </div>
   </section>
+
+  <HubFAQ items={faq} />
 
   <CTABand heading="Have a specific engineering question?" body="Send it to our engineering desk. We answer technical questions from anyone — customer or not. If we do not know, we will say so." />
 </PageLayout>

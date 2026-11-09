@@ -4,6 +4,7 @@ import PageLayout from '../../layouts/PageLayout.astro';
 import PageHero from '../PageHero.astro';
 import CTABand from '../CTABand.astro';
 import Figure from '../Figure.astro';
+import HubFAQ from '../HubFAQ.astro';
 import { equipmentByCategory } from '../../data/equipment.js';
 import { getEquipmentContent } from '../../i18n/content.js';
 import { getDetailUI } from '../../i18n/detail.js';
@@ -19,6 +20,16 @@ const items = await Promise.all(equipmentByCategory(category).map((e) => getEqui
 const gallery = copy.gallery ?? [];
 const catName = category === 'cleaning' ? t.cleaning : t.milling;
 
+
+const enFaq = category === 'cleaning' ? [
+  { q: 'Why does the order of cleaning machines matter?', a: 'Cleaning runs coarse to fine, dry to wet, size to density, with magnets last. Swapping two stages either blinds a screen or sends stones into the rolls; the sequence is fixed by the physics, not by the catalogue.' },
+  { q: 'Do I need a washer if I already have a destoner?', a: 'Only when wheat quality justifies it. A washer removes surface dirt and improves ash, but adds water, drying load and operating cost. A destoner alone is enough for clean, dry wheat.' },
+  { q: 'How much cleaning capacity should I allow?', a: 'Size to 1.2–1.3× peak intake. Harvest rush and wet wheat reduce effective capacity; a line sized exactly to the average becomes the bottleneck on the days that matter.' },
+] : [
+  { q: 'How many roll passages do I need?', a: 'It depends on target extraction and flour grades. 3B2M is the minimum for a clean patent flour; 4B4M allows multiple grades; 4B5M1S1T with a purifier is required for low-ash patent flour at high extraction.' },
+  { q: 'What is the difference between a plansifter and a purifier?', a: 'The plansifter separates by particle size; the purifier separates by quality in an air stream. A purifier is what turns a simple mill into a low-ash, multi-grade mill.' },
+  { q: 'What determines milling power consumption?', a: 'Passage count, roll surface, extraction rate and the hardness of the wheat. Specific energy falls as plant capacity rises, but an oversized plant run below its design point can consume more per tonne.' },
+];
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
@@ -105,6 +116,8 @@ const schema = {
       </section>
     )
   }
+
+  {lang === 'en' && <HubFAQ items={enFaq} />}
 
   <CTABand heading={copy.cta} lang={lang} />
 </PageLayout>

@@ -1,0 +1,36 @@
+---
+// Reusable FAQ block for hub pages: visible Q&A plus FAQPage JSON-LD.
+const { items = [], title = 'Frequently asked questions', eyebrow = 'FAQ' } = Astro.props;
+const faqLd = items.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: items.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    }
+  : null;
+---
+
+{items.length > 0 && (
+  <section class="section hairline">
+    <div class="container-x">
+      <div class="max-w-3xl">
+        <p class="eyebrow">{eyebrow}</p>
+        <h2 class="mt-2 font-display text-3xl font-bold uppercase tracking-tight text-steel-900 sm:text-4xl">{title}</h2>
+      </div>
+      <div class="mt-8 grid gap-4 md:grid-cols-2">
+        {items.map((f) => (
+          <details class="rounded-lg border border-steel-200 bg-white p-5">
+            <summary class="cursor-pointer text-sm font-bold text-steel-900">{f.q}</summary>
+            <p class="mt-3 text-sm leading-relaxed text-steel-600">{f.a}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+
+{faqLd && <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />}

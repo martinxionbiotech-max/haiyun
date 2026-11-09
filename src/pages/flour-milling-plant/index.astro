@@ -2,6 +2,7 @@
 import PageLayout from '../../layouts/PageLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import CTABand from '../../components/CTABand.astro';
+import HubFAQ from '../../components/HubFAQ.astro';
 import { plantSeries } from '../../data/plants.js';
 
 const groups = [
@@ -22,6 +23,12 @@ const groups = [
   },
 ];
 
+
+const faq = [
+  { q: 'How do I choose the right plant capacity?', a: 'Work backwards from finished flour sales: divide daily flour demand by the extraction rate (typically 0.72–0.78), add 10% headroom for peak days, then choose the next standard capacity. A plant sized on wheat intake rather than flour sales usually ends up oversized or short.' },
+  { q: 'When do I need a tower instead of a flat-floor plant?', a: 'Above roughly 60 t/d the flow sheet needs gravity transfer through multiple floors, so a tower or steel frame becomes the cheaper operating choice. Below that, a flat-floor layout with pneumatic lift is usually simpler and faster to build.' },
+  { q: 'What is included in a turnkey plant?', a: 'Cleaning, tempering, milling, sifting, purifying, packing and dust collection, plus layout design, installation supervision, commissioning and operator training. Civil works and local electrical supply are normally by the client.' },
+];
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
@@ -132,6 +139,8 @@ const schema = {
       </div>
     </div>
   </section>
+
+  <HubFAQ items={faq} />
 
   <CTABand body="Send us your target tonnage, wheat specification, building dimensions and available power. We reply with a flow sheet, an equipment list and a budget range within 12 working hours." />
 </PageLayout>

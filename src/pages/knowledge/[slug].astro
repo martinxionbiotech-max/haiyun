@@ -22,6 +22,28 @@ const related = entry.data.related.length
   ? entry.data.related.map((r) => all.find((a) => a.id === r)).filter(Boolean)
   : [];
 
+const equipmentLinks = (() => {
+  const s = (entry.data.title + ' ' + entry.data.keywords.join(' ')).toLowerCase();
+  if (s.includes('clean') || s.includes('wheat')) {
+    return [
+      { href: '/equipment/cleaning-equipment/', label: 'Wheat cleaning equipment' },
+      { href: '/equipment/drum-sieve-pre-cleaner/', label: 'Drum sieve pre-cleaner' },
+      { href: '/equipment/gravity-destoner/', label: 'Gravity destoner' },
+    ];
+  }
+  if (s.includes('flow') || s.includes('mill') || s.includes('roll')) {
+    return [
+      { href: '/equipment/flour-milling-equipment/', label: 'Flour milling equipment' },
+      { href: '/equipment/fmfq-double-roller-mill/', label: 'FMFQ roller mill' },
+      { href: '/equipment/high-square-plansifter/', label: 'High-square plansifter' },
+    ];
+  }
+  return [
+    { href: '/flour-milling-plant/', label: 'Flour milling plants' },
+    { href: '/equipment/', label: 'Equipment catalogue' },
+  ];
+})();
+
 const toc = headings.filter((h) => h.depth === 2);
 
 const schema = [
@@ -32,6 +54,7 @@ const schema = [
     description: entry.data.description,
     author: { '@id': `${site.url}/#organization` },
     publisher: { '@id': `${site.url}/#organization` },
+    reviewedBy: { '@id': `${site.url}/#organization` },
     datePublished: entry.data.updated.toISOString().split('T')[0],
     dateModified: entry.data.updated.toISOString().split('T')[0],
     keywords: entry.data.keywords.join(', '),
@@ -81,7 +104,7 @@ const schema = [
         </h1>
         <p class="mt-4 max-w-3xl text-lg leading-relaxed text-steel-600">{entry.data.description}</p>
         <div class="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs text-steel-500">
-          <span>By Haiyun engineering desk</span>
+          <span>Written and reviewed by the Haiyun engineering desk</span>
           <span>Updated {entry.data.updated.toISOString().split('T')[0]}</span>
           {entry.data.readingTime && <span>{entry.data.readingTime} min read</span>}
         </div>
@@ -119,6 +142,15 @@ const schema = [
 
           <div class="prose-hy">
             <Content />
+          </div>
+
+          <div class="mt-10 rounded-xl border border-steel-200 p-6">
+            <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">Related equipment</p>
+            <ul class="mt-4 grid gap-3 sm:grid-cols-2">
+              {equipmentLinks.map((e) => (
+                <li><a href={e.href} class="text-sm font-medium text-steel-800 hover:text-ember-700">→ {e.label}</a></li>
+              ))}
+            </ul>
           </div>
 
           {entry.data.type === 'pillar' && siblings.length > 0 && (
