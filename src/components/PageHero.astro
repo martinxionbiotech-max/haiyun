@@ -2,10 +2,15 @@
 import { site } from '../data/site.js';
 import { getUI } from '../i18n/ui.js';
 import { localizePath } from '../i18n/config.js';
+import { img } from '../data/images.js';
 
 const { title, subtitle, image, imageAlt = '', eyebrow, lang = 'en', showCta = true } = Astro.props;
 const t = getUI(lang);
 const href = (p) => localizePath(lang, p);
+
+// Intrinsic size for the hero image, so the browser can reserve space and the
+// hero does not shift when the photo loads.
+const heroMeta = image ? img(image.replace(/^\/images\//, '')) : { w: 0, h: 0 };
 
 const points =
   lang === 'ru'
@@ -19,7 +24,14 @@ const points =
 
 <section class="relative overflow-hidden bg-steel-950">
   {image && (
-    <img src={image} alt={imageAlt} class="absolute inset-0 h-full w-full object-cover opacity-30" loading="eager" />
+    <img
+      src={image}
+      alt={imageAlt}
+      width={heroMeta.w || undefined}
+      height={heroMeta.h || undefined}
+      class="absolute inset-0 h-full w-full object-cover opacity-30"
+      loading="eager"
+    />
   )}
   <div class="absolute inset-0 bg-gradient-to-br from-steel-950 via-steel-950/90 to-steel-900/70"></div>
   <div class="absolute inset-0 grid-lines opacity-40"></div>

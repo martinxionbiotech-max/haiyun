@@ -102,22 +102,22 @@ export const imageCatalogue = [
   { file: 'p18_01.jpg', page: 18, section: '300 t/d plant', caption: 'Wheat flour production line', note: '6FTDP-300T plant, tall elevation', w: 1111, h: 1253 },
 
   // ── Cleaning equipment ─────────────────────────────────────────
-  { file: 'p19_01.jpg', page: 19, section: 'Cleaning equipment', caption: 'Cleaning equipment', note: 'Cleaning equipment overview', w: 458, h: 564 },
+  { file: 'p19_01.jpg', captionEn: 'Drum sieve pre-cleaner (SCQY), catalogue page 19', page: 19, section: 'Cleaning equipment', caption: '圆筒初清筛 SCQY', note: 'Drum sieve pre-cleaner, SCQY series, catalogue page 19', w: 458, h: 564 },
   { file: 'p19_02.jpg', page: 19, section: 'Cleaning equipment', caption: 'HZXZ200×250', note: 'HZXZ 200×250 rotary vibrating screen', w: 575, h: 412 },
-  { file: 'p20_01.jpg', page: 20, section: 'Self-balancing screen', caption: 'Cleaning equipment', note: 'TQLZ self-balancing vibrating screen', w: 464, h: 339 },
+  { file: 'p20_01.jpg', captionEn: 'Cycling air separator (TFXH), catalogue page 20', page: 20, section: 'Self-balancing screen', caption: '循环风选器 TFXH', note: 'Cycling air separator, TFXH series, catalogue page 20', w: 464, h: 339 },
   { file: 'p20_02.jpg', page: 20, section: 'Self-balancing screen', captionEn: 'TQLZ self-balancing vibrating screen: grades large, medium, small and light impurities in wheat pre-cleaning, rice milling, feed and chemical processing', caption: 'TQLZ 型自衡式振动筛：用于粮食中大中小及轻杂质筛理分离，用于小麦初清、碾米、饲料、化工等行业', note: 'TQLZ screen with description', w: 507, h: 497 },
-  { file: 'p21_01.jpg', page: 21, section: 'Gravity destoner', captionEn: 'Weight (kg), power (kW), overall dimensions (L×W×H)', caption: '重量 (kg) / 动力 (kW) / 外形尺寸 (长×宽×高)', note: 'TQSF destoner parameter table', w: 384, h: 272 },
+  { file: 'p21_01.jpg', page: 21, section: 'Gravity destoner', captionEn: 'Plane rotary sifter (TQLM) with capacity table, catalogue page 21', caption: '平面回转筛 TQLM', note: 'Plane rotary sifter TQLM with capacity table, catalogue page 21', w: 384, h: 272 },
   { file: 'p21_02.jpg', page: 21, section: 'Gravity destoner', captionEn: 'TQSF gravity grading destoner: combined screening and air classification for first-pass raw grain cleaning', caption: 'TQSF 型比重分级去石机：筛理与气流联合作用分级去石，用于原粮头道清理', note: 'TQSF gravity destoner', w: 693, h: 687 },
   { file: 'p21_03.jpg', page: 21, section: 'Gravity destoner', captionEn: 'Weight (kg), power (kW), overall dimensions (L×W×H)', caption: '重量 (kg) / 动力 (kW) / 外形尺寸 (长×宽×高)', note: 'TQSF destoner parameter table, second view', w: 560, h: 412 },
-  { file: 'p22_01.jpg', page: 22, section: 'Washer-destoner', captionEn: 'Overall dimensions; separation performance — whole grain in broken (%) and broken in whole (%)', caption: '外形尺寸 / 分离效果：碎中含整 (%) / 整中含碎 (%)', note: 'Washer-destoner performance table', w: 323, h: 326 },
-  { file: 'p22_02.jpg', page: 22, section: 'Washer-destoner', caption: 'Computer automatically forward to the water system', note: 'Water system control detail', w: 263, h: 407 },
-  { file: 'p22_03.jpg', page: 22, section: 'Washer-destoner', caption: 'Cleaning equipment', note: 'Washer-destoner-dryer unit', w: 379, h: 322 },
-  { file: 'p22_04.jpg', page: 22, section: 'Washer-destoner', captionEn: 'Overall dimensions; separation performance', caption: '外形尺寸 / 分离效果', note: 'Washer-destoner table detail', w: 279, h: 283 },
-  { file: 'p22_05.jpg', page: 22, section: 'Washer-destoner', captionEn: 'Overall dimensions; separation performance', caption: '外形尺寸 / 分离效果', note: 'Washer-destoner table detail', w: 427, h: 367 },
-  { file: 'p23_01.jpg', page: 23, section: 'Aspiration separator', captionEn: 'Overall dimensions (mm)', caption: '外型尺寸 (mm)', note: 'Aspiration separator dimension table', w: 280, h: 488 },
-  { file: 'p23_02.jpg', page: 23, section: 'Aspiration separator', caption: 'Cleaning equipment', note: 'Aspiration separator unit', w: 312, h: 392 },
-  { file: 'p23_03.jpg', page: 23, section: 'Aspiration separator', captionEn: 'Overall dimensions (mm)', caption: '外型尺寸 (mm)', note: 'Aspiration separator dimension table', w: 342, h: 264 },
-  { file: 'p23_04.jpg', page: 23, section: 'Aspiration separator', caption: 'Length (mm)', note: 'Aspiration separator length detail', w: 380, h: 236 },
+  { file: 'p22_01.jpg', page: 22, section: 'Washer-destoner', captionEn: 'Grain length grader (MDJY) with separation performance, catalogue page 22', caption: '粮食精选机/长度机 MDJY', note: 'Grain length grader MDJY with separation performance table, catalogue page 22', w: 323, h: 326 },
+  { file: 'p22_02.jpg', captionEn: 'Microcomputer automatic dampening system (DZS) — water-line control detail', page: 22, section: 'Washer-destoner', caption: '电脑自动着水系统 DZS — 加水控制', note: 'Automatic dampening system DZS, water-line control detail, catalogue page 22', w: 263, h: 407 },
+  { file: 'p22_03.jpg', captionEn: 'Wheat washer, destoner and dryer (XMS), catalogue page 22', page: 22, section: 'Washer-destoner', caption: '去石洗麦甩干机 XMS', note: 'Wheat washer, destoner and dryer XMS, catalogue page 22', w: 379, h: 322 },
+  { file: 'p22_04.jpg', page: 22, section: 'Washer-destoner', captionEn: 'Wheat washer-destoner-dryer — overall dimensions and separation performance', caption: '去石洗麦甩干机 外形尺寸 / 分离效果', note: 'XMS washer-destoner-dryer dimension and performance table, catalogue page 22', w: 279, h: 283 },
+  { file: 'p22_05.jpg', page: 22, section: 'Washer-destoner', captionEn: 'Wheat washer-destoner-dryer — separation performance detail', caption: '去石洗麦甩干机 分离效果', note: 'XMS washer-destoner-dryer performance detail, catalogue page 22', w: 427, h: 367 },
+  { file: 'p23_01.jpg', page: 23, section: 'Aspiration separator', captionEn: 'Aspiration separator (TXFY / TXFL), catalogue page 23', caption: '吸风分离器 TXFY / TXFL', note: 'Aspiration separator TXFY/TXFL, catalogue page 23', w: 280, h: 488 },
+  { file: 'p23_02.jpg', captionEn: 'Friction wheat scourer (FDMM), catalogue page 23', page: 23, section: 'Aspiration separator', caption: '摩擦打麦机 FDMM', note: 'Friction wheat scourer FDMM, catalogue page 23', w: 312, h: 392 },
+  { file: 'p23_03.jpg', page: 23, section: 'Aspiration separator', captionEn: 'Magnetic separator (TCXP plate / TCXT drum), catalogue page 23', caption: '磁选器 TCXP / TCXT', note: 'Magnetic separator, plate TCXP and drum TCXT types, catalogue page 23', w: 342, h: 264 },
+  { file: 'p23_04.jpg', captionEn: 'Wheat brush-scourer combination (TNSW), catalogue page 23', page: 23, section: 'Aspiration separator', caption: '小麦碾打刷组合机 TNSW', note: 'Wheat brush-scourer combination TNSW, catalogue page 23', w: 380, h: 236 },
 
   // ── Milling equipment ──────────────────────────────────────────
   { file: 'p24_01.jpg', page: 24, section: 'Milling equipment', captionEn: 'Synchronous belt drive', caption: '同步带式 synchronous belt drive', note: 'Roller mill, synchronous belt drive', w: 484, h: 309 },
@@ -129,7 +129,7 @@ export const imageCatalogue = [
   { file: 'p26_02.jpg', page: 26, section: 'Single bin plansifter', caption: 'Flour milling equipment', note: 'Plansifter bank', w: 537, h: 553 },
   { file: 'p26_03.jpg', page: 26, section: 'Single bin plansifter', caption: 'Model FSFG plansifter', note: 'FSFG high square plansifter', w: 420, h: 504 },
   { file: 'p26_04.jpg', page: 26, section: 'Single bin plansifter', captionEn: 'Standard single bin plansifter', caption: '普通单仓筛', note: 'Standard single bin plansifter, second view', w: 281, h: 373 },
-  { file: 'p26_05.jpg', page: 26, section: 'Single bin plansifter', captionEn: 'Sealed single bin plansifter', caption: '密封单仓筛', note: 'Sealed single bin plansifter', w: 438, h: 473 },
+  { file: 'p26_05.jpg', page: 26, section: 'Single bin plansifter', captionEn: 'Sealed single bin plansifter (FSFJ), catalogue page 26', caption: '密封单仓筛 FSFJ', note: 'Sealed single bin plansifter FSFJ, catalogue page 26', w: 438, h: 473 },
   { file: 'p27_01.jpg', page: 27, section: 'Bran finisher', captionEn: 'Weight (kg)', caption: '重量 Weight (kg)', note: 'Bran finisher weight table', w: 427, h: 413 },
   { file: 'p27_02.jpg', page: 27, section: 'Bran finisher', caption: 'Flour milling equipment', note: 'Bran finisher unit', w: 366, h: 419 },
   { file: 'p27_03.jpg', page: 27, section: 'Bran finisher', captionEn: 'Air supply', caption: '气源 Air supply', note: 'Bran finisher air supply detail', w: 292, h: 451 },
@@ -138,6 +138,35 @@ export const imageCatalogue = [
   // ── Closing ────────────────────────────────────────────────────
   { file: 'p28_01.jpg', page: 28, section: 'Closing', captionEn: 'Six decades of manufacturing experience — import and export licensed, exported to Eastern Europe and the CIS', caption: '六十余载制造经验 — 已获得进出口产品许可证，远销东欧、独联体', note: 'Export and experience banner', w: 1600, h: 1045 },
   { file: 'p29_01.jpg', page: 29, section: 'Back cover', caption: 'Back cover', note: 'Back cover visual', w: 1246, h: 1099 },
+
+  // ── Machine photographs ────────────────────────────────────────
+  // One full-machine shot per equipment family, taken from the manufacturer's
+  // own product photography. The brochure prints several machines per page at
+  // thumbnail size, so these are used as the machine hero images and the
+  // brochure crops stay in each page's gallery. `page: 0` = not a brochure page.
+  // One photograph covers every capacity variant of a machine, which is how
+  // the manufacturer catalogues them.
+  { file: 'eq-drum-sieve-pre-cleaner.jpg', page: 0, section: 'Machine photo', captionEn: 'Drum sieve pre-cleaner (SCQY)', caption: '圆筒初清筛 SCQY', note: 'Drum sieve pre-cleaner, SCQY series', w: 600, h: 450 },
+  { file: 'eq-rotary-vibrating-screen.jpg', page: 0, section: 'Machine photo', captionEn: 'Rotary vibrating screen (HZXZ)', caption: '旋转振动筛 HZXZ', note: 'Rotary vibrating screen, HZXZ series', w: 800, h: 600 },
+  { file: 'eq-self-balancing-vibrating-screen.jpg', page: 0, section: 'Machine photo', captionEn: 'Self-balancing vibrating screen (TQLZ)', caption: '自衡振动筛 TQLZ', note: 'Self-balancing vibrating screen, TQLZ series', w: 600, h: 450 },
+  { file: 'eq-cycling-air-separator.jpg', page: 0, section: 'Machine photo', captionEn: 'Cycling air separator (TFXH)', caption: '循环风选器 TFXH', note: 'Cycling air separator, TFXH series', w: 800, h: 600 },
+  { file: 'eq-gravity-destoner.jpg', page: 0, section: 'Machine photo', captionEn: 'Gravity classifying destoner (TQSF)', caption: '比重分级去石机 TQSF', note: 'Gravity classifying destoner, TQSF series', w: 800, h: 600 },
+  { file: 'eq-plane-rotary-sifter.jpg', page: 0, section: 'Machine photo', captionEn: 'Plane rotary sifter (TQLM)', caption: '平面回转筛 TQLM', note: 'Plane rotary sifter, TQLM series', w: 800, h: 600 },
+  { file: 'eq-horizontal-wheat-scourer.jpg', page: 0, section: 'Machine photo', captionEn: 'Horizontal wheat scourer (FDMW)', caption: '卧式打麦机 FDMW', note: 'Horizontal wheat scourer, FDMW series', w: 800, h: 600 },
+  { file: 'eq-wheat-washer-destoner-dryer.jpg', page: 0, section: 'Machine photo', captionEn: 'Wheat washer, destoner and dryer (XMS / FZSQ)', caption: '去石洗麦甩干机 XMS / FZSQ', note: 'Wheat washer, destoner and dryer, XMS/FZSQ series', w: 800, h: 382 },
+  { file: 'eq-automatic-dampening-system.jpg', page: 0, section: 'Machine photo', captionEn: 'Microcomputer automatic dampening system (DZS)', caption: '电脑自动着水系统 DZS', note: 'Microcomputer automatic dampening system, DZS series', w: 800, h: 600 },
+  { file: 'eq-aspiration-separator.jpg', page: 0, section: 'Machine photo', captionEn: 'Aspiration separator (TXFY / TXFL)', caption: '吸风分离器 TXFY / TXFL', note: 'Aspiration separator, TXFY/TXFL series', w: 800, h: 600 },
+  { file: 'eq-magnetic-separator.jpg', page: 0, section: 'Machine photo', captionEn: 'Magnetic separator (TCXP plate / TCXT drum)', caption: '磁选器 TCXP / TCXT', note: 'Magnetic separator, plate TCXP and drum TCXT types', w: 800, h: 600 },
+  { file: 'eq-6f-single-roller-mill.jpg', page: 0, section: 'Machine photo', captionEn: '6F single roller mill', caption: '6F 型单式磨粉机', note: '6F single roller mill', w: 600, h: 450 },
+  { file: 'eq-fmfq-double-roller-mill.jpg', page: 0, section: 'Machine photo', captionEn: 'FMFQ(S) double roller mill', caption: 'FMFQ(S) 型复式磨粉机', note: 'FMFQ(S) double roller mill', w: 600, h: 450 },
+  { file: 'eq-purifier.jpg', page: 0, section: 'Machine photo', captionEn: 'Purifier (FQFD)', caption: '清粉机 FQFD', note: 'Purifier, FQFD series', w: 600, h: 450 },
+  { file: 'eq-single-bin-plansifter.jpg', page: 0, section: 'Machine photo', captionEn: 'Single bin plansifter (FSFJ)', caption: '单仓平筛 FSFJ', note: 'Single bin plansifter, FSFJ series', w: 800, h: 600 },
+  { file: 'eq-double-bin-plansifter.jpg', page: 0, section: 'Machine photo', captionEn: 'Double bin plansifter (FSFJ-D)', caption: '双仓筛 FSFJ-D', note: 'Double bin plansifter, FSFJ-D series', w: 800, h: 600 },
+  { file: 'eq-high-square-plansifter.jpg', page: 0, section: 'Machine photo', captionEn: 'High square plansifter (FSFG)', caption: '高方平筛 FSFG', note: 'High square plansifter, FSFG series', w: 600, h: 450 },
+  { file: 'eq-bran-finisher.jpg', page: 0, section: 'Machine photo', captionEn: 'Bran finisher (FPDW / KFS)', caption: '打麸机 FPDW / KFS', note: 'Bran finisher, FPDW/KFS series', w: 600, h: 450 },
+  { file: 'eq-impact-detacher.jpg', page: 0, section: 'Machine photo', captionEn: 'Impact detacher (FSJZ / FSLZ)', caption: '撞击松粉机 FSJZ / FSLZ', note: 'Impact detacher, FSJZ/FSLZ series', w: 600, h: 450 },
+  { file: 'eq-automatic-packer.jpg', page: 0, section: 'Machine photo', captionEn: 'Automatic quantitative packer (LCS)', caption: '电脑打包机 LCS', note: 'Automatic quantitative packer, LCS series', w: 600, h: 450 },
+  { file: 'eq-pulse-jet-dust-collector.jpg', page: 0, section: 'Machine photo', captionEn: 'Low pressure pulse-jet dust collector (TBLM)', caption: '低压脉冲除尘器 TBLM', note: 'Low pressure pulse-jet dust collector, TBLM series', w: 600, h: 450 },
 ];
 
 const byFile = new Map(imageCatalogue.map((i) => [i.file, i]));

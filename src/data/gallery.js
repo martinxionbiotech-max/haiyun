@@ -1,5 +1,39 @@
-// Gallery mapping — which brochure images belong to which page, and in what role.
+// Gallery mapping — hero photograph plus supporting crops, per machine and per plant.
 // Every file here is catalogued in src/data/images.js with its original caption.
+//
+// ── How this mapping was built ──────────────────────────────────────────────
+// Two sources, in this order of preference:
+//
+// 1. Machine photographs (`eq-*.jpg`). The 2026 wheat catalogue prints two to
+//    four machines per page at thumbnail size (pp. 19–23 in columns, pp. 26–27
+//    in blocks), so a brochure crop is usually too small and too crowded to be
+//    a page hero. The manufacturer's own product photography shows one complete
+//    machine per photograph and is used as the hero wherever it exists.
+//
+// 2. Brochure crops (`pNN_NN.jpg`). These stay in each page's gallery as
+//    catalogue evidence — dimension drawings, parameter tables and detail
+//    views. Two machines have no standalone product photograph (the grain
+//    length grader and the wheat brush-scourer combination) and keep their
+//    brochure crop as the hero instead.
+//
+// Where a brochure page carries several machines, the crops were assigned by
+// the catalogue's own reading order and then cross-checked against every model
+// designation printed beside an image. All of these agree with the mapping:
+//
+//   p19_02 = HZXZ rotary vibrating screen     ("HZXZ200×250")
+//   p20_02 = TQLZ self-balancing screen       ("Model TQLZ…")
+//   p21_02 = TQSF gravity destoner            ("Model TQSF…")
+//   p22_02 = DZS automatic dampening          ("Computer automatically… water")
+//   p25_01 = FMFQ(S) double roller mill       ("Model FMFQ(S)…")
+//   p26_03 = FSFG high square plansifter      ("Model FSFG plansifter")
+//   p27_01 = FPDW bran finisher               (first machine on page 27)
+//
+// Crops whose caption is a dimension or parameter table ("Overall dimensions…",
+// "Weight (kg)") are kept in the gallery and never used as a hero: the numbers
+// are already reproduced as HTML tables in each page's spec section.
+//
+// One photograph covers every capacity variant of a machine — that is how the
+// manufacturer catalogues them, and the brochure prints one picture per family.
 
 export const plantGallery = {
   'small-flour-mill-unit': {
@@ -37,29 +71,64 @@ export const plantGallery = {
 };
 
 export const equipmentGallery = {
-  'drum-sieve-pre-cleaner': { hero: null, gallery: [] },
-  'rotary-vibrating-screen': { hero: 'p19_02.jpg', gallery: ['p19_02.jpg'] },
-  'self-balancing-vibrating-screen': { hero: 'p20_01.jpg', gallery: ['p20_01.jpg', 'p20_02.jpg'] },
-  'cycling-air-separator': { hero: null, gallery: [] },
-  'gravity-destoner': { hero: 'p21_02.jpg', gallery: ['p21_02.jpg', 'p21_01.jpg', 'p21_03.jpg'] },
-  'plane-rotary-sifter': { hero: null, gallery: [] },
-  'horizontal-wheat-scourer': { hero: null, gallery: [] },
-  'grain-length-grader': { hero: null, gallery: [] },
-  'wheat-washer-destoner-dryer': { hero: 'p22_03.jpg', gallery: ['p22_03.jpg', 'p22_02.jpg', 'p22_01.jpg', 'p22_04.jpg', 'p22_05.jpg'] },
-  'automatic-dampening-system': { hero: null, gallery: [] },
-  'aspiration-separator': { hero: 'p23_02.jpg', gallery: ['p23_02.jpg', 'p23_01.jpg', 'p23_03.jpg', 'p23_04.jpg'] },
-  'magnetic-separator': { hero: null, gallery: [] },
-  'wheat-brush-scourer-combination': { hero: null, gallery: [] },
-  '6f-single-roller-mill': { hero: 'p24_01.jpg', gallery: ['p24_01.jpg', 'p24_02.jpg'] },
-  'fmfq-double-roller-mill': { hero: 'p25_01.jpg', gallery: ['p25_01.jpg', 'p25_02.jpg', 'p25_03.jpg'] },
-  'purifier': { hero: null, gallery: [] },
-  'single-bin-plansifter': { hero: 'p26_02.jpg', gallery: ['p26_02.jpg', 'p26_01.jpg', 'p26_04.jpg', 'p26_05.jpg'] },
-  'double-bin-plansifter': { hero: null, gallery: [] },
-  'high-square-plansifter': { hero: 'p26_03.jpg', gallery: ['p26_03.jpg', 'p26_02.jpg'] },
-  'bran-finisher': { hero: 'p27_02.jpg', gallery: ['p27_02.jpg', 'p27_03.jpg', 'p27_01.jpg', 'p27_04.jpg'] },
-  'impact-detacher': { hero: null, gallery: [] },
-  'automatic-packer': { hero: null, gallery: [] },
-  'pulse-jet-dust-collector': { hero: null, gallery: [] },
+  // ── Cleaning ──
+  'drum-sieve-pre-cleaner': { hero: 'eq-drum-sieve-pre-cleaner.jpg', gallery: ['p19_01.jpg'] },
+  'rotary-vibrating-screen': { hero: 'eq-rotary-vibrating-screen.jpg', gallery: ['p19_02.jpg'] },
+  'self-balancing-vibrating-screen': {
+    hero: 'eq-self-balancing-vibrating-screen.jpg',
+    gallery: ['p20_02.jpg'],
+  },
+  'cycling-air-separator': { hero: 'eq-cycling-air-separator.jpg', gallery: ['p20_01.jpg'] },
+  'gravity-destoner': { hero: 'eq-gravity-destoner.jpg', gallery: ['p21_02.jpg', 'p21_01.jpg'] },
+  'plane-rotary-sifter': { hero: 'eq-plane-rotary-sifter.jpg', gallery: ['p21_01.jpg'] },
+  'horizontal-wheat-scourer': {
+    hero: 'eq-horizontal-wheat-scourer.jpg',
+    gallery: ['p21_03.jpg'],
+  },
+  // No standalone product photograph — the brochure crop stays the hero.
+  'grain-length-grader': { hero: 'p22_01.jpg', gallery: ['p22_01.jpg'] },
+  'wheat-washer-destoner-dryer': {
+    hero: 'eq-wheat-washer-destoner-dryer.jpg',
+    gallery: ['p22_05.jpg', 'p22_04.jpg'],
+  },
+  'automatic-dampening-system': {
+    hero: 'eq-automatic-dampening-system.jpg',
+    gallery: ['p22_02.jpg', 'p22_03.jpg'],
+  },
+  'aspiration-separator': { hero: 'eq-aspiration-separator.jpg', gallery: ['p23_01.jpg'] },
+  'magnetic-separator': { hero: 'eq-magnetic-separator.jpg', gallery: ['p23_02.jpg', 'p23_03.jpg'] },
+  // No standalone product photograph — the brochure crop stays the hero.
+  'wheat-brush-scourer-combination': { hero: 'p23_04.jpg', gallery: ['p23_04.jpg'] },
+
+  // ── Milling ──
+  '6f-single-roller-mill': {
+    hero: 'eq-6f-single-roller-mill.jpg',
+    gallery: ['p24_01.jpg', 'p24_02.jpg'],
+  },
+  'fmfq-double-roller-mill': {
+    hero: 'eq-fmfq-double-roller-mill.jpg',
+    gallery: ['p25_01.jpg', 'p25_02.jpg'],
+  },
+  'purifier': { hero: 'eq-purifier.jpg', gallery: ['p25_03.jpg'] },
+  'single-bin-plansifter': {
+    hero: 'eq-single-bin-plansifter.jpg',
+    gallery: ['p26_01.jpg', 'p26_04.jpg', 'p26_05.jpg'],
+  },
+  'double-bin-plansifter': {
+    hero: 'eq-double-bin-plansifter.jpg',
+    gallery: ['p26_02.jpg'],
+  },
+  'high-square-plansifter': {
+    hero: 'eq-high-square-plansifter.jpg',
+    gallery: ['p26_03.jpg'],
+  },
+  'bran-finisher': { hero: 'eq-bran-finisher.jpg', gallery: ['p27_01.jpg'] },
+  'impact-detacher': { hero: 'eq-impact-detacher.jpg', gallery: ['p27_04.jpg'] },
+  'automatic-packer': { hero: 'eq-automatic-packer.jpg', gallery: ['p27_02.jpg'] },
+  'pulse-jet-dust-collector': {
+    hero: 'eq-pulse-jet-dust-collector.jpg',
+    gallery: ['p27_03.jpg'],
+  },
 };
 
 // Workshop photography, grouped by what the brochure caption says they show.
