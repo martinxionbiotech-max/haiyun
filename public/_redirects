@@ -1,10 +1,15 @@
-
 # Plant range renamed: the page covers 60–500 t/d, not 100–500.
-/100-500tpd-flour-plant/     /60-500tpd-flour-plant/     301
-/100-500tpd-flour-plant      /60-500tpd-flour-plant/     301
-/ru/100-500tpd-flour-plant/  /ru/60-500tpd-flour-plant/  301
-/ru/100-500tpd-flour-plant   /ru/60-500tpd-flour-plant/  301
-/es/100-500tpd-flour-plant/  /es/60-500tpd-flour-plant/  301
-/es/100-500tpd-flour-plant   /es/60-500tpd-flour-plant/  301
-/ar/100-500tpd-flour-plant/  /ar/60-500tpd-flour-plant/  301
-/ar/100-500tpd-flour-plant   /ar/60-500tpd-flour-plant/  301
+# Canonical old paths (full prefix):
+/flour-milling-plant/100-500tpd-flour-plant/      /flour-milling-plant/60-500tpd-flour-plant/      301
+/flour-milling-plant/100-500tpd-flour-plant       /flour-milling-plant/60-500tpd-flour-plant/      301
+/ru/flour-milling-plant/100-500tpd-flour-plant/   /ru/flour-milling-plant/60-500tpd-flour-plant/   301
+/ru/flour-milling-plant/100-500tpd-flour-plant    /ru/flour-milling-plant/60-500tpd-flour-plant/   301
+/es/flour-milling-plant/100-500tpd-flour-plant/   /es/flour-milling-plant/60-500tpd-flour-plant/   301
+/es/flour-milling-plant/100-500tpd-flour-plant    /es/flour-milling-plant/60-500tpd-flour-plant/   301
+/ar/flour-milling-plant/100-500tpd-flour-plant/   /ar/flour-milling-plant/60-500tpd-flour-plant/   301
+/ar/flour-milling-plant/100-500tpd-flour-plant    /ar/flour-milling-plant/60-500tpd-flour-plant/   301
+# Shorthand aliases that may exist in old links:
+/100-500tpd-flour-plant/      /flour-milling-plant/60-500tpd-flour-plant/      301
+/ru/100-500tpd-flour-plant/   /ru/flour-milling-plant/60-500tpd-flour-plant/   301
+/es/100-500tpd-flour-plant/   /es/flour-milling-plant/60-500tpd-flour-plant/   301
+/ar/100-500tpd-flour-plant/   /ar/flour-milling-plant/60-500tpd-flour-plant/   301
