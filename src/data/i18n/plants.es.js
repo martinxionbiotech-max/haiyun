@@ -307,7 +307,7 @@ export default {
     },
   },
 
-  '100-500tpd-flour-plant': {
+  '60-500tpd-flour-plant': {
     name: 'Planta harinera completa 60–500 t/día',
     scale: 'Llave en mano industrial',
     tagline: 'Plantas llave en mano de varias alturas con tonelaje y consumo garantizados.',

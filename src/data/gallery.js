@@ -60,7 +60,7 @@ export const plantGallery = {
     hero: 'p11_01.webp',
     gallery: ['p11_01.webp', 'p11_02.webp', 'p12_01.webp', 'p12_02.webp', 'p14_01.webp', 'p14_02.webp'],
   },
-  '100-500tpd-flour-plant': {
+  '60-500tpd-flour-plant': {
     hero: 'p06_01.webp',
     gallery: [
       'p06_01.webp', 'p15_01.webp', 'p15_02.webp', 'p15_03.webp', 'p15_04.webp',

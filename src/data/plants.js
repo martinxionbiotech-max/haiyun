@@ -202,7 +202,7 @@ export const plantSeries = [
   },
   {
     id: 'plant-100-500',
-    slug: '100-500tpd-flour-plant',
+    slug: '60-500tpd-flour-plant',
     name: '60–500 t/d Complete Flour Plant',
     altName: '60–500 吨成套面粉工程',
     capacity: '60–500 t/d',
