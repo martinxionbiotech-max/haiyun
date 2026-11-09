@@ -25,7 +25,7 @@ faq:
     a: "Usually one of three causes: tempering water not reaching target, ambient humidity change with an unsealed pneumatic system, or a packaging line that is not compensating for ambient conditions. Check the dampener calibration first."
   - q: "Do I need a full laboratory?"
     a: "A minimum viable lab is: moisture oven, muffle furnace for ash, sieve shaker for granulation, and a balance. That covers 80% of daily quality control. Farinograph and extensograph are for product development and customer disputes, not daily production."
-heroImage: "/images/p09_01.jpg"
+heroImage: "/images/p09_01.webp"
 ---
 
 Quality control in a flour mill has one job: to detect a process drift before the customer does.

@@ -22,7 +22,7 @@ faq:
     a: "Tempering raises moisture so bran becomes leathery and endosperm becomes friable. Without it, bran shatters into the flour and endosperm powders instead of fracturing cleanly, which costs both ash specification and extraction."
   - q: "What is the difference between storage in bags and in silos?"
     a: "Silos allow aeration, fumigation, blending and mechanical handling at a fraction of the labour cost. Bag storage is only rational below about 5 t/day or where capital is severely constrained."
-heroImage: "/images/p13_05.jpg"
+heroImage: "/images/p13_05.webp"
 ---
 
 Every mill performance problem we are asked to diagnose eventually resolves to one of three things: the flow sheet, the maintenance, or the wheat. The first two are engineering problems with engineering answers. The third is a procurement problem, and it is usually decided before the first machine is ordered.

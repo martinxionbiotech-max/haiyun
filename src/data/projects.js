@@ -15,7 +15,7 @@ export const projects = [
     region: 'Xinjiang, China',
     year: 2021,
     scope: 'Turnkey — design, supply, installation, commissioning',
-    files: ['p13_01.jpg', 'p13_02.jpg'],
+    files: ['p13_01.webp', 'p13_02.webp'],
     summary:
       'A storey-typed 300 t/d plant with a 4B5M1S1T flow sheet and a dedicated granular flour line, built for high-vitreous Xinjiang wheat and a local bread market that buys by the bag.',
     seoDescription:
@@ -104,7 +104,7 @@ export const projects = [
     region: 'Xinjiang, China',
     year: 2020,
     scope: 'Turnkey — design, supply, installation, commissioning',
-    files: ['p13_03.jpg'],
+    files: ['p13_03.webp'],
     summary:
       'A 200 t/d plant with a double-purifier bank feeding five high square plansifters, and automatic proportioning across three wheat origins to hold a 12.3% protein specification year-round.',
     seoDescription:
@@ -189,7 +189,7 @@ export const projects = [
     region: 'Heilongjiang, China',
     year: 2019,
     scope: 'Turnkey — cold-climate design, supply, installation, commissioning',
-    files: ['p13_04.jpg'],
+    files: ['p13_04.webp'],
     summary:
       'A 200 t/d plant designed for −35 °C ambient: heated tempering bins, insulated conveying, enclosed intake and a building envelope rated for a Heilongjiang winter.',
     seoDescription:
@@ -274,7 +274,7 @@ export const projects = [
     region: 'Shandong, China',
     year: 2022,
     scope: 'Turnkey — twin-line design, supply, installation, commissioning',
-    files: ['p13_06.jpg'],
+    files: ['p13_06.webp'],
     summary:
       'The largest plant delivered to date: two parallel 250 t/d lines with shared intake, separate milling floors and a common packing hall, running at 65–70 kWh/t.',
     seoDescription:

@@ -25,7 +25,7 @@ faq:
     a: "Yes, but stone surface temperature must stay below 45 °C. Continuous operation needs a water-cooled hub or forced-air shroud on the stone housing, and hourly temperature checks."
   - q: "What is the maximum capacity of a stone mill?"
     a: "Single stone units top out around 100–150 kg/h. Beyond that you add stone pairs rather than enlarging stones — the SFM-3+4 uses four stone mills to reach 600 kg/h."
-heroImage: "/images/p08_01.jpg"
+heroImage: "/images/p08_01.webp"
 ---
 
 Stone milling survives commercially for one reason: heat.

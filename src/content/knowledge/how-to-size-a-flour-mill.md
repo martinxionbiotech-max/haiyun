@@ -24,7 +24,7 @@ faq:
     a: "Below 30 t/d with floor-mounted plansifters: 4–6.5 m clear. At 40–60 t/d: 8 m. Above 60 t/d the plant is normally storey-typed with 12.5–27.5 m total height depending on capacity."
   - q: "How long does it take to build a flour mill?"
     a: "A 20–30 t/d plant: 80–100 days from order to first flour. A 60 t/d plant: 100–130 days. A 300 t/d turnkey plant: 8–11 months including civil works."
-heroImage: "/images/p13_05.jpg"
+heroImage: "/images/p13_05.webp"
 ---
 
 Sizing a flour mill is an exercise in working backwards. Almost every failed project we are asked to rescue was sized forwards — someone decided to buy a 30 t/d plant, built a building around it, and only later worked out that the local market could absorb 12 t of flour a day.

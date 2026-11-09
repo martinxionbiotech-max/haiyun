@@ -25,7 +25,7 @@ faq:
     a: "Yes. At 40 t/d the flow sheet normally has 4 breaks, which produces enough middlings to feed a purifier. Without one you cap out around 74% extraction; with one you reach 76–77% at lower ash."
   - q: "How many roll stands does a 60 t/d plant need?"
     a: "Twelve for a single-pair configuration (6FTDP-60 with 2240/12 mills), fewer if you use compound double-roll stands. Stand count depends on passage count, not directly on tonnage."
-heroImage: "/images/p14_02.jpg"
+heroImage: "/images/p14_02.webp"
 ---
 
 A flow sheet is a diagram of decisions. Where you break the wheat, how hard, what you sift out, and what you send back determine your extraction, your ash, your power bill and your product range — all before a single machine is ordered.

@@ -220,7 +220,7 @@ const pageDesc = `${plant.tagline} ${plant.name}: ${plant.capacity}, ${plant.mod
           <p class="mt-3 max-w-2xl text-[15px] leading-relaxed text-steel-600">{t.galleryNote}</p>
           <div class="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {galleryFiles.map((f, i) => (
-              <Figure file={f} ratio="4/3" index={i + 1} showNote caption={lang !== 'en' ? `${plant.name} — ${i + 1}` : undefined} showOriginal={lang === 'en'} />
+              <Figure file={f} ratio="4/3" index={i + 1} showNote alt={lang !== 'en' ? `${plant.name} — ${i + 1}` : undefined} caption={lang !== 'en' ? `${plant.name} — ${i + 1}` : undefined} showOriginal={lang === 'en'} />
             ))}
           </div>
         </div>

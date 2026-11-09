@@ -25,7 +25,7 @@ faq:
     a: "Plan for 12–18% of total project cost. Wheat inventory of 30–45 days is normal in markets with seasonal harvest, plus receivables of 30–60 days if you sell on credit, plus a spares inventory of 2–3% of equipment value."
   - q: "Is a smaller mill more profitable per tonne?"
     a: "No. Specific costs — labour per tonne, power per tonne, maintenance per tonne — all fall with scale. A 20 t/d plant typically needs 3 operators per shift; a 200 t/d plant needs 8, which is 40% fewer people per tonne."
-heroImage: "/images/p13_03.jpg"
+heroImage: "/images/p13_03.webp"
 ---
 
 Flour milling is a commodity business with a thin margin and a large capital base. That combination means the project either works at the feasibility stage or it does not work at all — you cannot manage your way out of a plant that was sized for a market that does not exist.

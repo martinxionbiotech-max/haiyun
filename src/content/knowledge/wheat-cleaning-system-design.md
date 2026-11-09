@@ -25,7 +25,7 @@ faq:
     a: "Minimum four: wheat intake, before the first break, and one on each flour stream before packing. A 100 t/d plant normally has five to seven. Higher-gauss units (5,000–12,000) catch fine stainless wear particles that 3,000-gauss magnets miss."
   - q: "How long should wheat temper before milling?"
     a: "Twelve hours minimum, eighteen to twenty-four hours standard. Below twelve hours water has not reached the crease and bran remains brittle, which shatters into the flour and raises ash."
-heroImage: "/images/p19_02.jpg"
+heroImage: "/images/p19_02.webp"
 ---
 
 A flour mill has two halves. The milling half is visible, expensive and interesting. The cleaning half is invisible, cheap and decisive.
