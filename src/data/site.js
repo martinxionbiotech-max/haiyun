@@ -8,11 +8,19 @@ export const site = {
     'Haiyun builds complete wheat flour milling plants from 10 to 500 tonnes per day, plus cleaning equipment, roller mills, plansifters and stone mills. 60+ years of grain machinery manufacturing, 100+ patents, ISO 9001:2015, exported to 40+ countries.',
   phone: '+86 537 423 9999',
   phoneRaw: '+865374239999',
-  mobile: '+86 132 1049 8999',
-  mobileRaw: '+8613210498999',
-  whatsapp: '8613210498999',
-  email: 'export@cnhylj.com',
-  emailAlt: 'sales@flourmillingpro.com',
+  // Mobile doubles as the WeChat number. Shown as text so buyers can add it.
+  mobile: '+86 151 5358 8090',
+  mobileRaw: '+8615153588090',
+  wechat: '+86 151 5358 8090',
+  // WhatsApp clicks straight through to the same number; the number itself is
+  // never printed on the page, only the button label.
+  whatsapp: '8615153588090',
+  email: 'director@flourmillingpro.com',
+  emails: [
+    { address: 'director@flourmillingpro.com', roles: { en: 'Director — commercial and technical enquiries', ru: 'Директор — коммерческие и технические вопросы', es: 'Director — consultas comerciales y técnicas', ar: 'المدير — الاستفسارات التجارية والفنية' } },
+    { address: 'laura@flourmillingpro.com', roles: { en: 'Sales and export — quotations, shipping, documents', ru: 'Продажи и экспорт — предложения, отгрузка, документы', es: 'Ventas y exportación — cotizaciones, envíos, documentos', ar: 'المبيعات والتصدير — عروض الأسعار والشحن والمستندات' } },
+    { address: 'admin@flourmillingpro.com', roles: { en: 'Administration — invoices, certificates, after-sales', ru: 'Администрация — счета, сертификаты, сервис', es: 'Administración — facturas, certificados, posventa', ar: 'الإدارة — الفواتير والشهادات وخدمة ما بعد البيع' } },
+  ],
   address: {
     street: 'Shengcheng Road 7, Sishui Economic Development Zone',
     city: 'Jining',

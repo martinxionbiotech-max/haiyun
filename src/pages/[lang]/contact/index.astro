@@ -19,7 +19,7 @@ const copy = {
     hero: 'Сообщите тоннаж — пришлём технологическую схему',
     sub: 'Укажите целевую мощность, характеристики пшеницы, габариты здания и доступную мощность электросети. По этим четырём цифрам мы подготовим предварительную схему, перечень оборудования и диапазон бюджета.',
     direct: 'Прямая связь',
-    labels: ['Телефон', 'Мобильный / WhatsApp', 'Экспортная почта', 'Почта отдела продаж', 'Завод', 'Часы работы'],
+    labels: ['Телефон', 'WeChat', 'Экспортная почта', 'Почта отдела продаж', 'Завод', 'Часы работы'],
     hours: 'Пн–Сб, 08:00–18:00 (GMT+8)',
     response: 'Ответ в течение 12 рабочих часов',
     includeTitle: 'Что указать в запросе',
@@ -36,6 +36,9 @@ const copy = {
     ],
     noObligation: 'Без обязательств.',
     noObligationBody: 'Предварительная схема и диапазон бюджета ничего не стоят и ни к чему не обязывают. Если ваш план выглядит нежизнеспособным, мы скажем об этом прямо — это экономит время обеим сторонам.',
+    whatsappLabel: 'WhatsApp',
+    whatsappCta: 'Написать в WhatsApp',
+    emailLabel: 'Почта',
     emailCta: 'Отправить запрос по почте',
     faqTitle: 'Частые вопросы на этом этапе',
     faq: [
@@ -52,7 +55,7 @@ const copy = {
     hero: 'Díganos su tonelaje. Le enviamos el diagrama.',
     sub: 'Incluya la capacidad objetivo, la especificación del trigo, las dimensiones del edificio y la potencia disponible. Con esos cuatro datos preparamos un diagrama preliminar, una lista de equipos y un rango de presupuesto.',
     direct: 'Contacto directo',
-    labels: ['Teléfono', 'Móvil / WhatsApp', 'Correo de exportación', 'Correo comercial', 'Fábrica', 'Horario'],
+    labels: ['Teléfono', 'WeChat', 'Correo de exportación', 'Correo comercial', 'Fábrica', 'Horario'],
     hours: 'Lun–Sáb, 08:00–18:00 (GMT+8)',
     response: 'Respuesta en 12 horas hábiles',
     includeTitle: 'Qué incluir en su consulta',
@@ -69,6 +72,9 @@ const copy = {
     ],
     noObligation: 'Sin compromiso.',
     noObligationBody: 'Un diagrama preliminar y un rango de presupuesto no cuestan nada y no comprometen a nada. Le diremos si su plan no parece viable: eso nos ahorra tiempo a ambos.',
+    whatsappLabel: 'WhatsApp',
+    whatsappCta: 'Escríbanos por WhatsApp',
+    emailLabel: 'Correo',
     emailCta: 'Enviar consulta por correo',
     faqTitle: 'Preguntas frecuentes en esta fase',
     faq: [
@@ -85,7 +91,7 @@ const copy = {
     hero: 'أخبرنا بإنتاجيتك. نرسل لك المخطط.',
     sub: 'أدرج الطاقة المستهدفة، ومواصفات القمح، وأبعاد المبنى، والطاقة الكهربائية المتاحة. بهذه الأرقام الأربعة نُعد مخططًا أوليًا وقائمة معدات ونطاق ميزانية.',
     direct: 'تواصل مباشر',
-    labels: ['الهاتف', 'الجوال / واتساب', 'بريد التصدير', 'بريد المبيعات', 'المصنع', 'ساعات العمل'],
+    labels: ['الهاتف', 'WeChat', 'بريد التصدير', 'بريد المبيعات', 'المصنع', 'ساعات العمل'],
     hours: 'الاثنين–السبت، 08:00–18:00 (GMT+8)',
     response: 'الرد خلال 12 ساعة عمل',
     includeTitle: 'ما يجب تضمينه في استفسارك',
@@ -102,6 +108,9 @@ const copy = {
     ],
     noObligation: 'دون التزام.',
     noObligationBody: 'المخطط الأولي ونطاق الميزانية لا يكلفانك شيئًا ولا يلزمانك بشيء. وإن بدت خطتك غير قابلة للتنفيذ سنقولها بصراحة — وهذا يوفر الوقت للطرفين.',
+    whatsappLabel: 'واتساب',
+    whatsappCta: 'راسلنا على واتساب',
+    emailLabel: 'البريد',
     emailCta: 'أرسل استفسارك بالبريد',
     faqTitle: 'أسئلة متكررة في هذه المرحلة',
     faq: [
@@ -143,17 +152,45 @@ const schema = {
       <div>
         <h2 class="font-display text-2xl font-bold uppercase tracking-tight text-steel-900">{c.direct}</h2>
         <div class="mt-5 space-y-5">
-          {[
-            [c.labels[0], site.phone, `tel:${site.phoneRaw}`],
-            [c.labels[1], site.mobile, `https://wa.me/${site.whatsapp}`],
-            [c.labels[2], site.email, `mailto:${site.email}`],
-            [c.labels[3], site.emailAlt, `mailto:${site.emailAlt}`],
-          ].map(([label, value, link]) => (
-            <div class="border-b border-steel-200 pb-4">
-              <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">{label}</p>
-              <a href={link} class="mt-1 block text-base font-semibold text-steel-900 hover:text-ember-700" dir="ltr">{value}</a>
-            </div>
-          ))}
+          {[[c.labels[0], site.phone, `tel:${site.phoneRaw}`], [c.labels[1], site.wechat, null]].map(
+            ([label, value, link]) => (
+              <div class="border-b border-steel-200 pb-4">
+                <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">{label}</p>
+                {link ? (
+                  <a href={link} class="mt-1 block text-base font-semibold text-steel-900 hover:text-ember-700" dir="ltr">{value}</a>
+                ) : (
+                  <p class="mt-1 text-base font-semibold text-steel-900" dir="ltr">{value}</p>
+                )}
+              </div>
+            ),
+          )}
+
+          <div class="border-b border-steel-200 pb-4">
+            <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">{c.whatsappLabel}</p>
+            <a
+              href={`https://wa.me/${site.whatsapp}`}
+              rel="noopener"
+              class="mt-2 inline-flex items-center gap-2 rounded bg-ember-600 px-4 py-2 text-sm font-bold uppercase tracking-wide text-white transition hover:bg-ember-700"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29z"/>
+              </svg>
+              {c.whatsappCta}
+            </a>
+          </div>
+
+          <div>
+            <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">{c.emailLabel}</p>
+            <ul class="mt-2 space-y-3">
+              {site.emails.map((e) => (
+                <li>
+                  <a href={`mailto:${e.address}`} class="text-base font-semibold text-steel-900 hover:text-ember-700" dir="ltr">{e.address}</a>
+                  <p class="mt-0.5 text-sm leading-snug text-steel-600">{e.roles[lang]}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           <div>
             <p class="text-[11px] font-bold uppercase tracking-widest text-steel-500">{c.labels[4]}</p>
             <p class="mt-1 text-base leading-relaxed text-steel-800">{site.address.full}</p>
@@ -187,7 +224,7 @@ const schema = {
 
         <div class="mt-6 flex flex-wrap gap-3">
           <a href={`mailto:${site.email}?subject=Flour%20milling%20plant%20enquiry`} class="btn-primary">{c.emailCta}</a>
-          <a href={`https://wa.me/${site.whatsapp}`} rel="noopener" class="btn-outline">WhatsApp {site.mobile}</a>
+          <a href={`https://wa.me/${site.whatsapp}`} rel="noopener" class="btn-outline">{c.whatsappCta}</a>
         </div>
       </div>
     </div>
