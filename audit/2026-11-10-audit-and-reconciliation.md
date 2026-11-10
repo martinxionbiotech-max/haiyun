@@ -112,7 +112,7 @@ llms.txt 有（10.6 KB），但 225 个页面没有 `/path/index.md`。AI 抓取
 | 3 | 知识库剩余 46 篇补来源 | 46 | 2–3 天 |
 | 4 | 设备同级页加"何时选另一台"判断 | 10 对 | 1 天 |
 | 5 | md 侧车 + Accept 协商 | 225 | 半天 |
-| 6 | 商业页加厚（/equipment/、/locations/） | 2–3 | 4 h |
+| 6 | 商业页加厚（/equipment/ 六篇最薄、/contact/、/solutions/） | 5 页 | 2 h |
 
 ---
 
