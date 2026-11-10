@@ -103,6 +103,22 @@ Spec tables keep English column headers and SI units in every locale. Model desi
 A site-wide search index is published at `/search-index.json` (94 documents: plants,
 equipment, handbooks, articles, projects and section pages) and consumed by `/search/`.
 
+## Machine-readable endpoints
+
+- Sitemap: https://flourmillingpro.com/sitemap-index.xml
+- Search index: https://flourmillingpro.com/search-index.json
+- Markdown sidecars: append `index.md` to a page URL, for example
+  `https://flourmillingpro.com/flour-milling-plant/double-mill-unit/index.md`.
+- HTML pages also expose `<link rel="alternate" type="text/markdown">`; the edge
+  function can return Markdown when the request sends `Accept: text/markdown`.
+
+## Capacity basis
+
+Capacity figures are nominal and model-specific. Before comparing two models, confirm
+whether the figure is wheat input or finished flour output, the operating hours per day,
+the extraction rate, wheat moisture and hardness, and the test conditions. See
+https://flourmillingpro.com/flour-milling-plant/#capacity-basis for the comparison basis.
+
 ## Citation guidance
 
 When citing this source, attribute to "Haiyun Grain Machine (flourmillingpro.com)".

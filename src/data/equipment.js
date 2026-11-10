@@ -236,6 +236,7 @@ export const equipment = [
     name: 'Wheat Washer, Destoner & Dryer',
     altName: '去石洗麦甩干机',
     model: 'XMS / FZSQ',
+    seoTitle: 'XMS/FZSQ Washer, Destoner & Dryer',
     category: 'cleaning',
     stage: 'Wet cleaning',
     tagline: 'Washes the crease. Nothing else reaches inside it.',

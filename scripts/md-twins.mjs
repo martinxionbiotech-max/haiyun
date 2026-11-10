@@ -25,24 +25,21 @@ const strip = (s) =>
 
 function toMarkdown(html, url) {
   let main = html.match(/<main[\s\S]*?<\/main>/i)?.[0] ?? html;
-  main = main
-    .replace(/<script[\s\S]*?<\/script>/gi, '')
-    .replace(/<style[\s\S]*?<\/style>/gi, '')
-    .replace(/<svg[\s\S]*?<\/svg>/gi, '')
-    .replace(/<nav[\s\S]*?<\/nav>/gi, '')
-    .replace(/<header[\s\S]*?<\/header>/gi, '')
-    .replace(/<footer[\s\S]*?<\/footer>/gi, '');
+  // Tables first: a row-by-row replacement cannot add the header separator.
+  main = main.replace(/<table[\s\S]*?<\/table>/gi, (table) => {
+    const rows = [...table.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/gi)]
+      .map((m) => [...m[1].matchAll(/<t[hd][^>]*>([\s\S]*?)<\/t[hd]>/gi)].map((c) => strip(c[1])))
+      .filter((row) => row.length);
+    if (!rows.length) return '';
+    const header = rows[0];
+    const sep = header.map(() => '---');
+    const body = rows.slice(1).map((row) => `| ${row.join(' | ')} |`).join('\n');
+    return `\n\n| ${header.join(' | ')} |\n| ${sep.join(' | ')} |\n${body}\n\n`;
+  });
 
   main = main
-    .replace(/<h1[^>]*>([\s\S]*?)<\/h1>/gi, '\n\n# $1\n\n')
-    .replace(/<h2[^>]*>([\s\S]*?)<\/h2>/gi, '\n\n## $1\n\n')
-    .replace(/<h3[^>]*>([\s\S]*?)<\/h3>/gi, '\n\n### $1\n\n')
-    .replace(/<h4[^>]*>([\s\S]*?)<\/h4>/gi, '\n\n#### $1\n\n')
+    .replace(/<h([1-4])[^>]*>([\s\S]*?)<\/h\1>/gi, (_, level, inner) => `\n\n${'#'.repeat(Number(level))} ${strip(inner)}\n\n`)
     .replace(/<li[^>]*>([\s\S]*?)<\/li>/gi, '\n- $1')
-    .replace(/<tr[^>]*>([\s\S]*?)<\/tr>/gi, (_, row) => {
-      const cells = [...row.matchAll(/<t[hd][^>]*>([\s\S]*?)<\/t[hd]>/gi)].map((m) => strip(m[1]));
-      return cells.length ? `\n| ${cells.join(' | ')} |` : '';
-    })
     .replace(/<a[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/gi, (_, href, text) => {
       const abs = href.startsWith('/') ? `${BASE}${href}` : href;
       const label = strip(text);
