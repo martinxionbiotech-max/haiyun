@@ -127,7 +127,7 @@ const schema = [
     <div class="container-x grid gap-8 lg:grid-cols-2">
       <div class="card p-6 sm:p-8">
         <p class="eyebrow">Capacity</p>
-        <h2 id="capacity-calculator" class="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
+        <h2 id="capacity-calculator" class="mt-2 scroll-mt-28 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
           Flour mill capacity calculator
         </h2>
         <p class="mt-3 text-sm leading-relaxed text-steel-600">
@@ -137,15 +137,15 @@ const schema = [
         <div class="mt-6 grid gap-4 sm:grid-cols-3">
           <label class="block text-sm font-semibold text-steel-800">
             Flour output (t/day)
-            <input id="cap-flour" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="0.1" value="60" inputmode="decimal" />
+            <input id="cap-flour" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 text-base font-normal text-steel-900" type="number" min="0" step="0.1" value="60" inputmode="decimal" />
           </label>
           <label class="block text-sm font-semibold text-steel-800">
             Extraction (%)
-            <input id="cap-extraction" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" max="100" step="0.1" value="76" inputmode="decimal" />
+            <input id="cap-extraction" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 text-base font-normal text-steel-900" type="number" min="0" max="100" step="0.1" value="76" inputmode="decimal" />
           </label>
           <label class="block text-sm font-semibold text-steel-800">
             Operating hours / day
-            <input id="cap-hours" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="1" max="24" step="0.5" value="24" inputmode="decimal" />
+            <input id="cap-hours" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 text-base font-normal text-steel-900" type="number" min="1" max="24" step="0.5" value="24" inputmode="decimal" />
           </label>
         </div>
         <dl class="mt-6 grid gap-3 text-sm sm:grid-cols-3" aria-live="polite">
@@ -170,7 +170,7 @@ const schema = [
 
       <div class="card p-6 sm:p-8">
         <p class="eyebrow">Extraction</p>
-        <h2 id="extraction-calculator" class="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
+        <h2 id="extraction-calculator" class="mt-2 scroll-mt-28 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
           Wheat extraction rate calculator
         </h2>
         <p class="mt-3 text-sm leading-relaxed text-steel-600">
@@ -180,11 +180,11 @@ const schema = [
         <div class="mt-6 grid gap-4 sm:grid-cols-2">
           <label class="block text-sm font-semibold text-steel-800">
             Wheat input (kg)
-            <input id="ext-wheat" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="1" value="1000" inputmode="decimal" />
+            <input id="ext-wheat" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 text-base font-normal text-steel-900" type="number" min="0" step="1" value="1000" inputmode="decimal" />
           </label>
           <label class="block text-sm font-semibold text-steel-800">
             Flour output (kg)
-            <input id="ext-flour" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="1" value="760" inputmode="decimal" />
+            <input id="ext-flour" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 text-base font-normal text-steel-900" type="number" min="0" step="1" value="760" inputmode="decimal" />
           </label>
         </div>
         <div class="mt-6 rounded-lg border border-steel-200 bg-white p-4" aria-live="polite">
@@ -204,7 +204,7 @@ const schema = [
     <div class="container-x grid gap-8 lg:grid-cols-2">
       <div class="card p-6 sm:p-8">
         <p class="eyebrow">Energy</p>
-        <h2 id="power-calculator" class="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
+        <h2 id="power-calculator" class="mt-2 scroll-mt-28 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
           Flour mill power consumption calculator
         </h2>
         <p class="mt-3 text-sm leading-relaxed text-steel-600">
@@ -214,15 +214,15 @@ const schema = [
         <div class="mt-6 grid gap-4 sm:grid-cols-3">
           <label class="block text-sm font-semibold text-steel-800">
             Wheat processed (t/day)
-            <input id="pwr-capacity" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="0.1" value="100" inputmode="decimal" />
+            <input id="pwr-capacity" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 text-base font-normal text-steel-900" type="number" min="0" step="0.1" value="100" inputmode="decimal" />
           </label>
           <label class="block text-sm font-semibold text-steel-800">
             Specific energy (kWh/t)
-            <input id="pwr-specific" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="0.1" value="70" inputmode="decimal" />
+            <input id="pwr-specific" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 text-base font-normal text-steel-900" type="number" min="0" step="0.1" value="70" inputmode="decimal" />
           </label>
           <label class="block text-sm font-semibold text-steel-800">
             Electricity price (USD/kWh)
-            <input id="pwr-price" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="0.001" value="0.10" inputmode="decimal" />
+            <input id="pwr-price" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 text-base font-normal text-steel-900" type="number" min="0" step="0.001" value="0.10" inputmode="decimal" />
           </label>
         </div>
         <dl class="mt-6 grid gap-3 text-sm sm:grid-cols-3" aria-live="polite">
@@ -247,7 +247,7 @@ const schema = [
 
       <div class="card p-6 sm:p-8">
         <p class="eyebrow">Storage</p>
-        <h2 id="silo-calculator" class="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
+        <h2 id="silo-calculator" class="mt-2 scroll-mt-28 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
           Wheat silo capacity calculator
         </h2>
         <p class="mt-3 text-sm leading-relaxed text-steel-600">
@@ -257,19 +257,19 @@ const schema = [
         <div class="mt-6 grid gap-4 sm:grid-cols-2">
           <label class="block text-sm font-semibold text-steel-800">
             Diameter (m)
-            <input id="silo-diameter" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="0.1" value="6" inputmode="decimal" />
+            <input id="silo-diameter" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 text-base font-normal text-steel-900" type="number" min="0" step="0.1" value="6" inputmode="decimal" />
           </label>
           <label class="block text-sm font-semibold text-steel-800">
             Usable grain height (m)
-            <input id="silo-height" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="0.1" value="12" inputmode="decimal" />
+            <input id="silo-height" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 text-base font-normal text-steel-900" type="number" min="0" step="0.1" value="12" inputmode="decimal" />
           </label>
           <label class="block text-sm font-semibold text-steel-800">
             Bulk density (kg/m³)
-            <input id="silo-density" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="1" value="750" inputmode="decimal" />
+            <input id="silo-density" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 text-base font-normal text-steel-900" type="number" min="0" step="1" value="750" inputmode="decimal" />
           </label>
           <label class="block text-sm font-semibold text-steel-800">
             Usable fill (%)
-            <input id="silo-fill" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" max="100" step="1" value="90" inputmode="decimal" />
+            <input id="silo-fill" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 text-base font-normal text-steel-900" type="number" min="0" max="100" step="1" value="90" inputmode="decimal" />
           </label>
         </div>
         <dl class="mt-6 grid gap-3 text-sm sm:grid-cols-2" aria-live="polite">
@@ -294,7 +294,7 @@ const schema = [
     <div class="container-x grid gap-8 lg:grid-cols-2">
       <div class="card p-6 sm:p-8">
         <p class="eyebrow">Packing</p>
-        <h2 id="bag-calculator" class="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
+        <h2 id="bag-calculator" class="mt-2 scroll-mt-28 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
           Flour bag count calculator
         </h2>
         <p class="mt-3 text-sm leading-relaxed text-steel-600">
@@ -304,11 +304,11 @@ const schema = [
         <div class="mt-6 grid gap-4 sm:grid-cols-2">
           <label class="block text-sm font-semibold text-steel-800">
             Flour quantity (kg)
-            <input id="bag-flour" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="1" value="1000" inputmode="decimal" />
+            <input id="bag-flour" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 text-base font-normal text-steel-900" type="number" min="0" step="1" value="1000" inputmode="decimal" />
           </label>
           <label class="block text-sm font-semibold text-steel-800">
             Bag size (kg)
-            <input id="bag-size" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="1" step="0.5" value="50" inputmode="decimal" />
+            <input id="bag-size" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 text-base font-normal text-steel-900" type="number" min="1" step="0.5" value="50" inputmode="decimal" />
           </label>
         </div>
         <div class="mt-6 rounded-lg border border-steel-200 bg-white p-4" aria-live="polite">
@@ -324,7 +324,7 @@ const schema = [
 
       <div class="card p-6 sm:p-8">
         <p class="eyebrow">Tempering</p>
-        <h2 id="tempering-calculator" class="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
+        <h2 id="tempering-calculator" class="mt-2 scroll-mt-28 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
           Wheat tempering water calculator
         </h2>
         <p class="mt-3 text-sm leading-relaxed text-steel-600">
@@ -334,15 +334,15 @@ const schema = [
         <div class="mt-6 grid gap-4 sm:grid-cols-3">
           <label class="block text-sm font-semibold text-steel-800">
             Wheat mass (kg)
-            <input id="temp-wheat" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="1" value="1000" inputmode="decimal" />
+            <input id="temp-wheat" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 text-base font-normal text-steel-900" type="number" min="0" step="1" value="1000" inputmode="decimal" />
           </label>
           <label class="block text-sm font-semibold text-steel-800">
             Initial moisture (%)
-            <input id="temp-initial" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" max="100" step="0.1" value="12" inputmode="decimal" />
+            <input id="temp-initial" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 text-base font-normal text-steel-900" type="number" min="0" max="100" step="0.1" value="12" inputmode="decimal" />
           </label>
           <label class="block text-sm font-semibold text-steel-800">
             Target moisture (%)
-            <input id="temp-target" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" max="100" step="0.1" value="15" inputmode="decimal" />
+            <input id="temp-target" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 text-base font-normal text-steel-900" type="number" min="0" max="100" step="0.1" value="15" inputmode="decimal" />
           </label>
         </div>
         <div class="mt-6 rounded-lg border border-steel-200 bg-white p-4" aria-live="polite">
@@ -362,8 +362,8 @@ const schema = [
   <section class="section">
     <div class="container-x max-w-4xl">
       <h2 class="font-display text-3xl font-bold uppercase tracking-tight text-steel-900">Formula reference</h2>
-      <div class="prose-hy mt-6">
-        <table>
+      <div class="prose-hy mt-6 overflow-x-auto">
+        <table class="min-w-[620px]">
           <thead>
             <tr><th>Calculation</th><th>Formula</th><th>Watch the units</th></tr>
           </thead>
