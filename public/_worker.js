@@ -4,6 +4,17 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const accept = request.headers.get('Accept') || '';
+
+    // Temporary deployment probe. Remove after verifying Advanced Mode is active.
+    if (url.pathname === '/__worker-check') {
+      return new Response('Worker Active', {
+        headers: {
+          'Content-Type': 'text/plain; charset=utf-8',
+          'X-Markdown-Negotiation': 'worker-active',
+        },
+      });
+    }
+
     const isPagePath =
       request.method === 'GET' &&
       !url.pathname.startsWith('/_astro/') &&
