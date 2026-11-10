@@ -4,8 +4,9 @@ export async function onRequest(context) {
   const { request, next, env } = context;
   const url = new URL(request.url);
   const accept = request.headers.get('Accept') || '';
+  const isRead = request.method === 'GET' || request.method === 'HEAD';
   const isPagePath =
-    request.method === 'GET' &&
+    isRead &&
     !url.pathname.startsWith('/_astro/') &&
     !url.pathname.startsWith('/images/') &&
     !/\.[a-z0-9]+$/i.test(url.pathname);
@@ -21,7 +22,10 @@ export async function onRequest(context) {
       headers.set('Content-Type', 'text/markdown; charset=utf-8');
       headers.set('Vary', 'Accept');
       headers.set('X-Markdown-Source', 'pages-middleware');
-      return new Response(mdResponse.body, { status: 200, headers });
+      return new Response(request.method === 'HEAD' ? null : mdResponse.body, {
+        status: 200,
+        headers,
+      });
     }
   }
 
