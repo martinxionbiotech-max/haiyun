@@ -168,7 +168,7 @@ export const ui = {
       badge: 'Производство с 1963 года · Бывший Шаньдунский завод мельничного оборудования',
       h1a: 'Мельницы для пшеничной муки.',
       h1b: 'От 10 до 500 тонн в сутки.',
-      lead: 'Мы проектируем технологическую схему, изготавливаем оборудование, монтируем конструкции, вводим завод в эксплуатацию и обучаем ваших операторов. Один контракт — одна гарантия: тоннаж и выход муки, зафиксированные в протоколе приёмочных испытаний.',
+      lead: 'Проектируем схему, изготавливаем оборудование, монтируем, вводим в эксплуатацию и обучаем операторов. Один контракт — одна гарантия. и обучение.',
       ctaCompare: 'Сравнить классы заводов',
       stats: [
         ['60+', 'лет производства'],
@@ -299,7 +299,7 @@ export const ui = {
       badge: 'Fabricando desde 1963 · Antigua Fábrica de Maquinaria Harinera de Shandong',
       h1a: 'Plantas de harina de trigo.',
       h1b: 'De 10 a 500 toneladas al día.',
-      lead: 'Diseñamos el diagrama de proceso, fabricamos las máquinas, montamos la estructura, ponemos la planta en marcha y formamos a sus operadores. Un contrato, una garantía: el tonelaje y el rendimiento escritos en la prueba de aceptación.',
+      lead: 'Diseñamos el diagrama, fabricamos las máquinas, montamos y ponemos en marcha la planta y formamos a sus operadores. Un contrato, una garantía.',
       ctaCompare: 'Comparar clases de planta',
       stats: [
         ['60+', 'años fabricando'],

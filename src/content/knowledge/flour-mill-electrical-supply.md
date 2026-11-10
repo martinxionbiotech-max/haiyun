@@ -1,7 +1,7 @@
 ---
 title: "Power Supply for a Flour Mill: Transformer Sizing and Voltage Sag"
 seoTitle: "Power Supply for a Flour Mill: Transformer Sizing"
-description: "How to size a flour mill transformer, why voltage sag matters, what a generator really costs to run, and the power-quality checks that decide whether a 200."
+description: "How to size a flour mill transformer, why voltage sag matters, what a generator costs to run and the power-quality problems to design out. With tables."
 type: cluster
 pillar: how-to-size-a-flour-mill
 updated: 2026-11-08
@@ -72,3 +72,9 @@ What is the largest motor you can start on your existing supply? If the answer i
 Has anyone logged power quality at the site? A week of data prevents a year of nuisance trips.
 
 None of this is exotic engineering. It is simply the difference between buying a plant and buying a plant that runs.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

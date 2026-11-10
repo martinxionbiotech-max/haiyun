@@ -202,3 +202,9 @@ A well-run 200 t/d plant completes a full overhaul in 5 days. The same work done
 Every interval in this schedule exists because something specific fails at roughly that interval. Bearings degrade on a predictable curve once grease quality drops; sifter hanger bushes change gyration path before they break; roll flutes wear measurably within 400–600 hours on hard wheat.
 
 If you want to replace the calendar with condition monitoring, the parameters to watch are bearing temperature, vibration on the mill floor and power draw per tonne. All three move before the machine stops, which is the entire premise of predictive maintenance.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

@@ -102,3 +102,9 @@ Alignment drifts after roll changes and after bearing wear. Check after every ro
 | Pressure | Moderate | Light |
 
 Change one and the others must be re-evaluated. This is why roll setting is a skilled job and why mills with high staff turnover produce inconsistent flour.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

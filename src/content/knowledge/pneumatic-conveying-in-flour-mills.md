@@ -158,3 +158,9 @@ A [60 t/d](/flour-milling-plant/40-60tpd-flour-plant/) mill moving 78 t of wheat
 | Total daily | 152 kWh | 874 kWh |
 
 At USD 0.10/kWh that is USD 15 versus USD 87 per day — USD 26,000 a year difference. Pneumatic conveying has to earn that difference through routing, hygiene or building constraints, or it should not be specified.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

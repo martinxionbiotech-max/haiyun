@@ -1,7 +1,7 @@
 ---
 title: "Flour Mill Project Economics: Capital, Operating Cost and Payback"
 seoTitle: "Flour Mill Project Economics: Capex, Opex and Payback"
-description: "A complete financial model for a wheat flour mill — capital cost by capacity class, operating cost structure, extraction economics, break-even analysis and…"
+description: "A financial model for a wheat flour mill: capital cost by capacity class, operating cost structure, extraction value and payback. With worked examples."
 type: pillar
 order: 6
 updated: 2026-11-07
@@ -209,3 +209,9 @@ Supplier credit is negotiable on larger orders and is often the difference betwe
 Flour milling is a good business at scale, in markets with real demand, with a flow sheet that extracts properly. It is a bad business for anyone who buys on price, underbudgets the building, and assumes 100% utilisation from day one.
 
 The plant that pays back reliably is the one that costs 20% more than the cheapest quotation and extracts three points more than the cheapest flow sheet.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

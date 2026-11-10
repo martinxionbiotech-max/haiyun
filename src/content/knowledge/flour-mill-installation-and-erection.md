@@ -89,3 +89,9 @@ Three things, and they cost almost nothing.
 **A pre-erection site survey by the supplier's supervisor.** Two days of a supervisor's time, before the crane arrives. It finds the beam, the drain and the door.
 
 The mills that go in smoothly are not the ones with better machinery. They are the ones where somebody walked the building with a tape measure before anyone poured concrete.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

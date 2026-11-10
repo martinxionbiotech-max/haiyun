@@ -1,7 +1,7 @@
 ---
 title: "SFM Stone Mill Configurations: 100, 1+2 and 3+4 Compared"
 seoTitle: "SFM Stone Mill Configurations: 100, 1+2 and 3+4"
-description: "Technical comparison of the three Haiyun stone mill configurations — capacity, power, footprint, extraction, roller-to-stone ratio and which buyer each one."
+description: "A technical comparison of the three stone mill configurations: capacity, power, footprint, extraction and roller-to-stone trade-offs. With worked examples."
 type: cluster
 pillar: stone-milling-technology
 updated: 2026-11-07
@@ -98,3 +98,9 @@ Ask three questions:
 1. **What will you sell per month?** If under 10 t, SFM-100. Under 40 t, SFM-1+2. Over 80 t, SFM-3+4.
 2. **Do you need white flour or whole wheat?** Pure stone makes whole wheat well and white flour badly. Hybrid can do both.
 3. **Who operates it?** Hybrid configurations need someone who understands roll settings as well as stone dressing.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

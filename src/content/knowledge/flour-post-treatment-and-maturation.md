@@ -178,3 +178,9 @@ Two items frequently missing from a new mill's budget:
 2. **A treatment system** — gravimetric feeder, premix handling, and the quality lab to verify it
 
 A mill without the first cannot sell its first month of output at full value. A mill without the second cannot meet the specification of any customer who needs accelerated maturation, enrichment or bleaching.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

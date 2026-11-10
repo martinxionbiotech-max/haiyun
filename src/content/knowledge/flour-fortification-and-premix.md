@@ -79,3 +79,9 @@ Two things worth knowing about the results. First, iron assays measure total iro
 Fortification adds cost per tonne and delivers no benefit the mill can charge for. In a mandatory market it is a licence to operate. In a voluntary market it is a marketing claim that requires the same discipline.
 
 Either way, the mills that get into trouble are not the ones that spent least on the equipment. They are the ones that treated a regulatory requirement as a purchase order.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

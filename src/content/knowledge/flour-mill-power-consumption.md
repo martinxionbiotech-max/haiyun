@@ -1,7 +1,7 @@
 ---
 title: "Flour Mill Power Consumption: What kWh per Tonne Really Means"
 seoTitle: "Flour Mill Power: What kWh per Tonne Really Means"
-description: "Why specific power consumption falls from 72 kWh/t at 60 t/d to 65 kWh/t at 500 t/d, what drives the difference, how to budget connected load versus actual."
+description: "Why specific power falls from 72 kWh/t at 60 t/d to 65 kWh/t at 500 t/d, what drives the difference, and how to budget connected load. And load factors."
 type: cluster
 pillar: how-to-size-a-flour-mill
 updated: 2026-11-07
@@ -100,3 +100,9 @@ For a feasibility study, assume:
 A 60 t/d plant with 190 kW installed: 190 × 0.72 = 137 kW average × 7,900 h = 1,083,000 kWh. At USD 0.10 that is USD 108,300 a year.
 
 Add 12% for lighting, offices, laboratory and workshop. Total roughly USD 121,000.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

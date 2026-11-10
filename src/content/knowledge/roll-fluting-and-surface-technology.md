@@ -153,3 +153,9 @@ Fine reduction passages (usually 8M onward) often use frosted rather than fluted
 | Shorter life | Surface roughness wears faster than flutes |
 
 If your flour specification includes a starch damage limit — biscuit flour typically caps at 7–8% — frosted rolls are how you meet it.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

@@ -91,3 +91,9 @@ Keep a stone log:
 | Operator | Accountability |
 
 Without a log, dressing happens when someone remembers. With a log, it happens on schedule and flour quality stops drifting.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

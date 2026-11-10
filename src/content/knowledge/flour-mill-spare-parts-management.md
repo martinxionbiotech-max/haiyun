@@ -203,3 +203,9 @@ Rotate stock by receipt date. A 12-year-old bearing in original packaging is not
 Split roughly 60% consumables and wear parts (screens, seals, belts, lubricants), 40% critical insurance spares (bearings, electrical, sensors).
 
 Mills that underspend on this line do not save money. They convert a predictable annual cost into an unpredictable large one, usually at the worst possible moment — during harvest, when the mill is running flat out and every tonne matters.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

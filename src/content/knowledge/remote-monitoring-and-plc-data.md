@@ -1,7 +1,7 @@
 ---
 title: "Remote Monitoring for Flour Mills: What Telemetry Tells You"
 seoTitle: "Remote Monitoring for Flour Mills: What Telemetry Tells"
-description: "Which PLC signals are worth transmitting from a flour mill, what the data actually proves, and where remote monitoring stops being useful."
+description: "Which PLC signals are worth transmitting from a flour mill, what the data actually proves, and where remote monitoring stops helping. With worked examples."
 type: cluster
 pillar: flour-mill-operations-and-maintenance
 updated: 2026-11-08
@@ -74,3 +74,9 @@ The minimum viable arrangement: one named person checks the weekly trend report 
 Six signals, a dedicated router with a UPS, thresholds set from your own baseline after a month of running, three alarm conditions, and one named person with a weekly signature.
 
 Then, separately, ask the supplier what they will commit to in writing: response time, access method, and whether the data is theirs or yours. That last question matters more than it sounds — a plant that cannot retrieve its own historical data has rented its memory.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

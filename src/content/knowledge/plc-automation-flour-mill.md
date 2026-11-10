@@ -1,7 +1,7 @@
 ---
 title: "PLC and Automation in Flour Mills: What to Automate and What to Leave Alone"
 seoTitle: "PLC and Automation in Flour Mills: What to Automate"
-description: "Control system architecture for a flour mill, the automation scope that pays back, sensor selection, and the interlocks that prevent a small fault becoming."
+description: "Control architecture for a flour mill: the automation scope that pays back, sensor selection, and the interlocks that prevent a wreck. With I/O scope."
 type: cluster
 pillar: flour-mill-operations-and-maintenance
 updated: 2026-11-07
@@ -166,3 +166,9 @@ Remote access is worth having. It must go through a VPN, never a forwarded port.
 | Alarm log | Event | Failure pattern analysis |
 
 Retain at least 12 months. The value of a historian is not in the current reading but in the comparison against the same week last year — which is how you find the 3% yield loss that crept in over eight months.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

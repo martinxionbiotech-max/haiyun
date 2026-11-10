@@ -167,3 +167,9 @@ Handover discipline matters more than the pattern. A 10-minute structured handov
 | Aging workforce | Apprentice programme, 3–5 year horizon |
 
 The most common failure in new mills is not equipment. It is a plant with no one who can set it up, staffed by people who were trained by the installer for two weeks and then left alone.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

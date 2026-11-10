@@ -77,6 +77,7 @@ export const detailUI = {
     millingCategory: 'Flour milling equipment',
     cleaningShort: 'Cleaning',
     millingShort: 'Milling',
+    metaSuffix: 'Technical parameters, selection guidance and maintenance notes.',
   },
 
   ru: {
@@ -152,6 +153,7 @@ export const detailUI = {
     millingCategory: 'Мельничное оборудование',
     cleaningShort: 'Очистка',
     millingShort: 'Помол',
+    metaSuffix: 'Технические параметры, рекомендации по выбору и обслуживание.',
   },
 
   es: {
@@ -227,6 +229,7 @@ export const detailUI = {
     millingCategory: 'Equipos de molienda de harina',
     cleaningShort: 'Limpieza',
     millingShort: 'Molienda',
+    metaSuffix: 'Parámetros técnicos, guía de selección y notas de mantenimiento.',
   },
 
   ar: {
@@ -300,6 +303,7 @@ export const detailUI = {
     millingCategory: 'معدات طحن الدقيق',
     cleaningShort: 'تنظيف',
     millingShort: 'طحن',
+    metaSuffix: 'المواصفات الفنية وإرشادات الاختيار والصيانة.',
   },
 };
 

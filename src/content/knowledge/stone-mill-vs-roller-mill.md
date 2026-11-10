@@ -75,3 +75,9 @@ A stone mill produces 15–25% of a [roller mill](/equipment/fmfq-double-roller-
 Most commercial buyers who want stone character end up with the hybrid. It is the configuration that acknowledges both economics and positioning.
 
 If you are building this kind of business rather than a general mill, the [stone-milled flour operation](/solutions/#premium-stone-flour) page sets out the capacity, flow sheet and staffing that model assumes.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

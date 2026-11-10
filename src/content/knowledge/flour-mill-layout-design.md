@@ -115,3 +115,9 @@ The cost of this forethought is perhaps 6–8% of building cost. The cost of ret
 **5. Electrical panels in the cleaning room.** Dust ingress destroys contactors. Put panels in a pressurised or sealed room.
 
 **6. No spares store.** Parts accumulate on the floor, get damaged, and are lost. A 40 m² store pays for itself repeatedly.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

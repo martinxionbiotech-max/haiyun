@@ -1,7 +1,7 @@
 ---
 title: "Flour Granulation: Why Particle Size Matters More Than You Think"
 seoTitle: "Flour Granulation: Why Particle Size Matters"
-description: "How to test and control flour granulation — sieve stacks, target distributions by application, what controls particle size, and why two flours at identical."
+description: "How to test and control flour granulation: sieve stacks, target distributions by application, and the settings that move particle size. With sieve stacks."
 type: cluster
 pillar: flour-quality-control
 updated: 2026-11-07
@@ -105,3 +105,9 @@ Test granulation:
 - After any roll change or screen replacement
 
 Do not test every shift. It consumes 20 minutes and rarely changes. Test when something is different.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

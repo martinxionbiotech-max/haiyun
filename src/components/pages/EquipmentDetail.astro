@@ -2,6 +2,7 @@
 // Shared equipment detail body, used by the English page and the /ru|es|ar/
 // pages. Spec tables stay in src/data/equipment.js — translations only carry
 // prose, so a machine's numbers can never differ between locales.
+import { fitDescription, fitTitle } from '../../lib/seo.js';
 import PageLayout from '../../layouts/PageLayout.astro';
 import PageHero from '../PageHero.astro';
 import Figure from '../Figure.astro';
@@ -13,6 +14,8 @@ import { localizePath } from '../../i18n/config.js';
 import { site } from '../../data/site.js';
 import { equipmentByCategory } from '../../data/equipment.js';
 import { selectionBySlug } from '../../data/selection.js';
+import { VS } from '../../data/vs.js';
+import { equipment as allEquipment } from '../../data/equipment.js';
 import { equipmentGallery } from '../../data/gallery.js';
 import { equipmentReading, knowledgeTitles } from '../../data/equipment-reading.js';
 
@@ -40,6 +43,9 @@ const galleryFiles = shots.gallery.filter((f) => f !== heroFile);
 const isCleaning = item.category === 'cleaning';
 const catName = isCleaning ? t.cleaning : t.milling;
 const catHref = isCleaning ? '/equipment/cleaning-equipment/' : '/equipment/flour-milling-equipment/';
+
+const vsEntry = VS[item.slug];
+const vsItem = vsEntry ? allEquipment.find((e) => e.slug === vsEntry.slug) : null;
 
 const schema = [
   {
@@ -80,8 +86,8 @@ const schema = [
 ---
 
 <PageLayout
-  title={item.model ? `${item.name} — ${item.model}` : item.name}
-  description={`${item.tagline} ${item.name} (${item.model}) — ${t.technicalParameters}, ${t.selectionGuidance}, ${t.maintenance}.`}
+  title={fitTitle(item.model ? `${item.name} — ${item.model}` : item.name)}
+  description={fitDescription(`${item.tagline} ${item.name} (${item.model}) — ${t.technicalParameters}, ${t.selectionGuidance}, ${t.maintenance}.`, t.metaSuffix)}
   image={heroFile ? `/images/${heroFile}` : undefined}
   schema={schema}
   lang={lang}
@@ -148,6 +154,14 @@ const schema = [
             <p class="mt-2 text-sm leading-relaxed text-steel-700">{item.maintenance}</p>
           </div>
         </div>
+
+        {lang === 'en' && vsEntry && vsItem && (
+          <div class="mt-6 rounded-lg border-l-4 border-ember-500 bg-ember-50/40 p-5">
+            <h3 class="text-xs font-bold uppercase tracking-widest text-ember-700">{t.alternative}: {vsItem.name}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-steel-700">{vsEntry.note}</p>
+            <p class="mt-2 text-sm"><a class="font-semibold text-ember-700 underline" href={`${lang === 'en' ? '' : '/' + lang}/equipment/${vsItem.slug}/`}>{vsItem.name} →</a></p>
+          </div>
+        )}
 
         {
           selGroup && (

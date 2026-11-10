@@ -1,7 +1,7 @@
 ---
 title: "Wheat Protein and Flour Quality: What You Can and Cannot Change in the Mill"
 seoTitle: "Wheat Protein and Flour Quality: What You Can Change"
-description: "How wheat protein content and quality determine flour performance, what milling can influence through stream selection, and why blending is the only real lever."
+description: "How wheat protein content and quality determine flour performance, what milling can influence, and which specification actually predicts it."
 type: cluster
 pillar: flour-quality-control
 updated: 2026-11-07

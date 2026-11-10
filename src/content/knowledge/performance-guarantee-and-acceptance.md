@@ -81,3 +81,9 @@ If a supplier refuses retention entirely, that tells you something about their c
 Name the wheat. Define the test duration. Put the power denominator in writing as tonnes of flour. Hold retention.
 
 Four clauses, a page of contract, and they are the difference between a guarantee and a sentence.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

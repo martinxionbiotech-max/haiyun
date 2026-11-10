@@ -1,7 +1,7 @@
 ---
 title: "Roll Wear and Flute Life: The Consumable Nobody Puts in the Budget"
 seoTitle: "Roll Wear and Flute Life: The Unbudgeted Consumable"
-description: "How fast roller mill chills actually wear, what the wear does to extraction before anyone notices, how to measure it without a specialist, and why refluting…"
+description: "How fast roller mill chills wear, what wear does to extraction before anyone notices, and how to measure it without a shutdown. And measuring steps."
 type: cluster
 pillar: flour-milling-flow-sheet-design
 updated: 2026-11-08
@@ -94,3 +94,9 @@ Ask for the roll specification in writing: chill depth, hardness, flute profile 
 A supplier who cannot answer that has not thought about your wheat. A supplier who answers "many years" is telling you they do not know.
 
 Then put a line in the five-year plan for the second set of break rolls. It is coming, it is expensive, and the mills that budget for it treat it as maintenance. The mills that do not treat it as a crisis in the middle of a harvest.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

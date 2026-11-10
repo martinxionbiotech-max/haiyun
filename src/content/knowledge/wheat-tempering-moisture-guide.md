@@ -1,7 +1,7 @@
 ---
 title: "Wheat Tempering: Moisture Targets, Time and Why ±0.2% Matters"
 seoTitle: "Wheat Tempering: Moisture Targets and Why ±0.2% Matters"
-description: "How to temper wheat for milling — target moisture by wheat class, minimum and optimum tempering time, the effect of temperature, and why automatic dampening."
+description: "How to temper wheat for milling: target moisture by class, minimum and optimum tempering time, and the effect of temperature on the wheat. With tables."
 type: cluster
 pillar: wheat-cleaning-system-design
 updated: 2026-11-07

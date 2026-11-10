@@ -1,7 +1,7 @@
 ---
 title: "Downtime and OEE in a Flour Mill: Measuring What Actually Stops You"
 seoTitle: "Downtime and OEE in a Flour Mill: What Stops You"
-description: "How to calculate OEE for a flour mill honestly, why the standard formula misleads in milling, the four downtime categories that matter, and the measurement."
+description: "How to calculate OEE for a flour mill honestly, why the standard formula misleads in milling, and the four downtime categories to track. With full tables."
 type: cluster
 pillar: flour-mill-operations-and-maintenance
 updated: 2026-11-08
@@ -80,3 +80,9 @@ Four numbers, updated weekly, visible to the crew:
 The last one is a behavioural instrument more than a technical one. A crew that can see the number running up takes a different view of a rumbling bearing than a crew that reports it into a system nobody reads.
 
 One closing warning. Availability figures are easy to improve by redefining the denominator — excluding cleaning, excluding changeover, excluding "planned" stops. Every mill that quotes 96% availability is doing one of those three. The number worth having is the honest one, even when it is 78%, because only the honest number tells you where the money is going.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

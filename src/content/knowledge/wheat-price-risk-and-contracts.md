@@ -1,7 +1,7 @@
 ---
 title: "Wheat Price Risk and Contracts: The Hedge You Buy Without Knowing It"
 seoTitle: "Wheat Price Risk and Contracts: The Hedge You Buy"
-description: "How flour mills actually carry wheat price risk — basis versus flat price, the storage-and-carry trap, contract clauses that shift risk to the mill, and why…"
+description: "How flour mills carry wheat price risk: basis versus flat price, the storage-and-carry trap, contract clauses and hedging limits. And contract terms."
 type: cluster
 pillar: wheat-procurement-and-storage
 updated: 2026-11-08
@@ -101,3 +101,9 @@ The mills that survive price volatility are not the ones with the cleverest proc
 That number — the open position — is the whole discipline. Everything else is commentary.
 
 A mill owner who cannot state it in one sentence is not managing price risk. They are exposed to it, and the exposure was chosen by default rather than by decision.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

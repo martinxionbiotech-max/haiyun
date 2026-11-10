@@ -109,3 +109,9 @@ Don't forget these — they consume 25–35% of the total footprint:
 **Humid climates**: sealed pneumatic conveying prevents moisture pick-up. Flour stored in unsealed buildings gains 0.3–0.8% moisture, which is both a legal and a margin problem.
 
 **Coastal**: stainless or galvanised contact surfaces, and epoxy coating on steelwork. Salt air destroys a mill frame in five years.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

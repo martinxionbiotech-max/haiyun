@@ -60,3 +60,9 @@ Four articles, in the order a new mill owner needs them:
 - **Automation** — what to automate, what to leave alone, and why the labour-saving case is usually the weakest one.
 
 One warning before you read any of them. Operational discipline is cheap and it is also the first thing cut when a mill is under financial pressure. A plant that stops greasing on schedule to save a fitter's hour will spend forty times that hour on a seized bearing. That is not a theory; it is the single most common cause of the emergencies we are called about.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

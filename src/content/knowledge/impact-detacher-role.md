@@ -1,7 +1,7 @@
 ---
 title: "Impact Detachers: The 3 kW Machine That Adds 10% Sifting Capacity"
 seoTitle: "Impact Detachers: 3 kW That Adds 10% Sifting Capacity"
-description: "Why smooth reduction rolls produce flakes that blind sifters, how an impact detacher fixes it, where to place one, and the maintenance that decides whether."
+description: "Why smooth reduction rolls produce flakes that blind sifters, how an impact detacher fixes it, where to place one and how to size it. With worked examples."
 type: cluster
 pillar: flour-milling-flow-sheet-design
 updated: 2026-11-07
@@ -98,3 +98,9 @@ Take a sample of detacher outlet and sieve it against a sample of detacher inlet
 | No change | Rotor not turning, or feed bypassing |
 
 Run this check quarterly. It takes fifteen minutes and is the only reliable test.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

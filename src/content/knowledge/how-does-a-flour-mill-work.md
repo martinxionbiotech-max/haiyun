@@ -106,3 +106,9 @@ That is why a mill with more passages extracts more flour from the same wheat â€
 The [UK Flour Millers](https://www.ukflourmillers.org/) technical pages describe the same process from the trade body's side, and [BÃ¼hler's milling resources](https://www.buhlergroup.com/global/en/innovations/milling.html) show how the passage structure is drawn on a modern flow sheet. If you want the physics of what happens inside a roll nip rather than the sequence of the plant, those are the places to start.
 
 For the raw material side, [US Wheat Associates](https://www.grains.org/buyingselling/wheat) publishes the class specifications that most export contracts are written against.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

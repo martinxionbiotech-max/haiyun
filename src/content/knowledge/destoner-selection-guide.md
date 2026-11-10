@@ -111,3 +111,9 @@ Wheat loss in the stone outlet should be under 10 kernels per 100 stones. More t
 | Suspension springs | Annual inspection |
 
 The deck screen is the wearing part. A hole in the deck lets wheat fall into the stone channel, which shows up as high wheat loss in the stone outlet — a symptom often misdiagnosed as excessive air.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

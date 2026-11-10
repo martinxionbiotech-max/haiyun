@@ -1,7 +1,7 @@
 ---
 title: "Plansifter Sizing: How Much Sifting Area Does Your Mill Need?"
 seoTitle: "Plansifter Sizing: How Much Sifting Area You Need"
-description: "The sifting-area rule (1 m² per 0.8 t/d), how to distribute area across streams, when to choose twin-bin over high-square, and what happens when sifting is."
+description: "The sifting-area rule (1 m² per 0.8 t/d), how to distribute area across streams, and when to choose twin-bin over high-square sifters. With area tables."
 type: cluster
 pillar: flour-milling-flow-sheet-design
 updated: 2026-11-07
@@ -101,3 +101,9 @@ The rule of 0.8 t/d per m² of sifting area comes from standard milling practice
 [Miller Magazine's technical writing on sifters](https://millermagazine.com/blog/sifters-used-in-milling-industry-and-their-dynamic-behaviors-3435) sets out how passage count and sieve configuration change the effective area. Equipment datasheets list a *range* of screening area per machine — an FSFG8×24 is quoted anywhere from 60 to 107 m² depending on sieve build — precisely because the usable figure depends on what you put in it.
 
 Treat 0.8 as the starting point for a standard flow sheet and adjust from there. A single-grade whole wheat plant needs far less; a five-grade patent plant with two purifier banks needs more.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

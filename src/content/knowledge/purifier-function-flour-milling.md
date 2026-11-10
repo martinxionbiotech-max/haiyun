@@ -108,3 +108,9 @@ Above 100 t/d, one purifier is not enough. A bank of three to six units is fed f
 At 200 t/d expect 5–8 purifiers. At 300 t/d, 8–12.
 
 The building implications matter: purifiers need 1.7–1.8 m of height and their aspiration ducting needs careful routing to avoid long runs, which cost pressure and therefore separation efficiency.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

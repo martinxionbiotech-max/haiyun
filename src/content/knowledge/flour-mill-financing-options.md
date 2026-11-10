@@ -124,3 +124,9 @@ Breaching a covenant is not a default, but it hands the lender leverage. Model y
 7. **Financial close** — all documentation signed together
 
 Starting the working capital facility after financial close is a common and avoidable mistake.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

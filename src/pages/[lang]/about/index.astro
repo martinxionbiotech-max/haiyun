@@ -20,7 +20,8 @@ const copy = {
   ru: {
     eyebrow: 'О компании',
     hero: 'Шестьдесят лет одного дела: зерноперерабатывающее оборудование',
-    sub: 'Shandong Sishui Haiyun Grain Machine Co., Ltd. строит мельничные заводы производительностью от 10 до 500 тонн пшеницы в сутки.',
+    metaTitle: 'Haiyun: зерноперерабатывающее оборудование с 1963 года',
+    sub: 'Shandong Sishui Haiyun Grain Machine Co., Ltd. строит мельницы 10–500 т/сут и вводит их в эксплуатацию с 1963 года в провинции Шаньдун. Полный цикл.',
     companyEyebrow: 'Компания',
     companyTitle: 'Что мы делаем и чего не делаем',
     companyP1: 'Мы проектируем, изготавливаем, монтируем и запускаем мельничные заводы. Мы не продаём отдельные машины в качестве основного бизнеса — хотя продаём и их. Разница принципиальная: ответственность за тоннаж и выход муки лежит на нас, а не распределяется между поставщиками.',
@@ -63,7 +64,7 @@ const copy = {
   es: {
     eyebrow: 'Empresa',
     hero: 'Sesenta años en una sola cosa: maquinaria para grano',
-    sub: 'Shandong Sishui Haiyun Grain Machine Co., Ltd. construye plantas de molienda de trigo de 10 a 500 toneladas al día.',
+    sub: 'Shandong Sishui Haiyun Grain Machine Co., Ltd. construye plantas de molienda de trigo de 10 a 500 t/día y las pone en marcha desde 1963. desde 1963.',
     companyEyebrow: 'La empresa',
     companyTitle: 'Qué hacemos y qué no hacemos',
     companyP1: 'Diseñamos, fabricamos, montamos y ponemos en marcha plantas de molienda. No vendemos máquinas sueltas como negocio principal, aunque también las vendemos. La diferencia es sustancial: la responsabilidad del tonelaje y del rendimiento es nuestra, no se reparte entre proveedores.',
@@ -106,7 +107,7 @@ const copy = {
   ar: {
     eyebrow: 'عن الشركة',
     hero: 'ستون عامًا في شيء واحد: ماكينات الحبوب',
-    sub: 'شركة شاندونغ سيشوي هايون لماكينات الحبوب المحدودة تبني مصانع طحن دقيق القمح من 10 إلى 500 طن يوميًا.',
+    sub: 'شركة شاندونغ سيشوي هايون لماكينات الحبوب المحدودة تبني مصانع طحن دقيق القمح من 10 إلى 500 طن يوميًا وتشغّلها منذ عام 1963.  مع جداول المواصفات الكاملة.',
     companyEyebrow: 'الشركة',
     companyTitle: 'ما نفعله وما لا نفعله',
     companyP1: 'نصمم ونصنع ونركّب ونشغّل مصانع الطحن. لا نبيع ماكينات منفردة كعمل أساسي، وإن كنا نبيعها أيضًا. الفرق جوهري: مسؤولية الإنتاجية ونسبة الاستخلاص تقع علينا، لا توزَّع بين مورّدين.',
@@ -160,7 +161,7 @@ const schema = {
 };
 ---
 
-<PageLayout title={c.hero} description={c.sub} lang={lang} image={`/images/${companyBanner}`} schema={[schema]}>
+<PageLayout title={c.metaTitle ?? c.hero} description={c.sub} lang={lang} image={`/images/${companyBanner}`} schema={[schema]}>
   <PageHero eyebrow={c.eyebrow} title={c.hero} subtitle={c.sub} image={`/images/${companyBanner}`} imageAlt={c.hero} lang={lang} />
 
   <section class="section">

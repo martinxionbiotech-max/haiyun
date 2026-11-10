@@ -201,3 +201,9 @@ Expect extraction to be 1–3 points below the acceptance figure for the first m
 | Test certificates for pressure vessels | Statutory |
 
 The PLC backup deserves special mention. A mill with no PLC backup that loses its controller waits 2–6 weeks for a replacement and a program. That single file is worth more than most of the paperwork in the handover folder.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

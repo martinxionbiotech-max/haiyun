@@ -84,3 +84,9 @@ Four documents, all of them free:
 4. A hot work permit, tied to the dust explosion controls
 
 None of these require a consultant. All of them require somebody to decide that a mill which has not had an accident yet is not the same thing as a safe mill.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

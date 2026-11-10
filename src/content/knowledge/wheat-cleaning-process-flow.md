@@ -82,3 +82,9 @@ Below 30 t/d most plants omit wet cleaning and length grading. Above 60 t/d both
 The [UK Flour Millers](https://www.ukflourmillers.org/) technical pages cover the same cleaning sequence from the trade body's perspective, and are a useful cross-check that the order described here is standard practice rather than one supplier's habit.
 
 The one place suppliers genuinely differ is how many scourer passes they specify. Two is the norm above 60 t/d; one is common below 30 t/d and is usually enough for domestic commodity markets.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

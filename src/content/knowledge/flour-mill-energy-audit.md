@@ -1,7 +1,7 @@
 ---
 title: "Flour Mill Energy Audit: Where the Kilowatt-Hours Actually Go"
 seoTitle: "Flour Mill Energy Audit: Where the kWh Actually Go"
-description: "A break-down of power consumption across a flour mill by process stage, the measurements that reveal waste, and the ten interventions ranked by payback period."
+description: "A stage-by-stage breakdown of flour mill power use, the measurements that reveal waste, and the interventions with the shortest payback. With full tables."
 type: cluster
 pillar: flour-mill-project-economics
 updated: 2026-11-07
@@ -126,3 +126,9 @@ A useful energy audit produces four things:
 4. **Measurement plan** — what to meter so the next audit takes a day, not a month
 
 Without sub-metering, every audit is an estimate. The meters cost USD 300–800 each and turn an annual guess into a monthly fact. For a 200 t/d plant, eight meters are enough to cover the whole process.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

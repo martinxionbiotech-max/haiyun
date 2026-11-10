@@ -73,3 +73,9 @@ The practical implications:
 A load-cell net weigher with ±0.5% or better, a seal integrity check on every bag rather than a sample, and a date coder that cannot be skipped. Then a finished flour silo sized at half a day, with a discharge cone steep enough to actually empty.
 
 The rest — palletisers, shrink wrappers, robotic stacking — is labour economics. Worth it at high volume and high wage, not worth it at 20 t/d. The three items above are not labour economics. They are the difference between shipping the product you made and shipping a complaint.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

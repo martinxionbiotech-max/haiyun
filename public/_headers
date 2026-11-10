@@ -1,15 +1,10 @@
-# Cloudflare Pages headers
-/*
-  X-Content-Type-Options: nosniff
-  X-Frame-Options: SAMEORIGIN
-  Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: geolocation=(), microphone=(), camera=()
+# Markdown twins: correct type and content negotiation
+/*/index.md
+  Content-Type: text/markdown; charset=utf-8
+  Vary: Accept
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
 
 /images/*
   Cache-Control: public, max-age=31536000, immutable
-
-/_astro/*
-  Cache-Control: public, max-age=31536000, immutable
-
-/*.html
-  Cache-Control: public, max-age=0, must-revalidate

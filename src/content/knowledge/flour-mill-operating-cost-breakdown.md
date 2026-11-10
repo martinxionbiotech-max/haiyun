@@ -112,3 +112,9 @@ Under-budgeting maintenance is the classic path to a plant that runs well for th
 Extraction dominates everything you control inside the plant. It is worth more than eliminating your entire power bill.
 
 If you are building this kind of business rather than a general mill, the [contract milling operation](/solutions/#contract-milling) page sets out the capacity, flow sheet and staffing that model assumes.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

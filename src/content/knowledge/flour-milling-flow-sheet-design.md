@@ -184,3 +184,9 @@ Add the price premium for 0.52% ash versus 0.68% ash — typically 3–6% on the
 Any supplier can quote a machine list. A flow sheet with the passages named, the differentials specified, the sifter area calculated and the extraction target stated is a document you can hold someone to.
 
 If a quotation does not include one, that is the answer to your question about that supplier.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

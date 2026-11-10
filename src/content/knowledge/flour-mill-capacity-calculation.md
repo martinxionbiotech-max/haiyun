@@ -109,3 +109,9 @@ If your available building cannot accommodate the tonnage you calculated, either
 **Forgetting utilisation.** Produces a plant that is chronically 15% short and cannot catch up after any disruption.
 
 **Forgetting shift pattern.** Produces a plant that delivers 40% of what the buyer expected in month one.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

@@ -119,3 +119,9 @@ Intake dictates the site plan more than the mill does:
 - Sampler station beside the bridge, not at the pit
 
 Getting this wrong is expensive: moving a weighbridge after construction costs more than the bridge did.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

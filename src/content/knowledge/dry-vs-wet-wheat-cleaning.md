@@ -1,7 +1,7 @@
 ---
 title: "Dry vs Wet Wheat Cleaning: The Real Trade-Off and When Each Wins"
 seoTitle: "Dry vs Wet Wheat Cleaning: The Real Trade-Off"
-description: "A commercial comparison of dry and wet wheat cleaning for flour mills — capital, water, effluent, ash improvement, residue removal and the market conditions."
+description: "A commercial comparison of dry and wet wheat cleaning: capital, water, effluent, ash improvement and the residue disposal question. And effluent costs."
 type: cluster
 pillar: wheat-cleaning-system-design
 updated: 2026-11-07
@@ -101,3 +101,9 @@ Many plants install dry cleaning plus:
 - An additional aspirator before the first break
 
 This combination reaches roughly 70% of wet cleaning's ash benefit at 30% of the capital, with no water and no effluent. For a mill that needs better flour but cannot justify wet cleaning, it is the sensible compromise.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

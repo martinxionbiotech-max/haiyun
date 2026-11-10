@@ -124,3 +124,9 @@ Durum requires separate milling with higher tempering moisture (16.5–17.0%) an
 This is why wheat sourcing is a strategic decision, not a purchasing one.
 
 If you are building this kind of business rather than a general mill, the [regional flour brand](/solutions/#regional-flour-brand) page sets out the capacity, flow sheet and staffing that model assumes.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

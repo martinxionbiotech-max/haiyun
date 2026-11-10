@@ -109,3 +109,9 @@ The correct sequence:
 The wrong sequence, which is common: install SFM-3+4, produce 100 t/month, discover the market is 15 t/month, and watch inventory go rancid.
 
 If you are building this kind of business rather than a general mill, the [premium stone-milled flour brand](/solutions/#premium-stone-flour) page sets out the capacity, flow sheet and staffing that model assumes.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

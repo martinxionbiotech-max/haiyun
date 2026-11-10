@@ -1,6 +1,7 @@
 ---
 // Shared plant detail body. Both the English page and the /ru|es|ar/ pages use
 // this, so the four locales cannot drift structurally — only the strings differ.
+import { fitDescription, fitTitle } from '../../lib/seo.js';
 import PageLayout from '../../layouts/PageLayout.astro';
 import PageHero from '../PageHero.astro';
 import Figure from '../Figure.astro';
@@ -68,11 +69,11 @@ const schema = [
 ];
 
 const pageTitle = plant.name.includes(plant.capacity) ? plant.name : `${plant.name} — ${plant.capacity}`;
-const pageDesc = `${plant.tagline} ${plant.name}: ${plant.capacity}, ${plant.models.length} ${t.configurations}.`;
+const pageDesc = fitDescription(`${plant.tagline} ${plant.name}: ${plant.capacity}, ${plant.models.length} ${t.configurations}.`, t.metaSuffix);
 ---
 
 <PageLayout
-  title={pageTitle}
+  title={fitTitle(pageTitle)}
   description={pageDesc}
   image={heroFile ? `/images/${heroFile}` : undefined}
   schema={schema}

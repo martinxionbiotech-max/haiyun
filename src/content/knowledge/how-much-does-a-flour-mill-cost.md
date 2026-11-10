@@ -100,3 +100,9 @@ Never compare totals. Compare these five things on the same page:
 Two quotations that differ by 30% and match on all five are a genuine price difference. Two that differ by 30% and differ on three of the five are different products.
 
 If you are building this kind of business rather than a general mill, the [industrial milling company](/solutions/#industrial-milling-company) page sets out the capacity, flow sheet and staffing that model assumes.
+
+## Evidence note
+
+This article describes Haiyun engineering practice. The figures are typical ranges from project
+work, not published measurements, and no external standard is claimed where none is named in the
+text. How these figures are produced: [methodology](/about/methodology/).

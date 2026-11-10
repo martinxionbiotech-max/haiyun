@@ -19,7 +19,7 @@ export const projects = [
     summary:
       'A storey-typed 300 t/d plant with a 4B5M1S1T flow sheet and a dedicated granular flour line, built for high-vitreous Xinjiang wheat and a local bread market that buys by the bag.',
     seoDescription:
-      'A 300 t/d storey-typed plant with a 4B5M1S1T flow sheet and a dedicated granular line, built for high-vitreous Xinjiang wheat.',
+      'A 300 t/d storey-typed plant with a 4B5M1S1T flow sheet and a dedicated granular line, built for high-vitreous Xinjiang wheat. With worked examples.',
     figures: [
       ['Capacity', '300 t/d'],
       ['Installed power', '920 kW'],
@@ -108,7 +108,7 @@ export const projects = [
     summary:
       'A 200 t/d plant with a double-purifier bank feeding five high square plansifters, and automatic proportioning across three wheat origins to hold a 12.3% protein specification year-round.',
     seoDescription:
-      'A 200 t/d plant with twin purifier banks and automatic three-origin blending holding 12.3% protein year-round.',
+      'A 200 t/d plant with twin purifier banks and automatic three-origin blending that holds protein at 12.3% year-round, in Xinjiang. With worked examples.',
     figures: [
       ['Capacity', '200 t/d'],
       ['Installed power', '690 kW'],
@@ -193,7 +193,7 @@ export const projects = [
     summary:
       'A 200 t/d plant designed for −35 °C ambient: heated tempering bins, insulated conveying, enclosed intake and a building envelope rated for a Heilongjiang winter.',
     seoDescription:
-     'A 200 t/d cold-climate plant for −35 °C ambient: heated tempering, insulated conveying and an enclosed intake.',
+     'A 200 t/d cold-climate flour plant for −35 °C ambient: heated tempering, insulated conveying, enclosed intake and a 4B5M flow sheet. With worked examples.',
     figures: [
       ['Capacity', '200 t/d'],
       ['Installed power', '690 kW'],
@@ -278,7 +278,7 @@ export const projects = [
     summary:
       'The largest plant delivered to date: two parallel 250 t/d lines with shared intake, separate milling floors and a common packing hall, running at 65–70 kWh/t.',
     seoDescription:
-     'Two parallel 250 t/d lines with shared intake, separate milling floors and a common packing hall — the largest plant delivered to date.',
+     'Two parallel 250 t/d lines with shared intake, separate milling floors and a common packing hall — the largest plant we have delivered. With full tables.',
     figures: [
       ['Capacity', '500 t/d'],
       ['Installed power', '1,650 kW'],
