@@ -10,6 +10,7 @@ import { getEquipmentContent } from '../../i18n/content.js';
 import { getDetailUI } from '../../i18n/detail.js';
 import { site as siteCfg } from '../../data/site.js';
 import { localizePath } from '../../i18n/config.js';
+import LocalizedContext from '../LocalizedContext.astro';
 
 const { category, lang = 'en', copy } = Astro.props;
 
@@ -118,6 +119,8 @@ const schema = {
   }
 
   {lang === 'en' && <HubFAQ items={enFaq} />}
+
+  <LocalizedContext lang={lang} kind="category" />
 
   <CTABand heading={copy.cta} lang={lang} />
 </PageLayout>

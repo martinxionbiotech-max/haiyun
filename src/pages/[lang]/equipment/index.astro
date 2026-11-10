@@ -6,6 +6,7 @@ import { equipmentCategories, equipmentByCategory } from '../../../data/equipmen
 import { getUI } from '../../../i18n/ui.js';
 import { translatedLocales, localeMeta, localizePath } from '../../../i18n/config.js';
 import { getEquipmentContent } from '../../../i18n/content.js';
+import LocalizedContext from '../../../components/LocalizedContext.astro';
 
 export function getStaticPaths() {
   return translatedLocales.map((lang) => ({ params: { lang } }));
@@ -125,6 +126,8 @@ const schema = {
       </div>
     </div>
   </section>
+
+  <LocalizedContext lang={lang} kind="category" />
 
   <CTABand lang={lang} heading={c.cta} body={t.home.ctaBandBody} />
 </PageLayout>

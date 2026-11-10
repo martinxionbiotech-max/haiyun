@@ -18,6 +18,7 @@ import { VS } from '../../data/vs.js';
 import { equipment as allEquipment } from '../../data/equipment.js';
 import { equipmentGallery } from '../../data/gallery.js';
 import { equipmentReading, knowledgeTitles } from '../../data/equipment-reading.js';
+import LocalizedContext from '../LocalizedContext.astro';
 
 const { item, lang = 'en' } = Astro.props;
 
@@ -279,6 +280,8 @@ const schema = [
       </section>
     )
   }
+
+  <LocalizedContext lang={lang} kind="equipment" item={item} />
 
   <FAQ faq={item.faq} lang={lang} />
 

@@ -4,6 +4,7 @@ import HomeContent from '../../components/pages/HomeContent.astro';
 import { site } from '../../data/site.js';
 import { getUI } from '../../i18n/ui.js';
 import { localeMeta, translatedLocales, defaultLocale } from '../../i18n/config.js';
+import LocalizedContext from '../../components/LocalizedContext.astro';
 
 export function getStaticPaths() {
   return translatedLocales.map((lang) => ({ params: { lang } }));
@@ -29,5 +30,6 @@ const schema = {
   lang={lang}
   schema={[schema]}
 >
+  <LocalizedContext lang={lang} kind="home" />
   <HomeContent lang={lang} />
 </PageLayout>

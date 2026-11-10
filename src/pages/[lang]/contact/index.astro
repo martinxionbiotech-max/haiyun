@@ -4,6 +4,7 @@ import CTABand from '../../../components/CTABand.astro';
 import { site } from '../../../data/site.js';
 import { translatedLocales, localeMeta } from '../../../i18n/config.js';
 import { getUI } from '../../../i18n/ui.js';
+import LocalizedContext from '../../../components/LocalizedContext.astro';
 
 export function getStaticPaths() {
   return translatedLocales.map((lang) => ({ params: { lang } }));
@@ -243,6 +244,8 @@ const schema = {
       </dl>
     </div>
   </section>
+
+  <LocalizedContext lang={lang} kind="contact" />
 
   <CTABand lang={lang} heading={t.home.ctaBand} body={t.home.ctaBandBody} />
 </PageLayout>

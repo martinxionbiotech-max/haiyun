@@ -7,6 +7,7 @@ import { site } from '../../../data/site.js';
 import { translatedLocales, localeMeta } from '../../../i18n/config.js';
 import { getUI } from '../../../i18n/ui.js';
 import { companyBanner, certificates, workshops } from '../../../data/gallery.js';
+import LocalizedContext from '../../../components/LocalizedContext.astro';
 
 export function getStaticPaths() {
   return translatedLocales.map((lang) => ({ params: { lang } }));
@@ -257,6 +258,8 @@ const schema = {
       </div>
     </div>
   </section>
+
+  <LocalizedContext lang={lang} kind="about" />
 
   <CTABand lang={lang} heading={c.cta} body={t.home.ctaBandBody} />
 </PageLayout>
