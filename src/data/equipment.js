@@ -212,7 +212,7 @@ export const equipment = [
     stage: 'Fine cleaning',
     tagline: 'Removes broken, shrivelled and diseased kernels by length alone.',
     intro:
-      'An indent cylinder grades by kernel length, which no screen can do. It pulls out broken grains, ergot-adjacent shrivelled kernels and light diseased grain that would otherwise inflate your ash and downgrade your flour colour.',
+      'An indent cylinder grades by kernel length, which no screen can do. It pulls out broken grains, ergot-adjacent shrivelled kernels and light diseased grain that would otherwise inflate your ash and downgrade your flour colour. The cylinder lifts broken kernels and short round seeds — vetch, wild radish, cockle — that no sieve separates because their width matches sound wheat. Capacity follows cylinder area rather than drive power, so two short cylinders in parallel beat one long one where headroom is limited.',
     specs: {
       headers: ['Model', 'Capacity (t/h)', 'Power', 'Dimensions (mm)', 'Broken-in-whole', 'Whole-in-broken'],
       rows: [
@@ -272,7 +272,7 @@ export const equipment = [
     stage: 'Tempering',
     tagline: 'Microwave moisture measurement, ±0.2% water control, no operator guesswork.',
     intro:
-      'Milling performance is decided before the wheat ever reaches a roll. The DZS measures incoming moisture with a microwave sensor, calculates the water needed to hit target tempered moisture, and adds it continuously — holding accuracy to ±0.2%, which is finer than any operator with a jug and a moisture meter.',
+      'Milling performance is decided before the wheat ever reaches a roll. The DZS measures incoming moisture with a microwave sensor, calculates the water needed to hit target tempered moisture, and adds it continuously — holding accuracy to ±0.2%, which is finer than any operator with a jug and a moisture meter. Control quality depends far more on where moisture is measured than on the pump: an online meter after the dampener lets the loop correct within seconds, while a lab sample taken an hour later corrects wheat milled an hour ago. Budget for a tempering bin sized to the rest time, not just for the dampener.',
     specs: {
       headers: ['Parameter', 'Value'],
       rows: [
@@ -325,7 +325,7 @@ export const equipment = [
     stage: 'Final cleaning',
     tagline: '3,000–12,000 gauss. Non-negotiable in any food-grade plant.',
     intro:
-      'Ferrous contamination — a broken screen wire, a bolt, a staple from a jute bag — is the single most common cause of product recall. Plate magnets in spouts and permanent magnetic drums on free-flowing lines intercept it before it can reach a roll or a customer.',
+      'Ferrous contamination — a broken screen wire, a bolt, a staple from a jute bag — is the single most common cause of product recall. Plate magnets in spouts and permanent magnetic drums on free-flowing lines intercept it before it can reach a roll or a customer. Field strength at the face is not field strength at 40 mm, which is where the wheat actually flows. Neodymium plates hold their strength but lose it above 80 °C, a real problem after a dryer; ferrite is weaker but tolerant. Clean the plate every shift and check gauss annually.',
     specs: {
       headers: ['Type', 'Model', 'Field strength', 'Wheat (t/h)', 'Paddy (t/h)', 'Flour (t/h)'],
       rows: [
@@ -444,7 +444,7 @@ export const equipment = [
     stage: 'Grading',
     tagline: 'The machine that separates a good flour from a great one.',
     intro:
-      'A purifier stratifies middlings on a vibrating sieve under an air stream. Pure endosperm, being lighter and more angular, floats and travels; bran-contaminated particles of the same size settle and are rejected. This is how a mill produces genuinely low-ash patent flour instead of merely sifting what the rolls produced.',
+      'A purifier stratifies middlings on a vibrating sieve under an air stream. Pure endosperm, being lighter and more angular, floats and travels; bran-contaminated particles of the same size settle and are rejected. This is how a mill produces genuinely low-ash patent flour instead of merely sifting what the rolls produced. Air volume per metre of sieve, not sieve area alone, sets the separation: too little air and semolina rides with the bran, too much and good semolina reports to the coarse stream. The eccentric drive and the sieve clothing matter as much as the frame, and both are specified per stream.',
     specs: {
       headers: ['Model', 'Coarse fraction (t/h)', 'Fine fraction (t/h)', 'Power', 'Air volume (m³/h)', 'Weight', 'Dimensions (mm)'],
       rows: [
@@ -603,7 +603,7 @@ export const equipment = [
     stage: 'Packing',
     tagline: '±0.2% weighing accuracy at 150–300 bags per hour.',
     intro:
-      'The packer is where a mill either makes or loses money quietly. A 0.2% accuracy figure sounds trivial until you calculate it against 60,000 bags a month — it is the difference between giving away product and being fined for underweight.',
+      'The packer is where a mill either makes or loses money quietly. A 0.2% accuracy figure sounds trivial until you calculate it against 60,000 bags a month — it is the difference between giving away product and being fined for underweight. Bag clamping, tare and dust extraction decide whether that accuracy survives a shift: a leaking spout seal lets air into the bag, the weight drifts and the operator over-fills to compensate. Specify the bag size range at order — moving from 25 kg to 50 kg needs a different weigh hopper, not a setting.',
     specs: {
       headers: ['Model', 'Output (bags/h)', 'Power', 'Accuracy', 'Range', 'Air supply'],
       rows: [
@@ -627,7 +627,7 @@ export const equipment = [
     stage: 'Environmental',
     tagline: 'Dry collection without stopping the plant.',
     intro:
-      'Every flour mill is a dust explosion risk and a dust nuisance simultaneously. The TBLM uses electromagnetic pulse valves to clean filter bags online — the plant keeps running while a compartment is being cleaned, which is what makes 24-hour operation possible.',
+      'Every flour mill is a dust explosion risk and a dust nuisance simultaneously. The TBLM uses electromagnetic pulse valves to clean filter bags online — the plant keeps running while a compartment is being cleaned, which is what makes 24-hour operation possible. Sizing is an air-to-cloth ratio decision: 1.2–1.5 m/min for flour dust, lower if bags are washed rather than replaced. On a milling line the collector is also the explosion-protection node — venting, a rotary valve and a spark detector belong to the system, not to the accessory list.',
     specs: {
       headers: ['Model', 'Bags', 'Bag length (mm)', 'Filter area (m²)', 'Air volume (m³/h)', 'Scraper power', 'Airlock power'],
       rows: [

@@ -128,5 +128,49 @@ const schema = {
     </div>
   </section>
 
+
+  <section class="section bg-steel-50">
+    <div class="container-x">
+      <h2 class="font-display text-2xl font-bold uppercase tracking-tight text-steel-900">Choosing by constraint, not by tonnage</h2>
+      <p class="mt-3 max-w-3xl text-sm leading-relaxed text-steel-600">
+        Capacity is the last thing to decide, not the first. What actually fixes the architecture is the
+        constraint you cannot change: the building, the power supply, the wheat, or the customer you have
+        already promised flour to. Start from that column.
+      </p>
+      <div class="mt-6 overflow-x-auto rounded-lg border border-steel-200 bg-white">
+        <table class="w-full text-left text-sm">
+          <thead class="bg-steel-100 text-[11px] uppercase tracking-widest text-steel-600">
+            <tr>
+              <th class="px-4 py-3 font-bold">Your binding constraint</th>
+              <th class="px-4 py-3 font-bold">What it rules out</th>
+              <th class="px-4 py-3 font-bold">Start here</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-steel-200">
+            {[
+              ['No building, single-phase power, one operator', 'Any storey-typed plant; anything needing a pneumatic lift', 'Village & farm milling', '/flour-milling-plant/small-flour-mill-unit/'],
+              ['You sell a story, not a price', 'High-extraction roller flour; volume contracts', 'Premium stone flour', '/flour-milling-plant/stone-mill-unit/'],
+              ['A fixed 18 × 6 m building with 6.5 m clear height', 'Tower layouts; purifier-heavy flow sheets above 30 t/d', 'Regional flour brand', '/flour-milling-plant/20-30tpd-flour-plant/'],
+              ['Bakery contracts that specify ash and protein', 'Single-grade mills; plants without blending bins', 'Regional or industrial', '/flour-milling-plant/'],
+              ['Export customers who audit your process', 'Plants without a cleaning section or lab', 'Industrial milling', '/flour-milling-plant/60-500tpd-flour-plant/'],
+              ['A wheat supply that changes every harvest', 'Flow sheets designed around one sample', 'Industrial milling', '/flour-milling-plant/60-500tpd-flour-plant/'],
+            ].map(([c, r, h, href]) => (
+              <tr>
+                <td class="px-4 py-3 font-medium text-steel-900">{c}</td>
+                <td class="px-4 py-3 text-steel-600">{r}</td>
+                <td class="px-4 py-3"><a href={href} class="font-semibold text-ember-700 underline">{h}</a></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 text-sm leading-relaxed text-steel-600">
+        Two of these constraints often conflict — a cheap building and an export-grade specification, for
+        example. In that case the building wins the first phase and the flow sheet is designed so the
+        cleaning and blending sections can be added later without moving the mill.
+      </p>
+    </div>
+  </section>
+
   <CTABand heading="Not sure which model fits your situation?" body="Tell us who buys your flour today and who you want to sell to in three years. We will tell you which architecture that implies — and which it rules out." />
 </PageLayout>

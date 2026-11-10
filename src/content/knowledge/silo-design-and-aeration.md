@@ -1,7 +1,7 @@
 ---
 title: "Silo Design and Aeration: Storing Wheat Without Losing It"
 seoTitle: "Silo Design and Aeration: Storing Wheat Safely"
-description: "Silo types, capacity sizing, aeration rates, temperature monitoring and the storage economics that decide whether a mill buys at harvest. With full tables."
+description: "Silo types, capacity sizing, aeration rates, temperature monitoring and the storage economics that decide whether a mill buys at harvest. And carry cost."
 type: cluster
 pillar: wheat-procurement-and-storage
 updated: 2026-11-07

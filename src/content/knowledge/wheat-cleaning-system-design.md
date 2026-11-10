@@ -1,7 +1,7 @@
 ---
 title: "Wheat Cleaning System Design: A Machine-by-Machine Engineering Guide"
 seoTitle: "Wheat Cleaning System Design: A Machine-by-Machine Guide"
-description: "How to design a wheat cleaning line: impurity classes, machine sequence, capacity sizing rules, and where dry and wet cleaning diverge. With full tables."
+description: "How to design a wheat cleaning line: impurity classes, machine sequence, capacity sizing rules, and where dry and wet cleaning diverge. And machine order."
 type: pillar
 order: 2
 updated: 2026-11-07

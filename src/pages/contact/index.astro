@@ -141,6 +141,10 @@ const schema = {
           ['What is the warranty?', '12 months on mechanical parts, 24 months on roll packs, from commissioning or 18 months from shipment, whichever comes first.'],
           ['Do you supply spare parts after warranty?', 'Yes. Critical wear parts are held in stock for 10 years after the last unit of a model is delivered.'],
           ['Which languages do you work in?', 'English, Chinese, Russian and Spanish for technical documentation and correspondence.'],
+          ['Can the plant fit an existing building?', 'Usually, if clear height and floor loading allow it. Send a section drawing and the column grid: a 20–30 t/d plant needs about 6.5 m clear height, and the roller floor carries 800–1,200 kg/m². Where height is short we design a low-profile flow sheet rather than sell you a new building.'],
+          ['What if our wheat changes through the year?', 'We design for a wheat envelope, not a single sample. Give us the range of moisture, protein and impurity you expect across the season; the flow sheet should hold the specification at both ends of that range, with roll settings and blending bins doing the adjusting.'],
+          ['Do we need our own laboratory?', 'For 20 t/d and above, yes — at minimum moisture, ash, protein, gluten and falling number. A basic bench costs less than one day of lost production from a mis-specified blend. Below that, a neighbouring mill or a regional lab can test your wheat and your flour.'],
+
         ].map(([q, a]) => (
           <div class="border-b border-steel-200 pb-4">
             <dt class="text-sm font-bold text-steel-900">{q}</dt>

@@ -1,7 +1,7 @@
 ---
 title: "Flour Mill Project Economics: Capital, Operating Cost and Payback"
 seoTitle: "Flour Mill Project Economics: Capex, Opex and Payback"
-description: "A financial model for a wheat flour mill: capital cost by capacity class, operating cost structure, extraction value and payback. With worked examples."
+description: "A financial model for a wheat flour mill: capital cost by capacity class, operating cost structure, extraction value and payback. And a payback model."
 type: pillar
 order: 6
 updated: 2026-11-07
