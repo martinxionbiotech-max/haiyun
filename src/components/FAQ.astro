@@ -8,7 +8,10 @@ const t = getDetailUI(lang);
 const heading = title ?? t.faqTitle;
 const contactHref = localizePath(lang, '/contact/');
 
-const faqSchema = faq.length
+// Keep FAQPage structured data on the English canonical pages only.
+// Translated pages still show the visible FAQ, but do not duplicate the schema
+// across every hreflang variant.
+const faqSchema = lang === 'en' && faq.length >= 3
   ? {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
