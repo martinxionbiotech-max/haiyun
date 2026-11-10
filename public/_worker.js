@@ -15,6 +15,20 @@ export default {
       });
     }
 
+    if (url.pathname === '/__worker-echo') {
+      const mdPath = '/flour-milling-plant/double-mill-unit/index.md';
+      const md = await env.ASSETS.fetch(new URL(mdPath, url));
+      return new Response(JSON.stringify({
+        accept,
+        mdPath,
+        mdStatus: md.status,
+        mdType: md.headers.get('content-type'),
+        mdLength: md.headers.get('content-length'),
+      }), {
+        headers: { 'Content-Type': 'application/json; charset=utf-8' },
+      });
+    }
+
     const isPagePath =
       request.method === 'GET' &&
       !url.pathname.startsWith('/_astro/') &&
