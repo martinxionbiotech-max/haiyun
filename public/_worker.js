@@ -5,30 +5,6 @@ export default {
     const url = new URL(request.url);
     const accept = request.headers.get('Accept') || '';
 
-    // Temporary deployment probe. Remove after verifying Advanced Mode is active.
-    if (url.pathname === '/__worker-check') {
-      return new Response('Worker Active', {
-        headers: {
-          'Content-Type': 'text/plain; charset=utf-8',
-          'X-Markdown-Negotiation': 'worker-active',
-        },
-      });
-    }
-
-    if (url.pathname === '/__worker-echo') {
-      const mdPath = '/flour-milling-plant/double-mill-unit/index.md';
-      const md = await env.ASSETS.fetch(new URL(mdPath, url));
-      return new Response(JSON.stringify({
-        accept,
-        mdPath,
-        mdStatus: md.status,
-        mdType: md.headers.get('content-type'),
-        mdLength: md.headers.get('content-length'),
-      }), {
-        headers: { 'Content-Type': 'application/json; charset=utf-8' },
-      });
-    }
-
     const isPagePath =
       request.method === 'GET' &&
       !url.pathname.startsWith('/_astro/') &&
@@ -40,9 +16,7 @@ export default {
         ? `${url.pathname}index.md`
         : `${url.pathname}/index.md`;
       const mdUrl = new URL(mdPath, url);
-      const mdResponse = await env.ASSETS.fetch(
-        new Request(mdUrl, { method: 'GET', headers: request.headers })
-      );
+      const mdResponse = await env.ASSETS.fetch(mdUrl);
 
       if (mdResponse.ok) {
         const headers = new Headers(mdResponse.headers);
