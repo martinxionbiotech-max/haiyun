@@ -5,7 +5,7 @@ export const site = {
   url: 'https://flourmillingpro.com',
   tagline: 'Wheat flour milling plants, 10–500 t/d — engineered, built and commissioned.',
   description:
-    'Haiyun builds complete wheat flour milling plants from 10 to 500 tonnes per day, plus cleaning equipment, roller mills, plansifters and stone mills. 60+ years of grain machinery manufacturing, 100+ patents, ISO 9001:2015, exported to 40+ countries.',
+    'Haiyun builds 10–500 t/d wheat flour milling plants and grain equipment. Incorporated in 2010, continuing the manufacturing heritage of the former Shandong Flour Machinery Factory (production since 1963). 100+ patents; ISO 9001:2015; exports to 40+ countries.',
   // One number serves as phone, WeChat and WhatsApp. It is printed once, as a
   // tel: link; WhatsApp opens from a button, so the number is not repeated.
   phone: '+86 151 5358 8090',

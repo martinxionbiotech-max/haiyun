@@ -1,0 +1,72 @@
+---
+interface Props {
+  compact?: boolean;
+}
+const { compact = false } = Astro.props;
+---
+
+<section id="capacity-basis" class={compact ? 'border-y border-steel-200 bg-steel-50 py-8' : 'section bg-steel-50'}>
+  <div class="container-x">
+    <div class="max-w-3xl">
+      <p class="eyebrow">Capacity basis</p>
+      <h2 class="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-steel-900 sm:text-3xl">
+        Compare capacity on the same basis
+      </h2>
+      <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
+        A capacity figure is only meaningful when the basis is stated. Before comparing two models or
+        two suppliers, confirm whether the number refers to wheat intake or finished flour output, the
+        operating hours per day, the extraction rate, the wheat specification and the test conditions.
+      </p>
+    </div>
+
+    <div class="mt-6 overflow-x-auto">
+      <table class="w-full min-w-[720px] border-collapse text-left text-sm">
+        <thead>
+          <tr class="border-b border-steel-300">
+            <th class="py-3 pr-4 font-semibold text-steel-900">Parameter</th>
+            <th class="py-3 pr-4 font-semibold text-steel-900">What to confirm</th>
+            <th class="py-3 font-semibold text-steel-900">Why it changes the comparison</th>
+          </tr>
+        </thead>
+        <tbody class="text-steel-700">
+          <tr class="border-b border-steel-200">
+            <td class="py-3 pr-4 font-medium text-steel-900">Capacity basis</td>
+            <td class="py-3 pr-4">Wheat input or finished flour output</td>
+            <td class="py-3">The same mill has different t/d figures under the two definitions.</td>
+          </tr>
+          <tr class="border-b border-steel-200">
+            <td class="py-3 pr-4 font-medium text-steel-900">Operating time</td>
+            <td class="py-3 pr-4">24-hour continuous or actual shift pattern</td>
+            <td class="py-3">A 10-hour shift is not comparable with a 24-hour rating.</td>
+          </tr>
+          <tr class="border-b border-steel-200">
+            <td class="py-3 pr-4 font-medium text-steel-900">Extraction rate</td>
+            <td class="py-3 pr-4">Flour yield from wheat, by product mix</td>
+            <td class="py-3">Higher extraction changes flour output and power per tonne.</td>
+          </tr>
+          <tr class="border-b border-steel-200">
+            <td class="py-3 pr-4 font-medium text-steel-900">Wheat condition</td>
+            <td class="py-3 pr-4">Moisture, hardness, variety and cleanliness</td>
+            <td class="py-3">Difficult wheat reduces throughput and changes conditioning.</td>
+          </tr>
+          <tr class="border-b border-steel-200">
+            <td class="py-3 pr-4 font-medium text-steel-900">Power</td>
+            <td class="py-3 pr-4">Installed power or measured consumption</td>
+            <td class="py-3">Installed kW is not the same as kWh per tonne.</td>
+          </tr>
+          <tr>
+            <td class="py-3 pr-4 font-medium text-steel-900">Scope</td>
+            <td class="py-3 pr-4">Cleaning, milling, sifting, packing and civil works</td>
+            <td class="py-3">Capacity outside the quoted scope is not comparable.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-5 max-w-3xl text-sm leading-relaxed text-steel-600">
+      Haiyun quotes a plant against an agreed wheat specification, flow sheet and operating pattern.
+      Catalogue tables are a selection guide, not a performance guarantee; the quotation and approved
+      flow sheet define the contractual basis.
+    </p>
+  </div>
+</section>

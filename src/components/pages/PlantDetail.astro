@@ -7,6 +7,7 @@ import PageHero from '../PageHero.astro';
 import Figure from '../Figure.astro';
 import FAQ from '../FAQ.astro';
 import CTABand from '../CTABand.astro';
+import CapacityBasis from '../CapacityBasis.astro';
 import { getDetailUI } from '../../i18n/detail.js';
 import { localizePath } from '../../i18n/config.js';
 import { site } from '../../data/site.js';
@@ -29,26 +30,16 @@ const galleryFiles = shots.gallery.filter((f) => f !== heroFile);
 const schema = [
   {
     '@context': 'https://schema.org',
-    '@type': 'Product',
+    '@type': 'Service',
     name: plant.name,
+    serviceType: 'Complete wheat flour milling plant',
     description: plant.tagline,
-    brand: { '@type': 'Brand', name: 'HAIYUN' },
-    manufacturer: { '@id': `${site.url}/#organization` },
-    category: t.plantType,
-    sku: plant.slug,
+    provider: { '@id': `${site.url}/#organization` },
+    areaServed: site.markets.map((m) => ({ '@type': 'Place', name: m })),
     url: `${site.url}${href(`/flour-milling-plant/${plant.slug}/`)}`,
-    '@id': `${site.url}${href(`/flour-milling-plant/${plant.slug}/`)}#product`,
+    '@id': `${site.url}${href(`/flour-milling-plant/${plant.slug}/`)}#service`,
     image: [heroFile ? `${site.url}/images/${heroFile}` : `${site.url}/og-default.jpg`],
     mainEntityOfPage: { '@id': `${site.url}${href(`/flour-milling-plant/${plant.slug}/`)}` },
-    offers: {
-      '@type': 'AggregateOffer',
-      priceCurrency: 'USD',
-      lowPrice: 8000,
-      highPrice: 4500000,
-      availability: 'https://schema.org/InStock',
-      offerCount: plant.models.length,
-      seller: { '@id': `${site.url}/#organization` },
-    },
     additionalProperty: [
       { '@type': 'PropertyValue', name: t.capacityLabel, value: plant.capacity },
       { '@type': 'PropertyValue', name: t.modelsLabel, value: String(plant.models.length) },
@@ -87,6 +78,8 @@ const pageDesc = fitDescription(`${plant.tagline} ${plant.name}: ${plant.capacit
     imageAlt={plant.name}
     lang={lang}
   />
+
+  <CapacityBasis compact />
 
   <section class="section">
     <div class="container-x grid gap-12 lg:grid-cols-[2fr_1fr]">

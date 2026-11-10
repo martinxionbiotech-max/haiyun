@@ -3,6 +3,7 @@ import PageLayout from '../../layouts/PageLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import CTABand from '../../components/CTABand.astro';
 import HubFAQ from '../../components/HubFAQ.astro';
+import CapacityBasis from '../../components/CapacityBasis.astro';
 import { plantSeries } from '../../data/plants.js';
 
 const groups = [
@@ -72,6 +73,8 @@ const schema = {
       </div>
     </div>
   </section>
+
+  <CapacityBasis />
 
   {groups.map((group) => (
     <section class="pb-16">
