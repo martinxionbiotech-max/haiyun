@@ -1,0 +1,524 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+
+const faq = [
+  {
+    q: 'How do I calculate wheat input from flour output?',
+    a: 'Divide the required flour output by the extraction rate. At 76% extraction, 76 tonnes of flour requires 100 tonnes of wheat. The capacity calculator also converts the result to hourly wheat and flour rates.',
+  },
+  {
+    q: 'What is a good flour extraction rate?',
+    a: 'Extraction depends on the flour grade and wheat. Patent flour is commonly around 65–72%, two-grade milling around 75–78%, and wholemeal or Atta can exceed 85%. The calculator reports the rate you enter; it does not prescribe one.',
+  },
+  {
+    q: 'How many kWh does a flour mill use per tonne?',
+    a: 'Specific energy varies with capacity, flow sheet, wheat hardness and product mix. Typical published figures for complete wheat mills are roughly 65–75 kWh per tonne of wheat, but the number must be confirmed against the actual flow sheet and test conditions.',
+  },
+  {
+    q: 'How much wheat fits in a silo?',
+    a: 'Multiply the cylindrical volume by the bulk density and the usable fill percentage. A 6 m diameter silo with 12 m of usable grain height holds about 339 m³; at 750 kg/m³ and 90% fill, that is roughly 229 tonnes.',
+  },
+  {
+    q: 'How many 50 kg bags are in a tonne of flour?',
+    a: 'One tonne is 1,000 kg, so 20 bags of 50 kg make one tonne. The bag calculator rounds up because a partial bag still needs packaging.',
+  },
+  {
+    q: 'How much water is needed to temper wheat?',
+    a: 'Use the moisture mass balance: final weight = initial weight × (100 − initial moisture) ÷ (100 − target moisture). The difference is the water to add. The calculator reports kilograms, which are approximately litres.',
+  },
+  {
+    q: 'Are these calculators a substitute for a quotation?',
+    a: 'No. They are early-stage planning tools. A real quotation depends on the wheat, flow sheet, building, power supply, product mix and the performance-test conditions agreed in the contract.',
+  },
+  {
+    q: 'Can I use these calculators for a rice or maize mill?',
+    a: 'The arithmetic for capacity, extraction, power, silo volume and bag count is generic, but the assumptions and equipment differ. Use them as a first estimate and confirm the process with an engineer.',
+  },
+];
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Flour Mill Calculators',
+    description:
+      'Free calculators for flour mill capacity, wheat extraction, power consumption, silo capacity, bag count and tempering water.',
+    url: 'https://flourmillingpro.com/tools/flour-mill-calculators/',
+    applicationCategory: 'BusinessApplication',
+    operatingSystem: 'Any',
+    isAccessibleForFree: true,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    featureList: [
+      'Flour mill capacity calculator',
+      'Wheat extraction rate calculator',
+      'Flour mill power consumption calculator',
+      'Wheat silo capacity calculator',
+      'Flour bag count calculator',
+      'Wheat tempering water calculator',
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://flourmillingpro.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Tools', item: 'https://flourmillingpro.com/tools/flour-mill-calculators/' },
+    ],
+  },
+];
+---
+
+<PageLayout
+  title="Flour Mill Calculators: Capacity, Extraction & Power"
+  description="Free flour mill calculators for wheat input, extraction rate, power use, silo capacity, bag count and tempering water, with formulas and examples."
+  schema={schema}
+>
+  <section class="bg-steel-950">
+    <div class="container-x py-16 sm:py-20">
+      <p class="eyebrow-light">Free engineering tools</p>
+      <h1 class="mt-3 max-w-4xl font-display text-4xl font-bold uppercase leading-[1.05] tracking-tight text-white sm:text-5xl">
+        Flour mill calculators for capacity, extraction and power
+      </h1>
+      <p class="mt-5 max-w-3xl text-lg leading-relaxed text-steel-300">
+        Six practical calculators for early-stage mill planning: wheat input, flour extraction,
+        specific energy, silo volume, bag count and tempering water. Each shows the formula behind
+        the number, so you can check the assumption before you use the result.
+      </p>
+      <p class="mt-4 text-sm text-steel-400">
+        Planning estimates only — a quotation and approved flow sheet remain the contractual basis.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-x">
+      <div class="max-w-3xl">
+        <p class="eyebrow">Start here</p>
+        <h2 class="mt-2 font-display text-3xl font-bold uppercase tracking-tight text-steel-900 sm:text-4xl">
+          Use the calculator that matches your decision
+        </h2>
+        <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
+          Capacity and extraction are linked: flour output is wheat input multiplied by the
+          extraction rate. Power, silo volume and bag count depend on that first capacity decision.
+          Change one input and the downstream numbers move with it.
+        </p>
+        <ul class="mt-4 grid gap-2 text-sm text-steel-700 sm:grid-cols-2">
+          <li><a class="font-semibold text-ember-700 hover:text-ember-800" href="#capacity-calculator">Flour mill capacity calculator</a></li>
+          <li><a class="font-semibold text-ember-700 hover:text-ember-800" href="#extraction-calculator">Wheat extraction calculator</a></li>
+          <li><a class="font-semibold text-ember-700 hover:text-ember-800" href="#power-calculator">Power consumption calculator</a></li>
+          <li><a class="font-semibold text-ember-700 hover:text-ember-800" href="#silo-calculator">Wheat silo capacity calculator</a></li>
+          <li><a class="font-semibold text-ember-700 hover:text-ember-800" href="#bag-calculator">Flour bag count calculator</a></li>
+          <li><a class="font-semibold text-ember-700 hover:text-ember-800" href="#tempering-calculator">Tempering water calculator</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-steel-50">
+    <div class="container-x grid gap-8 lg:grid-cols-2">
+      <div class="card p-6 sm:p-8">
+        <p class="eyebrow">Capacity</p>
+        <h2 id="capacity-calculator" class="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
+          Flour mill capacity calculator
+        </h2>
+        <p class="mt-3 text-sm leading-relaxed text-steel-600">
+          Work backwards from finished flour demand to the wheat intake required, then convert it
+          to hourly rates.
+        </p>
+        <div class="mt-6 grid gap-4 sm:grid-cols-3">
+          <label class="block text-sm font-semibold text-steel-800">
+            Flour output (t/day)
+            <input id="cap-flour" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="0.1" value="60" inputmode="decimal" />
+          </label>
+          <label class="block text-sm font-semibold text-steel-800">
+            Extraction (%)
+            <input id="cap-extraction" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" max="100" step="0.1" value="76" inputmode="decimal" />
+          </label>
+          <label class="block text-sm font-semibold text-steel-800">
+            Operating hours / day
+            <input id="cap-hours" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="1" max="24" step="0.5" value="24" inputmode="decimal" />
+          </label>
+        </div>
+        <dl class="mt-6 grid gap-3 text-sm sm:grid-cols-3" aria-live="polite">
+          <div class="rounded-lg border border-steel-200 bg-white p-4">
+            <dt class="text-steel-500">Wheat input</dt>
+            <dd class="mt-1 font-display text-2xl font-bold text-steel-900"><span id="cap-wheat">—</span> <span class="text-sm font-normal">t/day</span></dd>
+          </div>
+          <div class="rounded-lg border border-steel-200 bg-white p-4">
+            <dt class="text-steel-500">Wheat per hour</dt>
+            <dd class="mt-1 font-display text-2xl font-bold text-steel-900"><span id="cap-wheat-hour">—</span> <span class="text-sm font-normal">t/h</span></dd>
+          </div>
+          <div class="rounded-lg border border-steel-200 bg-white p-4">
+            <dt class="text-steel-500">Flour per hour</dt>
+            <dd class="mt-1 font-display text-2xl font-bold text-steel-900"><span id="cap-flour-hour">—</span> <span class="text-sm font-normal">t/h</span></dd>
+          </div>
+        </dl>
+        <p class="mt-4 text-xs leading-relaxed text-steel-500">
+          Formula: wheat = flour ÷ (extraction ÷ 100). Example: 60 t/day flour at 76% extraction
+          needs about 78.9 t/day of wheat, or 3.29 t/h over 24 hours.
+        </p>
+      </div>
+
+      <div class="card p-6 sm:p-8">
+        <p class="eyebrow">Extraction</p>
+        <h2 id="extraction-calculator" class="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
+          Wheat extraction rate calculator
+        </h2>
+        <p class="mt-3 text-sm leading-relaxed text-steel-600">
+          Compare flour output with wheat input to see the extraction rate achieved by a batch,
+          shift or trial.
+        </p>
+        <div class="mt-6 grid gap-4 sm:grid-cols-2">
+          <label class="block text-sm font-semibold text-steel-800">
+            Wheat input (kg)
+            <input id="ext-wheat" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="1" value="1000" inputmode="decimal" />
+          </label>
+          <label class="block text-sm font-semibold text-steel-800">
+            Flour output (kg)
+            <input id="ext-flour" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="1" value="760" inputmode="decimal" />
+          </label>
+        </div>
+        <div class="mt-6 rounded-lg border border-steel-200 bg-white p-4" aria-live="polite">
+          <p class="text-sm text-steel-500">Extraction rate</p>
+          <p class="mt-1 font-display text-3xl font-bold text-steel-900"><span id="ext-result">—</span>%</p>
+          <p class="mt-2 text-xs text-steel-500" id="ext-note">Enter wheat and flour weights to compare.</p>
+        </div>
+        <p class="mt-4 text-xs leading-relaxed text-steel-500">
+          Formula: extraction = flour ÷ wheat × 100. Example: 760 kg flour from 1,000 kg wheat is
+          76% extraction. Ash, moisture and product grade still need their own tests.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-x grid gap-8 lg:grid-cols-2">
+      <div class="card p-6 sm:p-8">
+        <p class="eyebrow">Energy</p>
+        <h2 id="power-calculator" class="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
+          Flour mill power consumption calculator
+        </h2>
+        <p class="mt-3 text-sm leading-relaxed text-steel-600">
+          Estimate daily and monthly electricity use from throughput and specific energy. The
+          optional price gives an operating-cost indication.
+        </p>
+        <div class="mt-6 grid gap-4 sm:grid-cols-3">
+          <label class="block text-sm font-semibold text-steel-800">
+            Wheat processed (t/day)
+            <input id="pwr-capacity" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="0.1" value="100" inputmode="decimal" />
+          </label>
+          <label class="block text-sm font-semibold text-steel-800">
+            Specific energy (kWh/t)
+            <input id="pwr-specific" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="0.1" value="70" inputmode="decimal" />
+          </label>
+          <label class="block text-sm font-semibold text-steel-800">
+            Electricity price (USD/kWh)
+            <input id="pwr-price" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="0.001" value="0.10" inputmode="decimal" />
+          </label>
+        </div>
+        <dl class="mt-6 grid gap-3 text-sm sm:grid-cols-3" aria-live="polite">
+          <div class="rounded-lg border border-steel-200 bg-white p-4">
+            <dt class="text-steel-500">Per day</dt>
+            <dd class="mt-1 font-display text-2xl font-bold text-steel-900"><span id="pwr-day">—</span> <span class="text-sm font-normal">kWh</span></dd>
+          </div>
+          <div class="rounded-lg border border-steel-200 bg-white p-4">
+            <dt class="text-steel-500">Per 30 days</dt>
+            <dd class="mt-1 font-display text-2xl font-bold text-steel-900"><span id="pwr-month">—</span> <span class="text-sm font-normal">kWh</span></dd>
+          </div>
+          <div class="rounded-lg border border-steel-200 bg-white p-4">
+            <dt class="text-steel-500">Energy cost / day</dt>
+            <dd class="mt-1 font-display text-2xl font-bold text-steel-900">$<span id="pwr-cost">—</span></dd>
+          </div>
+        </dl>
+        <p class="mt-4 text-xs leading-relaxed text-steel-500">
+          Formula: kWh/day = wheat t/day × kWh per tonne. Specific energy is not the same as
+          installed motor kW; confirm both against the flow sheet.
+        </p>
+      </div>
+
+      <div class="card p-6 sm:p-8">
+        <p class="eyebrow">Storage</p>
+        <h2 id="silo-calculator" class="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
+          Wheat silo capacity calculator
+        </h2>
+        <p class="mt-3 text-sm leading-relaxed text-steel-600">
+          Estimate usable grain volume and tonnes from a cylindrical silo. The fill percentage
+          accounts for freeboard and handling.
+        </p>
+        <div class="mt-6 grid gap-4 sm:grid-cols-2">
+          <label class="block text-sm font-semibold text-steel-800">
+            Diameter (m)
+            <input id="silo-diameter" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="0.1" value="6" inputmode="decimal" />
+          </label>
+          <label class="block text-sm font-semibold text-steel-800">
+            Usable grain height (m)
+            <input id="silo-height" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="0.1" value="12" inputmode="decimal" />
+          </label>
+          <label class="block text-sm font-semibold text-steel-800">
+            Bulk density (kg/m³)
+            <input id="silo-density" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="1" value="750" inputmode="decimal" />
+          </label>
+          <label class="block text-sm font-semibold text-steel-800">
+            Usable fill (%)
+            <input id="silo-fill" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" max="100" step="1" value="90" inputmode="decimal" />
+          </label>
+        </div>
+        <dl class="mt-6 grid gap-3 text-sm sm:grid-cols-2" aria-live="polite">
+          <div class="rounded-lg border border-steel-200 bg-white p-4">
+            <dt class="text-steel-500">Usable volume</dt>
+            <dd class="mt-1 font-display text-2xl font-bold text-steel-900"><span id="silo-volume">—</span> <span class="text-sm font-normal">m³</span></dd>
+          </div>
+          <div class="rounded-lg border border-steel-200 bg-white p-4">
+            <dt class="text-steel-500">Estimated grain</dt>
+            <dd class="mt-1 font-display text-2xl font-bold text-steel-900"><span id="silo-tonnes">—</span> <span class="text-sm font-normal">t</span></dd>
+          </div>
+        </dl>
+        <p class="mt-4 text-xs leading-relaxed text-steel-500">
+          Formula: volume = π × (diameter ÷ 2)² × height × fill%; tonnes = volume × density ÷ 1,000.
+          Check the silo's structural usable height, not the total shell height.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-steel-50">
+    <div class="container-x grid gap-8 lg:grid-cols-2">
+      <div class="card p-6 sm:p-8">
+        <p class="eyebrow">Packing</p>
+        <h2 id="bag-calculator" class="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
+          Flour bag count calculator
+        </h2>
+        <p class="mt-3 text-sm leading-relaxed text-steel-600">
+          Convert a flour quantity into bags for a chosen bag size. The result rounds up because a
+          partial bag still has to be packed.
+        </p>
+        <div class="mt-6 grid gap-4 sm:grid-cols-2">
+          <label class="block text-sm font-semibold text-steel-800">
+            Flour quantity (kg)
+            <input id="bag-flour" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="1" value="1000" inputmode="decimal" />
+          </label>
+          <label class="block text-sm font-semibold text-steel-800">
+            Bag size (kg)
+            <input id="bag-size" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="1" step="0.5" value="50" inputmode="decimal" />
+          </label>
+        </div>
+        <div class="mt-6 rounded-lg border border-steel-200 bg-white p-4" aria-live="polite">
+          <p class="text-sm text-steel-500">Bags required</p>
+          <p class="mt-1 font-display text-3xl font-bold text-steel-900"><span id="bag-count">—</span> <span class="text-base font-normal">bags</span></p>
+          <p class="mt-2 text-xs text-steel-500" id="bag-note">Includes rounding up to a whole bag.</p>
+        </div>
+        <p class="mt-4 text-xs leading-relaxed text-steel-500">
+          Formula: bags = ceiling(flour kg ÷ bag size kg). A tonne of flour is 20 × 50 kg bags; a
+          25 kg bag line needs 40 bags per tonne.
+        </p>
+      </div>
+
+      <div class="card p-6 sm:p-8">
+        <p class="eyebrow">Tempering</p>
+        <h2 id="tempering-calculator" class="mt-2 font-display text-2xl font-bold uppercase tracking-tight text-steel-900">
+          Wheat tempering water calculator
+        </h2>
+        <p class="mt-3 text-sm leading-relaxed text-steel-600">
+          Estimate water to add when conditioning wheat to a target moisture. The calculation uses a
+          moisture mass balance and reports approximate litres.
+        </p>
+        <div class="mt-6 grid gap-4 sm:grid-cols-3">
+          <label class="block text-sm font-semibold text-steel-800">
+            Wheat mass (kg)
+            <input id="temp-wheat" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" step="1" value="1000" inputmode="decimal" />
+          </label>
+          <label class="block text-sm font-semibold text-steel-800">
+            Initial moisture (%)
+            <input id="temp-initial" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" max="100" step="0.1" value="12" inputmode="decimal" />
+          </label>
+          <label class="block text-sm font-semibold text-steel-800">
+            Target moisture (%)
+            <input id="temp-target" class="mt-2 w-full rounded-lg border border-steel-300 bg-white px-3 py-2 font-normal text-steel-900" type="number" min="0" max="100" step="0.1" value="15" inputmode="decimal" />
+          </label>
+        </div>
+        <div class="mt-6 rounded-lg border border-steel-200 bg-white p-4" aria-live="polite">
+          <p class="text-sm text-steel-500">Water to add</p>
+          <p class="mt-1 font-display text-3xl font-bold text-steel-900"><span id="temp-water">—</span> <span class="text-base font-normal">kg / litres approx.</span></p>
+          <p class="mt-2 text-xs text-steel-500" id="temp-note">Uses a moisture mass balance; confirm with a laboratory moisture test.</p>
+        </div>
+        <p class="mt-4 text-xs leading-relaxed text-steel-500">
+          Formula: final mass = initial mass × (100 − initial moisture) ÷ (100 − target moisture);
+          water added = final mass − initial mass. Example: 1,000 kg at 12% to 15% needs about
+          35.3 kg of water.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-x max-w-4xl">
+      <h2 class="font-display text-3xl font-bold uppercase tracking-tight text-steel-900">Formula reference</h2>
+      <div class="prose-hy mt-6">
+        <table>
+          <thead>
+            <tr><th>Calculation</th><th>Formula</th><th>Watch the units</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Wheat input from flour output</td><td>wheat = flour ÷ extraction rate</td><td>Both quantities in the same unit; extraction as a decimal or percentage.</td></tr>
+            <tr><td>Extraction rate</td><td>flour ÷ wheat × 100</td><td>Use the same moisture basis for both weights.</td></tr>
+            <tr><td>Specific energy</td><td>kWh = wheat tonnes × kWh per tonne</td><td>Installed motor kW is not specific energy.</td></tr>
+            <tr><td>Silo tonnes</td><td>π × radius² × usable height × fill × density</td><td>Use usable height, not total shell height; density in kg/m³.</td></tr>
+            <tr><td>Bag count</td><td>ceiling(flour kg ÷ bag kg)</td><td>Round up; a partial bag is still a bag.</td></tr>
+            <tr><td>Tempering water</td><td>initial mass × (100 − M₁) ÷ (100 − M₂) − initial mass</td><td>Moistures as percentages; result is approximately litres.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 class="mt-12 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">Assumptions and limits</h2>
+      <ul class="mt-4 space-y-3 text-[15px] leading-relaxed text-steel-700">
+        <li><strong>Capacity is not a guarantee.</strong> Output depends on wheat, moisture, extraction, roll condition, power quality and operating hours.</li>
+        <li><strong>Extraction is a calculation, not a quality result.</strong> It does not measure ash, protein, falling number or flour colour.</li>
+        <li><strong>Power is an estimate.</strong> Specific energy varies with flow sheet, capacity utilisation, wheat hardness and equipment condition.</li>
+        <li><strong>Silo volume is geometric.</strong> Structural usable height, aeration, discharge and safety requirements may reduce the usable capacity.</li>
+        <li><strong>Tempering water is approximate.</strong> Wheat moisture must be measured; water absorption and evaporation vary.</li>
+        <li><strong>Currency and tariffs are not included.</strong> Energy cost is a simple price × kWh indication, not a full operating cost model.</li>
+      </ul>
+
+      <h2 class="mt-12 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">Related engineering guides</h2>
+      <div class="mt-5 grid gap-3 sm:grid-cols-2">
+        <a class="card p-4" href="/knowledge/how-to-size-a-flour-mill/"><strong>How to size a flour mill</strong><span class="mt-1 block text-sm text-steel-600">Five-stage sizing method with worked examples.</span></a>
+        <a class="card p-4" href="/knowledge/flour-extraction-rate-explained/"><strong>Flour extraction rate explained</strong><span class="mt-1 block text-sm text-steel-600">What extraction does and does not tell you.</span></a>
+        <a class="card p-4" href="/knowledge/flour-mill-project-economics/"><strong>Flour mill project economics</strong><span class="mt-1 block text-sm text-steel-600">Capital, operating cost and payback logic.</span></a>
+        <a class="card p-4" href="/knowledge/wheat-procurement-and-storage/"><strong>Wheat procurement and storage</strong><span class="mt-1 block text-sm text-steel-600">Intake, silo sizing, aeration and blending.</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-steel-50">
+    <div class="container-x max-w-4xl">
+      <h2 class="font-display text-3xl font-bold uppercase tracking-tight text-steel-900">Frequently asked questions</h2>
+      <dl class="mt-6 divide-y divide-steel-200">
+        {faq.map((f) => (
+          <div class="py-5 first:pt-0">
+            <dt class="text-base font-bold text-steel-900">{f.q}</dt>
+            <dd class="mt-2 text-[15px] leading-relaxed text-steel-700">{f.a}</dd>
+          </div>
+        ))}
+      </dl>
+      <p class="mt-8 text-sm leading-relaxed text-steel-600">
+        Need a project-specific calculation? Send the wheat specification, target flour output,
+        extraction target and available power through the <a class="font-semibold text-ember-700" href="/contact/">contact form</a>.
+      </p>
+    </div>
+  </section>
+
+  <script is:inline>
+    (() => {
+      const byId = (id) => document.getElementById(id);
+      const value = (id) => {
+        const el = byId(id);
+        if (!el) return NaN;
+        const raw = el.value.trim();
+        if (!raw) return NaN;
+        const n = Number(raw);
+        return Number.isFinite(n) ? n : NaN;
+      };
+      const show = (id, n, digits = 1) => {
+        const el = byId(id);
+        if (!el) return;
+        el.textContent = Number.isFinite(n)
+          ? n.toLocaleString(undefined, { maximumFractionDigits: digits })
+          : '—';
+      };
+
+      const capacity = () => {
+        const flour = value('cap-flour');
+        const extraction = value('cap-extraction');
+        const hours = value('cap-hours');
+        const wheat = extraction > 0 ? flour / (extraction / 100) : NaN;
+        show('cap-wheat', wheat, 1);
+        show('cap-wheat-hour', hours > 0 ? wheat / hours : NaN, 2);
+        show('cap-flour-hour', hours > 0 ? flour / hours : NaN, 2);
+      };
+
+      const extraction = () => {
+        const wheat = value('ext-wheat');
+        const flour = value('ext-flour');
+        const rate = wheat > 0 ? (flour / wheat) * 100 : NaN;
+        show('ext-result', rate, 1);
+        const note = byId('ext-note');
+        if (note) {
+          note.textContent = Number.isFinite(rate)
+            ? `${flour.toLocaleString()} kg flour from ${wheat.toLocaleString()} kg wheat.`
+            : 'Enter wheat and flour weights to compare.';
+        }
+      };
+
+      const power = () => {
+        const capacityT = value('pwr-capacity');
+        const specific = value('pwr-specific');
+        const price = value('pwr-price');
+        const daily = capacityT * specific;
+        show('pwr-day', daily, 0);
+        show('pwr-month', daily * 30, 0);
+        show('pwr-cost', Number.isFinite(price) ? daily * price : NaN, 2);
+      };
+
+      const silo = () => {
+        const diameter = value('silo-diameter');
+        const height = value('silo-height');
+        const density = value('silo-density');
+        const fill = value('silo-fill');
+        const volume = Math.PI * Math.pow(diameter / 2, 2) * height * (fill / 100);
+        show('silo-volume', volume, 0);
+        show('silo-tonnes', volume * density / 1000, 0);
+      };
+
+      const bags = () => {
+        const flour = value('bag-flour');
+        const size = value('bag-size');
+        const count = size > 0 ? Math.ceil(flour / size) : NaN;
+        show('bag-count', count, 0);
+        const note = byId('bag-note');
+        if (note) {
+          note.textContent = Number.isFinite(count)
+            ? `${count.toLocaleString()} bags at ${size.toLocaleString()} kg each.`
+            : 'Enter flour quantity and bag size.';
+        }
+      };
+
+      const tempering = () => {
+        const mass = value('temp-wheat');
+        const initial = value('temp-initial');
+        const target = value('temp-target');
+        const finalMass = target < 100 ? mass * (100 - initial) / (100 - target) : NaN;
+        const water = finalMass - mass;
+        show('temp-water', water, 1);
+        const note = byId('temp-note');
+        if (note) {
+          note.textContent = Number.isFinite(water)
+            ? `Final wheat mass approximately ${finalMass.toLocaleString()} kg.`
+            : 'Target moisture must be below 100%.';
+        }
+      };
+
+      const pairs = [
+        ['cap-flour', capacity], ['cap-extraction', capacity], ['cap-hours', capacity],
+        ['ext-wheat', extraction], ['ext-flour', extraction],
+        ['pwr-capacity', power], ['pwr-specific', power], ['pwr-price', power],
+        ['silo-diameter', silo], ['silo-height', silo], ['silo-density', silo], ['silo-fill', silo],
+        ['bag-flour', bags], ['bag-size', bags],
+        ['temp-wheat', tempering], ['temp-initial', tempering], ['temp-target', tempering],
+      ];
+      pairs.forEach(([id, fn]) => {
+        const el = byId(id);
+        if (el) el.addEventListener('input', fn);
+      });
+      [capacity, extraction, power, silo, bags, tempering].forEach((fn) => fn());
+    })();
+  </script>
+</PageLayout>
