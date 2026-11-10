@@ -1,7 +1,7 @@
 ---
 title: "Understanding Flour Extraction: Definitions, Measurement and Benchmarks"
 seoTitle: "Flour Extraction: Definitions, Measurement and Benchmarks"
-description: "A technical note on flour extraction: how it is measured, why mill extraction differs from commercial extraction, and benchmark figures. And the margins."
+description: "A technical note on flour extraction: how it is measured, why mill extraction differs from commercial extraction, and benchmark figures, plus the margins."
 type: cluster
 pillar: flour-milling-flow-sheet-design
 updated: 2026-11-07

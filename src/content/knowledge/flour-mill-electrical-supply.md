@@ -1,7 +1,7 @@
 ---
 title: "Power Supply for a Flour Mill: Transformer Sizing and Voltage Sag"
 seoTitle: "Power Supply for a Flour Mill: Transformer Sizing"
-description: "How to size a flour mill transformer, why voltage sag matters, what a generator costs to run and the power-quality problems to design out. And the sizing."
+description: "How to size a flour mill transformer, why voltage sag matters, what a generator costs to run and the power-quality problems to design out, plus the sizing."
 type: cluster
 pillar: how-to-size-a-flour-mill
 updated: 2026-11-08

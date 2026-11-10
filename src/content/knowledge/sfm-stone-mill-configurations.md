@@ -1,7 +1,7 @@
 ---
 title: "SFM Stone Mill Configurations: 100, 1+2 and 3+4 Compared"
 seoTitle: "SFM Stone Mill Configurations: 100, 1+2 and 3+4"
-description: "A technical comparison of the three stone mill configurations: capacity, power, footprint, extraction and roller-to-stone trade-offs. With three setups."
+description: "A technical comparison of the three stone mill configurations: capacity, power, footprint, extraction and roller-to-stone trade-offs, in three setups."
 type: cluster
 pillar: stone-milling-technology
 updated: 2026-11-07

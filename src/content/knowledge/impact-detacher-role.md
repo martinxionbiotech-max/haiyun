@@ -1,7 +1,7 @@
 ---
 title: "Impact Detachers: The 3 kW Machine That Adds 10% Sifting Capacity"
 seoTitle: "Impact Detachers: 3 kW That Adds 10% Sifting Capacity"
-description: "Why smooth reduction rolls produce flakes that blind sifters, how an impact detacher fixes it, where to place one and how to size it. And placement rules."
+description: "Why smooth reduction rolls produce flakes that blind sifters, how an impact detacher fixes it, where to place one and how to size it, plus placement rules."
 type: cluster
 pillar: flour-milling-flow-sheet-design
 updated: 2026-11-07
