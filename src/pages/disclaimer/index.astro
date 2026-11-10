@@ -1,0 +1,100 @@
+---
+import LegalPage from '../../components/LegalPage.astro';
+import { site } from '../../data/site.js';
+---
+
+<LegalPage
+  title="Disclaimer"
+  description="Important limits on the technical, capacity, performance and project information published on the Haiyun Grain Machine website."
+  lede="This page explains what the technical content on this site can and cannot be used for. It is a website disclaimer, not a substitute for a signed contract or site-specific engineering review."
+>
+  <h2>1. General information</h2>
+  <p>
+    The content on {site.url} is published for general business and technical evaluation. It
+    describes standard equipment, typical configurations and general milling practice. It is not
+    a substitute for a site survey, a wheat analysis, a structural assessment, an electrical design
+    or a qualified engineer's review of your project.
+  </p>
+
+  <h2>2. No professional advice</h2>
+  <p>
+    Nothing on this site constitutes engineering, legal, tax, safety, environmental or financial
+    advice. You should obtain advice from qualified professionals in your jurisdiction before
+    committing capital, ordering equipment, constructing a building or changing a process.
+  </p>
+
+  <h2>3. Capacity and performance</h2>
+  <p>
+    Capacity figures are nominal and depend on the basis stated for the table or model. Actual
+    output varies with wheat variety, moisture, bulk density, extraction rate, product mix, roll
+    condition, ambient conditions, operating hours, power quality and operator skill. A capacity
+    shown as t/d may refer to wheat intake or finished flour; the quotation and flow sheet state
+    the contractual basis.
+  </p>
+  <p>
+    Power, ash, extraction, staffing and consumption figures are indicative. They are not a
+    guarantee of performance at your site. Performance tests, acceptance criteria and remedies are
+    defined in the signed contract, not on this website.
+  </p>
+
+  <h2>4. Technical information may change</h2>
+  <p>
+    We review and update content, but equipment, standards and recommended practice change. A page
+    may not reflect the latest model, option, regulation or safety requirement. The date on an
+    article is not a guarantee that every statement remains current. Confirm the current
+    specification with our technical team before ordering.
+  </p>
+
+  <h2>5. No offer or contract</h2>
+  <p>
+    Product descriptions, photographs, dimensions, prices, lead times and project examples are
+    invitations to enquire. They are not an offer capable of acceptance and do not create a
+    contract. A binding obligation arises only from a written quotation or contract signed by
+    authorised representatives of both parties.
+  </p>
+
+  <h2>6. Project examples</h2>
+  <p>
+    Reference projects describe configurations and results achieved in specific conditions. They
+    are not a promise that a similar plant will achieve the same output, extraction, energy use or
+    payback at another site. Wheat, climate, building, power, labour and management differ.
+  </p>
+
+  <h2>7. Third-party information and links</h2>
+  <p>
+    We may refer to standards, regulations, suppliers or external websites. We do not control those
+    sources and are not responsible for their accuracy, availability or security. A link is not an
+    endorsement of every statement on the destination page.
+  </p>
+
+  <h2>8. Safety and compliance</h2>
+  <p>
+    Milling equipment involves rotating machinery, dust, heat, electrical systems and confined
+    spaces. Installation and operation must follow the approved drawings, local electrical and
+    safety rules, lockout/tagout procedures and the operator manual. This website does not replace
+    those documents or the training provided at commissioning.
+  </p>
+
+  <h2>9. Export and end-use</h2>
+  <p>
+    Export, re-export and end-use may be subject to sanctions, export-control and customs rules.
+    Customers are responsible for providing accurate end-use, end-user and destination information.
+    See the <a href="/export-compliance/">Export Compliance</a> page.
+  </p>
+
+  <h2>10. Limitation of liability</h2>
+  <p>
+    To the extent permitted by law, we exclude liability for indirect, incidental or consequential
+    loss arising from reliance on this website. Nothing in this disclaimer limits liability for
+    death or personal injury caused by negligence, fraud, or any liability that cannot lawfully be
+    excluded. Mandatory rights under applicable law are not affected.
+  </p>
+
+  <h2>11. Contact</h2>
+  <p>
+    To confirm a specification or discuss a project, contact {site.legalName} at
+    <a href={`mailto:${site.email}`}>{site.email}</a> or {site.phone}.
+    See also the <a href="/terms/">Terms of Use</a> and
+    <a href="/editorial-policy/">Editorial Policy</a>.
+  </p>
+</LegalPage>

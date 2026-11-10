@@ -1,0 +1,82 @@
+---
+import LegalPage from '../../components/LegalPage.astro';
+import { site } from '../../data/site.js';
+---
+
+<LegalPage
+  title="Cookie Policy"
+  description="How this website uses cookies, local storage and third-party requests, including Google Fonts, and how you can control them."
+  lede="This policy explains the cookies and similar technologies used on flourmillingpro.com. The short version: no advertising cookies, no analytics cookies, no data selling."
+>
+  <h2>1. What cookies are</h2>
+  <p>
+    Cookies are small text files placed on your device when you visit a website. They can remember
+    preferences, keep a session open, measure traffic or support advertising. Similar technologies
+    include local storage, pixels and third-party requests that load resources such as fonts.
+  </p>
+
+  <h2>2. What this site uses</h2>
+  <table>
+    <thead>
+      <tr><th>Category</th><th>Used?</th><th>Purpose</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Strictly necessary</td><td>Yes, where required by hosting</td><td>Serve pages, apply security controls and route requests through the CDN.</td></tr>
+      <tr><td>Preferences</td><td>No</td><td>We do not set a cookie to remember language or display settings.</td></tr>
+      <tr><td>Analytics</td><td>No</td><td>We do not run Google Analytics or another traffic-measurement cookie.</td></tr>
+      <tr><td>Advertising / retargeting</td><td>No</td><td>No advertising networks, pixels or retargeting tags.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>3. Hosting and security</h2>
+  <p>
+    The site is served through Cloudflare. Cloudflare may process technical request data — IP
+    address, requested URL, user agent, timestamp and security signals — to deliver the site and
+    protect it from abuse. Its own privacy terms apply to that processing. We do not use Cloudflare
+    analytics or advertising products on this site.
+  </p>
+
+  <h2>4. Google Fonts</h2>
+  <p>
+    Pages load the typefaces Inter and Barlow Condensed from Google Fonts. When your browser
+    requests those files, Google receives your IP address, browser information and the page that
+    requested the font. This is a third-party request, not a cookie set by us. Google's privacy
+    policy applies: <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a>.
+  </p>
+  <p>
+    If you prefer to avoid this request, you can block third-party fonts in your browser or use a
+    content blocker. The site remains readable with system fonts.
+  </p>
+
+  <h2>5. Consent</h2>
+  <p>
+    Because we do not currently set analytics, advertising or preference cookies, no consent banner
+    is displayed. If we introduce a non-essential cookie or tracking technology, we will update this
+    policy and, where required, ask for consent before it is set.
+  </p>
+
+  <h2>6. Your browser controls</h2>
+  <p>
+    You can block, delete or restrict cookies in your browser settings. The controls differ by
+    browser; look for “Privacy”, “Cookies and site data” or “Content settings”. Blocking all cookies
+    may affect some websites, but should not prevent you from reading this site.
+  </p>
+  <p>
+    You can also use private browsing, a content blocker or a DNS-level filter. We do not respond to
+    “Do Not Track” signals differently because we do not run cross-site tracking.
+  </p>
+
+  <h2>7. Changes</h2>
+  <p>
+    We review this policy when the site, hosting or third-party services change. The revised version
+    will be posted here with a new date. Material changes will be communicated where required by
+    law.
+  </p>
+
+  <h2>8. Contact</h2>
+  <p>
+    Questions about cookies or privacy: <a href={`mailto:${site.email}`}>{site.email}</a>.
+    See also our <a href="/privacy/">Privacy Policy</a> and
+    <a href="/terms/">Terms of Use</a>.
+  </p>
+</LegalPage>

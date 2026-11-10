@@ -1,0 +1,87 @@
+---
+import LegalPage from '../../components/LegalPage.astro';
+import { site } from '../../data/site.js';
+---
+
+<LegalPage
+  title="Export Compliance"
+  description="Export-control, sanctions and end-use expectations for enquiries and shipments of Haiyun grain-milling equipment."
+  lede="International equipment projects are subject to export-control, customs and sanctions rules. This page explains the information we need and the responsibilities that remain with the buyer."
+>
+  <h2>1. Scope</h2>
+  <p>
+    This page applies to enquiries, quotations, contracts, shipments and technical data relating to
+    equipment supplied by {site.legalName}. It is a summary of our expectations, not a substitute
+    for legal advice or the export-control rules of any particular country.
+  </p>
+
+  <h2>2. Destination and end-use review</h2>
+  <p>
+    Before quoting or shipping, we may ask for the destination country, final installation site,
+    intended use, end user and, where relevant, the end-use certificate or import permit. We may
+    decline an enquiry or shipment where the information is incomplete, inconsistent or indicates a
+    prohibited destination, end use or end user.
+  </p>
+
+  <h2>3. Sanctions and restricted parties</h2>
+  <p>
+    We maintain controls intended to avoid dealings with persons or entities subject to applicable
+    sanctions or export restrictions. Customers and intermediaries are expected to confirm that
+    they, their owners, agents and ultimate consignees are not restricted parties. We may screen
+    names and destinations using available sources and may request additional ownership or
+    end-user information.
+  </p>
+  <p>
+    A confirmed match or a material risk may result in a declined order, a hold, a request for
+    further information or a decision not to proceed. We will explain the reason where lawful and
+    practical.
+  </p>
+
+  <h2>4. Dual-use and controlled technology</h2>
+  <p>
+    Some grain-milling equipment, spare parts, software or technical documents may be subject to
+    export-control classification in one or more jurisdictions. The classification can depend on
+    the model, capacity, automation, materials, destination and end use. Do not assume that a
+    product page is an export classification.
+  </p>
+
+  <h2>5. Customer responsibilities</h2>
+  <p>By submitting an enquiry or order, the customer confirms that:</p>
+  <ul>
+    <li>the destination and end-use information provided is accurate and complete;</li>
+    <li>the equipment will not be used for a prohibited weapons, military or proliferation purpose;</li>
+    <li>the equipment will not be diverted to a restricted destination or end user;</li>
+    <li>required import permits, licences and customs documents will be obtained;</li>
+    <li>the customer will cooperate with reasonable end-use or post-shipment verification requests.</li>
+  </ul>
+
+  <h2>6. Documentation</h2>
+  <p>
+    Shipping and customs documents may include commercial invoice, packing list, bill of lading,
+    certificate of origin, fumigation or wood-packaging declarations, insurance documents and, where
+    applicable, end-use statements. Document requirements vary by destination; the contract or
+    freight instructions define the set for each project.
+  </p>
+
+  <h2>7. Re-export and transfer</h2>
+  <p>
+    Re-export, transfer, repair, servicing or transfer of technical data may be subject to separate
+    rules. Customers should obtain their own advice before re-exporting equipment or sharing
+    controlled technical data with a third party.
+  </p>
+
+  <h2>8. No legal advice</h2>
+  <p>
+    This page describes our internal expectations and does not provide legal advice or a
+    determination that a transaction is permitted. Export-control and sanctions rules are complex
+    and change. Obtain advice from qualified counsel or your national export authority for your
+    specific transaction.
+  </p>
+
+  <h2>9. Contact</h2>
+  <p>
+    Export-compliance questions: <a href={`mailto:${site.email}`}>{site.email}</a>.
+    Include the destination, end user, intended use and model or project reference so we can route
+    the enquiry correctly. Postal address: {site.address.full}.
+  </p>
+</LegalPage>

@@ -1,0 +1,104 @@
+---
+import LegalPage from '../../components/LegalPage.astro';
+import { site } from '../../data/site.js';
+---
+
+<LegalPage
+  title="Editorial Policy"
+  description="How Haiyun Grain Machine writes, reviews, sources, updates and corrects its engineering and procurement content."
+  lede="This policy explains who writes our technical content, how it is checked, how sources are used, and how readers can report an error."
+>
+  <h2>1. Purpose</h2>
+  <p>
+    The Knowledge Centre and product pages exist to help professional buyers understand grain
+    milling equipment, project scope, specifications and procurement risk. Content is written for
+    engineers, mill owners, project developers and technical buyers — not for the general consumer
+    market and not as operating instructions for unqualified personnel.
+  </p>
+
+  <h2>2. Authorship</h2>
+  <p>
+    Articles and product descriptions are prepared by the {site.name} technical content team, with
+    input from sales engineers, process engineers and quality staff. Pages may carry a byline such
+    as “Technical Content Team” or a named role. We do not publish invented author names,
+    qualifications or reviewer credentials. Where a page names an individual, the page states that
+    person's role and the scope of their review.
+  </p>
+
+  <h2>3. Technical review</h2>
+  <p>
+    Content that makes a technical claim is reviewed against at least one of the following:
+  </p>
+  <ul>
+    <li>manufacturer drawings, specifications, test records or approved catalogues;</li>
+    <li>published standards, reference books or peer-reviewed literature;</li>
+    <li>project records from commissioned installations, with customer details removed;</li>
+    <li>measurements or observations made by our engineering team.</li>
+  </ul>
+  <p>
+    Review is proportional to risk. A general explainer may receive a desk review; a page that
+    states a capacity, extraction rate or electrical requirement is checked against the current
+    technical data before publication.
+  </p>
+
+  <h2>4. Sources and attribution</h2>
+  <p>
+    Where a page relies on an external standard, regulation, book or article, we identify the source
+    in the text or in a reference list. We prefer primary sources: standards bodies, equipment
+    manufacturers, government guidance and peer-reviewed publications. We do not cite a source to
+    imply an endorsement that does not exist.
+  </p>
+  <p>
+    Technical figures are described with their assumptions where possible — for example wheat
+    moisture, extraction rate, operating hours or voltage. A number without a basis is treated as
+    incomplete, not as a specification.
+  </p>
+
+  <h2>5. Use of software and AI</h2>
+  <p>
+    We may use software, translation tools and AI-assisted drafting to prepare or localise content.
+    Such tools are aids, not authorities. Technical claims, names, figures, links and compliance
+    statements are checked by a human before publication. We do not publish AI-generated citations,
+    reviewer names, certificates or test results that cannot be verified.
+  </p>
+
+  <h2>6. Accuracy and updates</h2>
+  <p>
+    Equipment, standards and recommended practice change. We review high-traffic technical pages
+    periodically and update them when a specification, regulation or project lesson changes. The
+    “Last updated” date records the last substantive review, not a cosmetic edit. Older pages may
+    remain online for reference; check the date and confirm current data with our team before
+    ordering.
+  </p>
+
+  <h2>7. Corrections</h2>
+  <p>
+    If you find an error, a broken link, an unclear statement or a figure that does not match the
+    current specification, email <a href={`mailto:${site.email}`}>{site.email}</a> with the page URL
+    and the issue. We aim to acknowledge substantive reports within five working days and correct
+    confirmed errors promptly. Where a correction changes a specification, we update the page and
+    the date rather than silently deleting the old text.
+  </p>
+
+  <h2>8. Independence and commercial content</h2>
+  <p>
+    Product pages describe equipment we manufacture or supply. They are commercial content and are
+    labelled as such by their context. We do not publish paid third-party reviews, sponsored
+    rankings or affiliate recommendations. Reference projects are described as examples, not as
+    universal proof of performance.
+  </p>
+
+  <h2>9. Comments and user content</h2>
+  <p>
+    The site does not currently host public comments or user-generated profiles. If we add them,
+    this policy will be updated with moderation, privacy and correction rules before launch.
+  </p>
+
+  <h2>10. Contact</h2>
+  <p>
+    Editorial questions and corrections: <a href={`mailto:${site.email}`}>{site.email}</a>.
+    Postal address: {site.address.full}. See also our
+    <a href="/about/methodology/">methodology page</a> and
+    <a href="/disclaimer/">Disclaimer</a>.
+  </p>
+</LegalPage>

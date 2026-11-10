@@ -1,0 +1,83 @@
+---
+import LegalPage from '../../components/LegalPage.astro';
+import { site } from '../../data/site.js';
+---
+
+<LegalPage
+  title="Accessibility Statement"
+  description="Our accessibility commitment for flourmillingpro.com, the measures we take, known limitations and how to report a barrier."
+  lede="We want this website to be usable by engineers and buyers with different devices, abilities and connection speeds. This statement describes where we are and how to tell us when something does not work."
+>
+  <h2>1. Our commitment</h2>
+  <p>
+    {site.legalName} is working toward the Web Content Accessibility Guidelines (WCAG) 2.2 Level AA
+    for this website. We treat accessibility as an ongoing quality requirement, not a one-time
+    certificate. We prioritise barriers that prevent someone from reading technical information,
+    requesting a quotation or contacting our team.
+  </p>
+
+  <h2>2. Measures we take</h2>
+  <ul>
+    <li>Semantic HTML headings, landmarks and lists to support screen readers and keyboard navigation.</li>
+    <li>Text alternatives for informative images; decorative graphics are marked as decorative where possible.</li>
+    <li>Responsive layouts that reflow on small screens and remain usable at increased text size.</li>
+    <li>Visible focus styles and keyboard-operable links, buttons and form fields.</li>
+    <li>Colour combinations chosen for readable contrast; colour is not the only way to convey meaning.</li>
+    <li>Language attributes on multilingual pages, including right-to-left direction for Arabic.</li>
+    <li>Forms with visible labels and instructions; we avoid relying on placeholder text alone.</li>
+    <li>Reduced reliance on animation for understanding content.</li>
+  </ul>
+
+  <h2>3. Known limitations</h2>
+  <p>
+    We have not completed a formal third-party audit of every page. Known or possible limitations
+    include:
+  </p>
+  <ul>
+    <li>older PDFs, drawings or catalogue files that may not be tagged for screen readers;</li>
+    <li>third-party embedded content or linked sites outside our control;</li>
+    <li>complex specification tables that may require horizontal scrolling on very small screens;</li>
+    <li>machine-translated pages where terminology or reading order may be imperfect;</li>
+    <li>legacy pages that have not yet received the same accessibility review as newer pages.</li>
+  </ul>
+  <p>
+    We fix barriers as they are reported and as pages are revised. If a document is essential to
+    your evaluation, contact us and we will try to provide the information in another format.
+  </p>
+
+  <h2>4. Feedback and assistance</h2>
+  <p>
+    If you encounter a barrier, email <a href={`mailto:${site.email}`}>{site.email}</a> with:
+  </p>
+  <ul>
+    <li>the page URL or document name;</li>
+    <li>what you were trying to do;</li>
+    <li>the device, browser and assistive technology you used, if relevant;</li>
+    <li>the format that would work better for you.</li>
+  </ul>
+  <p>
+    We aim to acknowledge accessibility reports within five working days and to provide a
+    substantive response or alternative format within a reasonable period. Complex document
+    remediation may take longer; we will explain the timeline.
+  </p>
+
+  <h2>5. Enforcement and complaints</h2>
+  <p>
+    If you are not satisfied with our response, you may escalate the matter to the contact address
+    below. Where local law provides a formal accessibility complaint route, that route remains
+    available. This statement does not limit rights under applicable disability or accessibility
+    law.
+  </p>
+
+  <h2>6. Preparation of this statement</h2>
+  <p>
+    This statement was prepared by the website team using a combination of manual review, automated
+    checks and user reports. It is reviewed when the site receives a significant redesign or when a
+    material accessibility issue is identified.
+  </p>
+  <p>
+    Last updated: 10 November 2026.<br />
+    Contact: {site.legalName}, {site.address.full}.
+    Email: <a href={`mailto:${site.email}`}>{site.email}</a>.
+  </p>
+</LegalPage>

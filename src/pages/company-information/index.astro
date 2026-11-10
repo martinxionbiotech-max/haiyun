@@ -1,0 +1,96 @@
+---
+import LegalPage from '../../components/LegalPage.astro';
+import { site } from '../../data/site.js';
+---
+
+<LegalPage
+  title="Company Information"
+  description="Legal identity, registered address, website operator, contact details and certification information for Shandong Sishui Haiyun Grain Machine Co., Ltd."
+  lede="This page identifies the company behind flourmillingpro.com and the information buyers usually request during supplier qualification."
+>
+  <h2>1. Legal identity</h2>
+  <table>
+    <tbody>
+      <tr><th>Legal name</th><td>{site.legalName}</td></tr>
+      <tr><th>Brand</th><td>Haiyun Milling / HAIYUN</td></tr>
+      <tr><th>Legal form</th><td>Limited liability company registered in the People's Republic of China</td></tr>
+      <tr><th>Established</th><td>2010; manufacturing heritage from the former Shandong Flour Machinery Factory (production from 1963)</td></tr>
+      <tr><th>Registered / operating address</th><td>{site.address.full}</td></tr>
+      <tr><th>Business</th><td>Design, manufacture, supply and commissioning of wheat flour milling plants and grain-processing equipment</td></tr>
+    </tbody>
+  </table>
+
+  <h2>2. Website operator and responsibility for content</h2>
+  <p>
+    This website is operated by {site.legalName}. The company is responsible for the editorial and
+    commercial content published on flourmillingpro.com. The website is a business-to-business
+    information and enquiry channel; it is not a marketplace and does not accept payment-card
+    transactions.
+  </p>
+  <p>
+    Editorial responsibility: {site.name} technical content team. Contact:
+    <a href={`mailto:${site.email}`}>{site.email}</a>.
+  </p>
+
+  <h2>3. Contact</h2>
+  <table>
+    <tbody>
+      <tr><th>Telephone / WeChat</th><td>{site.phone}</td></tr>
+      <tr><th>WhatsApp</th><td>{site.phone}</td></tr>
+      <tr><th>Commercial enquiries</th><td><a href={`mailto:${site.email}`}>{site.email}</a></td></tr>
+      <tr><th>Sales and export</th><td><a href="mailto:laura@flourmillingpro.com">laura@flourmillingpro.com</a></td></tr>
+      <tr><th>Administration / after-sales</th><td><a href="mailto:admin@flourmillingpro.com">admin@flourmillingpro.com</a></td></tr>
+      <tr><th>Business hours</th><td>{site.hours}</td></tr>
+    </tbody>
+  </table>
+
+  <h2>4. Registration and qualification documents</h2>
+  <p>
+    The company's business licence, Unified Social Credit Code, import/export registration and
+    certificate scopes are available to qualified buyers, freight forwarders, inspection agencies
+    and regulators on request. We do not publish full registration numbers on the public website
+    because they are used in commercial due-diligence and fraud checks; we will provide the relevant
+    documents through a verified business channel.
+  </p>
+  <p>
+    Certification references on this site include ISO 9001:2015, CE for selected models, an import
+    and export licence, and National High-Tech Enterprise recognition. A certificate reference is
+    not a statement that every product or project is covered; confirm the model-specific scope in
+    the quotation or supplier-qualification pack.
+  </p>
+
+  <h2>5. Facilities and capability</h2>
+  <p>
+    The site covers approximately {site.area}, including about {site.workshop} of covered workshop.
+    The company reports {site.employees} employees and more than {site.patents} patents. These
+    figures are company-reported and should be verified against current records during a supplier
+    audit.
+  </p>
+  <p>
+    Product systems include wheat cleaning, roller milling, sifting, purification, packing, dust
+    collection and complete plant engineering. Capacity ranges and model data are published for
+    evaluation; the signed technical agreement defines the supplied scope.
+  </p>
+
+  <h2>6. Payment and contracting</h2>
+  <p>
+    Equipment is supplied against a written quotation and contract. Payments are normally made by
+    bank transfer to the account named in the contract. We do not request payment-card details
+    through this website, and we do not ask buyers to send funds to a different account without a
+    verified contract amendment.
+  </p>
+  <p>
+    If you receive a payment instruction that looks inconsistent with your contract, stop and
+    verify it with the contact details on this page before paying.
+  </p>
+
+  <h2>7. Legal documents</h2>
+  <p>
+    See our <a href="/privacy/">Privacy Policy</a>,
+    <a href="/cookie-policy/">Cookie Policy</a>,
+    <a href="/terms/">Terms of Use</a>,
+    <a href="/disclaimer/">Disclaimer</a>,
+    <a href="/export-compliance/">Export Compliance</a> and
+    <a href="/compliance/">Compliance &amp; Ethics</a> pages.
+  </p>
+</LegalPage>

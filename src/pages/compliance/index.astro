@@ -1,0 +1,99 @@
+---
+import LegalPage from '../../components/LegalPage.astro';
+import { site } from '../../data/site.js';
+---
+
+<LegalPage
+  title="Compliance & Ethics"
+  description="Haiyun Grain Machine's expectations for anti-bribery, conflicts of interest, fair competition, labour, environment and responsible supply chains."
+  lede="This page summarises the standards we expect from our team, agents and suppliers. It is a statement of expectations, not a substitute for a signed code of conduct or local legal advice."
+>
+  <h2>1. Purpose</h2>
+  <p>
+    {site.legalName} operates in international equipment supply, where projects involve public and
+    private buyers, agents, freight providers, inspectors and subcontractors. This statement explains
+    the conduct we expect and the channels available to raise a concern.
+  </p>
+
+  <h2>2. Anti-bribery and corruption</h2>
+  <p>
+    We do not offer, promise, authorise or accept bribes, kickbacks or improper payments to obtain
+    or retain business. This applies to dealings with government officials, private buyers, agents,
+    consultants, inspectors and freight providers. Facilitation payments are not permitted.
+  </p>
+  <p>
+    Payments must be made to the contracting party or a verified payee against a legitimate invoice
+    and contract. Requests to route payments through unrelated accounts, shell companies or
+    intermediaries are treated as a red flag and may require enhanced review.
+  </p>
+
+  <h2>3. Gifts and hospitality</h2>
+  <p>
+    Modest, transparent business hospitality may be acceptable where it is lawful, reasonable and
+    does not create an obligation. Cash, cash equivalents, expensive gifts, travel for family
+    members and anything that could influence a decision are not acceptable. Gifts and hospitality
+    must be recorded where required by internal policy or local law.
+  </p>
+
+  <h2>4. Conflicts of interest</h2>
+  <p>
+    Staff, agents and advisers should avoid situations where a personal, financial or family interest
+    conflicts with the interests of the company or a customer. A potential conflict should be
+    disclosed before a decision is made, so that it can be reviewed or the person removed from the
+    decision.
+  </p>
+
+  <h2>5. Fair competition</h2>
+  <p>
+    We compete on specification, quality, service and price. We do not participate in price-fixing,
+    market allocation, bid-rigging or the improper exchange of competitively sensitive information
+    with competitors. Questions about a competitor's pricing or customer should be handled through
+    lawful market research, not through improper contacts.
+  </p>
+
+  <h2>6. Labour and human rights</h2>
+  <p>
+    We expect our operations and suppliers to respect applicable labour law, prohibit forced and
+    child labour, avoid discrimination, provide a safe working environment and respect freedom of
+    association where local law permits. Workers should be able to raise concerns without
+    retaliation.
+  </p>
+
+  <h2>7. Environment and product safety</h2>
+  <p>
+    We expect suppliers to manage dust, noise, waste, energy and hazardous materials responsibly and
+    to comply with applicable environmental and product-safety requirements. Equipment must be
+    supplied with the documentation needed for safe installation, operation and maintenance.
+  </p>
+
+  <h2>8. Responsible supply chain</h2>
+  <p>
+    We aim to work with suppliers who can identify their own critical subcontractors, maintain
+    records and respond to reasonable due-diligence questions. We may request information about
+    ownership, site location, quality controls, labour practices and environmental permits during
+    supplier qualification.
+  </p>
+
+  <h2>9. Raising a concern</h2>
+  <p>
+    Employees, agents, suppliers, customers and other stakeholders may report a suspected breach in
+    good faith. Reports may be sent to <a href={`mailto:${site.email}`}>{site.email}</a> with the
+    subject “Compliance concern”. Include enough detail to allow a review; you may ask for
+    confidentiality where local law permits.
+  </p>
+  <p>
+    We do not tolerate retaliation against a person who raises a concern honestly, even if the
+    concern later proves unfounded. Deliberately false or malicious reports are a separate matter.
+  </p>
+
+  <h2>10. Review</h2>
+  <p>
+    This statement is reviewed when our operations, markets or legal obligations change. It applies
+    alongside our <a href="/export-compliance/">Export Compliance</a>,
+    <a href="/terms/">Terms of Use</a> and <a href="/privacy/">Privacy Policy</a>.
+  </p>
+  <p>
+    Contact: {site.legalName}, {site.address.full}. Email:
+    <a href={`mailto:${site.email}`}>{site.email}</a>.
+  </p>
+</LegalPage>

@@ -1,0 +1,51 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import CTABand from './CTABand.astro';
+import { site } from '../data/site.js';
+
+interface Props {
+  title: string;
+  description: string;
+  updated?: string;
+  lede?: string;
+}
+
+const { title, description, updated = '10 November 2026', lede } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: title,
+  description,
+  url: canonical,
+  inLanguage: 'en',
+  dateModified: '2026-11-10',
+  isPartOf: { '@id': `${site.url}/#website` },
+  publisher: { '@id': `${site.url}/#organization` },
+};
+---
+
+<PageLayout title={`${title} | ${site.name}`} description={description} schema={[schema]}>
+  <section class="bg-steel-950">
+    <div class="container-x py-14">
+      <p class="eyebrow-light">Legal &amp; compliance</p>
+      <h1 class="mt-2 max-w-4xl font-display text-4xl font-bold uppercase tracking-tight text-white sm:text-5xl">{title}</h1>
+      <p class="mt-4 max-w-3xl text-lg leading-relaxed text-steel-300">{lede ?? description}</p>
+      <p class="mt-4 text-sm text-steel-400">Last updated: {updated}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-x max-w-3xl">
+      <div class="prose-hy">
+        <slot />
+      </div>
+      <p class="mt-10 border-t border-steel-200 pt-5 text-xs leading-relaxed text-steel-500">
+        This page is published by {site.legalName}, {site.address.full}. Questions about this
+        document: <a href={`mailto:${site.email}`}>{site.email}</a>. It is a website policy, not
+        legal advice; mandatory rights under applicable law are not excluded.
+      </p>
+    </div>
+  </section>
+  <CTABand />
+</PageLayout>
