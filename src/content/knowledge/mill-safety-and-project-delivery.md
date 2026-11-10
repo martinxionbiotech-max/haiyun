@@ -66,3 +66,10 @@ Five articles, in the sequence a project actually encounters them:
 - **Performance guarantee and acceptance** — how to write a test that can actually be failed.
 
 A closing observation. Safety spending in a flour mill is judged by an event that mostly does not happen, which makes it permanently vulnerable to budget cuts. The mills that cut it are indistinguishable from the mills that did not — until one of them is not. That asymmetry is the whole argument, and it is worth remembering when a quotation line item looks easy to delete.
+
+## Sources
+
+- [NFPA 61 — Standard for the Prevention of Fires and Dust Explosions in Agricultural and Food Processing Facilities](https://www.nfpa.org/codes-and-standards/nfpa-61-standard-development/61) — dust hazard control requirements.
+- [EU-OSHA — ATEX Directives 1999/92/EC and 2014/34/EU](https://osha.europa.eu/en/legislation/directives/19) — explosive-atmosphere classification and equipment requirements.
+
+Figures in this article are typical ranges from Haiyun project work unless a source is named; they are not measurements reproduced from these documents. How figures are produced: [methodology](/about/methodology/).

@@ -118,3 +118,11 @@ Hand-scooping from the top of a truck samples the driest, cleanest wheat in the 
 ## Specification references
 
 Wheat class definitions and typical analysis ranges are published by [US Wheat Associates](https://www.grains.org/buyingselling/wheat) and are the basis of most internationally traded contracts. Your domestic standard may differ; write the contract against the standard your buyer actually tests to.
+
+## Sources
+
+- [USDA Wheat Standards](https://www.ams.usda.gov/grades-standards/wheat-standards) — US wheat class names and grading factors.
+- [7 CFR Part 810 Subpart M — United States Standards for Wheat](https://www.ecfr.gov/current/title-7/subtitle-B/chapter-VIII/subchapter-A/part-810/subpart-M) — the legal text behind the class definitions.
+- [ISO 7970:2011 — Wheat (Triticum aestivum L.) specification](https://www.iso.org/standard/43302.html) — wheat specification parameters.
+
+Figures in this article are typical ranges from Haiyun project work unless a source is named; they are not measurements reproduced from these documents. How figures are produced: [methodology](/about/methodology/).

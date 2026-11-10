@@ -128,3 +128,10 @@ A blend that is calculated correctly but metered incorrectly is worse than no bl
 **Blending on paper only.** Purchase contracts specify protein at 14% moisture basis; the mill measures at whatever moisture the wheat actually is. Without correction, the blend is wrong by 0.1–0.3% routinely.
 
 **Never re-optimising.** Wheat prices move weekly. A blend ratio fixed at the start of the season is almost certainly not the cheapest blend by month three.
+
+## Sources
+
+- [7 CFR Part 810 Subpart M — United States Standards for Wheat](https://www.ecfr.gov/current/title-7/subtitle-B/chapter-VIII/subchapter-A/part-810/subpart-M) — the legal text behind the class definitions.
+- [USDA Wheat Standards](https://www.ams.usda.gov/grades-standards/wheat-standards) — US wheat class names and grading factors.
+
+Figures in this article are typical ranges from Haiyun project work unless a source is named; they are not measurements reproduced from these documents. How figures are produced: [methodology](/about/methodology/).

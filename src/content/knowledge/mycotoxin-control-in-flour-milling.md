@@ -89,3 +89,10 @@ The implication is uncomfortable and worth sitting with: **making whole wheat fl
 Buy a rapid test kit before you buy your first silo. It is the cheapest quality instrument in the plant and it protects the only thing you cannot recover — a batch of flour that has already shipped.
 
 And be sceptical of any supplier who describes mycotoxin as a cleaning problem. It is an intake problem. Everything after the weighbridge is damage control.
+
+## Sources
+
+- [EU Regulation 1881/2006 — maximum levels for contaminants in foodstuffs](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32006R1881) — mycotoxin limits referenced.
+- [Codex Standard for Wheat Flour (CXS 152-1985)](https://www.fao.org/input/download/standards/50/CXS_152e.pdf) — definitions and compositional reference for wheat flour.
+
+Figures in this article are typical ranges from Haiyun project work unless a source is named; they are not measurements reproduced from these documents. How figures are produced: [methodology](/about/methodology/).

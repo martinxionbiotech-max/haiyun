@@ -80,3 +80,9 @@ Build the prerequisite programmes first and properly: pest control with document
 The mills that fail audits are almost never the ones with weak hazard analysis. They are the ones with an elaborate plan and no records, or a [metal detector](/equipment/magnetic-separator/) nobody has challenged since installation.
 
 One more thing, and it is the part that annoys quality managers: the cheapest route to passing an audit is not documentation, it is a clean packing hall and a filled-in metal detector log. Auditors are experienced people looking at physical evidence. Paperwork that describes a plant nobody maintains is transparently paperwork.
+
+## Sources
+
+- [Codex General Principles of Food Hygiene (CXC 1-1969)](https://www.fao.org/fao-who-codexalimentarius/sh-proxy/en/?lnk=1&url=https%253A%252F%252Fworkspace.fao.org%252Fsites%252Fcodex%252FStandards%252FCXC%2B1-1969%252FCXC_001e.pdf) — HACCP principles and hygiene practice.
+
+Figures in this article are typical ranges from Haiyun project work unless a source is named; they are not measurements reproduced from these documents. How figures are produced: [methodology](/about/methodology/).

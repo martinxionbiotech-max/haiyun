@@ -155,3 +155,9 @@ It is the wrong choice when:
 The hybrid configurations exist precisely to soften this trade. SFM-1+2 lets a commercial miller enter the premium market without abandoning yield. That is usually the right answer.
 
 If you are building this kind of business rather than a general mill, the [premium stone-flour business](/solutions/#premium-stone-flour) page sets out the capacity, flow sheet and staffing that model assumes.
+
+## Sources
+
+- [Bakerpedia — Extraction Rate](https://bakerpedia.com/processes/extraction-rate/) — the definition of extraction rate used here.
+
+Figures in this article are typical ranges from Haiyun project work unless a source is named; they are not measurements reproduced from these documents. How figures are produced: [methodology](/about/methodology/).

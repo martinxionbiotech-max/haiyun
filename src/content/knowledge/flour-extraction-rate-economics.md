@@ -104,3 +104,9 @@ The optimum is different for every market. In a market that pays a premium for l
 **2. Re-flute on schedule.** Mills that wait for symptoms typically run 2–3 points below design extraction for months before anyone notices.
 
 **3. Check the purifier air balance.** A purifier running out of balance silently loses 2–4 points of extraction. Re-balance costs a few hours of technician time.
+
+## Sources
+
+- [Bakerpedia — Extraction Rate](https://bakerpedia.com/processes/extraction-rate/) — the definition of extraction rate used here.
+
+Figures in this article are typical ranges from Haiyun project work unless a source is named; they are not measurements reproduced from these documents. How figures are produced: [methodology](/about/methodology/).

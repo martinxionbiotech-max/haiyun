@@ -146,3 +146,9 @@ Moving wheat between silos breaks up temperature stratification and kills insect
 | No turning | Relies entirely on aeration and fumigation |
 
 Turning causes 0.1–0.3% breakage per pass. That is real money at scale, so turn deliberately, not routinely.
+
+## Sources
+
+- [FAO — Prevention of Post-Harvest Food Losses: Central Storage](https://www.fao.org/4/x0039e/X0039E05.htm) — grain storage and pest control in bulk.
+
+Figures in this article are typical ranges from Haiyun project work unless a source is named; they are not measurements reproduced from these documents. How figures are produced: [methodology](/about/methodology/).

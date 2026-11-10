@@ -39,6 +39,8 @@ Specific consumption — kWh per tonne — is the number to compare, and it depe
 | 300 t/d | 920 kW | 65–71 |
 | 500 t/d | 1,650 kW | 65–70 |
 
+The table describes tower-type plants with pneumatic lift. A floor-mounted 6FTDP plant of 60 t/d draws 150 kW connected — the same tonnage on a longer, lower frame rather than in a tower.
+
 Larger plants are more efficient per tonne because:
 
 - Pneumatic systems move more product per unit of air

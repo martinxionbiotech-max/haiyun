@@ -92,3 +92,10 @@ The first three are cheap or free and are the reason well-maintained older mills
 If you want to know what a supplier's quoted extraction actually means, ask three questions: on what wheat, by which definition, and measured over what period. A laboratory figure on hard wheat and a commercial figure on a blend are not comparable, and the gap between them can be six points.
 
 [UK Flour Millers](https://www.ukflourmillers.org/) publishes the industry's own description of the milling process and the terms used in it, which is useful when a supplier uses a term differently from the way you do.
+
+## Sources
+
+- [Bakerpedia — Extraction Rate](https://bakerpedia.com/processes/extraction-rate/) — the definition of extraction rate used here.
+- [Codex Standard for Wheat Flour (CXS 152-1985)](https://www.fao.org/input/download/standards/50/CXS_152e.pdf) — definitions and compositional reference for wheat flour.
+
+Figures in this article are typical ranges from Haiyun project work unless a source is named; they are not measurements reproduced from these documents. How figures are produced: [methodology](/about/methodology/).

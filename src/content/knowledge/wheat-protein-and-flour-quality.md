@@ -108,3 +108,10 @@ This is a genuine trade-off: you cannot produce both high-damage bread flour and
 If your local wheat is 9.5% protein and your market wants bread flour, you must import high-protein wheat to blend. There is no milling solution.
 
 This is a supply-chain decision that must be made before the plant is designed — because importing wheat changes your intake capacity, storage requirement, cleaning line and blending system.
+
+## Sources
+
+- [ISO 21415-2 — Wheat and wheat flour: gluten content](https://www.iso.org/standard/91312.html) — wet gluten and gluten index methods.
+- [Codex Standard for Wheat Flour (CXS 152-1985)](https://www.fao.org/input/download/standards/50/CXS_152e.pdf) — definitions and compositional reference for wheat flour.
+
+Figures in this article are typical ranges from Haiyun project work unless a source is named; they are not measurements reproduced from these documents. How figures are produced: [methodology](/about/methodology/).

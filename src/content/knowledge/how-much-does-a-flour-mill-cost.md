@@ -35,9 +35,9 @@ Equipment is 63–66% of what a flour mill costs to build; civil works, electric
 | 40 t/d | 170,000–250,000 | 3B4M1S with purifier |
 | 60 t/d | 240,000–350,000 | 4B5M1S1T |
 | 100 t/d | 400,000–580,000 | Storey-typed |
-| 200 t/d | 780,000–1,150,000 | Full turnkey plant |
-| 300 t/d | 1,250,000–1,850,000 | Full turnkey plant |
-| 500 t/d | 2,100,000–3,100,000 | Full turnkey plant |
+| 200 t/d | 780,000–1,150,000 | Storey-typed equipment |
+| 300 t/d | 1,250,000–1,850,000 | Storey-typed equipment |
+| 500 t/d | 2,100,000–3,100,000 | Storey-typed equipment |
 
 ## Turnkey cost (building included)
 

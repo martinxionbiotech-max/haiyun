@@ -177,3 +177,11 @@ An NIR analyser is worth considering above 100 t/d: it measures moisture, protei
 5. **Test granulation on change, not on schedule.** It matters for customer disputes.
 6. **Retain samples for 30 days.** This is the difference between a four-hour investigation and a four-week argument.
 7. **Trace every deviation to a machine.** A quality number without a machine attribution is just anxiety.
+
+## Sources
+
+- [Codex Standard for Wheat Flour (CXS 152-1985)](https://www.fao.org/input/download/standards/50/CXS_152e.pdf) — definitions and compositional reference for wheat flour.
+- [ISO 3093:2009 — Falling number of wheat, rye and their flours](https://www.iso.org/standard/54114.html) — the falling-number method referenced.
+- [ISO 2171:2023 — Ash yield of cereals, pulses and milled products](https://www.iso.org/standard/75726.html) — the ash method behind the ash figures.
+
+Figures in this article are typical ranges from Haiyun project work unless a source is named; they are not measurements reproduced from these documents. How figures are produced: [methodology](/about/methodology/).

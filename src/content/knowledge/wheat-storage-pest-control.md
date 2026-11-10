@@ -144,3 +144,10 @@ The cheapest pest control in a flour mill is a design that has no dead ends wher
 The [FAO's manual on grain storage](https://www.fao.org/4/x5467e/x5467e00.htm) remains the most practical single document on small-to-medium storage, and its treatment of aeration and fumigation sealing is still accurate decades after publication.
 
 Residue limits change, so check the current Codex or destination-market schedule rather than any figure quoted in an article — including this one.
+
+## Sources
+
+- [FAO Manual of Fumigation for Insect Control](https://www.fao.org/4/x5042e/x5042e0r.htm) — phosphine dosing and fumigation practice.
+- [FAO — Prevention of Post-Harvest Food Losses: Central Storage](https://www.fao.org/4/x0039e/X0039E05.htm) — grain storage and pest control in bulk.
+
+Figures in this article are typical ranges from Haiyun project work unless a source is named; they are not measurements reproduced from these documents. How figures are produced: [methodology](/about/methodology/).

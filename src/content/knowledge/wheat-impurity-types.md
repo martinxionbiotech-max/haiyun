@@ -114,3 +114,9 @@ A simple sieve-and-float test tells you most of what you need:
 4. Hand-pick and weigh coarse material
 
 Ten minutes of work gives you an impurity profile accurate enough to specify a cleaning line. Most buyers skip this and accept whatever the supplier recommends.
+
+## Sources
+
+- [USDA Wheat Standards](https://www.ams.usda.gov/grades-standards/wheat-standards) — US wheat class names and grading factors.
+
+Figures in this article are typical ranges from Haiyun project work unless a source is named; they are not measurements reproduced from these documents. How figures are produced: [methodology](/about/methodology/).

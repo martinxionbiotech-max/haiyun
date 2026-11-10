@@ -100,3 +100,9 @@ The bran flake size is the technical differentiator. Large flakes are visible in
 - Keep sealed — whole wheat absorbs moisture and odours faster than white flour
 - Rotate stock strictly: first in, first out, with date coding
 - Clean silos and bins between lots — residual germ oil oxidises and taints new stock
+
+## Sources
+
+- [Codex Standard for Wheat Flour (CXS 152-1985)](https://www.fao.org/input/download/standards/50/CXS_152e.pdf) — definitions and compositional reference for wheat flour.
+
+Figures in this article are typical ranges from Haiyun project work unless a source is named; they are not measurements reproduced from these documents. How figures are produced: [methodology](/about/methodology/).

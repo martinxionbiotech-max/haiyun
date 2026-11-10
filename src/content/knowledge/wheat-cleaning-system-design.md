@@ -179,3 +179,10 @@ Cleaning design begins with a wheat analysis, not a machine list. Send:
 - Any residue or food-safety certification your market requires
 
 We will respond with a cleaning flow diagram, machine list and capacity sizing within 12 working hours.
+
+## Sources
+
+- [USDA Wheat Standards](https://www.ams.usda.gov/grades-standards/wheat-standards) — US wheat class names and grading factors.
+- [7 CFR Part 810 Subpart M — United States Standards for Wheat](https://www.ecfr.gov/current/title-7/subtitle-B/chapter-VIII/subchapter-A/part-810/subpart-M) — the legal text behind the class definitions.
+
+Figures in this article are typical ranges from Haiyun project work unless a source is named; they are not measurements reproduced from these documents. How figures are produced: [methodology](/about/methodology/).

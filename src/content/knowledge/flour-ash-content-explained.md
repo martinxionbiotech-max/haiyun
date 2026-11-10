@@ -102,3 +102,10 @@ The correct target is not minimum ash. It is **maximum extraction at the specifi
 Ash is measured by incineration at 550–600 °C to constant weight. The method is specified in national and international standards, and the temperature matters: at 550 °C you retain some mineral salts that volatilise above 600 °C, so two labs using different temperatures will disagree by a few hundredths of a point.
 
 If you are buying against a specification, agree the method and the temperature in the contract, not just the number.
+
+## Sources
+
+- [ISO 2171:2023 — Ash yield of cereals, pulses and milled products](https://www.iso.org/standard/75726.html) — the ash method behind the ash figures.
+- [Codex Standard for Wheat Flour (CXS 152-1985)](https://www.fao.org/input/download/standards/50/CXS_152e.pdf) — definitions and compositional reference for wheat flour.
+
+Figures in this article are typical ranges from Haiyun project work unless a source is named; they are not measurements reproduced from these documents. How figures are produced: [methodology](/about/methodology/).

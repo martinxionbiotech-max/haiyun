@@ -129,3 +129,11 @@ If you intend to sell to large retail or export, your lab needs:
 - Traceability from wheat lot to finished lot
 
 ISO 22000 or FSSC 22000 audits examine the laboratory first, because it is where claims are verified.
+
+## Sources
+
+- [ISO 3093:2009 — Falling number of wheat, rye and their flours](https://www.iso.org/standard/54114.html) — the falling-number method referenced.
+- [ISO 2171:2023 — Ash yield of cereals, pulses and milled products](https://www.iso.org/standard/75726.html) — the ash method behind the ash figures.
+- [ISO 21415-2 — Wheat and wheat flour: gluten content](https://www.iso.org/standard/91312.html) — wet gluten and gluten index methods.
+
+Figures in this article are typical ranges from Haiyun project work unless a source is named; they are not measurements reproduced from these documents. How figures are produced: [methodology](/about/methodology/).

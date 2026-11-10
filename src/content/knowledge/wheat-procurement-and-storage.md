@@ -103,3 +103,9 @@ For a wheat-side design we need:
 - Available footprint for silos and the building height limit
 
 With those we can size intake, storage and blending together with the mill — which is the only way the three numbers end up consistent.
+
+## Sources
+
+- [FAO — Prevention of Post-Harvest Food Losses: Central Storage](https://www.fao.org/4/x0039e/X0039E05.htm) — grain storage and pest control in bulk.
+
+Figures in this article are typical ranges from Haiyun project work unless a source is named; they are not measurements reproduced from these documents. How figures are produced: [methodology](/about/methodology/).

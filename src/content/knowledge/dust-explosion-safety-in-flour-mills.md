@@ -205,3 +205,10 @@ The explosion parameters in this article are measured values, not estimates, and
 For the regulatory framework, [NFPA 61](https://www.nfpa.org/codes-and-standards/nfpa-61-standard-development/61) covers dust hazard control in grain and food processing, and [OSHA's combustible dust guidance](https://www.osha.gov/combustible-dust) sets out what an inspection will look for. [HSE's dust pages](https://www.hse.gov.uk/dust/) are the clearest plain-language explanation of why secondary explosions dominate the casualties.
 
 What none of these will do is tell you the Kst of *your* dust. That requires a lab test on a sample from your own collectors, and it is the cheapest safety spend in the project.
+
+## Sources
+
+- [NFPA 61 — Standard for the Prevention of Fires and Dust Explosions in Agricultural and Food Processing Facilities](https://www.nfpa.org/codes-and-standards/nfpa-61-standard-development/61) — dust hazard control requirements.
+- [EU-OSHA — ATEX Directives 1999/92/EC and 2014/34/EU](https://osha.europa.eu/en/legislation/directives/19) — explosive-atmosphere classification and equipment requirements.
+
+Figures in this article are typical ranges from Haiyun project work unless a source is named; they are not measurements reproduced from these documents. How figures are produced: [methodology](/about/methodology/).
