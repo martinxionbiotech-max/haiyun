@@ -28,6 +28,7 @@ export const equipment = [
       ],
     },
     selection: 'Size to 1.3× your peak intake rate — pre-cleaners are often bypassed during harvest rush and you do not want to be the reason a truck waits.',
+    notFor: 'Not a substitute for a vibrating screen or destoner. It removes coarse straw and string, but cannot size-grade small stones or broken grain.',
     maintenance: 'Inspect the drum screen every 200 hours; replace when hole deformation exceeds 15%. Bearing grease every 500 hours.',
     faq: [
       { q: 'Does the drum sieve replace a vibrating screen?', a: 'No. It removes only coarse and large impurities. Size grading of small impurities requires a vibrating screen downstream.' },
@@ -53,6 +54,7 @@ export const equipment = [
       ],
     },
     selection: 'Three decks are worth the marginal cost when you also need to grade small impurities below 1.5 mm — a two-deck unit leaves them in the wheat.',
+    notFor: 'Not for wet, sticky wheat that blinds the screen. Dry or pre-clean high-moisture grain before using it as a size grader.',
     maintenance: 'Check screen tension weekly; slack screens are the number one cause of premature frame cracking. Replace rubber buffers annually.',
     faq: [
       { q: 'What is the difference between pre-cleaning and cleaning capacity?', a: 'Pre-cleaning capacity assumes lightly contaminated grain straight from the field. Cleaning capacity assumes grain that has already passed a first stage and is being graded to mill-ready standard.' },
@@ -81,6 +83,7 @@ export const equipment = [
       ],
     },
     selection: 'Match cleaning capacity (not pre-cleaning capacity) to your mill throughput. A 30 t/d plant needs a TQLZ100×150 at minimum, sized on the cleaning column at 12 t/h over a 10-hour effective working window.',
+    notFor: 'Not a precision size grader. If you need narrow particle fractions, use a dedicated grader rather than a high-capacity screen.',
     maintenance: 'Rebound rubber and screen frames are consumables — budget for one set per 18 months on two-shift operation.',
     faq: [
       { q: 'Why is cleaning capacity so much lower than pre-cleaning capacity?', a: 'Cleaning requires the grain to spend far longer on the screen so that small impurities can pass. The same deck area therefore handles roughly a third of the throughput when it is doing real cleaning rather than rough scalping.' },
@@ -111,6 +114,7 @@ export const equipment = [
       ],
     },
     selection: 'Choose the closed-loop version wherever the plant is in a residential or food-grade environment. The open-aspiration alternative is cheaper to buy and much more expensive to permit.',
+    notFor: 'Not a destoner for stones close to wheat density. Pair it with a gravity destoner when stone removal is the actual requirement.',
     maintenance: 'Clean the settling chamber every shift; a loaded chamber silently cuts separation efficiency by 30% or more.',
     faq: [
       { q: 'Does a cycling air separator need a bag filter?', a: 'No. The heavy dust fraction drops into a settling hopper. A small secondary filter is only needed if the machine exhausts into a sealed room.' },
@@ -144,6 +148,7 @@ export const equipment = [
       ],
     },
     selection: 'The "B" variants deliver roughly 60% more capacity on the same screen width by using a larger air volume and a steeper deck. Use them when floor space is the constraint rather than headroom.',
+    notFor: 'Not for wheat with heavy surface mud or free water. Clean and dry the grain first; a destoner is not a washer.',
     maintenance: 'Replace the screen cloth when stone removal efficiency drops below 95%; test quarterly by spiking a sample with 200 counted stones.',
     faq: [
       { q: 'How do I know my destoner is working?', a: 'Take a 1 kg sample from the stone outlet. It should be almost entirely stones and glass. If you see more than 10 wheat kernels per 100 stones, the air volume is too high or the deck angle is wrong.' },
@@ -171,6 +176,7 @@ export const equipment = [
       ],
     },
     selection: 'Use this where grain damage matters — seed stock, malting barley, specialty wheat with a premium on kernel integrity. For bulk commercial wheat, the cheaper vibrating screen is adequate.',
+    notFor: 'Not a primary screen for dirty intake wheat. Use a drum sieve or vibrating pre-cleaner first, or the sieve will blind.',
     maintenance: 'The eccentric drive runs in an oil bath; change oil every 2,000 hours and check the flexible coupling for fatigue every quarter.',
     faq: [
       { q: 'Can the TQLM replace a vibrating screen entirely?', a: 'In capacity terms no — it is a lower-throughput machine. It is usually installed as a second-stage screen or where kernel integrity is a commercial requirement.' },
@@ -197,6 +203,7 @@ export const equipment = [
       ],
     },
     selection: 'Light-beat for soft wheat and durum where breakage is costly; heavy-beat for hard wheat with visible surface contamination. The double-drum units are two machines on one frame and share a single inlet.',
+    notFor: 'Not a washer. It removes surface dust and loose dirt, but cannot clean the crease or remove embedded dirt.',
     maintenance: 'Rotate or replace beaters every 800–1,200 hours. Worn beaters round off and stop scouring entirely while still consuming full power.',
     faq: [
       { q: 'How much does scouring reduce ash?', a: 'A single heavy-beat pass typically removes 0.03–0.06 percentage points of ash from the whole meal. Two passes with an intervening brush can reach 0.08.' },
@@ -226,6 +233,7 @@ export const equipment = [
       ],
     },
     selection: 'Essential for seed production and for any market that grades visually. For plain commercial flour milling it is optional — but it pays back quickly on high-value wheat.',
+    notFor: 'Not a width or thickness grader. It separates by length only; pair it with a screen when multiple dimensions matter.',
     maintenance: 'Indent pockets wear at the leading edge; re-cut or replace cylinders every 3–5 seasons depending on tonnage.',
     faq: [
       { q: 'What is the difference between the two separation figures?', a: 'Broken-in-whole is how much broken grain remains in the accepted stream (lower is better). Whole-in-broken is how much good grain is lost to the reject stream (also lower is better). Together they define the machine\'s efficiency.' },
@@ -258,6 +266,7 @@ export const equipment = [
       ],
     },
     selection: 'Wet cleaning costs water, effluent treatment and 3–5% extra drying load. It is justified when wheat arrives with visible soil in the crease, when the mill serves a premium or export market, or when pesticide residue limits are contractually enforced.',
+    notFor: 'Not for sites without water treatment and drying capacity. Wet cleaning adds water, effluent and operating cost; it is not automatically cleaner.',
     maintenance: 'Water consumption is 0.8–1.2 m³ per tonne of wheat. Budget for a settling pit and a recirculation pump — discharging once-through is illegal in most jurisdictions now.',
     faq: [
       { q: 'Can I skip wet cleaning?', a: 'Yes, with dry cleaning plus two scourer passes you can reach good commercial quality. Wet cleaning is what separates a commodity flour from a flour that passes residue testing for export.' },
@@ -287,6 +296,7 @@ export const equipment = [
       ],
     },
     selection: 'If you are running more than one wheat origin, this is not optional. Blended wheat with mismatched tempering is the classic cause of "the mill was fine yesterday" complaints.',
+    notFor: 'Not a substitute for measuring wheat moisture. It controls water addition, not the actual moisture absorbed by the kernel.',
     maintenance: 'Calibrate the microwave sensor against an oven-dry reference every 30 days. A drifted sensor is worse than no sensor because operators trust it.',
     faq: [
       { q: 'What tempered moisture should I target?', a: 'Soft wheat: 15.0–15.5%. Hard wheat: 16.0–16.5%. Durum: 16.5–17.0%. Below these figures the bran shatters; above them the rolls smear.' },
@@ -312,6 +322,7 @@ export const equipment = [
       ],
     },
     selection: 'Always fit one. The payback is not measured in capacity but in avoided customer complaints.',
+    notFor: 'Not a precision density separator. Use it for light impurity aspiration, not as a replacement for a gravity destoner.',
     maintenance: 'No wearing parts. Clean the air inlet grille weekly.',
     faq: [
       { q: 'Is an aspirator the same as a pneumatic conveyor?', a: 'No. The aspirator uses air only to separate light material; it does not transport product. Pneumatic conveying is a separate system with much higher air volume and pressure.' },
@@ -342,6 +353,7 @@ export const equipment = [
       ],
     },
     selection: 'Install at minimum: one on wheat intake, one before the first break, one on each flour stream before packing. Higher-gauss (5,000–12,000) units catch fine stainless wear particles that 3,000 gauss misses.',
+    notFor: 'Not a substitute for metal detection. It captures ferrous tramp, but not non-ferrous metal or all stainless fragments.',
     maintenance: 'Clean magnets every shift. A magnet caked with iron filings stops attracting. Record the material removed — it is your early-warning system for equipment wear.',
     faq: [
       { q: 'Where do magnets belong in a flour mill?', a: 'Wheat intake, pre-break, each flour outlet before the packer, and on any stream that passes a screen. Five to seven locations is normal for a 100 t/d plant.' },
@@ -366,6 +378,7 @@ export const equipment = [
       ],
     },
     selection: 'The premium alternative to a second scourer pass when bran integrity matters — whole wheat flour, stone milling, and any line where the bran must stay in large flakes rather than shatter into powder.',
+    notFor: 'Not for dirty wheat with stones. Pre-clean and destone first; the brush treats surfaces, it does not remove heavy impurities.',
     maintenance: 'Brush segments wear against the screen; inspect every 600 hours and rotate position to even out wear.',
     faq: [
       { q: 'How much ash reduction is achievable?', a: 'Up to 0.10 percentage points on the whole meal, which is substantial — roughly equivalent to a full extra break passage in ash terms.' },
@@ -395,6 +408,7 @@ export const equipment = [
       ],
     },
     selection: 'Synchronous belt drive transmits more torque at low speed and is quieter; chain drive tolerates heat and dust better and is easier to repair with basic tools. In dusty environments with unskilled maintenance, choose chain and accept the noise.',
+    notFor: 'Not for a high-capacity commercial flow sheet. Use a multi-stand FMFQ line when tonnage and extraction targets require more passages.',
     maintenance: 'Roll re-fluting every 1,500–2,500 operating hours depending on wheat hardness. Worn flutes polish the bran instead of cutting it, which floods the patent stream with fine bran.',
     faq: [
       { q: 'What does "single" and "double" feed mean?', a: 'Single feed means the stand serves one grinding passage. Double feed means two separate product streams can be fed to the same roll pair from either end — effectively doubling useful capacity on a stand.' },
@@ -429,6 +443,7 @@ export const equipment = [
       ],
     },
     selection: 'The differential ratio is not interchangeable — it belongs to the passage. Break passages run 2.5:1 for a cutting action; reduction passages step down to 1.25:1 for a gentle attrition action. Ordering the wrong ratio for a position is a common and costly mistake.',
+    notFor: 'Not a complete mill by itself. It needs cleaning, sifting, purification and conveying around it to make a saleable flour line.',
     maintenance: 'Working pressure 0.4–0.6 MPa; air consumption 0.06–0.08 m³/h per mill. Check roll parallelism every 500 hours with a feeler gauge at both ends; a 0.05 mm taper produces a visible ash gradient across the flour stream.',
     faq: [
       { q: 'What does the S in FMFQ(S) mean?', a: 'It denotes the pneumatic (servo-assisted) engagement variant. The base FMFQ is manual engagement; the S adds pneumatic roll engagement and disengagement with remote control.' },
@@ -454,6 +469,7 @@ export const equipment = [
       ],
     },
     selection: 'A purifier is only worth installing if you have at least 4 break passages — with less, there is not enough middlings to purify and the machine sits idle. Below 40 t/d, most plants skip it; at 40 t/d and above it becomes the difference between 65% and 73% patent extraction.',
+    notFor: 'Not useful below the flow-sheet scale that produces enough controlled middlings. Do not install one just to add a machine to the catalogue.',
     maintenance: 'Air balance is everything. Re-balance the aspiration hoods every 6 months and after any change to the flow sheet. Sieve frames are consumable — replace when the mesh sags.',
     faq: [
       { q: 'Can I add a purifier to an existing plant?', a: 'Only if the flow sheet has enough middling streams to feed it. Retrofits usually require adding a break passage at the same time, which is why the decision is best made at initial design.' },
@@ -481,6 +497,7 @@ export const equipment = [
       ],
     },
     selection: 'One per packing line. If you run three flour grades simultaneously, you need three check sifters — sharing one defeats the purpose because a failure in one stream contaminates the others.',
+    notFor: 'Not for a high-capacity multi-grade flow sheet. Its sieve area is limited; check the sifting area per tonne before selecting it.',
     maintenance: 'Inspect the sieve frames weekly under strong light; a single pinhole defeats the entire machine. Replace wooden frames when they warp.',
     faq: [
       { q: 'What is the difference between a check sifter and a plansifter?', a: 'A check sifter inspects finished flour — one product, one pass, safety function. A plansifter grades mill streams — many products, many passes, process function.' },
@@ -507,6 +524,7 @@ export const equipment = [
       ],
     },
     selection: 'Specify the number of bins and the sieve stack at order — the frame is standard but the internal stack is bespoke to your flow sheet. Changing it afterwards is possible but costs a rebuild.',
+    notFor: 'Not a substitute for a high-square sifter at large capacity. Compare sieve area and maintenance access, not just the bin count.',
     maintenance: 'Check the flexible connections between bins annually; a perished sleeve leaks flour into the wrong stream and is difficult to diagnose.',
     faq: [
       { q: 'How many sifters does a 25 t/d plant need?', a: 'Two twin-bin units, typically one for break and coarse reduction streams and one for the reduction and flour streams.' },
@@ -533,6 +551,7 @@ export const equipment = [
       ],
     },
     selection: 'Rule of thumb: 1 m² of sifting area per 0.8 t of daily capacity for a standard 4B5M flow sheet. A 100 t/d plant therefore wants roughly 125 m², which is one FSFG8×24 plus one FSFG6×24, or three FSFG6×24.',
+    notFor: 'Not for very small plants where maintenance access or building height is tight. The capacity advantage only matters when the flow sheet needs it.',
     maintenance: 'The hanger rods and their rubber bushes are the critical wear item. Replace bushes every 12–18 months; a worn bush changes the gyration path and silently degrades grading efficiency across every compartment at once.',
     faq: [
       { q: 'How do I size a plansifter?', a: 'Start from total sifting area: daily capacity in tonnes divided by 0.8 gives the square metres required for a standard flow sheet. Then choose the compartment combination that covers that area with the fewest machines.' },
@@ -561,6 +580,7 @@ export const equipment = [
       ],
     },
     selection: 'Size on bran flow, not mill capacity. Bran is typically 22–28% of wheat intake, so a 60 t/d plant produces 14–17 t/day of bran across two shifts — one FPDW45×2 handles that comfortably.',
+    notFor: 'Not a primary reduction mill. It treats bran and break stocks; it does not replace the roller mill passages.',
     maintenance: 'Beater tips and screen cloth wear together; replace both, never one alone. Worn beaters against a new screen will shred it in weeks.',
     faq: [
       { q: 'How much flour does a bran finisher recover?', a: 'Typically 1.5–3% of mill intake — on 100 t/d that is 1.5–3 tonnes of saleable flour per day, which generally pays for the machine in under a year.' },
@@ -589,6 +609,7 @@ export const equipment = [
       ],
     },
     selection: 'The FSJQ intensive model is used where the stock is heavily flaked or where a second function is required — impact disinfestation. Standard FSJZ is sufficient for normal reduction streams.',
+    notFor: 'Not a substitute for insufficient sifting area. It breaks flakes, but it cannot fix a plansifter that is already overloaded.',
     maintenance: 'Pins wear on the leading face; rotate the rotor plate 180° at mid-life, then replace. Check rotor balance after any pin change — imbalance destroys bearings within weeks.',
     faq: [
       { q: 'Where in the flow sheet does an impact detacher go?', a: 'Immediately after the smooth-roll reduction mills, before the sifter. One unit can serve a group of mills via a common collecting conveyor.' },
@@ -614,6 +635,7 @@ export const equipment = [
       ],
     },
     selection: 'For retail flour, specify the 5 kg unit with a bag-presenting carousel; for bulk, the 50 kg unit with a sewing head. Both need a stable 0.6 MPa air supply — under-supplied air is the most common cause of accuracy drift.',
+    notFor: 'Not for low-volume manual packing. The payback depends on sustained bag output, stable product flow and a trained operator.',
     maintenance: 'Calibrate with certified test weights weekly. Replace the load cell every 3–4 years; load cells drift silently before they fail.',
     faq: [
       { q: 'What accuracy can I legally claim?', a: 'Pre-packaged goods regulations in most jurisdictions require the average net content to equal the declared weight, with a tolerated negative deviation. ±0.2% machine accuracy keeps you comfortably inside those limits.' },
@@ -644,6 +666,7 @@ export const equipment = [
       ],
     },
     selection: 'Size on total aspiration air volume with 20% margin. Cylinder construction with tangential inlet reduces bag load; flat-bottom scraper discharge keeps the unit short enough to fit under a normal roof.',
+    notFor: 'Not a substitute for proper hood design and capture. A larger filter cannot compensate for poor dust capture at the source.',
     maintenance: 'Pulse valves fail quietly — test each one monthly by listening for the discharge pulse. A dead valve blinds its row of bags and halves effective filter area.',
     faq: [
       { q: 'Is a dust collector required by law?', a: 'In nearly every jurisdiction, yes — both for occupational exposure limits and for explosion safety. Flour dust is a combustible dust with a Kst value in the explosive range.' },
