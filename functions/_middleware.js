@@ -3,6 +3,12 @@
 export async function onRequest(context) {
   const { request, next, env } = context;
   const url = new URL(request.url);
+
+  // Canonical host: the site is published on the non-www domain.
+  if (url.hostname === 'www.flourmillingpro.com') {
+    return Response.redirect(`https://flourmillingpro.com${url.pathname}${url.search}`, 301);
+  }
+
   const accept = request.headers.get('Accept') || '';
   const isRead = request.method === 'GET' || request.method === 'HEAD';
   const isPagePath =
