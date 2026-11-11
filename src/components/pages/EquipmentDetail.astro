@@ -86,7 +86,7 @@ const schema = [
 ---
 
 <PageLayout
-  title={fitTitle(item.seoTitle ?? (item.model ? `${item.name} — ${item.model}` : item.name))}
+  title={fitTitle(lang === 'en' ? (item.seoTitle ?? (item.model ? `${item.name} — ${item.model}` : item.name)) : (item.model ? `${item.name} — ${item.model}` : item.name))}
   description={fitDescription(`${item.tagline} ${item.name} (${item.model}) — ${t.technicalParameters}, ${t.selectionGuidance}, ${t.maintenance}.`, t.metaSuffix)}
   image={heroFile ? `/images/${heroFile}` : undefined}
   schema={schema}
