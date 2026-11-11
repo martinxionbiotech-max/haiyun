@@ -1,0 +1,246 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import CTABand from '../../components/CTABand.astro';
+
+const faq = [
+  {
+    q: 'How much does a flour mill cost?',
+    a: 'Cost depends on capacity, flow-sheet complexity, building, power supply, automation and the scope of civil works. A useful estimate separates equipment, steel and installation, electrical, civil works, commissioning and working capital. A single “turnkey price per tonne” without scope is not comparable.',
+  },
+  {
+    q: 'What should a flour mill feasibility study include?',
+    a: 'It should include market demand and flour specification, wheat supply and quality, capacity and flow sheet, capital cost, operating cost, working capital, financing, sensitivity analysis, permits and a realistic commissioning timeline. A financial model without a process design is a spreadsheet, not a feasibility study.',
+  },
+  {
+    q: 'What is the biggest operating cost in a flour mill?',
+    a: 'Wheat is usually the dominant cost, followed by energy, labour, maintenance and packaging. The exact split depends on local wheat and energy prices, extraction rate and product mix. Track cost per tonne of saleable flour, not per tonne of wheat processed.',
+  },
+  {
+    q: 'How do I evaluate a flour mill energy audit?',
+    a: 'Start with specific energy in kWh per tonne of wheat, then separate milling, cleaning, conveying, packing and auxiliary loads. Compare measured values with the flow-sheet design and check whether the mill is running near its efficient capacity. A low kWh/t at half load can still be a poor result.',
+  },
+  {
+    q: 'What should a performance guarantee cover?',
+    a: 'At minimum: wheat specification, operating hours, output, extraction, flour ash or grade, specific energy and the test method. The guarantee should define sampling, duration, correction for wheat variation, acceptance criteria and remedies. Without a written test protocol, a “guarantee” is not enforceable.',
+  },
+];
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Flour Mill Investment and Operation',
+    description:
+      'A pillar on flour mill project cost, feasibility, operating cost, energy audits, financing, maintenance and performance guarantees.',
+    url: 'https://flourmillingpro.com/knowledge/flour-mill-investment-operation/',
+    inLanguage: 'en',
+    hasPart: [
+      '/knowledge/how-much-does-a-flour-mill-cost/',
+      '/knowledge/flour-mill-project-economics/',
+      '/knowledge/flour-mill-feasibility-study/',
+      '/knowledge/flour-mill-operating-cost-breakdown/',
+      '/knowledge/flour-mill-energy-audit/',
+      '/knowledge/flour-mill-financing-options/',
+      '/knowledge/flour-mill-operations-and-maintenance/',
+      '/knowledge/performance-guarantee-and-acceptance/',
+    ].map((url) => ({ '@type': 'TechArticle', url: `https://flourmillingpro.com${url}` })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://flourmillingpro.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Knowledge centre', item: 'https://flourmillingpro.com/knowledge/' },
+      { '@type': 'ListItem', position: 3, name: 'Flour Mill Investment and Operation', item: 'https://flourmillingpro.com/knowledge/flour-mill-investment-operation/' },
+    ],
+  },
+];
+---
+
+<PageLayout
+  title="Flour Mill Investment & Operation: Cost and Performance"
+  description="A practical pillar on flour mill project cost, feasibility, operating cost, energy, financing, maintenance and performance guarantees."
+  schema={schema}
+>
+  <section class="bg-steel-950">
+    <div class="container-x py-14 sm:py-18">
+      <p class="eyebrow-light">Pillar C · P2</p>
+      <h1 class="mt-3 max-w-4xl font-display text-4xl font-bold uppercase leading-[1.05] tracking-tight text-white sm:text-5xl">
+        Flour mill investment and operation: the numbers behind the plant
+      </h1>
+      <p class="mt-5 max-w-3xl text-lg leading-relaxed text-steel-300">
+        A flour mill is a capital project before it is a factory. The investment case, operating cost,
+        energy intensity, maintenance model and performance guarantee decide whether the plant earns
+        its cost of capital — not just whether it runs.
+      </p>
+      <p class="mt-4 text-sm text-steel-400">
+        For investors, project sponsors and owner-operators building or expanding a mill.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-x max-w-4xl">
+      <h2 class="font-display text-3xl font-bold uppercase tracking-tight text-steel-900">The investment chain</h2>
+      <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
+        Investment decisions fail when the model is separated from the process. A lower equipment
+        price can mean a flow sheet with less sifting area, a building that needs more steel, or a
+        commissioning period that consumes working capital. The financial model must use the same
+        capacity, extraction and operating assumptions as the engineering design.
+      </p>
+      <div class="prose-hy mt-6">
+        <table>
+          <thead>
+            <tr><th>Decision</th><th>What to quantify</th><th>What it changes</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Capacity and product mix</td><td>Saleable flour, extraction, operating hours</td><td>Capital cost, wheat intake, staffing</td></tr>
+            <tr><td>Scope</td><td>Equipment, steel, civil, electrical, installation, commissioning</td><td>Comparability of quotations</td></tr>
+            <tr><td>Operating cost</td><td>Wheat, energy, labour, maintenance, packaging</td><td>Gross margin and payback</td></tr>
+            <tr><td>Financing</td><td>Equity, debt, tenor, currency, working capital</td><td>Cash flow and debt service cover</td></tr>
+            <tr><td>Performance guarantee</td><td>Output, extraction, ash, kWh/t, test method</td><td>Risk allocation and remedies</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-steel-50">
+    <div class="container-x max-w-4xl">
+      <h2 class="font-display text-3xl font-bold uppercase tracking-tight text-steel-900">1. Flour mill project cost</h2>
+      <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
+        A credible project cost has layers: process equipment, structural steel and platforms,
+        installation, electrical and controls, civil works, dust collection, commissioning, spares and
+        working capital. The building and electrical scope are the two items most often excluded from
+        an “equipment price” and later added at a premium.
+      </p>
+      <p class="mt-3 text-[15px] leading-relaxed text-steel-700">
+        Read <a class="font-semibold text-ember-700" href="/knowledge/how-much-does-a-flour-mill-cost/">how much a flour mill costs</a>
+        and <a class="font-semibold text-ember-700" href="/knowledge/flour-mill-project-economics/">project economics</a>.
+        Always ask for the scope boundary: what is excluded is often more important than the headline price.
+      </p>
+
+      <h2 class="mt-12 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">2. Feasibility study</h2>
+      <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
+        A feasibility study connects market demand to a technical configuration and a financial model.
+        It should test wheat supply, flour specification, capacity, capex, opex, working capital,
+        financing, permits and sensitivity to wheat price, flour price and utilisation.
+      </p>
+      <p class="mt-3 text-[15px] leading-relaxed text-steel-700">
+        See <a class="font-semibold text-ember-700" href="/knowledge/flour-mill-feasibility-study/">flour mill feasibility study</a>
+        for the document structure and the assumptions a lender or investment committee will challenge.
+      </p>
+
+      <h2 class="mt-12 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">3. Operating cost</h2>
+      <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
+        Operating cost is not a single number. Wheat, energy, labour, maintenance, packaging, lab
+        testing and finance costs behave differently with capacity and utilisation. A mill running at
+        50% load has a worse cost per tonne than the same mill at 85% load, even if the equipment is
+        identical.
+      </p>
+      <p class="mt-3 text-[15px] leading-relaxed text-steel-700">
+        Use <a class="font-semibold text-ember-700" href="/knowledge/flour-mill-operating-cost-breakdown/">operating cost breakdown</a>
+        to build the model by line item, and separate fixed from variable cost before calculating payback.
+      </p>
+
+      <h2 class="mt-12 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">4. Energy audit</h2>
+      <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
+        Energy is one of the few operating costs an owner can influence without changing the wheat.
+        Start with specific energy in kWh per tonne, then break it down by cleaning, milling, conveying,
+        packing and auxiliary systems. A low total at low throughput can hide an inefficient mill.
+      </p>
+      <p class="mt-3 text-[15px] leading-relaxed text-steel-700">
+        Read <a class="font-semibold text-ember-700" href="/knowledge/flour-mill-energy-audit/">flour mill energy audit</a>
+        and <a class="font-semibold text-ember-700" href="/knowledge/flour-mill-power-consumption/">power consumption</a>.
+      </p>
+
+      <h2 class="mt-12 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">5. Financing</h2>
+      <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
+        Financing structures differ in currency, tenor, security, grace period and covenants. A project
+        that looks profitable on an unlevered basis can fail on debt service if the ramp-up period is
+        too short or working capital is underestimated.
+      </p>
+      <p class="mt-3 text-[15px] leading-relaxed text-steel-700">
+        See <a class="font-semibold text-ember-700" href="/knowledge/flour-mill-financing-options/">flour mill financing options</a>
+        for common structures and the assumptions lenders test.
+      </p>
+
+      <h2 class="mt-12 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">6. Maintenance and operation</h2>
+      <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
+        Maintenance is a budget line and a capacity decision. Roll wear, sifter screen condition,
+        bearing failures and spare-part lead times determine availability. A mill that runs at 95%
+        availability with planned maintenance usually beats one that runs at 80% and repairs under
+        pressure.
+      </p>
+      <p class="mt-3 text-[15px] leading-relaxed text-steel-700">
+        Read <a class="font-semibold text-ember-700" href="/knowledge/flour-mill-operations-and-maintenance/">operations and maintenance</a>
+        and <a class="font-semibold text-ember-700" href="/knowledge/flour-mill-preventive-maintenance-schedule/">preventive maintenance</a>.
+      </p>
+
+      <h2 class="mt-12 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">7. Performance guarantee</h2>
+      <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
+        A performance guarantee is only useful if it defines the test. It should state wheat
+        specification, moisture, extraction target, product grade, operating duration, sampling method,
+        measurement instruments and acceptance criteria. It should also state what happens if wheat or
+        operating conditions fall outside the agreed basis.
+      </p>
+      <p class="mt-3 text-[15px] leading-relaxed text-steel-700">
+        See <a class="font-semibold text-ember-700" href="/knowledge/performance-guarantee-and-acceptance/">performance guarantee and acceptance</a>
+        before signing a contract with a capacity or kWh/t promise.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-x max-w-4xl">
+      <h2 class="font-display text-3xl font-bold uppercase tracking-tight text-steel-900">Common investment mistakes</h2>
+      <ul class="mt-4 space-y-3 text-[15px] leading-relaxed text-steel-700">
+        <li><strong>Comparing equipment prices with different scopes.</strong> Civil works, electrical and commissioning are often excluded.</li>
+        <li><strong>Modelling 100% utilisation from day one.</strong> Ramp-up, wheat quality and market penetration take time.</li>
+        <li><strong>Ignoring working capital.</strong> Wheat inventory and receivables can consume more cash than expected.</li>
+        <li><strong>Treating energy as fixed.</strong> Specific energy and load factor are manageable variables, not constants.</li>
+        <li><strong>Accepting a guarantee without a test protocol.</strong> “Runs at capacity” is not a measurable obligation.</li>
+      </ul>
+
+      <h2 class="mt-12 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">How to use this pillar</h2>
+      <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
+        Start with project cost and feasibility if you are evaluating a new plant. If the plant is
+        already operating, start with operating cost, energy and maintenance. Use the performance
+        guarantee article before signing any contract that includes a capacity or efficiency promise.
+      </p>
+      <div class="mt-6 grid gap-3 sm:grid-cols-2">
+        <a class="card p-4" href="/knowledge/how-much-does-a-flour-mill-cost/"><strong>How much a flour mill costs</strong><span class="mt-1 block text-sm text-steel-600">Capex by capacity and scope.</span></a>
+        <a class="card p-4" href="/knowledge/flour-mill-project-economics/"><strong>Project economics</strong><span class="mt-1 block text-sm text-steel-600">Capital, operating cost and payback.</span></a>
+        <a class="card p-4" href="/knowledge/flour-mill-feasibility-study/"><strong>Feasibility study</strong><span class="mt-1 block text-sm text-steel-600">What a real study contains.</span></a>
+        <a class="card p-4" href="/knowledge/flour-mill-operating-cost-breakdown/"><strong>Operating cost</strong><span class="mt-1 block text-sm text-steel-600">Cost by line item.</span></a>
+        <a class="card p-4" href="/knowledge/flour-mill-energy-audit/"><strong>Energy audit</strong><span class="mt-1 block text-sm text-steel-600">Where the kWh go.</span></a>
+        <a class="card p-4" href="/knowledge/performance-guarantee-and-acceptance/"><strong>Performance guarantee</strong><span class="mt-1 block text-sm text-steel-600">A test that can fail.</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-steel-50">
+    <div class="container-x max-w-4xl">
+      <h2 class="font-display text-3xl font-bold uppercase tracking-tight text-steel-900">Frequently asked questions</h2>
+      <dl class="mt-6 divide-y divide-steel-200">
+        {faq.map((f) => (
+          <div class="py-5 first:pt-0">
+            <dt class="text-base font-bold text-steel-900">{f.q}</dt>
+            <dd class="mt-2 text-[15px] leading-relaxed text-steel-700">{f.a}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+
+  <CTABand />
+</PageLayout>

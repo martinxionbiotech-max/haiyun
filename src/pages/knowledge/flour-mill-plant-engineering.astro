@@ -1,0 +1,249 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import CTABand from '../../components/CTABand.astro';
+
+const faq = [
+  {
+    q: 'What is the first step in designing a flour mill plant?',
+    a: 'Start with the market demand and the flour specification, not with a machine list. Convert demand into wheat input using the intended extraction rate, then choose a flow sheet and building that can support that capacity.',
+  },
+  {
+    q: 'Should I design the building or the flow sheet first?',
+    a: 'They develop together. The flow sheet determines floor heights, gravity transfer, sifter area and maintenance access; the building constrains what the flow sheet can do economically. Freeze the capacity first, then iterate both.',
+  },
+  {
+    q: 'How much spare capacity should a new mill have?',
+    a: 'A common planning allowance is 10–20% above current demand, depending on market growth and the cost of later expansion. Too much spare capacity raises capital cost and can leave the mill running below its efficient point.',
+  },
+  {
+    q: 'What causes most plant engineering failures?',
+    a: 'The recurring causes are an undersized intake, a flow sheet that does not match the product mix, a building that cannot take the height or loads, late electrical capacity, and commissioning without a written test protocol.',
+  },
+  {
+    q: 'Can an existing building be converted into a flour mill?',
+    a: 'Sometimes. The constraints are floor height, floor loading, vertical openings, dust containment and power. A flat-floor mill is easier to fit into an existing shed; a multi-storey gravity plant usually needs a purpose-designed structure.',
+  },
+];
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Flour Mill Plant Engineering',
+    description:
+      'A pillar guide to flour mill design, layout, flow sheets, capacity, buildings, electrical supply and installation.',
+    url: 'https://flourmillingpro.com/knowledge/flour-mill-plant-engineering/',
+    inLanguage: 'en',
+    hasPart: [
+      '/knowledge/how-to-size-a-flour-mill/',
+      '/knowledge/flour-mill-layout-design/',
+      '/knowledge/flour-milling-flow-sheet-design/',
+      '/knowledge/flour-mill-capacity-calculation/',
+      '/knowledge/flour-mill-building-requirements/',
+      '/knowledge/flour-mill-electrical-supply/',
+      '/knowledge/flour-mill-installation-and-erection/',
+      '/knowledge/flour-mill-commissioning-and-testing/',
+    ].map((url) => ({ '@type': 'TechArticle', url: `https://flourmillingpro.com${url}` })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://flourmillingpro.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Knowledge centre', item: 'https://flourmillingpro.com/knowledge/' },
+      { '@type': 'ListItem', position: 3, name: 'Flour Mill Plant Engineering', item: 'https://flourmillingpro.com/knowledge/flour-mill-plant-engineering/' },
+    ],
+  },
+];
+---
+
+<PageLayout
+  title="Flour Mill Plant Engineering: Design, Layout & Delivery"
+  description="A plant-engineering pillar for flour mill investors: capacity, flow sheet, layout, building, power, installation and commissioning."
+  schema={schema}
+>
+  <section class="bg-steel-950">
+    <div class="container-x py-14 sm:py-18">
+      <p class="eyebrow-light">Pillar A · P1</p>
+      <h1 class="mt-3 max-w-4xl font-display text-4xl font-bold uppercase leading-[1.05] tracking-tight text-white sm:text-5xl">
+        Flour mill plant engineering: design, layout and delivery
+      </h1>
+      <p class="mt-5 max-w-3xl text-lg leading-relaxed text-steel-300">
+        A flour mill is not a collection of machines. It is a chain of constraints: demand becomes
+        capacity, capacity becomes a flow sheet, the flow sheet becomes a building, and the building
+        becomes a commissioning sequence. This pillar explains the order and the decisions that
+        cannot be reversed cheaply.
+      </p>
+      <p class="mt-4 text-sm text-steel-400">
+        For investors, project engineers and buyers specifying a complete plant.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-x max-w-3xl">
+      <p class="eyebrow">The engineering chain</p>
+      <h2 class="mt-2 font-display text-3xl font-bold uppercase tracking-tight text-steel-900 sm:text-4xl">
+        Seven decisions, in the only order that works
+      </h2>
+      <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
+        Most expensive mistakes are sequencing mistakes. A mill sized before the product mix is known
+        will need a different flow sheet. A building designed before the flow sheet is fixed will
+        force compromises in gravity transfer or maintenance access. Power is often the last item
+        checked and the first item that stops commissioning.
+      </p>
+      <div class="prose-hy mt-6">
+        <table>
+          <thead>
+            <tr><th>Decision</th><th>Input you need</th><th>Output that locks the next step</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Market and product mix</td><td>Flour grades, customers, bag sizes, seasonality</td><td>Target extraction and daily flour output</td></tr>
+            <tr><td>Capacity</td><td>Flour demand, extraction, operating hours, headroom</td><td>Wheat input in t/day and t/h</td></tr>
+            <tr><td>Flow sheet</td><td>Wheat quality, product mix, extraction target</td><td>Break/reduction passages, sifter area, purifier need</td></tr>
+            <tr><td>Layout</td><td>Site, floor heights, access, future expansion</td><td>Gravity or flat-floor architecture</td></tr>
+            <tr><td>Building</td><td>Loads, height, openings, dust control, fire access</td><td>Civil works and erection sequence</td></tr>
+            <tr><td>Electrical</td><td>Motor list, starting method, voltage, supply capacity</td><td>Transformer, protection and cable routes</td></tr>
+            <tr><td>Installation and commissioning</td><td>Approved drawings, test protocol, spares, operators</td><td>Performance acceptance and handover</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-steel-50">
+    <div class="container-x max-w-4xl">
+      <h2 class="font-display text-3xl font-bold uppercase tracking-tight text-steel-900">1. Capacity calculation</h2>
+      <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
+        Capacity is a financial decision before it is an engineering one. Start from saleable flour,
+        divide by the expected extraction rate, then add a realistic operating allowance. A plant
+        rated at 100 t/day of wheat does not produce 100 t/day of flour; at 76% extraction it produces
+        about 76 t/day, and only if the mill runs at its rated point.
+      </p>
+      <p class="mt-3 text-[15px] leading-relaxed text-steel-700">
+        Use the <a class="font-semibold text-ember-700" href="/tools/flour-mill-calculators/">capacity calculator</a>
+        for a first estimate, then read <a class="font-semibold text-ember-700" href="/knowledge/how-to-size-a-flour-mill/">how to size a flour mill</a>
+        and <a class="font-semibold text-ember-700" href="/knowledge/flour-mill-capacity-calculation/">capacity calculation</a>
+        before fixing the equipment list. The quotation must state whether the figure is wheat input
+        or flour output.
+      </p>
+
+      <h2 class="mt-12 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">2. Flow sheet design</h2>
+      <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
+        The flow sheet is the mill's logic. Break rolls open the wheat and scrape endosperm from bran;
+        reduction rolls reduce the released endosperm; sifters separate by particle size; purifiers
+        separate by quality in an air stream. A 3B2M sheet is a different product strategy from a
+        4B5M sheet, not merely a smaller version of it.
+      </p>
+      <p class="mt-3 text-[15px] leading-relaxed text-steel-700">
+        Read the <a class="font-semibold text-ember-700" href="/knowledge/flour-milling-flow-sheet-design/">flow sheet design handbook</a>
+        before comparing quotations. Two suppliers can quote the same tonnage with different passage
+        counts, sifter area and power, and both can be technically correct for different flour grades.
+      </p>
+
+      <h2 class="mt-12 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">3. Layout design</h2>
+      <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
+        Layout is where capital cost and operating cost diverge. A gravity-fed multi-storey plant
+        reduces pneumatic conveying and power, but requires a structure that can carry the loads and
+        provide the height. A flat-floor plant is easier to fit into an existing shed, but needs more
+        conveying, more floor space and more maintenance access planning.
+      </p>
+      <p class="mt-3 text-[15px] leading-relaxed text-steel-700">
+        The practical questions are: where does wheat enter, where does flour leave, how does a roller
+        mill leave the building for refluting, and how does an operator reach the sifter without
+        climbing over a purifier? The <a class="font-semibold text-ember-700" href="/knowledge/flour-mill-layout-design/">layout design guide</a>
+        covers workflow, access and the cost of bad geometry.
+      </p>
+
+      <h2 class="mt-12 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">4. Building requirements</h2>
+      <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
+        A mill building is a machine support structure. It must carry dead load, live load, vibration,
+        equipment torque and the occasional maintenance load. It also needs floor openings for
+        gravity spouts, a loading dock that trucks can actually use, and dust-control provisions that
+        do not fight the flow sheet.
+      </p>
+      <p class="mt-3 text-[15px] leading-relaxed text-steel-700">
+        Check the <a class="font-semibold text-ember-700" href="/knowledge/flour-mill-building-requirements/">building requirements guide</a>
+        before buying a shed or committing to a civil design. Height and floor loading are the two
+        constraints that are most expensive to change later.
+      </p>
+
+      <h2 class="mt-12 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">5. Electrical supply</h2>
+      <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
+        The electrical design starts with the motor list, not the transformer catalogue. Large roller
+        mill motors, starting methods and voltage sag determine whether the plant can start under
+        load. A supply that looks adequate on connected kW can still fail on inrush or on a weak
+        feeder.
+      </p>
+      <p class="mt-3 text-[15px] leading-relaxed text-steel-700">
+        See <a class="font-semibold text-ember-700" href="/knowledge/flour-mill-electrical-supply/">electrical supply for a flour mill</a>
+        and <a class="font-semibold text-ember-700" href="/knowledge/mill-electrical-safety-and-loto/">electrical safety and LOTO</a>.
+        Power quality is a commissioning issue, not a handover surprise.
+      </p>
+
+      <h2 class="mt-12 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">6. Installation and commissioning</h2>
+      <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
+        Installation is an interface problem: civil works, steel, equipment, electrical, dust
+        collection and controls. The sequence matters because access disappears once equipment is
+        installed. Commissioning then proves the plant against a written protocol — not against a
+        verbal promise that it “runs well”.
+      </p>
+      <p class="mt-3 text-[15px] leading-relaxed text-steel-700">
+        Read <a class="font-semibold text-ember-700" href="/knowledge/flour-mill-installation-and-erection/">installation and erection</a>
+        and <a class="font-semibold text-ember-700" href="/knowledge/flour-mill-commissioning-and-testing/">commissioning and testing</a>.
+        The acceptance test should define duration, wheat specification, sampling, extraction and
+        power measurement before the contract is signed.
+      </p>
+
+      <h2 class="mt-12 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">Common failure modes</h2>
+      <ul class="mt-4 space-y-3 text-[15px] leading-relaxed text-steel-700">
+        <li><strong>Oversized plant, undersized market.</strong> The mill runs below its efficient point and cannot recover fixed cost.</li>
+        <li><strong>Flow sheet copied from another project.</strong> The wheat and product mix are different, so the passage count and sifter area are wrong.</li>
+        <li><strong>Building bought before layout.</strong> Height, floor openings or loading access force a redesign after steel is ordered.</li>
+        <li><strong>Power checked at the end.</strong> The transformer or feeder cannot support starting, and commissioning slips by months.</li>
+        <li><strong>No commissioning protocol.</strong> Everyone disagrees about what “capacity” means after the plant is built.</li>
+      </ul>
+
+      <h2 class="mt-12 font-display text-3xl font-bold uppercase tracking-tight text-steel-900">How to use this pillar</h2>
+      <p class="mt-4 text-[15px] leading-relaxed text-steel-700">
+        Read the seven articles in order if you are starting a project. If you already have a
+        quotation, use the capacity, flow sheet and building articles as a checklist for the questions
+        to put back to the supplier. Do not use a single article as a substitute for a site-specific
+        engineering review.
+      </p>
+      <div class="mt-6 grid gap-3 sm:grid-cols-2">
+        <a class="card p-4" href="/knowledge/how-to-size-a-flour-mill/"><strong>How to size a flour mill</strong><span class="mt-1 block text-sm text-steel-600">Five-stage sizing method.</span></a>
+        <a class="card p-4" href="/knowledge/flour-milling-flow-sheet-design/"><strong>Flow sheet design</strong><span class="mt-1 block text-sm text-steel-600">Passages, sifter area and purifier placement.</span></a>
+        <a class="card p-4" href="/knowledge/flour-mill-layout-design/"><strong>Layout design</strong><span class="mt-1 block text-sm text-steel-600">Workflow, access and geometry cost.</span></a>
+        <a class="card p-4" href="/knowledge/flour-mill-building-requirements/"><strong>Building requirements</strong><span class="mt-1 block text-sm text-steel-600">Height, loading, floors and openings.</span></a>
+        <a class="card p-4" href="/knowledge/flour-mill-electrical-supply/"><strong>Electrical supply</strong><span class="mt-1 block text-sm text-steel-600">Transformer sizing and voltage sag.</span></a>
+        <a class="card p-4" href="/knowledge/flour-mill-installation-and-erection/"><strong>Installation and erection</strong><span class="mt-1 block text-sm text-steel-600">Sequence and interfaces.</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container-x max-w-4xl">
+      <h2 class="font-display text-3xl font-bold uppercase tracking-tight text-steel-900">Frequently asked questions</h2>
+      <dl class="mt-6 divide-y divide-steel-200">
+        {faq.map((f) => (
+          <div class="py-5 first:pt-0">
+            <dt class="text-base font-bold text-steel-900">{f.q}</dt>
+            <dd class="mt-2 text-[15px] leading-relaxed text-steel-700">{f.a}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+
+  <CTABand />
+</PageLayout>

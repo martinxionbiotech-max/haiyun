@@ -56,6 +56,12 @@
 - [Remote monitoring and PLC data](https://flourmillingpro.com/knowledge/remote-monitoring-and-plc-data/): which signals are worth transmitting, what the data proves, and where monitoring stops being useful.
 - [Wheat price risk and contracts](https://flourmillingpro.com/knowledge/wheat-price-risk-and-contracts/): procurement timing, contract structures and how a mill hedges its largest cost line.
 
+## Programme pillars
+
+- [Flour Mill Plant Engineering](https://flourmillingpro.com/knowledge/flour-mill-plant-engineering/): capacity, flow sheet, layout, building, power, installation and commissioning.
+- [Flour Milling Technology](https://flourmillingpro.com/knowledge/flour-milling-technology/): cleaning, tempering, roller milling, plansifting, purification, extraction and quality control.
+- [Flour Mill Investment and Operation](https://flourmillingpro.com/knowledge/flour-mill-investment-operation/): project cost, feasibility, operating cost, energy, financing, maintenance and performance guarantees.
+
 ## Engineering calculators
 
 - [Flour mill calculators](https://flourmillingpro.com/tools/flour-mill-calculators/): free tools for wheat input, extraction rate, specific energy, silo capacity, bag count and tempering water, with formulas and assumptions.
