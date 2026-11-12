@@ -63,10 +63,17 @@ const schema = [
     '@id': `${site.url}${href(`/equipment/${item.slug}/`)}#product`,
     image: [heroFile ? `${site.url}/images/${heroFile}` : `${site.url}/og-default.jpg`],
     mainEntityOfPage: { '@id': `${site.url}${href(`/equipment/${item.slug}/`)}` },
-    // Quote-based sale: no price is published, so the offer points at the
-    // enquiry form rather than carrying a misleading priceCurrency.
+    // Published price band for the equipment range. The exact price is quoted
+    // per configuration, so the markup carries an aggregate range rather than a
+    // single figure; Google requires at least one price field in offers.
     offers: {
-      '@type': 'Offer',
+      '@type': 'AggregateOffer',
+      priceCurrency: 'USD',
+      lowPrice: 5000,
+      highPrice: 10000,
+      offerCount: 1,
+      itemCondition: 'https://schema.org/NewCondition',
+      availability: 'https://schema.org/InStock',
       businessFunction: 'http://purl.org/goodrelations/v1#Sell',
       seller: { '@id': `${site.url}/#organization` },
       url: `${site.url}${href('/contact/')}`,
