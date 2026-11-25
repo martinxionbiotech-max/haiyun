@@ -71,6 +71,16 @@ const schema = [
       priceCurrency: 'USD',
       lowPrice: 5000,
       highPrice: 10000,
+      // Google's Product snippet validator requires a concrete price field in
+      // offers, in addition to an aggregate range. 5000 is the published
+      // starting point; the final configuration is quoted separately.
+      price: 5000,
+      priceSpecification: {
+        '@type': 'PriceSpecification',
+        price: 5000,
+        priceCurrency: 'USD',
+        valueAddedTaxIncluded: false,
+      },
       offerCount: 1,
       itemCondition: 'https://schema.org/NewCondition',
       availability: 'https://schema.org/InStock',
